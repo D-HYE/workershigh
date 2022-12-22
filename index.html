@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div id="login_fr">
+        <div class="login_inner">
+            <div class="form_top">
+                <div class="form_img">
+                    <img src="./images/logo_bk.svg" alt="workes high">
+                </div>
+                <h3>세션 시작을 위해 로그인 해주세요.</h3>
+            </div>
+            <div class="form_area">
+                <form action="/sub/basic_ui.html">
+                    <div class="input_wrap text_input_wrap">
+                        <input type="text" name="id" id="login_id" value="designer" placeholder="아이디">
+                    </div>
+                    <div class="input_wrap text_input_wrap">
+                        <input type="password" name="pw" id="login_pw" placeholder="비밀번호">
+                    </div>
+                    <div class="input_wrap checkbox_input_wrap">
+                        <input type="checkbox" name="id_check" id="id_check">
+                        <label for="id_check">아이디 기억하기</label>
+                    </div>
+                    <button type="submit" class="btn">로그인</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

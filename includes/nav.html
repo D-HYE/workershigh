@@ -1,0 +1,166 @@
+<div class="gnb_inner">
+    <div class="gnb_header">
+        <div class="bar_title">
+            <div class="bar_title_inner">
+                <h1 class="logo">
+                    <img src="../images/logo_wh.svg" alt="workers high">
+                </h1>
+                <button class="icon_btn gnb_arrow_btn" type="button"></button>
+            </div>
+        </div>
+        <div class="user_info">
+            <div class="user_info_inner">
+                <div class="user_account">
+                    <h3>닉네임</h3>
+                    <h4>id_<span>12345678</span></h4>
+                </div>
+                <a href="/" class="user_logout">로그아웃</a>
+            </div>
+        </div>
+    </div>
+    <nav class="gnb_list_area">
+        <ul>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <a href="/">대시보드</a>
+                </div>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>거래처 관리</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">거래처</a></li>
+                    <li><a href="/">매대</a></li>
+                </ol>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>장비관리</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">전체 장비</a></li>
+                    <li><a href="/">거래처별 장비</a></li>
+                </ol>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>실적관리</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">목표관리</a></li>
+                    <li><a href="/">매출현황</a></li>
+                    <li><a href="/">손익현황</a></li>
+                    <li><a href="/">실적등록</a></li>
+                </ol>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>통계</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">매출 통계</a></li>
+                    <li><a href="/">회원별 통계</a></li>
+                    <li><a href="/">상품별 통계</a></li>
+                    <li><a href="/">회원 통계</a></li>
+                </ol>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>고객관리</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">회원</a></li>
+                    <li><a href="/">복지포인트</a></li>
+                    <li><a href="/">회원주문내역</a></li>
+                </ol>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>상품관리</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">전체주문내역</a></li>
+                    <li><a href="/">카테고리</a></li>
+                    <li><a href="/">상품</a></li>
+                    <li><a href="/">큐레이션</a></li>
+                    <li><a href="/">큐레이션셜과</a></li>
+                    <li><a href="/">거래체 발주</a></li>
+                </ol>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>재고관리</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">구매처</a></li>
+                    <li><a href="/">로케이션</a></li>
+                    <li><a href="/">창고 재고</a></li>
+                    <li><a href="/">피킹</a></li>
+                    <li><a href="/">출고</a></li>
+                    <li><a href="/">진열</a></li>
+                    <li><a href="/">재입고</a></li>
+                </ol>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>진열관리</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">담당자 관리</a></li>
+                    <li><a href="/">스케쥴관리</a></li>
+                </ol>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>발주관리</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">구매처발주</a></li>
+                </ol>
+            </li>
+            <li class="gnb_list">
+                <div class="list_item">
+                    <div class="list_icon"></div>
+                    <span>관리자</span>
+                </div>
+                <ol class="depth_list">
+                    <li><a href="/">개발요청</a></li>
+                    <li><a href="/">권한</a></li>
+                    <li><a href="/">키오스크</a></li>
+                    <li><a href="/">APK&#47;AD관리</a></li>
+                    <li><a href="/">사용이력</a></li>
+                    <li><a href="/">로그</a></li>
+                    <li><a href="/">시스템 로그</a></li>
+                </ol>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script>
+    $('.gnb_list').click(function(){
+        $('.gnb_list').removeClass('on')
+        $(this).addClass('on')
+    })
+    $('.gnb_arrow_btn').click(function(){
+        $('#gnb').removeClass('active')
+        $('main').addClass('active')
+
+    })
+    $('.menu_btn').click(function(){
+        $('#gnb').addClass('active')
+        $('main').removeClass('active')
+
+    })
+</script>

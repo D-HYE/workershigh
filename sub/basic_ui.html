@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sub/sub7.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page7_3">
+        <div id="gnb" class="active"></div>
+        <main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>상품</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>상품관리</li>
+                                    <li>상품</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="search_area">
+                            <div class="form_table">
+                                <ul class="row row1">
+                                    <li class="col col1">
+                                        <div class="input_wrap date_input_wrap">
+                                            <input type="date" name="product_date" value="2022-10-12">
+                                            <span>~</span>
+                                            <input type="date" name="product_date" value="2022-10-12">
+                                        </div>
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">상품명</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="option">상품명</li>
+                                                <li class="option">상품명1</li>
+                                                <li class="option">상품명2</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="col col3">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" placeholder="검색어를 입력해 주세요.">
+                                        </div>
+                                    </li>
+                                    <li class="col col4">
+                                        <button type="button" class="btn search_btn">검색</button>
+                                    </li>
+                                </ul>
+                                <ul class="row row2">
+                                    <li class="col col1">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">마스터</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="option">마스터</li>
+                                                <li class="option">마스터1</li>
+                                                <li class="option">마스터2</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">전체상품</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="option">전체상품</li>
+                                                <li class="option">개별상품2</li>
+                                                <li class="option">개별상품3</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="option_area">
+                            <ul class="option_btn_wrap">
+                                <li><button type="button" class="option_btn btn active">등록</button></li>
+                                <li><button type="button" class="option_btn btn">파일 업로드</button></li>
+                                <li><button type="button" class="option_btn btn">다운로드</button></li>
+                                <li><button type="button" class="option_btn btn">지점별 가격</button></li>
+                                <li><button type="button" class="option_btn btn">RAW 데이터</button></li>
+                            </ul>
+                            <div class="option_result_wrap">
+                                <div class="option_result">
+                                    <h3>검색결과 <span>33</span></h3>
+                                </div>
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">상품명</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="option">상품명</li>
+                                        <li class="option">상품명1</li>
+                                        <li class="option">상품명2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result_area">
+                            <div class="result_table">
+                                <table>
+                                    <thead>
+                                        <tr class="row row1">
+                                            <th class="col col1">NO</th>
+                                            <th class="col col2">이미지</th>
+                                            <th class="col col3">상품명</th>
+                                            <th class="col col4">바코드</th>
+                                            <th class="col col5">1차 카테고리</th>
+                                            <th class="col col6">2차 카테고리</th>
+                                            <th class="col col7">3차 카테고리</th>
+                                            <th class="col col8">원가</th>
+                                            <th class="col col9">마스터가격</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row row2">
+                                            <td class="col col1">1</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">로얄카드</td>
+                                            <td class="col col4">23452345</td>
+                                            <td class="col col5">상온</td>
+                                            <td class="col col6">어메니티</td>
+                                            <td class="col col7">-</td>
+                                            <td class="col col8">4,000</td>
+                                            <td class="col col9">마스터가격</td>
+                                        </tr>
+                                        <tr class="row row3">
+                                            <td class="col col1">2</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">chang 소다 워터 오리지날</td>
+                                            <td class="col col4">563456345</td>
+                                            <td class="col col5">상온</td>
+                                            <td class="col col6">음료</td>
+                                            <td class="col col7">음료(탄산/일반)</td>
+                                            <td class="col col8">1,200</td>
+                                            <td class="col col9">1,200</td>
+                                        </tr>
+                                        <tr class="row row4">
+                                            <td class="col col1">3</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">맥스봉크레이지핫핫바</td>
+                                            <td class="col col4">45764576</td>
+                                            <td class="col col5">냉장</td>
+                                            <td class="col col6">식사대용</td>
+                                            <td class="col col7">식사대용</td>
+                                            <td class="col col8">2,200</td>
+                                            <td class="col col9">2,200</td>
+                                        </tr>
+                                        <tr class="row row5">
+                                            <td class="col col1">4</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">로얄카드</td>
+                                            <td class="col col4">23452345</td>
+                                            <td class="col col5">상온</td>
+                                            <td class="col col6">어메니티</td>
+                                            <td class="col col7">-</td>
+                                            <td class="col col8">4,000</td>
+                                            <td class="col col9">마스터가격</td>
+                                        </tr>
+                                        <tr class="row row6">
+                                            <td class="col col1">5</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">chang 소다 워터 오리지날</td>
+                                            <td class="col col4">563456345</td>
+                                            <td class="col col5">상온</td>
+                                            <td class="col col6">음료</td>
+                                            <td class="col col7">음료(탄산/일반)</td>
+                                            <td class="col col8">1,200</td>
+                                            <td class="col col9">1,200</td>
+                                        </tr>
+                                        <tr class="row row7">
+                                            <td class="col col1">6</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">맥스봉크레이지핫핫바</td>
+                                            <td class="col col4">45764576</td>
+                                            <td class="col col5">냉장</td>
+                                            <td class="col col6">식사대용</td>
+                                            <td class="col col7">식사대용</td>
+                                            <td class="col col8">2,200</td>
+                                            <td class="col col9">2,200</td>
+                                        </tr>
+                                        <tr class="row row8">
+                                            <td class="col col1">7</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">로얄카드</td>
+                                            <td class="col col4">23452345</td>
+                                            <td class="col col5">상온</td>
+                                            <td class="col col6">어메니티</td>
+                                            <td class="col col7">-</td>
+                                            <td class="col col8">4,000</td>
+                                            <td class="col col9">마스터가격</td>
+                                        </tr>
+                                        <tr class="row row9">
+                                            <td class="col col1">8</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">chang 소다 워터 오리지날</td>
+                                            <td class="col col4">563456345</td>
+                                            <td class="col col5">상온</td>
+                                            <td class="col col6">음료</td>
+                                            <td class="col col7">음료(탄산/일반)</td>
+                                            <td class="col col8">1,200</td>
+                                            <td class="col col9">1,200</td>
+                                        </tr>
+                                        <tr class="row row10">
+                                            <td class="col col1">9</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">맥스봉크레이지핫핫바</td>
+                                            <td class="col col4">45764576</td>
+                                            <td class="col col5">냉장</td>
+                                            <td class="col col6">식사대용</td>
+                                            <td class="col col7">식사대용</td>
+                                            <td class="col col8">2,200</td>
+                                            <td class="col col9">2,200</td>
+                                        </tr>
+                                        <tr class="row row11">
+                                            <td class="col col1">10</td>
+                                            <td class="col col2"><div class="table_img_box"><img src="../images/product_img.png" alt="제품사진"></div></td>
+                                            <td class="col col3">로얄카드</td>
+                                            <td class="col col4">23452345</td>
+                                            <td class="col col5">상온</td>
+                                            <td class="col col6">어메니티</td>
+                                            <td class="col col7">-</td>
+                                            <td class="col col8">4,000</td>
+                                            <td class="col col9">마스터가격</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="result_pagenation">
+                                <div class="pagenation_wrap">
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn first_btn"></span></li>
+                                        <li><span class="icon_btn left_btn"></span></li>
+                                    </ul>
+                                    <ol class="pagenation_item">
+                                        <li class="selected"><span class="num">1</span></li>
+                                        <li><span class="num">2</span></li>
+                                        <li><span class="num">3</span></li>
+                                        <li><span class="num">4</span></li>
+                                    </ol>
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn right_btn"></span></li>
+                                        <li><span class="icon_btn last_btn"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
