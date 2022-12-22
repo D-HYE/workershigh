@@ -59,19 +59,7 @@ input[type='checkbox']:checked{
     background: url(../images/icon/icon-checked.svg) no-repeat center/20px;
     border: none;
 }
-.checkbox_input_wrap label{font-size: 14px;}
 
-.date_input_wrap{
-    padding-left: 54px;
-    border: 1px solid #C1C1C1;
-    border-radius: 6px;
-    background: url(../images/icon/icon-calendar-bl.svg) no-repeat 10px 50%/24px, #fff;
-    cursor: pointer;
-}
-.date_input_wrap span{
-    display: inline-block;
-    margin-right: 10px;
-}
 input[type='date']{
     padding: 0;
     background: none;
@@ -145,3 +133,196 @@ input[type='date']:focus{
 
 }
 .select_wrap .option:hover{color: #0044FE;}
+
+
+
+
+/* btn style */
+.btn_white{
+    border-radius: 100px !important;
+    text-align: center;
+    font-size: 14px !important;
+    background-color: #fff;
+    border:1px solid #4267EB !important;
+    color: #4267EB;
+    font-weight: 700;
+    transition:all .3s;
+}
+.btn_white:hover{
+    background-color: #4267EB;
+    color: #fff;
+}
+.btn_blue{
+    border-radius: 100px !important;
+    text-align: center;
+    font-size: 14px !important;
+    border:none !important;
+    background-color: #0044fe !important;
+    color: #fff;
+    font-weight: 700;
+    transition:all .3s;
+}
+.btn_blue:hover{
+    background-color: #0B1293!important;
+}
+.btn_paleBlue{
+    border-radius: 100px !important;
+    text-align: center;
+    font-size: 14px !important;
+    border:none !important;
+    background-color: #F2F4FF !important;
+    color: #4267EB;
+    font-weight: 700;
+    transition:all .3s;
+}
+.btn_paleBlue:hover{
+    color: #0B1293;
+    background-color: #D0D5F2;
+}
+
+/* 달력 calander date */
+.date_area{position: relative;}
+.date_input_wrap{
+    padding-left: 54px;
+    border: 1px solid #C1C1C1;
+    border-radius: 6px;
+    background: url(../images/icon/icon-calendar-bl.svg) no-repeat 10px 50%/24px, #fff;
+    cursor: pointer;
+}
+.checkbox_input_wrap label{font-size: 14px;}
+.date_input_wrap span{
+    display: inline-block;
+    margin-right: 10px;
+}
+.date_wrap{
+  height: 44px;
+  border: 1px solid #C1C1C1;
+  border-radius: 6px;
+  padding-left: 54px;
+  background: url(../images/icon/icon-calendar-bl.svg) no-repeat 10px 50%/24px, #fff;
+  cursor: pointer;
+
+  width: auto;
+  min-width: 256px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-size: 14px;
+}
+.date_wrap div{display: flex;}
+.date_wrap div p:after{content: '.';}
+.date_wrap div p:last-child::after{display: none;}
+.date_wrap>span{display: block; margin: 0 15px;}
+
+.calander_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 52px;
+    left: 0;
+
+    width: 622px;
+    height: 305px;
+    background-color: #fff;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+    z-index: 1;
+}
+.calander_wrap .left_side{
+    width: 120px;
+}
+.calander_wrap .left_side li{
+    width: 100%;
+    border-right: 1px solid #eee;
+    height: 35px;
+    line-height: 21px;
+    font-size:14px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+.calander_wrap .left_side li.on{
+    color: #fff;
+    background-color: #4267EB;
+}
+.calander_wrap .calander_con{
+    border-bottom: 1px solid #eee;
+    display: flex;
+}
+.calander_wrap .calander_con .calander {
+    padding: 26px 20px 30px;
+}
+.calander_wrap .calander_con .calander .year_month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 18px;
+}
+.calander_wrap .calander_con .calander .year_month input[type=button]{
+    font-size:0;
+    border:0;
+    height: 21px;
+    width: 21px;
+    background-repeat: no-repeat;
+}
+.calander_wrap .calander_con .calander .year_month .prev{
+    background-image: url(../images/icon/icon-arrow-left-bold-bk.svg);
+    background-position: left 8px top 50%;
+}
+.calander_wrap .calander_con .calander .year_month .next{
+    background-image: url(../images/icon/icon-arrow-right-bold-bk.svg);
+    background-position: right 8px top 50%;
+}
+.calander_wrap .calander_con .calander .year_month div{display: flex;}
+.calander_wrap .calander_con .calander .year_month div p::after{content: '.';}
+.calander_wrap .calander_con .calander td{
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.calander_wrap .calander_con .calander td.gray{
+    color: #C1C1C1;
+}
+.calander_wrap .calander_con .calander td.start,
+.calander_wrap .calander_con .calander td.end{
+    background-color: #4267EB;
+    color: #fff;
+    font-weight: 700;
+}
+.calander_wrap .calander_con .calander td.start{border-radius:15px 0px 0px 15px;}
+.calander_wrap .calander_con .calander td.end{border-radius:0px 15px 15px 0px;}
+.calander_wrap .calander_con .calander td.on{
+    color: #4267EB;
+    background-color: #F6FAFF;
+}
+.calander_wrap .btm{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    padding: 0 12px;
+}
+.calander_wrap .btm input{
+    width: 66px;
+    height: 36px;
+    line-height: 34px;
+    margin-left: 12px;
+}
+.calander_wrap .btm .date_wrap{
+    background: none;
+    padding: 0;
+    border: none;
+    width: auto;
+    min-width: 0;
+}
+.calander_wrap .btm div p:after{content: '-';}
+.calander_wrap .btm .date_wrap>span{
+    margin:0 3px
+}

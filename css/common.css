@@ -22,7 +22,7 @@
     width: 270px;
     height: 100%;
     box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
-    overflow-y: scroll;
+    overflow-y: auto;
     transition: .3s;
 }
 
@@ -277,6 +277,8 @@ main{
     height: 50px;
     background: #FCFCFC;
     border-bottom: 1px solid #D3D3D3;
+    height: 50px;
+    line-height: 50px;
 }
 .result_area thead th{
     font-size: 13px;
