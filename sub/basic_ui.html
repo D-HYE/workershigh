@@ -38,11 +38,184 @@
                             <div class="form_table">
                                 <ul class="row row1">
                                     <li class="col col1">
-                                        <div class="input_wrap date_input_wrap">
+                                        <!-- <div class="input_wrap date_input_wrap">
                                             <input type="date" name="product_date" value="2022-10-12">
                                             <span>~</span>
                                             <input type="date" name="product_date" value="2022-10-12">
+                                        </div> -->
+                                        <div class="date_area">
+                                            <div class="date_wrap">
+                                                <div class="date_first">
+                                                    <p class="year">2022</p>
+                                                    <p class="month">10</p>
+                                                    <p class="date">12</p>
+                                                </div>
+                                                <span>~</span>
+                                                <div class="date_second">
+                                                    <p class="year">2022</p>
+                                                    <p class="month">10</p>
+                                                    <p class="date">12</p>
+                                                </div>
+                                            </div>
+                                            <div class="calander_wrap" style="display:none">
+                                                <ul class="left_side">
+                                                    <li>오늘</li>
+                                                    <li>어제</li>
+                                                    <li>일주일</li>
+                                                    <li>30일</li>
+                                                    <li>이번달</li>
+                                                    <li>지난달</li>
+                                                    <li class="on">사용자 지정</li>
+                                                </ul>
+                                                <div class="calander_con">
+                                                    <div class="calander calander_first">
+                                                        <div class="year_month">
+                                                            <input type="button" value="prev" class="prev">
+                                                            <div class="date">
+                                                                <p class="year">2022</p>
+                                                                <p class="month">10</p>
+                                                            </div>
+                                                            <input type="button" value="next" class="next">
+                                                        </div>
+                                                        <div class="month_date">
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="gray">30</td>
+                                                                        <td class="gray">31</td>
+                                                                        <td>1</td>
+                                                                        <td>2</td>
+                                                                        <td>3</td>
+                                                                        <td>4</td>
+                                                                        <td>5</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>6</td>
+                                                                        <td>7</td>
+                                                                        <td class="start">8</td>
+                                                                        <td class="on">9</td>
+                                                                        <td class="on">10</td>
+                                                                        <td class="on">11</td>
+                                                                        <td class="on">12</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="on">13</td>
+                                                                        <td class="on">14</td>
+                                                                        <td class="on">15</td>
+                                                                        <td class="on">16</td>
+                                                                        <td class="on">17</td>
+                                                                        <td class="on">18</td>
+                                                                        <td class="on">19</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="on">20</td>
+                                                                        <td class="on">21</td>
+                                                                        <td class="on">22</td>
+                                                                        <td class="on">23</td>
+                                                                        <td class="on">24</td>
+                                                                        <td class="on">25</td>
+                                                                        <td class="on">26</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="on">27</td>
+                                                                        <td class="on">28</td>
+                                                                        <td class="on">29</td>
+                                                                        <td class="on">30</td>
+                                                                        <td class="gray">1</td>
+                                                                        <td class="gray">2</td>
+                                                                        <td class="gray">3</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="calander calander_second">
+                                                        <div class="year_month">
+                                                            <input type="button" value="prev" class="prev">
+                                                            <div class="date">
+                                                                <p class="year">2022</p>
+                                                                <p class="month">12</p>
+                                                            </div>
+                                                            <input type="button" value="next" class="next">
+                                                        </div>
+                                                        <div class="month_date">
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="gray">27</td>
+                                                                        <td class="gray">28</td>
+                                                                        <td class="gray">29</td>
+                                                                        <td class="gray">30</td>
+                                                                        <td class="on">1</td>
+                                                                        <td class="on">2</td>
+                                                                        <td class="on">3</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="on">4</td>
+                                                                        <td class="on">5</td>
+                                                                        <td class="end">6</td>
+                                                                        <td>7</td>
+                                                                        <td>8</td>
+                                                                        <td>9</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>11</td>
+                                                                        <td>12</td>
+                                                                        <td>13</td>
+                                                                        <td>14</td>
+                                                                        <td>15</td>
+                                                                        <td>16</td>
+                                                                        <td>17</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>18</td>
+                                                                        <td>19</td>
+                                                                        <td>20</td>
+                                                                        <td>21</td>
+                                                                        <td>22</td>
+                                                                        <td>23</td>
+                                                                        <td>24</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>25</td>
+                                                                        <td>26</td>
+                                                                        <td>27</td>
+                                                                        <td>28</td>
+                                                                        <td>29</td>
+                                                                        <td>30</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="btm">
+                                                    <div class="date_wrap">
+                                                        <div class="date_first">
+                                                            <p class="year">2022</p>
+                                                            <p class="month">11</p>
+                                                            <p class="date">8</p>
+                                                        </div>
+                                                        <span>~</span>
+                                                        <div class="date_second">
+                                                            <p class="year">2022</p>
+                                                            <p class="month">12</p>
+                                                            <p class="date">06</p>
+                                                        </div>
+                                                    </div>
+                                                    <input type="button" value="닫기" class="btn_white close">
+                                                    <input type="button" value="적용" class="btn_blue confirm">
+                                                </div>
+                                            </div>
                                         </div>
+                                        <script>
+                                            $(function(){
+                                                $('.date_wrap').on('click', function(){
+                                                    $('.calander_wrap').toggle();
+                                                })
+                                            })
+                                        </script>
                                     </li>
                                     <li class="col col2">
                                         <div class="select_wrap">
