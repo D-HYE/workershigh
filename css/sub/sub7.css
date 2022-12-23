@@ -2,12 +2,12 @@
 
 
 /* ---------- sub7_3 ---------- */
-#page7_3 .select_wrap{width: 180px;}
+#page7_3 .search_area .date_area{width: 256px;}
+#page7_3 .search_area .calander_wrap{width: 622px; height: 305px;}
 #page7_3 .search_area input[type='text']{width: 400px;}
+#page7_3 .select_wrap{width: 180px;}
 #page7_3 .result_area .col1{width: 80px; text-align: center;}
 #page7_3 .result_area .col2{width: 70px; text-align: center;}
 #page7_3 .result_area .col2 .table_img_box{width: 40px; height: 40px; margin: auto; overflow: hidden;}
-#page7_3 .result_area .col3{width: 240px;}
 #page7_3 .result_area .col4, #page7_3 .result_area .col5, #page7_3 .result_area .col6, #page7_3 .result_area .col7{width: 130px;text-align: center;}
 #page7_3 .result_area .col8, #page7_3 .result_area .col9{width: 100px; text-align: center;}
-#page7_3 main.active .result_area .col3{width: 510px;}

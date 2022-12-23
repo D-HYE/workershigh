@@ -1,0 +1,121 @@
+/* ---------- sub2_1 ---------- */
+#page2_1 .search_area .select_wrap{width: 300px;}
+#page2_1 .result_area .col{text-align: center;}
+#page2_1 .result_area .col1{width: 60px;}
+#page2_1 .result_area .col2{width: 120px;}
+#page2_1 .result_area .col3{width: 80px;}
+#page2_1 .result_area .col4{width: 130px;}
+#page2_1 .result_area .col5{width: 150px;}
+#page2_1 .result_area .col6{width: 80px;}
+#page2_1 .result_area .col7{
+    text-overflow: initial;
+    white-space:initial;
+    word-break: break-word;
+}
+#page2_1 .result_area .col8{width: 200px;}
+#page2_1 .result_area .col9{width: 110px;}
+#page2_1 .result_area .icon_btn_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+#page2_1 .result_area .col9 .icon_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#page2_1 .result_area .icon_btn.edit_btn{
+    background: url(../../images/icon/icon-edit.svg) no-repeat center/24px, #F2F4FF;
+}
+#page2_1 .result_area .icon_btn.delete_btn{
+    background: url(../../images/icon/icon-delete.svg) no-repeat center/24px, #f2f2f2;
+}
+
+/* ---------- sub2_1_1 ---------- */
+#page2_1_1 .block_category{width: 100px;}
+#page2_1_1 .table_category{width: 120px;}
+#page2_1_1 .table_block .col>div{width: 100%;}
+#page2_1_1 .table_block input:not(input[type="radio"]){width: 100%;}
+
+#page2_1_1 .table_block>.row, #page2_1_1 .depth_table{width: calc(100% - 100px);}
+#page2_1_1 .table_block1 .col1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#page2_1_1 .table_block1 .col .select_wrap{width: 180px;}
+
+#page2_1_1 .table_block2 .row1 .col2, #page2_1_1 .table_block2 .row2 .col2{width: calc(29.703% - 120px);}
+#page2_1_1 .table_block2 .row1 .col4,
+#page2_1_1 .table_block2 .row1 .col6,
+#page2_1_1 .table_block2 .row2 .col4,
+#page2_1_1 .table_block2 .row2 .col6{width: calc(35.149% - 120px);}
+#page2_1_1 .table_block2 .row3 .col2, #page2_1_1 .table_block2 .row3 .col4{width: calc(29.703% - 120px);}
+#page2_1_1 .table_block2 .row3 .col6{width: calc(40.594% - 120px);}
+#page2_1_1 .table_block2 .row3 .col6 .upload_wrap{width: 100%;}
+#page2_1_1 .table_block2 .row3 .col6 .upload_wrap .upload_val{width: 61.379%;}
+#page2_1_1 .table_block2 .row_collapse .row_collapse_left{width: 59.406%;}
+#page2_1_1 .table_block2 .row_collapse .row_collapse_left .col{height: 129px;}
+#page2_1_1 .table_block2 .row_collapse .row_collapse_left .col2{flex-grow: 1; display: block; padding-top: 14px;}
+#page2_1_1 .table_block2 .row_collapse .row_collapse_left .input_wrap:first-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 13px;
+}
+#page2_1_1 .table_block2 .row_collapse .row_collapse_right{flex-grow: 1;}
+#page2_1_1 .table_block2 .row_collapse .row_collapse_right .col4{flex-grow: 1;}
+
+#page2_1_1 .table_block3 .row1 .col:not(.table_category),
+#page2_1_1 .table_block3 .row2 .col:not(.table_category){width: calc(33.3% - 120px);}
+#page2_1_1 .table_block3 .row1 .calander_area{width: 250px; height: 240px;}
+#page2_1_1 .table_block3 .row3 .col2{width: calc(33.3% - 120px);}
+#page2_1_1 .table_block3 .row3 .col4 .input_wrap{display: flex; gap: 20px;}
+
+#page2_1_1 .table_block4 .col{
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%; 
+    height: 108px;
+}
+#page2_1_1 .table_block4 .goal_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 89.307%;
+    height: 100%;
+}
+#page2_1_1 .table_block4 .goal_wrap li{
+    display: flex;
+    width: 15.743%;
+    height: 39px;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+}
+#page2_1_1 .table_block4 .goal_wrap li h4{
+    width: 54px;
+    text-align: center;
+    line-height: 37px;
+    background: #F6FAFF;
+    border-right: 1px solid rgba(168, 177, 206, 0.2);
+}
+#page2_1_1 .table_block4 .goal_wrap li p{
+    flex-grow: 1;
+    padding-right: 10px;
+    text-align: right;
+    line-height: 37px;
+}
+#page2_1_1 .table_block5 .col{width: 100%; height: 144px;}
+#page2_1_1 .table_block5 .col textarea{
+    width: 100%;
+    height: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #c1c1c1;
+    border-radius: 6px;
+}
+#page2_1_1 .table_block5 .col textarea::placeholder{
+    font-size: 14px;
+    color: #111;
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub2.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page2_1_1">
+        <div id="gnb" class="active"></div>
+        <main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>거래처 수정</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>거래처 관리</li>
+                                    <li>거래처</li>
+                                    <li>거래처 수정</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="form_area">
+                            <div class="input_form_table">
+                                <div class="table_block table_block1">
+                                    <div class="block_category">채널</div>
+                                    <ul class="row row1">
+                                        <li class="col col1">
+                                            <div class="select_wrap">
+                                                <div class="selected">
+                                                    <div class="selected_value">B2B</div>
+                                                    <div class="icon_btn select_btn"></div>
+                                                </div>
+                                                <ul>
+                                                    <li class="sel_option">B2B</li>
+                                                    <li class="sel_option">B2C</li>
+                                                </ul>
+                                                <!-- 수정!?!?!?!?!?!?!?! -->
+                                            </div>
+                                            <button type="button" class="btn btn_blue">재계약</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="table_block table_block2">
+                                    <div class="block_category">거래처</div>
+                                    <div class="depth_table">
+                                        <ul class="row row1">
+                                            <li class="col col1 table_category">거래처명</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="company_name" value="롯데벤처스">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">거래처 담당자</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="company_manager" value="홍길동">
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">대표 연락처</li>
+                                            <li class="col col6">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="company_tel" value="010-1234-5678">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="row row2">
+                                            <li class="col col1 table_category">아이디</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="id" value="lotteb">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">대표자</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="ceo" value="박길동">
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">사업자번호</li>
+                                            <li class="col col6">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="business_num" value="863-56-45698">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="row row3">
+                                            <li class="col col1 table_category">담당자 연락처</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="manager_tel" value="010-9876-5432">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">매대그룹명</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="group_name" value="롯데벤처스">
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">사업자등록증</li>
+                                            <li class="col col6">
+                                                <div class="upload_wrap">
+                                                    <span class="upload_val">사업자등록증.png</span>
+                                                    <label for="file_upload" class="btn btn_white">파일선택</label> 
+                                                    <input type="file" id="file_upload">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="row_collapse">
+                                            <div class="row_collapse_left">
+                                                <ul class="row row4">
+                                                    <li class="col col1 table_category">주소</li>
+                                                    <li class="col col2">
+                                                        <div class="input_wrap">
+                                                            <input type="text" name="company_address1" value="경기 성남시 수성구">
+                                                            <button type="button" class="btn btn_white">주소검색</button>
+                                                        </div>
+                                                        <div class="input_wrap">
+                                                            <input type="text" name="company_address2" value="위례광장로 9-10">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="row_collapse_right">
+                                                <ul class="row row4">
+                                                    <li class="col col3 table_category">공식 이메일</li>
+                                                    <li class="col col4">
+                                                        <div class="input_wrap">
+                                                            <input type="text" name="official_email" value="sadifh@aasd.com">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="row row5">
+                                                    <li class="col col3 table_category">담당자 이메일</li>
+                                                    <li class="col col4">
+                                                        <div class="input_wrap">
+                                                            <input type="text" name="manager_email" value="sadifh@aasd.com">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table_block table_block3">
+                                    <div class="block_category">계약현황</div>
+                                    <div class="depth_table">
+                                        <ul class="row row1">
+                                            <li class="col col1 table_category">계약기간</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="term" value="롯데벤처스">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">입점일</li>
+                                            <li class="col col4">
+                                                <div class="date_area">
+                                                    <div class="date_wrap">
+                                                        <div class="date_first">
+                                                            <p class="year">2022</p>
+                                                            <p class="month">10</p>
+                                                            <p class="date">12</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="calander_area">
+                                                        <div class="calander_wrap">
+                                                            <div class="calander_con">
+                                                                <div class="calander calander_first">
+                                                                    <div class="year_month">
+                                                                        <input type="button" value="prev" class="prev">
+                                                                        <div class="date">
+                                                                            <p class="year">2022</p>
+                                                                            <p class="month">10</p>
+                                                                        </div>
+                                                                        <input type="button" value="next" class="next">
+                                                                    </div>
+                                                                    <div class="month_date">
+                                                                        <table>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="gray">30</td>
+                                                                                    <td class="gray">31</td>
+                                                                                    <td>1</td>
+                                                                                    <td>2</td>
+                                                                                    <td>3</td>
+                                                                                    <td>4</td>
+                                                                                    <td>5</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>6</td>
+                                                                                    <td>7</td>
+                                                                                    <td>8</td>
+                                                                                    <td>9</td>
+                                                                                    <td>10</td>
+                                                                                    <td>11</td>
+                                                                                    <td class="checked">12</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>13</td>
+                                                                                    <td>14</td>
+                                                                                    <td>15</td>
+                                                                                    <td>16</td>
+                                                                                    <td>17</td>
+                                                                                    <td>18</td>
+                                                                                    <td>19</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>20</td>
+                                                                                    <td>21</td>
+                                                                                    <td>22</td>
+                                                                                    <td>23</td>
+                                                                                    <td>24</td>
+                                                                                    <td>25</td>
+                                                                                    <td>26</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>27</td>
+                                                                                    <td>28</td>
+                                                                                    <td>29</td>
+                                                                                    <td>30</td>
+                                                                                    <td class="gray">1</td>
+                                                                                    <td class="gray">2</td>
+                                                                                    <td class="gray">3</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">가격유형</li>
+                                            <li class="col col6">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">유형2</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="sel_option">유형1</li>
+                                                        <li class="sel_option">유형2</li>
+                                                        <li class="sel_option">유형3</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="row row2">
+                                            <li class="col col1 table_category">영업담당자</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="business_manager" value="lotteb">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">목표금액</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="goal" value="500">
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">투자비</li>
+                                            <li class="col col6">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="investment" value="200">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="row row3">
+                                            <li class="col col1 table_category">배송주기</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap">
+                                                    <input type="text" name="delivery_term" value="">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">배송요일</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap">
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="mon" name="month">
+                                                        <label for="mon">월</label>
+                                                    </div>
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="tue" name="month" checked>
+                                                        <label for="tue">화</label>
+                                                    </div>
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="wen" name="month">
+                                                        <label for="wen">수</label>
+                                                    </div>
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="thu" name="month">
+                                                        <label for="thu">목</label>
+                                                    </div>
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="fri" name="month">
+                                                        <label for="fri">금</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table_block table_block4">
+                                    <div class="block_category">실적</div>
+                                    <ul class="row row1">
+                                        <li class="col col1">
+                                            <ol class="goal_wrap">
+                                                <li>
+                                                    <h4 class="goal_month">1월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">2월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">3월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">4월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">5월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">6월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">7월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">8월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">9월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">10월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">11월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                                <li>
+                                                    <h4 class="goal_month">12월</h4>
+                                                    <p class="goal_count">1000</p>
+                                                </li>
+                                            </ol>
+                                            <button type="button" class="btn btn_blue goal_btn">목표실적</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="table_block table_block5">
+                                    <div class="block_category">비고</div>
+                                    <ul class="row row1">
+                                        <li class="col col1">
+                                            <textarea placeholder="비고"></textarea>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input_form_table_btn">
+                                <div class="input_form_table_btn_wrap">
+                                    <button type="취소" class="btn btn_white cacle_btn">취소</button>
+                                    <button type="취소" class="btn btn_blue edit_btn">수정</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

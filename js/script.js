@@ -1,17 +1,29 @@
 $(function(){
-    $('#gnb').load('../includes/nav.html');
+    $('#gnb').load('../../includes/nav.html');
 
     $('.selected').click(function(){
-        $(this).parents('.select_wrap').toggleClass('active');
-        // $(this).closest('.select_wrap').addClass('active');
+        let sel_has = $(this).parents('.select_wrap').hasClass('active');
+        $('.select_wrap').removeClass('active');
+        if(sel_has !== false){
+            $(this).parents('.select_wrap').removeClass('active');
+        }else{
+            $(this).parents('.select_wrap').addClass('active');
+        }
     })
-    $('.select_wrap .option').click(function(){
+    $('.select_wrap .sel_option').click(function(){
         let option_val = $(this).text();
         $(this).closest('.select_wrap').find('.selected_value').text(option_val)
-        $('.select_wrap').toggleClass('active');
+        $(this).closest('.select_wrap').toggleClass('active');
     })
-    $('.date_input_wrap').click(function(){
-        $(this).toggleClass('active')
+
+    $('.date_wrap').on('click', function(){
+        $(this).toggleClass('active');
+        $('.calander_area').toggle()
     })
+
+    $('#file_upload').on('change',function(){
+        let file_name = $('#file_upload').val();
+        $(".upload_val").text(file_name);
+    });
     
 })

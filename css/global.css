@@ -1,22 +1,45 @@
-/* ---------- btn ---------- */
-
+/* ---------- 버튼 btn style ---------- */
 .btn{
-   height: 44px;
-   padding: 0 20px;
-   font-size: 14px;
-   font-weight: 700;
-   text-align: center;
-   border-radius: 100px;
-}
-.search_btn{width: 80px; color: #fff; background: #0044FE;}
-.search_btn:hover{background: #0B1293;}
+    height: 44px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 100px;
 
-.option_btn{color: #4267EB; border: 1px solid #4267EB;}
-.option_btn:hover{color: #fff; background: #4267EB;}
-.option_btn.active{color: #fff; background: #0044FE;}
-.option_btn.active:hover{background: #0B1293;}
+    transition:all .3s;
+ }
+
+.btn_white{
+    color: #4267EB;
+    background-color: #fff;
+    border:1px solid #4267EB !important;
+}
+.btn_white:hover{
+    background-color: #4267EB;
+    color: #fff;
+}
+.btn_blue{
+    color: #fff;
+    border:none !important;
+    background-color: #0044fe !important;
+    transition:all .3s;
+}
+.btn_blue:hover{
+    background-color: #0B1293!important;
+}
+.btn_paleBlue{
+    color: #4267EB;
+    background-color: #F2F4FF !important;
+    transition:all .3s;
+}
+.btn_paleBlue:hover{
+    color: #0B1293;
+    background-color: #D0D5F2;
+}
 
 .icon_btn{
+    display: block;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50% 50%;
@@ -24,8 +47,8 @@
 
 
 
-/* ---------- input ---------- */
-input:not(input[type="checkbox"]){
+/* ---------- input style ---------- */
+input:not(input[type="checkbox"], input[type="button"]){
     height: 44px;
     font-size: 14px;
     border: 1px solid #C1C1C1;
@@ -36,18 +59,12 @@ input[type='text']{
     padding: 12px 15px;
 }
 input::placeholder{color: #c1c1c1;}
-input[type='text']:focus, input[type='password']:focus{
+input[type='text']:focus, input[type='password']:focus, textarea:focus{
     color: #111;
     outline: none !important;
-    border: 1px solid #0044FE;
+    border: 1px solid #0044FE !important;
 }
 
-.checkbox_input_wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-}
 input[type='checkbox']{
     width: 20px;
     height: 20px;
@@ -59,21 +76,67 @@ input[type='checkbox']:checked{
     background: url(../images/icon/icon-checked.svg) no-repeat center/20px;
     border: none;
 }
+.checkbox_input_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.checkbox_input_wrap label{font-size: 14px;}
 
-input[type='date']{
+.radio_wrap{
+    position: relative;
+    display: flex;
+ 
+}
+.radio_input_wrap label{font-size: 14px;}
+input[type='radio']{
+    position: absolute;
+    width: 1px;
+    height: 1px;
     padding: 0;
-    background: none;
-    border: none !important;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-    appearance: none;
+input[type="radio"] + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
-input[type='date']:focus{
-    outline: none !important;
+input[type="radio"] + label:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid #c1c1c1;
+    border-radius: 100%;
 }
+input[type="radio"]:checked + label:before{border: 2px solid #4267EB;}
+input[type="radio"]:checked + label:after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #4267EB;
+    border-radius: 100%;
+  }
 
+
+/* ---------- 커스텀 선택창 select ---------- */
 .select_wrap{
     position: relative;
     font-size: 14px;
@@ -110,90 +173,33 @@ input[type='date']:focus{
     background: #fff;
     overflow: hidden;
 }
-.select_wrap .option{
+.select_wrap .sel_option{
     height: 44px;
     padding: 12px 15px;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
 }
-
-/* ---------- on active hover ----------- */
-.date_input_wrap.active{border: 1px solid #0044FE;}
-
-.select_wrap.active{border: 1px solid #0044FE;}
-.select_wrap.active .select_btn{background-image: url(../images/icon/icon-arrow-up-bold.svg);}
-.select_wrap.active ul{
-    height: auto;
-    border-bottom: 1px solid #0044FE;
-    border-left: 1px solid #0044FE;
-    border-right: 1px solid #0044FE;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-
-}
-.select_wrap .option:hover{color: #0044FE;}
-
-
-
-
-/* btn style */
-.btn_white{
-    border-radius: 100px !important;
-    text-align: center;
-    font-size: 14px !important;
-    background-color: #fff;
-    border:1px solid #4267EB !important;
-    color: #4267EB;
-    font-weight: 700;
-    transition:all .3s;
-}
-.btn_white:hover{
-    background-color: #4267EB;
-    color: #fff;
-}
-.btn_blue{
-    border-radius: 100px !important;
-    text-align: center;
-    font-size: 14px !important;
-    border:none !important;
-    background-color: #0044fe !important;
-    color: #fff;
-    font-weight: 700;
-    transition:all .3s;
-}
-.btn_blue:hover{
-    background-color: #0B1293!important;
-}
-.btn_paleBlue{
-    border-radius: 100px !important;
-    text-align: center;
-    font-size: 14px !important;
-    border:none !important;
-    background-color: #F2F4FF !important;
-    color: #4267EB;
-    font-weight: 700;
-    transition:all .3s;
-}
-.btn_paleBlue:hover{
-    color: #0B1293;
-    background-color: #D0D5F2;
+.select_wrap .sel_option:hover{
+    color: #0044FE;
 }
 
-/* 달력 calander date */
+/* ---------- 커스텀 달력 calander date ---------- */
+input[type='date']{
+    padding: 0;
+    background: none;
+    border: none !important;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    appearance: none;
+} 
+input[type='date']:focus{
+    outline: none !important;
+}
+
 .date_area{position: relative;}
-.date_input_wrap{
-    padding-left: 54px;
-    border: 1px solid #C1C1C1;
-    border-radius: 6px;
-    background: url(../images/icon/icon-calendar-bl.svg) no-repeat 10px 50%/24px, #fff;
-    cursor: pointer;
-}
-.checkbox_input_wrap label{font-size: 14px;}
-.date_input_wrap span{
-    display: inline-block;
-    margin-right: 10px;
-}
 .date_wrap{
   height: 44px;
   border: 1px solid #C1C1C1;
@@ -202,8 +208,6 @@ input[type='date']:focus{
   background: url(../images/icon/icon-calendar-bl.svg) no-repeat 10px 50%/24px, #fff;
   cursor: pointer;
 
-  width: auto;
-  min-width: 256px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -215,21 +219,22 @@ input[type='date']:focus{
 .date_wrap div p:last-child::after{display: none;}
 .date_wrap>span{display: block; margin: 0 15px;}
 
-.calander_wrap{
-    display: flex;
-    flex-wrap: wrap;
+.calander_area{
+    display: none;
+
     position: absolute;
     top: 52px;
     left: 0;
+    z-index: 1;
+}
+.calander_wrap{
+    display: flex;
+    flex-wrap: wrap;
 
-    width: 622px;
-    height: 305px;
     background-color: #fff;
     border: 1px solid #D3D3D3;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-
-    z-index: 1;
 }
 .calander_wrap .left_side{
     width: 120px;
@@ -291,10 +296,12 @@ input[type='date']:focus{
     color: #C1C1C1;
 }
 .calander_wrap .calander_con .calander td.start,
-.calander_wrap .calander_con .calander td.end{
+.calander_wrap .calander_con .calander td.end,
+.calander_wrap .calander_con .calander td.checked{
     background-color: #4267EB;
     color: #fff;
     font-weight: 700;
+    border-radius: 15px;
 }
 .calander_wrap .calander_con .calander td.start{border-radius:15px 0px 0px 15px;}
 .calander_wrap .calander_con .calander td.end{border-radius:0px 15px 15px 0px;}
@@ -309,7 +316,7 @@ input[type='date']:focus{
     align-items: center;
     padding: 0 12px;
 }
-.calander_wrap .btm input{
+.calander_wrap .btm .btn{
     width: 66px;
     height: 36px;
     line-height: 34px;
@@ -325,4 +332,47 @@ input[type='date']:focus{
 .calander_wrap .btm div p:after{content: '-';}
 .calander_wrap .btm .date_wrap>span{
     margin:0 3px
+}
+
+/* ---------- 커스텀 업로드 upload ---------- */
+.upload_wrap input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.upload_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.upload_wrap .upload_val{
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0B1293;
+    text-decoration: underline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+.upload_wrap .btn{line-height: 34px; cursor: pointer;}
+
+/* ---------- on active ----------- */
+.date_wrap.active{border: 1px solid #0044FE;}
+
+.select_wrap.active{border: 1px solid #0044FE;}
+.select_wrap.active .select_btn{background-image: url(../images/icon/icon-arrow-up-bold.svg);}
+.select_wrap.active ul{
+    height: auto;
+    border-bottom: 1px solid #0044FE;
+    border-left: 1px solid #0044FE;
+    border-right: 1px solid #0044FE;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
 }
