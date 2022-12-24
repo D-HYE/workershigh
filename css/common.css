@@ -84,7 +84,7 @@ h2.logo{width: 156px;}
 .gnb_list:nth-child(3) .list_icon{background-image: url('../images/icon/icon-system-df.svg');}
 .gnb_list:nth-child(4) .list_icon{background-image: url('../images/icon/icon-profit-df.svg');}
 .gnb_list:nth-child(5) .list_icon{background-image: url('../images/icon/icon-statistics-df.svg');}
-.gnb_list:nth-child(6) .list_icon{background-image: url('../images/icon/icon-customer-df.svg');}
+.gnb_list:nth-child(6) .list_icon{background-image: url('../images/icon/icon-company-df.svg');}
 .gnb_list:nth-child(7) .list_icon{background-image: url('../images/icon/icon-product-df.svg');}
 .gnb_list:nth-child(8) .list_icon{background-image: url('../images/icon/icon-stock-df.svg');}
 .gnb_list:nth-child(9) .list_icon{background-image: url('../images/icon/icon-display-df.svg');}
@@ -116,7 +116,7 @@ h2.logo{width: 156px;}
 .gnb_list:nth-child(3):hover .list_icon{background-image: url('../images/icon/icon-system-bl.svg');}
 .gnb_list:nth-child(4):hover .list_icon{background-image: url('../images/icon/icon-profit-bl.svg');}
 .gnb_list:nth-child(5):hover .list_icon{background-image: url('../images/icon/icon-statistics-bl.svg');}
-.gnb_list:nth-child(6):hover .list_icon{background-image: url('../images/icon/icon-customer-bl.svg');}
+.gnb_list:nth-child(6):hover .list_icon{background-image: url('../images/icon/icon-company-bl.svg');}
 .gnb_list:nth-child(7):hover .list_icon{background-image: url('../images/icon/icon-product-bl.svg');}
 .gnb_list:nth-child(8):hover .list_icon{background-image: url('../images/icon/icon-stock-bl.svg');}
 .gnb_list:nth-child(9):hover .list_icon{background-image: url('../images/icon/icon-display-bl.svg');}
@@ -136,7 +136,7 @@ h2.logo{width: 156px;}
 .gnb_list:nth-child(3).on .list_icon{background-image: url('../images/icon/icon-system-nv.svg');}
 .gnb_list:nth-child(4).on .list_icon{background-image: url('../images/icon/icon-profit-nv.svg');}
 .gnb_list:nth-child(5).on .list_icon{background-image: url('../images/icon/icon-statistics-nv.svg');}
-.gnb_list:nth-child(6).on .list_icon{background-image: url('../images/icon/icon-customer-nv.svg');}
+.gnb_list:nth-child(6).on .list_icon{background-image: url('../images/icon/icon-company-nv.svg');}
 .gnb_list:nth-child(7).on .list_icon{background-image: url('../images/icon/icon-product-nv.svg');}
 .gnb_list:nth-child(8).on .list_icon{background-image: url('../images/icon/icon-stock-nv.svg');}
 .gnb_list:nth-child(9).on .list_icon{background-image: url('../images/icon/icon-display-nv.svg');}
@@ -364,6 +364,7 @@ ol.pagenation_item span{
 .input_form_table .btn{height: 36px; padding: 0 15px; font-size: 13px; letter-spacing: -0.03em;}
 
 .table_block{display: flex; border-bottom: 1px solid #D3D3D3;}
+.table_block .col>div{width: 100%;}
 .table_block:last-child{border: none;}
 .block_category, .table_category{
     font-size: 13px;
@@ -456,6 +457,8 @@ footer p{
 
 /* ---------- 팝업 popup ---------- */
 .dim{
+    display: none;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -465,7 +468,10 @@ footer p{
     background: #343434;
     opacity: .6;
 }
+.dim.on{display: block;}
 .popup{
+    display: none;
+
     position: fixed;
     top: 50%;
     left: 50%;
@@ -475,9 +481,26 @@ footer p{
     border-radius: 12px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+.popup.on{display: block;}
 .popup_top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 70px;
     padding: 30px 30px 15px;
 }
+.popup_title{font-size: 18px; font-weight: 700;}
+.popup_top .null{width: 24px; height: 24px;}
+.popup_top .close_btn{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon/icon-x.svg);
+}
+.popup_content{padding: 15px 30px;}
+.popup_btm{padding: 15px 0 30px;}
+.popup_btm .popup_btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.popup_btm .popup_btn button{width: 110px;}

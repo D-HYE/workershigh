@@ -1,3 +1,6 @@
+input:not(input[type="radio"]){width: 100%;}
+
+
 /* ---------- sub2_1 ---------- */
 #page2_1 .search_area .select_wrap{width: 300px;}
 #page2_1 .search_area .text_input_wrap{padding: 5px 12px;}
@@ -32,17 +35,52 @@
     background: url(../../images/icon/icon-delete.svg) no-repeat center/24px, #f2f2f2;
 }
 
-#popup2_1{
-    
+#popup2_1{width: 960px; height: 89.648vh; max-height: 918px;}
+#popup2_1 .popup_content{
+    height: calc(89.648vh - 159px);
+    max-height: 759px;
+    overflow: scroll;
 }
+#popup2_1 .block_category{width: 80px;}
+#popup2_1 .table_category{width: 100px;}
+#popup2_1 .table_block1 .select_wrap{width: 180px;}
+#popup2_1 .table_block2 .row1 .col2,
+#popup2_1 .table_block2 .row1 .col4,
+#popup2_1 .table_block2 .row2 .col2,
+#popup2_1 .table_block2 .row2 .col4,
+#popup2_1 .table_block2 .row3 .col2,
+#popup2_1 .table_block2 .row3 .col4{width: 150px;}
+#popup2_1 .table_block2 .row1 .col6,
+#popup2_1 .table_block2 .row2 .col6,
+#popup2_1 .table_block2 .row3 .col6{width: 220px;}
+
+#popup2_1 .row_collapse .row_collapse_left .col{height: 129px;}
+#popup2_1 .row_collapse .row_collapse_left .col.col2{display: block; width: 310px;}
+#popup2_1 .row_collapse .row_collapse_left .col.col2 .input_wrap:first-child{
+    width: 100%;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#popup2_1 .row_collapse .row_collapse_left .col.col2 .input_wrap:first-child input{width: 198px;}
+#popup2_1 .row_collapse .row_collapse_right .col3{width: 120px;}
+#popup2_1 .row_collapse .row_collapse_right .col4{width: 290px;}
+#popup2_1 .table_block3 .depth_table{width: 820px;}
+#popup2_1 .table_block3 .row1 .col:nth-child(even),
+#popup2_1 .table_block3 .row2 .col:nth-child(even),
+#popup2_1 .table_block3 .row3 .col2{width: calc(33.3% - 100px);}
+#popup2_1 .table_block3 .row3 .input_wrap{display: flex; gap: 20px;}
+#popup2_1 .table_block4 .col{width: 820px; height: 144px;}
+#popup2_1 .table_block4 textarea{width: 100%; height: 100%;}
+#popup2_1 .input_form_table_btn{margin: 15px 0;}
 
 
 
 /* ---------- sub2_1_1 ---------- */
 #page2_1_1 .block_category{width: 100px;}
 #page2_1_1 .table_category{width: 120px;}
-#page2_1_1 .table_block .col>div{width: 100%;}
-#page2_1_1 .table_block input:not(input[type="radio"]){width: 100%;}
+
 
 #page2_1_1 .table_block>.row, #page2_1_1 .depth_table{width: calc(100% - 100px);}
 #page2_1_1 .table_block1 .col1{
@@ -74,8 +112,8 @@
 #page2_1_1 .table_block2 .row_collapse .row_collapse_right{flex-grow: 1;}
 #page2_1_1 .table_block2 .row_collapse .row_collapse_right .col4{flex-grow: 1;}
 
-#page2_1_1 .table_block3 .row1 .col:not(.table_category),
-#page2_1_1 .table_block3 .row2 .col:not(.table_category){width: calc(33.3% - 120px);}
+#page2_1_1 .table_block3 .row1 .col:nth-child(even),
+#page2_1_1 .table_block3 .row2 .col:nth-child(even){width: calc(33.3% - 120px);}
 #page2_1_1 .table_block3 .row1 .calander_area{width: 250px; height: 240px;}
 #page2_1_1 .table_block3 .row3 .col2{width: calc(33.3% - 120px);}
 #page2_1_1 .table_block3 .row3 .col4 .input_wrap{display: flex; gap: 20px;}
@@ -118,12 +156,4 @@
 #page2_1_1 .table_block5 .col textarea{
     width: 100%;
     height: 100%;
-    padding: 12px 15px;
-    font-size: 14px;
-    border: 1px solid #c1c1c1;
-    border-radius: 6px;
-}
-#page2_1_1 .table_block5 .col textarea::placeholder{
-    font-size: 14px;
-    color: #111;
 }

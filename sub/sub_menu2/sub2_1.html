@@ -48,7 +48,7 @@
                                             </div>
                                             <ul>
                                                 <li class="input_wrap text_input_wrap">
-                                                    <input type="text" name="company_select">
+                                                    <input type="text" name="customer_select">
                                                 </li>
                                                 <li class="sel_option">포컴퍼니</li>
                                                 <li class="sel_option">롯데벤처스</li>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="option_area">
                             <ul class="page_btn_wrap">
-                                <li><button type="button" class="btn_blue btn">거래처 등록</button></li>
+                                <li><button type="button" class="btn_blue btn" id="customer_resister">거래처 등록</button></li>
                             </ul>
                             <div class="option_result_wrap">
                                 <div class="option_result">
@@ -330,19 +330,19 @@
                                     <li class="col col1 table_category">거래처명</li>
                                     <li class="col col2">
                                         <div class="input_wrap text_input_wrap">
-                                            <input type="text" name="company_name">
+                                            <input type="text" name="customer_name">
                                         </div>
                                     </li>
                                     <li class="col col3 table_category">거래처 담당자</li>
                                     <li class="col col4">
                                         <div class="input_wrap text_input_wrap">
-                                            <input type="text" name="company_manager">
+                                            <input type="text" name="customer_manager">
                                         </div>
                                     </li>
                                     <li class="col col5 table_category">대표 연락처</li>
                                     <li class="col col6">
                                         <div class="input_wrap text_input_wrap">
-                                            <input type="text" name="company_tel">
+                                            <input type="text" name="customer_tel">
                                         </div>
                                     </li>
                                 </ul>
@@ -394,11 +394,11 @@
                                             <li class="col col1 table_category">주소</li>
                                             <li class="col col2">
                                                 <div class="input_wrap">
-                                                    <input type="text" name="company_address1">
+                                                    <input type="text" name="customer_address1">
                                                     <button type="button" class="btn btn_white">주소검색</button>
                                                 </div>
                                                 <div class="input_wrap text_input_wrap">
-                                                    <input type="text" name="company_address2">
+                                                    <input type="text" name="customer_address2">
                                                 </div>
                                             </li>
                                         </ul>
@@ -592,16 +592,28 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="input_form_table_btn">
-                        <div class="input_form_table_btn_wrap">
-                            <button type="취소" class="btn btn_white cancle_btn">취소</button>
-                            <button type="취소" class="btn btn_blue enroll_btn">등록</button>
-                        </div>
+                    
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white cancle_btn">취소</button>
+                        <button type="button" class="btn btn_blue resister_btn">등록</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="dim"></div>
+    <script>
+        $(function(){
+            $('#customer_resister').on('click', function(){
+                $('#popup2_1').addClass('on')
+                $('.dim').addClass('on')
+            })
+
+        })
+    </script>
 </body>
 </html>
