@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="../../css/sub/sub7.css">
+    <link rel="stylesheet" href="../../css/sub/sub1.css">
     <title>workes high</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../../js/script.js"></script>
 </head>
 <body>
@@ -33,7 +34,389 @@
                         </div>
                     </div>
                     <div class="content">
-
+                        <div class="left">
+                            <div class="sales_summary ">
+                                <div class="sales_year sales_con">
+                                    <h3>올해 매출</h3>
+                                    <div class="inner_content">
+                                        <div class="total">
+                                            <span class="number">35억</span>원
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>달성율</dt>
+                                                    <dd>
+                                                        <span class="percent">70</span>%
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>목표</dt>
+                                                    <dd>
+                                                        <span class="goal">40억</span>원
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sales_month sales_con">
+                                    <h3>당월 매출</h3>
+                                    <div class="inner_content">
+                                        <div class="total">
+                                            <span class="number">2억</span>원
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>달성율</dt>
+                                                    <dd>
+                                                        <span class="percent">60</span>%
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>목표</dt>
+                                                    <dd>
+                                                        <span class="goal">3억8천만</span>원
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sales_graph sales_con">
+                                <h3>월별 매출</h3>
+                                <div class="inner_content">
+                                    <div class="canvas_wrap">
+                                        <h4>B2C</h4>
+                                        <canvas id="graph_b2c" width="336" height="99"></canvas>
+                                    </div>
+                                    <div class="canvas_wrap">
+                                        <h4>B2B2C</h4>
+                                        <canvas id="graph_b2b2c" width="336" height="99"></canvas>
+                                    </div>
+                                    <div class="canvas_wrap">
+                                        <h4>B2B</h4>
+                                        <canvas id="graph_b2b" width="336" height="99"></canvas>
+                                    </div>
+                                </div>
+                                <script>
+                                    const ctx_1 = document.getElementById('graph_b2c');
+                                    const ctx_2 = document.getElementById('graph_b2b2c');
+                                    const ctx_3 = document.getElementById('graph_b2b');
+                                
+                                    new Chart(ctx_1, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                                            datasets: [{
+                                            label: '# of Votes',
+                                            data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+                                            backgroundColor: [
+                                                    'rgba(74, 139, 236, 1)'
+                                            ],
+                                            borderWidth: 1
+                                            }]
+                                        },
+                                        options: {
+                                            scales: {
+                                                y: {
+                                                    beginAtZero: true,
+                                                    min: 0,
+					                                stepSize : 5,
+                                                    max: 15,
+                                                    fontSize : 11,
+                                                    gridLines:{
+                                                        color: 'rgba(248, 248, 248, 1)',
+                                                        lineWidth:1,
+                                                    },
+                                                },
+                                                x: {
+                                                    grid:{
+                                                        drawBorder:false
+                                                    },
+                                                },
+                                            },
+                                            plugins: {
+                                                legend: {
+                                                display: false,
+                                                }
+                                            },
+                                            title: {
+                                                display: true,
+                                                text: 'B2C',
+                                                position:'left'
+                                            }
+                                        }
+                                    });
+                                    new Chart(ctx_2, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                                            datasets: [{
+                                            label: '# of Votes',
+                                            data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+                                            backgroundColor: [
+                                                    'rgba(48, 142, 194, 1)'
+                                            ],
+                                            borderWidth: 1
+                                            }]
+                                        },
+                                        options: {
+                                            scales: {
+                                                y: {
+                                                    beginAtZero: true,
+                                                    min: 0,
+					                                stepSize : 5,
+                                                    max: 15,
+                                                    fontSize : 11,
+                                                }
+                                            },
+                                            plugins: {
+                                                legend: {
+                                                display: false,
+                                                }
+                                            },
+                                            title: {
+                                                display: true,
+                                                text: 'B2B2C',
+                                                position:'left'
+                                            }
+                                        }
+                                    });
+                                    new Chart(ctx_3, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                                            datasets: [{
+                                            label: '# of Votes',
+                                            data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+                                            backgroundColor: [
+                                                    'rgba(23, 179, 179, 1)'
+                                            ],
+                                            borderWidth: 1
+                                            }]
+                                        },
+                                        options: {
+                                            scales: {
+                                                y: {
+                                                    beginAtZero: true,
+                                                    min: 0,
+                                                    max: 15,
+					                                stepSize : 5,
+                                                    fontSize : 11,
+                                                }
+                                            },
+                                            plugins: {
+                                                legend: {
+                                                display: false,
+                                                }
+                                            },
+                                            title: {
+                                                display: true,
+                                                text: 'B2B',
+                                                position:'left'
+                                            }
+                                        }
+                                    });
+                                </script>
+                            </div>
+                            <div class="buying_customer_cnt sales_con">
+                                <h3>월별 구매건수/Active회원수</h3>
+                                <div class="inner_content">
+                                    <div class="inner_content">
+                                        <div class="canvas_wrap"><canvas id="graph_buying_customer" width="382" height="116"></canvas></div>
+                                    </div>
+                                    
+                                    <script>
+                                        const ctx_4 = document.getElementById('graph_buying_customer');
+                                    
+                                        new Chart(ctx_4, {
+                                            type: 'bar',
+                                            data: {
+                                                datasets: [{
+                                                    type: 'bar',
+                                                    label: 'Bar Dataset',
+                                                    data: ['10', '20', '30', '40', '50', '60', '70', '80', '90', '100', '110', '120'],
+                                                }, {
+                                                    type: 'line',
+                                                    label: 'Line Dataset',
+                                                    data: ['10', '20', '30', '40', '50', '60', '70', '80', '90', '100', '110', '120'],
+                                                }],
+                                                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+                                            },
+                                            options: {
+                                                scales: {
+                                                    y: {
+                                                        beginAtZero: true,
+                                                        min: 0,
+                                                        max: 500,
+						                                stepSize : 100,
+                                                        fontSize : 10,
+                                                    }
+                                                },
+                                                plugins: {
+                                                    legend: {
+                                                    display: false,
+                                                    }
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="company_cnt sales_summary sales_con">
+                                <h3>거래처 수</h3>
+                                <div class="inner_content">
+                                    <div class="total">
+                                        <span class="number">102</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <dl>
+                                                <dt>전월</dt>
+                                                <dd>
+                                                    <span class="cnt">100</span>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>전월증감</dt>
+                                                <dd>
+                                                    <span class="cal">+2</span>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="sales_company sales_con">
+                                <h3>거래처별 당월 매출</h3>
+                                <div class="inner_content">
+                                    <ul>
+                                        <!-- 증가일때 calc div에 up추가 -->
+                                        <!-- 감소일때 calc div에 down추가 -->
+                                        <li class="top">
+                                            <div class="company">거래처</div>
+                                            <div class="last_sales">당월매출(1처당)</div>
+                                            <div class="calc">전월대비</div>
+                                        </li>
+                                        <li>
+                                            <div class="company">위워크</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>12,345천원</span></div>
+                                                <div class="percent"><span>50%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">롯데칠성</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">롯데호텔</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc down">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">롯데칠성</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">위워크</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">롯데칠성</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">롯데호텔</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">위워크</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">롯데칠성</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">롯데호텔</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">위워크</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">롯데칠성</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="company">롯데호텔</div>
+                                            <div class="last_sales">3,212천원<span class="bar"></span></div>
+                                            <div class="calc up">
+                                                <div class="money"><span>123천원</span></div>
+                                                <div class="percent"><span>28.4%</span></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
