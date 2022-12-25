@@ -1,0 +1,181 @@
+#page1_1 h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111;
+}
+
+#page1_1 .content{
+    display: flex;
+}
+#page1_1 .content .sales_con{
+    padding: 20px 20px 8px;
+    border: 1px solid #EEEEEE;
+    border-radius: 12px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    min-height: 200px;
+}
+#page1_1 .content .left{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+}
+#page1_1 .content .sales_con h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#page1_1 .content .sales_summary{
+    border: none;
+}
+#page1_1 .content .sales_summary .sales_con{
+    width: 240px;
+}
+#page1_1 .content .sales_summary h3{
+    text-align: left;
+    margin-bottom: 3.5px;
+}
+#page1_1 .content .sales_summary .total{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #343434;
+    text-align: right;
+    margin-bottom: 13.5px;
+}
+#page1_1 .content .sales_summary .total span{
+    color: #4267EB;
+    font-weight: 700;
+}
+#page1_1 .content .sales_summary li{
+    border-bottom: 1px solid #E7EBF5;
+}
+#page1_1 .content .sales_summary li:last-of-type{
+    border-bottom: none;
+}
+#page1_1 .content .sales_summary li dl{
+    display: flex;
+    justify-content: space-between;
+    line-height: 42px;
+    font-weight: 500;
+    font-size: 15px;
+}
+#page1_1 .content .sales_summary li dl{
+    font-size: 18px;
+}
+#page1_1 .content .sales_summary li dl span{
+    font-weight: 700;
+    color: #0B1293;
+}
+#page1_1 .content .sales_summary .sales_year{
+    background-color: #F6FAFF;
+    margin-bottom: 20px;
+    border: none;
+}
+#page1_1 .content .sales_summary .sales_month{
+    background-color: #F6FAFF;
+    border: none;
+    margin-bottom: 0;
+}
+#page1_1 .content .sales_graph{
+    width: 427px;
+}
+#page1_1 .content .sales_graph .canvas_wrap{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+#page1_1 .content .sales_graph .canvas_wrap canvas{max-width: 336px !important; max-height: 99px !important;}
+#page1_1 .content .sales_graph .canvas_wrap h4{
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 51px;
+}
+#page1_1 .content .sales_graph .canvas_wrap:nth-of-type(1) h4{color: #4A8BEC;}
+#page1_1 .content .sales_graph .canvas_wrap:nth-of-type(2) h4{color: #308EC2;}
+#page1_1 .content .sales_graph .canvas_wrap:nth-of-type(3) h4{color: #17B3B3;}
+#page1_1 .content .sales_graph .canvas_wrap:last-of-type{
+    margin-bottom: 0;
+}
+#page1_1 .content .sales_company{
+    width: 393px;
+    margin-right: 0;
+    padding: 20px 0 0;
+    margin-bottom: 0;
+}
+#page1_1 .content .sales_company ul{
+    line-height: 35px;
+    width: 100%;
+}
+#page1_1 .content .sales_company ul .top{
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    color: #6F869C;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+#page1_1 .content .sales_company ul .top div{
+    line-height: 35px;
+}
+#page1_1 .content .sales_company ul li{
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+    font-size: 13px;
+    color: #111;
+    display: flex;
+    line-height: 40px;
+}
+#page1_1 .content .sales_company ul li:last-of-type{
+    border-bottom: none;
+}
+#page1_1 .content .sales_company ul li div{
+    width: 33.3333%;
+    border-right: 1px solid #eee;
+    padding: 0 10px;
+}
+#page1_1 .content .sales_company ul li .company{width: 113px;}
+#page1_1 .content .sales_company ul li .last_sales{width: 120px;}
+#page1_1 .content .sales_company ul li.top .calc{justify-content: center;}
+#page1_1 .content .sales_company ul li .calc{
+    width: 160px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 0;
+}
+#page1_1 .content .sales_company ul li .calc.up{
+    color: #0B1293;
+}
+#page1_1 .content .sales_company ul li .calc.down{
+    color: #FF5530;
+}
+#page1_1 .content .sales_company ul li .calc div{
+    display: block;
+    width: auto;
+    border-right: none;
+    padding: 0;
+}
+#page1_1 .content .sales_company ul li .calc div span{
+    padding-left: 12px;
+    background-repeat: no-repeat;
+    background-position: top 50% left 2px;
+}
+#page1_1 .content .sales_company ul li .calc.up div span{background-image: url(../../images/icon/icon-income-up-blue.svg);}
+#page1_1 .content .sales_company ul li .calc.down div span{background-image: url(../../images/icon/icon-income-down-orange.svg);}
+#page1_1 .content .sales_company ul li .calc .money{
+    min-width: 90px;
+}
+#page1_1 .content .sales_company ul li .calc .percent{
+    min-width:70px;
+    text-align: center;
+    padding-right: 16px;
+}
+#page1_1 .content .sales_company ul li div:last-of-type{border-right:none;}
+#page1_1 .content .buying_customer_cnt{
+    width: 427px;
+}
+#page1_1 .content .company_cnt{
+    width: 240px;
+    background-color: #F2F4FF;
+}
