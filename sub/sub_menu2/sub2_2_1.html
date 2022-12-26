@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub2.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page2_2_1">
+        <div id="gnb" class="active"></div>
+        <main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>매대 수정</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>거래처 관리</li>
+                                    <li>매대</li>
+                                    <li>매대 수정</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="form_area">
+                            <div class="input_form_table">
+                                <div class="table_block table_block1">
+                                    <div class="block_category">매대현황</div>
+                                    <div class="depth_table">
+                                        <ul class="row row1">
+                                            <li class="col col1 table_category">그룹명</li>
+                                            <li class="col col2">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">롯데벤처스</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="sel_option">롯데벤처스</li>
+                                                        <li class="sel_option">거래처1</li>
+                                                        <li class="sel_option">거래처2</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">별칭</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="another_name" value="롯데벤처">
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">배송 담당자</li>
+                                            <li class="col col6">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="delivery_manager" value="박준혁">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="row_collapse">
+                                            <div class="row_collapse_left">
+                                                <ul class="row row2">
+                                                    <li class="col col1 table_category">주소</li>
+                                                    <li class="col col2">
+                                                        <div class="input_wrap">
+                                                            <input type="text" name="customer_address1" value="경기 성남시 수정구">
+                                                            <button type="button" class="btn btn_white">주소검색</button>
+                                                        </div>
+                                                        <div class="input_wrap text_input_wrap">
+                                                            <input type="text" name="customer_address2" value="위례광장로 9-10">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="row_collapse_right">
+                                                <ul class="row row2">
+                                                    <li class="col col3 table_category">장비현황</li>
+                                                    <li class="col col4">
+                                                        <button type="button" class="btn btn_white">장비</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <ul class="row row3">
+                                            <li class="col col1 table_category">배송주기</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="delivery_term" value="주 2회">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">배송요일</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap">
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="mon" name="month">
+                                                        <label for="mon">월</label>
+                                                    </div>
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="tue" name="month" checked>
+                                                        <label for="tue">화</label>
+                                                    </div>
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="wen" name="month">
+                                                        <label for="wen">수</label>
+                                                    </div>
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="thu" name="month">
+                                                        <label for="thu">목</label>
+                                                    </div>
+                                                    <div class="radio_input_wrap">
+                                                        <input type="radio" id="fri" name="month">
+                                                        <label for="fri">금</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table_block table_block2">
+                                    <div class="block_category">배송정보</div>
+                                    <div class="depth_table">
+                                        <ul class="row row1">
+                                            <li class="col col1 table_category">지역구</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="area" value="강남구">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">매대위치</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="company_location" value="14층">
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">출입여부</li>
+                                            <li class="col col6">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="entrance" value="출입증/인터뷰">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="row row2">
+                                            <li class="col col1 table_category">주차유형</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="pariking" value="지하/지상/노상">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">특이사항</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="etc" value="오전 안붐빔">
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">목표금액</li>
+                                            <li class="col col6">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="goal" value="500">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table_block table_block3">
+                                    <div class="block_category">비고</div>
+                                    <ul class="row row1">
+                                        <li class="col col1">
+                                            <div class="input_wrap text_input_wrap">
+                                                <input type="text" name="remarks" value="비고">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input_form_table_btn">
+                                <div class="input_form_table_btn_wrap">
+                                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                                    <button type="button" class="btn btn_blue edit_btn">수정</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div id="popup2_1_1_1" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">재계약</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <div class="table_head_row">
+                            <ul class="row row1">
+                                <li class="col col1 block_category">구분</li>
+                                <li class="col col2">내용</li>
+                                <li class="col col3">비고</li>
+                            </ul>
+                        </div>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">기간</li>
+                            <li class="col col2"></li>
+                            <li class="col col3"></li>
+                        </ul>
+                        <ul class="row row3">
+                            <li class="col col1 block_category">재계약일</li>
+                            <li class="col col2">
+                            </li>
+                            <li class="col col3"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow_position">
+                    <div class="date_area">
+                        <div class="date_wrap">
+                            <div class="date_first">
+                                <p class="year">2022</p>
+                                <p class="month">10</p>
+                                <p class="date">12</p>
+                            </div>
+                        </div>
+                        <div class="calander_area">
+                            <div class="calander_wrap">
+                                <div class="calander_con">
+                                    <div class="calander calander_first">
+                                        <div class="year_month">
+                                            <input type="button" value="prev" class="prev">
+                                            <div class="date">
+                                                <p class="year">2022</p>
+                                                <p class="month">10</p>
+                                            </div>
+                                            <input type="button" value="next" class="next">
+                                        </div>
+                                        <div class="month_date">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="gray">30</td>
+                                                        <td class="gray">31</td>
+                                                        <td>1</td>
+                                                        <td>2</td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>7</td>
+                                                        <td>8</td>
+                                                        <td>9</td>
+                                                        <td>10</td>
+                                                        <td>11</td>
+                                                        <td class="checked">12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                        <td>19</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20</td>
+                                                        <td>21</td>
+                                                        <td>22</td>
+                                                        <td>23</td>
+                                                        <td>24</td>
+                                                        <td>25</td>
+                                                        <td>26</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>27</td>
+                                                        <td>28</td>
+                                                        <td>29</td>
+                                                        <td>30</td>
+                                                        <td class="gray">1</td>
+                                                        <td class="gray">2</td>
+                                                        <td class="gray">3</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white cancle_btn">취소</button>
+                        <button type="button" class="btn btn_blue resister_btn">등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup2_1_1_2" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">목표실적 등록/수정</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <div class="table_block table_block1">
+                            <ul class="row row1">
+                                <li class="col col1 table_category">거래처명</li>
+                                <li class="col col2">B2B</li>
+                                <li class="col col3 table_category">거래처 담당자</li>
+                                <li class="col col4">포컴퍼니</li>
+                            </ul>
+                        </div>
+                        <div class="table_block table_block2">
+                            <div class="depth_table">
+                                <div class="table_head_row">
+                                    <ul class="row row1">
+                                        <li class="col col1">1월</li>
+                                        <li class="col col2">2월</li>
+                                        <li class="col col3">3월</li>
+                                        <li class="col col4">4월</li>
+                                        <li class="col col5">5월</li>
+                                        <li class="col col6">6월</li>
+                                    </ul>
+                                </div>
+                                <ul class="row row2">
+                                    <li class="col col1">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="january" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="feburary" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col3">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="march" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col4">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="april" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col5">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="may" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col6">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="june" value="500">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="table_head_row">
+                                    <ul class="row row4">
+                                        <li class="col col1">7월</li>
+                                        <li class="col col2">8월</li>
+                                        <li class="col col3">9월</li>
+                                        <li class="col col4">10월</li>
+                                        <li class="col col5">11월</li>
+                                        <li class="col col6">12월</li>
+                                    </ul>
+                                </div>
+                                <ul class="row row5">
+                                    <li class="col col1">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="july" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="august" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col3">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="september" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col4">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="octorber" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col5">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="november" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col6">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="december" value="500">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white close_btn">닫기</button>
+                        <button type="button" class="btn btn_blue confirm_btn">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+
+    <script>
+        $(function(){
+            $('#renewal_btn').on('click', function(){
+                $('#popup2_1_1_1').addClass('on')
+                $('.dim').addClass('on')
+            })
+            $('#goal_edit_btn').on('click', function(){
+                $('#popup2_1_1_2').addClass('on')
+                $('.dim').addClass('on')
+            })
+
+        })
+    </script>
+</body>
+</html>

@@ -15,6 +15,13 @@
     text-decoration: underline;
 }
 
+#popup3_1{width: 460px;}
+#popup3_1 .block_category{width: 120px;}
+#popup3_1 .col2{width: 280px;}
+#popup3_1 .col2 input{width: 100%;}
+
+
+
 /* ---------- sub3_2 ---------- */
 #page3_2 .select_wrap{width: 300px;}
 #page3_2 .form_area{margin: 30px 0 20px;}

@@ -53,7 +53,7 @@
                         </div>
                         <div class="option_area">
                             <ul class="page_btn_wrap">
-                                <li><button type="button" class="btn_blue btn">장비 등록</button></li>
+                                <li><button type="button" class="btn_blue btn" id="equipment_btn">장비 등록</button></li>
                             </ul>
                             <div class="option_result_wrap">
                                 <div class="option_result">
@@ -223,5 +223,96 @@
             </footer>
         </main>
     </div>
+    <div id="popup3_1" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">장비등록</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <ul class="row row1">
+                            <li class="col col1 block_category">장비명</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" name="count1">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">수량</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" name="count1">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row3">
+                            <li class="col col1 block_category">금액</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" name="count1">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row4">
+                            <li class="col col1 block_category">구매처</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" name="count1">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row5">
+                            <li class="col col1 block_category">담당자</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" name="count1">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row6">
+                            <li class="col col1 block_category">담당자 연락처</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" name="count1">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row7">
+                            <li class="col col1 block_category">견적서</li>
+                            <li class="col col2">
+                                <div class="upload_wrap">
+                                    <span class="upload_val">장비견적서.xls</span>
+                                    <label for="file_upload" class="btn btn_white">파일선택</label> 
+                                    <input type="file" id="file_upload">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white cancle_btn">취소</button>
+                        <button type="button" class="btn btn_blue resister_btn">등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+    <script>
+        $(function () {
+            $('#equipment_btn').on('click', function () {
+                $('#popup3_1').addClass('on');
+                $('.dim').addClass('on');
+            });
+        })
+    </script>
 </body>
 </html>
