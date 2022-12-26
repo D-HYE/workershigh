@@ -94,15 +94,15 @@
                                 <div class="inner_content">
                                     <div class="canvas_wrap">
                                         <h4>B2C</h4>
-                                        <canvas id="graph_b2c" width="336" height="99"></canvas>
+                                        <canvas id="graph_b2c" width="324" height="99"></canvas>
                                     </div>
                                     <div class="canvas_wrap">
                                         <h4>B2B2C</h4>
-                                        <canvas id="graph_b2b2c" width="336" height="99"></canvas>
+                                        <canvas id="graph_b2b2c" width="324" height="99"></canvas>
                                     </div>
                                     <div class="canvas_wrap">
                                         <h4>B2B</h4>
-                                        <canvas id="graph_b2b" width="336" height="99"></canvas>
+                                        <canvas id="graph_b2b" width="324" height="99"></canvas>
                                     </div>
                                 </div>
                                 <script>
@@ -115,30 +115,31 @@
                                         data: {
                                             labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
                                             datasets: [{
-                                            label: '# of Votes',
-                                            data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-                                            backgroundColor: [
-                                                    'rgba(74, 139, 236, 1)'
-                                            ],
-                                            borderWidth: 1
+                                                label: '# of Votes',
+                                                data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+                                                backgroundColor: [
+                                                        'rgba(74, 139, 236, 1)'
+                                                ],
+                                                borderWidth: 1
                                             }]
                                         },
                                         options: {
                                             scales: {
+                                                x:{
+                                                    grid:{
+                                                        display:false,
+                                                    }
+                                                },
                                                 y: {
                                                     beginAtZero: true,
                                                     min: 0,
 					                                stepSize : 5,
                                                     max: 15,
                                                     fontSize : 11,
+                                                    fontColor : 'rgba(151,151,151,1)',
                                                     gridLines:{
                                                         color: 'rgba(248, 248, 248, 1)',
                                                         lineWidth:1,
-                                                    },
-                                                },
-                                                x: {
-                                                    grid:{
-                                                        drawBorder:false
                                                     },
                                                 },
                                             },
@@ -169,10 +170,16 @@
                                         },
                                         options: {
                                             scales: {
+                                                x:{
+                                                    grid:{
+                                                        display:false,
+                                                    }
+                                                },
                                                 y: {
                                                     beginAtZero: true,
                                                     min: 0,
 					                                stepSize : 5,
+                                                    fontColor : 'rgba(151,151,151,1)',
                                                     max: 15,
                                                     fontSize : 11,
                                                 }
@@ -204,11 +211,17 @@
                                         },
                                         options: {
                                             scales: {
+                                                x:{
+                                                    grid:{
+                                                        display:false,
+                                                    }
+                                                },
                                                 y: {
                                                     beginAtZero: true,
                                                     min: 0,
-                                                    max: 15,
+                                                    max: 20,
 					                                stepSize : 5,
+                                                    fontColor : 'rgba(151,151,151,1)',
                                                     fontSize : 11,
                                                 }
                                             },
@@ -230,39 +243,75 @@
                                 <h3>월별 구매건수/Active회원수</h3>
                                 <div class="inner_content">
                                     <div class="inner_content">
-                                        <div class="canvas_wrap"><canvas id="graph_buying_customer" width="382" height="116"></canvas></div>
+                                        <div class="canvas_wrap"><canvas id="graph_buying_customer" width="382" height="126"></canvas></div>
+                                        <div class="legend">
+                                            <span class="line">구매건수</span>
+                                            <span class="bar">active회원수</span>
+                                        </div>
                                     </div>
-                                    
                                     <script>
                                         const ctx_4 = document.getElementById('graph_buying_customer');
                                     
                                         new Chart(ctx_4, {
                                             type: 'bar',
                                             data: {
-                                                datasets: [{
-                                                    type: 'bar',
-                                                    label: 'Bar Dataset',
-                                                    data: ['10', '20', '30', '40', '50', '60', '70', '80', '90', '100', '110', '120'],
-                                                }, {
+                                                datasets: [ {
                                                     type: 'line',
-                                                    label: 'Line Dataset',
-                                                    data: ['10', '20', '30', '40', '50', '60', '70', '80', '90', '100', '110', '120'],
+                                                    borderColor: '#0044fe',
+                                                    pointBorderColor: '#0044fe',
+                                                    pointBackgroundColor:'#fff',
+                                                    pointRadius:1.5,
+                                                    borderWidth: 1,
+                                                    spanGaps:false,
+                                                    label: '구매건수',
+                                                    data: [ '10', '20', '30', '40', '50', '60', '70', '80', '90', '100', '110', '100'],
+                                                    yAxisID: 'y-right',
+                                                },{
+                                                    type: 'bar',
+                                                    label: 'active회원수',
+                                                    data: ['200', '100', '200', '300', '400', '450', '110', '100', '400', '120', '400', '120'],
+                                                    yAxisID: 'y-left',
+                                                    backgroundColor: [
+                                                            'rgba(66, 154, 235, 1)'
+                                                    ],
                                                 }],
-                                                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+                                                labels: [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
                                             },
                                             options: {
                                                 scales: {
-                                                    y: {
+                                                    x:{
+                                                        grid:{
+                                                            display:false,
+                                                        }
+                                                    },
+                                                    'y-left': {
                                                         beginAtZero: true,
                                                         min: 0,
                                                         max: 500,
 						                                stepSize : 100,
                                                         fontSize : 10,
+                                                        lineHeight: 11,
+                                                        position:'left',
+                                                        grid:{
+                                                            display:false,
+                                                        }
+                                                    },
+                                                    'y-right': {
+                                                        beginAtZero: true,
+                                                        min: 0,
+                                                        max: 150,
+						                                stepSize : 20,
+                                                        fontSize : 10,
+                                                        lineHeight: 11,
+                                                        position:'right',
+                                                        grid:{
+                                                            display:false,
+                                                        }
                                                     }
                                                 },
                                                 plugins: {
                                                     legend: {
-                                                    display: false,
+                                                        display: false,
                                                     }
                                                 }
                                             }
