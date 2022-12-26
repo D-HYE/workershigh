@@ -52,7 +52,7 @@
                                                 </ul>
                                                 <!-- 수정!?!?!?!?!?!?!?! -->
                                             </div>
-                                            <button type="button" class="btn btn_blue">재계약</button>
+                                            <button type="button" class="btn btn_blue" id="renewal_btn">재계약</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -370,7 +370,7 @@
                                                     <p class="goal_count">1000</p>
                                                 </li>
                                             </ol>
-                                            <button type="button" class="btn btn_blue goal_btn">목표실적</button>
+                                            <button type="button" class="btn btn_blue goal_btn" id="goal_edit_btn">목표실적</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -401,5 +401,258 @@
             </footer>
         </main>
     </div>
+    <div id="popup2_1_1_1" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">재계약</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <div class="table_head_row">
+                            <ul class="row row1">
+                                <li class="col col1 block_category">구분</li>
+                                <li class="col col2">내용</li>
+                                <li class="col col3">비고</li>
+                            </ul>
+                        </div>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">기간</li>
+                            <li class="col col2"></li>
+                            <li class="col col3"></li>
+                        </ul>
+                        <ul class="row row3">
+                            <li class="col col1 block_category">재계약일</li>
+                            <li class="col col2">
+                            </li>
+                            <li class="col col3"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow_position">
+                    <div class="date_area">
+                        <div class="date_wrap">
+                            <div class="date_first">
+                                <p class="year">2022</p>
+                                <p class="month">10</p>
+                                <p class="date">12</p>
+                            </div>
+                        </div>
+                        <div class="calander_area">
+                            <div class="calander_wrap">
+                                <div class="calander_con">
+                                    <div class="calander calander_first">
+                                        <div class="year_month">
+                                            <input type="button" value="prev" class="prev">
+                                            <div class="date">
+                                                <p class="year">2022</p>
+                                                <p class="month">10</p>
+                                            </div>
+                                            <input type="button" value="next" class="next">
+                                        </div>
+                                        <div class="month_date">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="gray">30</td>
+                                                        <td class="gray">31</td>
+                                                        <td>1</td>
+                                                        <td>2</td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>7</td>
+                                                        <td>8</td>
+                                                        <td>9</td>
+                                                        <td>10</td>
+                                                        <td>11</td>
+                                                        <td class="checked">12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>13</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                        <td>19</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20</td>
+                                                        <td>21</td>
+                                                        <td>22</td>
+                                                        <td>23</td>
+                                                        <td>24</td>
+                                                        <td>25</td>
+                                                        <td>26</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>27</td>
+                                                        <td>28</td>
+                                                        <td>29</td>
+                                                        <td>30</td>
+                                                        <td class="gray">1</td>
+                                                        <td class="gray">2</td>
+                                                        <td class="gray">3</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white cancle_btn">취소</button>
+                        <button type="button" class="btn btn_blue resister_btn">등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup2_1_1_2" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">목표실적 등록/수정</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <div class="table_block table_block1">
+                            <ul class="row row1">
+                                <li class="col col1 table_category">거래처명</li>
+                                <li class="col col2">B2B</li>
+                                <li class="col col3 table_category">거래처 담당자</li>
+                                <li class="col col4">포컴퍼니</li>
+                            </ul>
+                        </div>
+                        <div class="table_block table_block2">
+                            <div class="depth_table">
+                                <div class="table_head_row">
+                                    <ul class="row row1">
+                                        <li class="col col1">1월</li>
+                                        <li class="col col2">2월</li>
+                                        <li class="col col3">3월</li>
+                                        <li class="col col4">4월</li>
+                                        <li class="col col5">5월</li>
+                                        <li class="col col6">6월</li>
+                                    </ul>
+                                </div>
+                                <ul class="row row2">
+                                    <li class="col col1">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="january" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="feburary" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col3">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="march" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col4">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="april" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col5">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="may" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col6">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="june" value="500">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="table_head_row">
+                                    <ul class="row row4">
+                                        <li class="col col1">7월</li>
+                                        <li class="col col2">8월</li>
+                                        <li class="col col3">9월</li>
+                                        <li class="col col4">10월</li>
+                                        <li class="col col5">11월</li>
+                                        <li class="col col6">12월</li>
+                                    </ul>
+                                </div>
+                                <ul class="row row5">
+                                    <li class="col col1">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="july" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="august" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col3">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="september" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col4">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="octorber" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col5">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="november" value="500">
+                                        </div>
+                                    </li>
+                                    <li class="col col6">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="december" value="500">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white close_btn">닫기</button>
+                        <button type="button" class="btn btn_blue confirm_btn">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+
+    <script>
+        $(function(){
+            $('#renewal_btn').on('click', function(){
+                $('#popup2_1_1_1').addClass('on')
+                $('.dim').addClass('on')
+            })
+            $('#goal_edit_btn').on('click', function(){
+                $('#popup2_1_1_2').addClass('on')
+                $('.dim').addClass('on')
+            })
+
+        })
+    </script>
 </body>
 </html>

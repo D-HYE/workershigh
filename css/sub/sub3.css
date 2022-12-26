@@ -1,6 +1,5 @@
 /* ---------- sub3_1 ---------- */
 #page3_1 .search_area input{width: 300px;}
-#page3_1 .result_area .col{text-align: center;}
 #page3_1 .result_area .col1{width: 160px;}
 #page3_1 .result_area .col2{width: 140px;}
 #page3_1 .result_area .col3{width: 80px;}
@@ -22,7 +21,6 @@
 #page3_2 .input_form_table .row{border: none;}
 #page3_2 .input_form_table .col{width: calc(33.3% - 120px); height: 50px;}
 #page3_2 .input_form_table .col.table_category{width: 120px;}
-#page3_2 .result_area .col{text-align: center;}
 #page3_2 .result_area .col1{width: 320px;}
 #page3_2 .result_area .col2{width: 320px;}
 #page3_2 .result_area .col3{width: 180px;}

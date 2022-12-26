@@ -18,7 +18,7 @@ $(function(){
 
     $('.date_wrap').on('click', function(){
         $(this).toggleClass('active');
-        $('.calander_area').toggle();
+        $(this).closest('.date_area').find('.calander_area').toggle();
     })
 
     $('#file_upload').on('change',function(){

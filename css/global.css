@@ -71,6 +71,7 @@ input[type='checkbox']{
     border: 1px solid #D3D3D3;
     border-radius: 4px;
     appearance: none;
+    cursor: pointer;
 }
 input[type='checkbox']:checked{
     background: url(../images/icon/icon-checked.svg) no-repeat center/20px;
@@ -221,7 +222,7 @@ input[type='date']:focus{
   font-size: 14px;
 }
 .date_wrap div{display: flex;}
-.date_wrap div p:after{content: '.';}
+.date_wrap div p:after{content: '-';}
 .date_wrap div p:last-child::after{display: none;}
 .date_wrap>span{display: block; margin: 0 15px;}
 

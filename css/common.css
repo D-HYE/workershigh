@@ -307,6 +307,7 @@ main{
     font-size: 15px;
     line-height: 1.5;
     vertical-align: middle;
+    text-align: center;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
@@ -355,6 +356,8 @@ ol.pagenation_item span{
     text-align: center;
 }
 
+
+
 /* ----------- 입력폼 input table ----------- */
 .input_form_table{
     border: 1px solid #D3D3D3;
@@ -362,10 +365,23 @@ ol.pagenation_item span{
     overflow: hidden;
 }
 .input_form_table .btn{height: 36px; padding: 0 15px; font-size: 13px; letter-spacing: -0.03em;}
+.input_form_table  .col>div{width: 100%;}
 
 .table_block{display: flex; border-bottom: 1px solid #D3D3D3;}
-.table_block .col>div{width: 100%;}
 .table_block:last-child{border: none;}
+.input_form_table .row{display: flex; border-bottom: 1px solid #eee;}
+.input_form_table .table_block .row:last-child{border: none;}
+.input_form_table .col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    padding: 10px 12px;
+}
+.input_form_table .col.table_category{padding: 0;}
+.input_form_table .col:nth-child(odd):not(.col1){border-left: 1px solid #eee;}
+.input_form_table .row_collapse{display: flex;}
+
 .block_category, .table_category{
     font-size: 13px;
     color: #6F869C;
@@ -378,18 +394,14 @@ ol.pagenation_item span{
     justify-content: center;
     border-right: 1px solid #eee;
 }
-.input_form_table .row{display: flex; border-bottom: 1px solid #eee;}
-.input_form_table .table_block .row:last-child{border: none;}
-.input_form_table .col{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 64px;
-    padding: 10px 12px;
+.table_head_row .row{border-bottom: 1px solid #D3D3D3;}
+.table_head_row .col{
+    height: 50px;
+    font-size: 13px;
+    color: #6F869C;
+    font-weight: 700;
+    background: #FCFCFC;
 }
-.input_form_table .col.table_category{padding: 0;}
-.input_form_table .col.col3, .input_form_table .col.col5{border-left: 1px solid #eee;}
-.input_form_table .row_collapse{display: flex;}
 
 
 /* ---------- container active hover ---------- */
