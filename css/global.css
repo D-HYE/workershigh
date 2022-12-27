@@ -190,6 +190,13 @@ input[type="radio"]:checked + label:after {
 .select_wrap .sel_option:hover{
     color: #0044FE;
 }
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none /*9*/;
+    -o-appearance: none;
+}
 
 /* ---------- 커스텀 달력 calander date ---------- */
 input[type='date']{
