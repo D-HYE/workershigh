@@ -140,3 +140,51 @@
     color: #0B1293;
     background-color: #D0D5F2;
 }
+
+#popup4_1_1{
+    width: 660px;
+    height: 490px;
+}
+#popup4_1_1 .option_area{
+    margin: 15px 0 20px;
+}
+#popup4_1_1 .option_area ul{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#popup4_1_1 .option_area ul li{
+    width: 180px;
+    padding: 0 12px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #111;
+    text-align: left;
+    background-color: #fff;
+}
+#popup4_1_1 .option_area ul li:nth-of-type(2){
+    border-right: 1px solid #D3D3D3;
+}
+#popup4_1_1 .option_area ul .table_category{
+    width: 120px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #6F869C;
+    background-color: #FCFCFC;
+    text-align: center;
+}
+#popup4_1_1 .col {
+    width: 100px;
+    font-size: 13px;
+    color: #6F869C;
+    font-weight: 700;
+    background: #FCFCFC;
+}
+#popup4_1_1 input{
+    width: 100%;
+    text-align: right;
+}
