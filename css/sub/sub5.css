@@ -4,9 +4,9 @@
     font-size: 13px;
 }
 
+.popup .result_area tbody tr{cursor: initial;}
 .popup .result_area tbody tr:hover{background: #fff;}
 .popup .result_area tbody tr:hover td{color: #111;}
-.popup .result_area tbody tr:hover td.col1{color: #6F869C;}
 
 /* ---------- sub5_1 ---------- */
 #page5_1 .content{height: calc(100vh - 148px); min-height: 680px;}
@@ -14,6 +14,9 @@
 #page5_1 .date_area .date_wrap{width: 143px;}
 #page5_1 .date_area .calander_area{width: 250px;}
 
+#page5_1 .result_area tbody tr{cursor: initial;}
+#page5_1 .result_area tbody tr:hover{background: #fff;}
+#page5_1 .result_area tbody tr:hover td{color: #111;}
 #page5_1 .result_area .col2, #page5_1 .result_area .col6{border-left: 1px solid #d3d3d3;}
 #page5_1 .result_area .col1{width: 230px;}
 #page5_1 .result_area thead .col{height: 40px;}
@@ -108,3 +111,61 @@
 #popup5_3 .result_table .col3{width: 130px;}
 #popup5_3 .result_table .col4{width: 120px;}
 #popup5_3 .result_table .col5{width: 100px;}
+
+
+
+/* ---------- sub5_4 ---------- */
+#page5_4 .content_tab{display: none;}
+#page5_4 .content_tab.on{display: block;}
+#page5_4 .content_tab_btn ul{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+#page5_4 .content_tab_btn .tab_btn{
+    height: 45px;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #656565;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+#page5_4 .content_tab_btn .tab_btn.on{
+    color: #0B1293;
+    font-weight: 700;
+    border-color: #0B1293;
+}
+
+#page5_4 .search_area .col3{margin-left: 7px;}
+#page5_4 .search_area .date_area{width: 122px;}
+#page5_4 .search_area .calander_area{width: 230px; height: 200px;}
+#page5_4 .search_area .calander_con{display: block; width: 100%;}
+#page5_4 .calander_wrap .calander_con .calander .year_month div p::after{content: "";}
+#page5_4 .calander_wrap .calander_con .calander .month_date ol li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#page5_4 .calander_wrap .calander_con .calander .month_date ol li:last-child{margin-bottom: 0;}
+#page5_4 .calander_wrap .calander_con .calander .month_date ol li div{
+    width: 40px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+#page5_4 .search_area .select_wrap{width: 180px;}
+
+#page5_4 .result_area tbody tr{cursor: initial;}
+#page5_4 .result_area tbody tr:hover{background: #fff;}
+#page5_4 .result_area tbody tr:hover td{color: #111;}
+#page5_4 .content_tab1{height: calc(100vh - 274px); min-height: 494px;}
+#page5_4 .content_tab1 .result_table{margin-bottom: 20px;}
+#page5_4 .content_tab1 .result_area .col2,
+#page5_4 .content_tab1 .result_area .col5{border-left: 1px solid #d3d3d3;}
+#page5_4 .content_tab1 .result_area .col1{width: 120px;}
+#page5_4 .content_tab1 .result_area thead .col{height: 40px;}
+#page5_4 .content_tab1 .result_area thead .row2 .col{border-top: 1px solid #eee;}
+
+#page5_4 .content_tab2 .result_table .col1{width: 140px;}

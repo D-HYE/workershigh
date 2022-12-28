@@ -311,7 +311,8 @@ input[type='date']:focus{
 }
 .calander_wrap .calander_con .calander td.start,
 .calander_wrap .calander_con .calander td.end,
-.calander_wrap .calander_con .calander td.checked{
+.calander_wrap .calander_con .calander td.checked,
+.calander_wrap .calander_con .calander .month_date ol div.checked{
     background-color: #4267EB;
     color: #fff;
     font-weight: 700;
