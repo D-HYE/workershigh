@@ -69,6 +69,7 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 #popup2_1 .table_block3 .row1 .col:nth-child(even),
 #popup2_1 .table_block3 .row2 .col:nth-child(even),
 #popup2_1 .table_block3 .row3 .col2{width: calc(33.3% - 100px);}
+#popup2_1 .table_block3 .row1 .calander_area{width: 250px;}
 #popup2_1 .table_block3 .row3 .input_wrap{display: flex; gap: 20px;}
 #popup2_1 .table_block4 .col{width: 820px; height: 144px;}
 #popup2_1 .table_block4 textarea{width: 100%; height: 100%;}
@@ -82,13 +83,11 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 
 
 #page2_1_1 .table_block>.row, #page2_1_1 .depth_table{width: calc(100% - 100px);}
-#page2_1_1 .table_block1 .col1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-#page2_1_1 .table_block1 .col .select_wrap{width: 180px;}
+
+#page2_1_1 .table_block1 .col{border: none;}
+#page2_1_1 .table_block1 .col:nth-child(even){border-left: 1px solid #eee;}
+#page2_1_1 .table_block1 .col:nth-child(odd){flex: 1;}
+
 
 #page2_1_1 .table_block2 .col2, #page2_1_1 .table_block2 .row3 .col4{width: calc(29.703% - 120px);}
 #page2_1_1 .table_block2 .row1 .col4,
@@ -166,13 +165,43 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 #popup2_1_1_1 .overflow_position .date_area .calander_area{width: 250px;}
 
 #popup2_1_1_2{width: 660px;}
-#popup2_1_1_2 .row{width: 100%;}
+#popup2_1_1_2 .option_area{
+    margin: 0 0 20px;
+}
+#popup2_1_1_2 .option_area ul{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#popup2_1_1_2 .option_area ul li{
+    width: 180px;
+    padding: 0 12px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #111;
+    text-align: left;
+    background-color: #fff;
+}
+#popup2_1_1_2 .option_area ul li:nth-of-type(2){
+    border-right: 1px solid #D3D3D3;
+}
+#popup2_1_1_2 .option_area ul .table_category{
+    width: 120px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #6F869C;
+    background-color: #FCFCFC;
+    text-align: center;
+}
 #popup2_1_1_2 .col{width: 100px;}
-#popup2_1_1_2 .table_block1 .col:nth-child(even){justify-content: flex-start; width: 200px;}
-#popup2_1_1_2 .table_block2 .col{border-left: 1px solid #eee;}
-#popup2_1_1_2 .table_block2 .col:first-child{border: none;}
-#popup2_1_1_2 .table_block2 .row:nth-child(odd) .col{height: 50px;}
-#popup2_1_1_2 .table_block2 input{text-align: right;}
+#popup2_1_1_2 .table_block .col{border-left: 1px solid #eee;}
+#popup2_1_1_2 .table_block .col:first-child{border: none;}
+#popup2_1_1_2 .table_block .row:nth-child(odd) .col{height: 50px;}
+#popup2_1_1_2 .table_block input{text-align: right;}
 
 
 

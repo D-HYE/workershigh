@@ -39,22 +39,38 @@
                             <div class="input_form_table">
                                 <div class="table_block table_block1">
                                     <div class="block_category">채널</div>
-                                    <ul class="row row1">
-                                        <li class="col col1">
-                                            <div class="select_wrap">
-                                                <div class="selected">
-                                                    <div class="selected_value">B2B</div>
-                                                    <div class="icon_btn select_btn"></div>
+                                    <div class="depth_table">
+                                        <ul class="row row1">
+                                            <li class="col col1">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">B2B</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="sel_option">B2B</li>
+                                                        <li class="sel_option">B2C</li>
+                                                    </ul>
+                                        
                                                 </div>
-                                                <ul>
-                                                    <li class="sel_option">B2B</li>
-                                                    <li class="sel_option">B2C</li>
-                                                </ul>
-                                                <!-- 수정!?!?!?!?!?!?!?! -->
+                                            </li>
+                                            <div class="col col2 table_category">거래처 코드</div>
+                                            <div class="col col3">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="customer_code">
+                                                </div>
                                             </div>
-                                            <button type="button" class="btn btn_blue" id="renewal_btn">재계약</button>
-                                        </li>
-                                    </ul>
+                                            <div class="col col4 table_category">그룹 코드</div>
+                                            <div class="col col5">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="group_code">
+                                                </div>
+                                            </div>
+                                            <div class="col col6">
+                                                <button type="button" class="btn btn_blue" id="renewal_btn">재계약</button>
+                                            </div>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="table_block table_block2">
                                     <div class="block_category">거래처</div>
@@ -528,17 +544,17 @@
                 <button class="icon_btn close_btn" type="button"></button>
             </div>
             <div class="popup_content">
+                <div class="option_area">
+                    <ul class="row row1">
+                        <li class="col col1 table_category">채널</li>
+                        <li class="col col2">B2C</li>
+                        <li class="col col3 table_category">거래처명</li>
+                        <li class="col col4">포컴퍼니</li>
+                    </ul>
+                </div>
                 <div class="form_area">
                     <div class="input_form_table">
-                        <div class="table_block table_block1">
-                            <ul class="row row1">
-                                <li class="col col1 table_category">거래처명</li>
-                                <li class="col col2">B2B</li>
-                                <li class="col col3 table_category">거래처 담당자</li>
-                                <li class="col col4">포컴퍼니</li>
-                            </ul>
-                        </div>
-                        <div class="table_block table_block2">
+                        <div class="table_block">
                             <div class="depth_table">
                                 <div class="table_head_row">
                                     <ul class="row row1">

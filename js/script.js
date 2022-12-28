@@ -14,12 +14,17 @@ $(function(){
         let option_val = $(this).text();
         $(this).closest('.select_wrap').find('.selected_value').text(option_val);
         $(this).closest('.select_wrap').toggleClass('active');
-    })
+    });
 
-    $('.date_wrap').on('click', function(){
+    $('.date_wrap ').on('click', function(){
         $(this).toggleClass('active');
         $(this).closest('.date_area').find('.calander_area').toggle();
-    })
+    });
+
+    $('.date_area .btm .btn').on('click', function(){
+        $(this).closest('.date_area').find('.date_wrap').removeClass('active');
+        $(this).closest('.date_area').find('.calander_area').hide();
+    });
 
     $('#file_upload').on('change',function(){
         let file_name = $('#file_upload').val();

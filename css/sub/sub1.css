@@ -7,12 +7,13 @@
 
 #page1_1 .content{
     display: flex;
+    justify-content: space-between;
 }
 #page1_1 .content .sales_con{
     padding: 20px 20px 8px;
     border: 1px solid #EEEEEE;
     border-radius: 12px;
-    margin-right: 25px;
+    margin-right: 26px;
     margin-bottom: 20px;
     /* margin-bottom: 25px; */
     min-height: 200px;
@@ -21,6 +22,11 @@
     display: flex;
     flex-wrap: wrap;
     /* align-items: flex-start; */
+    width: 64.5%;
+    margin-right: 2.25%;
+}
+#page1_1 .content .right{
+    width:35.4%
 }
 #page1_1 .content .sales_con h3{
     text-align: center;
@@ -28,9 +34,12 @@
 }
 #page1_1 .content .sales_summary{
     border: none;
+    width: calc(100% - 3.4% - 427px);
+    margin-right: 3.4%;
 }
 #page1_1 .content .sales_summary .sales_con{
-    width: 240px;
+    width: 100%;
+    margin-right: 0;
 }
 #page1_1 .content .sales_summary h3{
     text-align: left;
@@ -81,11 +90,13 @@
 #page1_1 .content .sales_graph{
     width: 427px;
     height: 420px;
+    margin-right: 0;
 }
 #page1_1 .content .sales_graph .canvas_wrap{
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 #page1_1 .content .sales_graph .canvas_wrap{
     position: relative;
@@ -129,6 +140,7 @@
     margin-right: 0;
     padding: 20px 0 0;
     margin-bottom: 0;
+    width: 100%;
 }
 #page1_1 .content .sales_company ul{
     line-height: 35px;
@@ -141,9 +153,11 @@
     color: #6F869C;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    background: #FCFCFC;
 }
 #page1_1 .content .sales_company ul .top div{
     line-height: 35px;
+    border-right: none;
 }
 #page1_1 .content .sales_company ul li{
     border-bottom: 1px solid #eee;
@@ -161,11 +175,24 @@
     border-right: 1px solid #eee;
     padding: 0 10px;
 }
-#page1_1 .content .sales_company ul li .company{width: 113px;}
-#page1_1 .content .sales_company ul li .last_sales{width: 120px;}
+#page1_1 .content .sales_company ul li .company{width: 28.7%;}
+#page1_1 .content .sales_company ul li .last_sales{
+    width: 120px; position:relative; background-color:transparent;
+    z-index:2;
+}
+#page1_1 .content .sales_company ul li .last_sales .bar{
+    position:absolute;
+    width:80%;
+    height:70%;
+    background:#f6faff;
+    left:0;
+    top:50%;
+    transform:translate(0, -50%);
+    z-index:-1;
+}
 #page1_1 .content .sales_company ul li.top .calc{justify-content: center;}
 #page1_1 .content .sales_company ul li .calc{
-    width: 160px;
+    width: 40.7%;
     display: flex;
     justify-content: flex-end;
     text-align: center;
@@ -192,15 +219,17 @@
 #page1_1 .content .sales_company ul li .calc.down div span{background-image: url(../../images/icon/icon-income-down-orange.svg);}
 #page1_1 .content .sales_company ul li .calc .money{
     min-width: 90px;
+    text-align: right;
 }
 #page1_1 .content .sales_company ul li .calc .percent{
     min-width:70px;
     text-align: center;
-    padding-right: 16px;
+    /* padding-right: 16px; */
 }
 #page1_1 .content .sales_company ul li div:last-of-type{border-right:none;}
 #page1_1 .content .buying_customer_cnt{
     width: 427px;
+    margin-right: 3.4%;
     position: relative;
 }
 #page1_1 .content .buying_customer_cnt h3{
@@ -264,6 +293,9 @@
 #page1_1 .content .buying_customer_cnt .legend .bar{background-image: url(../../images/icon/icon_legned_bar.svg);}
 #page1_1 .content .buying_customer_cnt .legend .line{background-image: url(../../images/icon/icon_legned_line.svg);}
 #page1_1 .content .company_cnt{
-    width: 240px;
+    width: calc(100% - 3.4% - 427px);
     background-color: #F2F4FF;
+    margin-right: 0;
 }
+
+#page1_1 main.active .content .left{width: 68%;}

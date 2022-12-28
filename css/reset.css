@@ -225,6 +225,7 @@ q:before, q:after {
    content: none;
 }
 table {
+    box-sizing: border-box;
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
