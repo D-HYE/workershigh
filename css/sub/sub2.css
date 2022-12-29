@@ -136,6 +136,8 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 }
 #page2_1_1 .table_block4 .goal_wrap li h4{
     width: 54px;
+    font-size: 14px;
+    font-weight: 400;
     text-align: center;
     line-height: 37px;
     background: #F6FAFF;

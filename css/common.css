@@ -510,6 +510,7 @@ footer p{
     background-image: url(../images/icon/icon-x.svg);
 }
 .popup_content{padding: 15px 30px;}
+.popup .row:last-child{border: none;}
 .popup_btm{padding: 15px 0 30px;}
 .popup_btm .popup_btn{
     display: flex;

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="survey_popup" id="popup1">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div>
+                    <h3 class="popup_title">설문 1</h3>
+                    <button class="close_btn" type="button"></button>
+                </div>
+            </div>
+            <div class="popup_content">
+                <div class="qna_area">
+                    <div class="qna_wrap qna_wrap1">
+                        <div class="question">
+                            <h2 class="num">1</h2>
+                            <div>
+                                <p>필요하신 서비스는 무엇인가요?</p>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <ul>
+                                <li class="answer_btn">간식</li>
+                                <li class="answer_btn">식사<br/>(조식/중식)</li>
+                                <li class="answer_btn on">커피</li>
+                                <li class="answer_btn">사무용품</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="qna_wrap qna_wrap2">
+                        <div class="question">
+                            <h2 class="num">2</h2>
+                            <div>
+                                <p>몇 명이 사용하나요?</p>
+                                <span>사용인원을 입력하세요. 5명 이상 이용 가능합니다.</span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <div class="input_wrap">
+                                <input type="text" value="2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qna_wrap qna_wrap3">
+                        <div class="question">
+                            <h2 class="num">3</h2>
+                            <div>
+                                <p>월 최대 예산은 얼마인가요?</p>
+                                <span>1인당 평균 N만원을 많이 사용합니다.</span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <div class="input_wrap">
+                                <input type="text" value="500">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qna_wrap qna_wrap4">
+                        <div class="question">
+                            <h2 class="num">4</h2>
+                            <div>
+                                <p>지금 신청하고 맞춤형 제안서를 받아보세요!</p>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <div class="input_wrap">
+                                <input type="text" value="" placeholder="휴대폰 번호를 입력해 주세요.">
+                            </div>
+                            <button type="button" class="btn btn_blue" id="phone_num_btn">휴대폰 번호로 인증받기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="next_btn" id="next_btn1">다음</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="survey_popup" id="popup2">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div>
+                    <h3 class="popup_title">설문 2</h3>
+                    <button class="close_btn" type="button"></button>
+                </div>
+            </div>
+            <div class="popup_content">
+                <div class="qna_area">
+                    <div class="qna_wrap qna_wrap1">
+                        <div class="question">
+                            <h2 class="num">1</h2>
+                            <div>
+                                <p>필요하신 서비스는 무엇인가요?</p>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <ul>
+                                <li class="answer_btn">간식</li>
+                                <li class="answer_btn">식사<br/>(조식/중식)</li>
+                                <li class="answer_btn on">커피</li>
+                                <li class="answer_btn">사무용품</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="qna_wrap qna_wrap2">
+                        <div class="question">
+                            <h2 class="num">2</h2>
+                            <div>
+                                <p>몇 명이 사용하나요?</p>
+                                <span>사용인원을 입력하세요. 5명 이상 이용 가능합니다.</span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <div class="input_wrap">
+                                <input type="text" value="2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qna_wrap qna_wrap3">
+                        <div class="question">
+                            <h2 class="num">3</h2>
+                            <div>
+                                <p>월 최대 예산은 얼마인가요?</p>
+                                <span>1인당 평균 N만원을 많이 사용합니다.</span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <div class="input_wrap">
+                                <input type="text" value="500">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qna_wrap qna_wrap4">
+                        <div class="question">
+                            <h2 class="num">4</h2>
+                            <div>
+                                <p>지금 신청하고 맞춤형 제안서를 받아보세요!</p>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <div class="input_wrap">
+                                <input type="text" value="" placeholder="휴대폰 번호를 입력해 주세요.">
+                            </div>
+                            <button type="button" class="btn btn_blue" id="phone_num_btn">휴대폰 번호로 인증받기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="next_btn" id="next_btn1">다음</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.answer_btn').click(function(){
+            $(this).closest('.answer').find('.answer_btn').removeClass('on');
+            $(this).addClass('on');
+        })
+        $('.answer input').on('change', function(){
+            let input_idx = $(this).closest('.survey_popup').find('input').length;
+            let input_val = $(this).closest('.survey_popup').find('input');
+            let input_null = 0;
+
+            for(i=1; i<=input_idx; i++){
+                if("" !== $(input_val[i]).val()){
+                    input_null++;
+                }
+            }
+
+            if(input_null == input_idx){
+                $(this).closest('.survey_popup').find('.next_btn').addClass('on')
+                $('#next_btn1').click(function(){
+                    $('#popup1').hide();
+                    $('#popup2').show();
+                })
+            }else{
+                $(this).closest('.survey_popup').find('.next_btn').removeClass('on')
+            }
+        });
+    </script>
+</body>
+</html>

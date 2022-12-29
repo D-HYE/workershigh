@@ -1,0 +1,51 @@
+
+/* ---------- popup1 ---------- */
+#popup1{width: 800px;}
+#popup1 .qna_wrap1 .answer li{
+    width: 166px;
+}
+#popup1 .qna_wrap2,
+#popup1 .qna_wrap3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#popup1 .qna_wrap2 .question,
+#popup1 .qna_wrap3 .question{
+    margin: 0;
+}
+#popup1 .qna_wrap2 .input_wrap,
+#popup1 .qna_wrap3 .input_wrap{
+    position: relative;
+    width: 285px;
+}
+#popup1 .qna_wrap2 .input_wrap::after,
+#popup1 .qna_wrap3 .input_wrap::after{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    font-size: 18px;
+    line-height: 25px;
+}
+#popup1 .qna_wrap2 input,
+#popup1 .qna_wrap3 input{
+    font-size: 24px;
+    text-align: right;
+}
+
+#popup1 .qna_wrap2 .input_wrap input{padding-right: 47px;}
+#popup1 .qna_wrap2 .input_wrap::after{
+    content: "명";
+}
+#popup1 .qna_wrap3 .input_wrap input{padding-right: 64px;}
+#popup1 .qna_wrap3 .input_wrap::after{
+    content: "만원";
+}
+
+#popup1 .qna_wrap4 .answer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#popup1 .qna_wrap4 .input_wrap{width: 435px;}
+#popup1 .qna_wrap4 .btn{width: 285px;}
