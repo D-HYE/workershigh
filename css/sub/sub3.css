@@ -24,6 +24,9 @@
 
 /* ---------- sub3_2 ---------- */
 #page3_2 .select_wrap{width: 300px;}
+#page3_2 .search_area .text_input_wrap{padding: 5px 12px;}
+#page3_2 .search_area .text_input_wrap input{width: 100%; height: 34px;}
+
 #page3_2 .form_area{margin: 30px 0 20px;}
 #page3_2 .input_form_table .row{border: none;}
 #page3_2 .input_form_table .col{width: calc(33.3% - 120px); height: 50px;}

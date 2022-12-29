@@ -240,20 +240,6 @@
                                 <div class="option_result">
                                     <h3>검색결과 <span>33</span></h3>
                                 </div>
-                                <div class="select_wrap">
-                                    <div class="selected">
-                                        <div class="selected_value">10개씩 보기</div>
-                                        <div class="icon_btn select_btn"></div>
-                                    </div>
-                                    <ul>
-                                        <li class="sel_option">10개씩 보기</li>
-                                        <li class="sel_option">20개씩 보기</li>
-                                        <li class="sel_option">30개씩 보기</li>
-                                        <li class="sel_option">40개씩 보기</li>
-                                        <li class="sel_option">50개씩 보기</li>
-                                        <li class="sel_option">전체보기</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                         <div class="result_area">
@@ -267,7 +253,7 @@
                                             <th class="col col4">결제액</th>
                                             <th class="col col5">구매수량</th>
                                             <th class="col col6">이용횟수</th>
-                                            <th class="col col7">비고</th>
+                                            <th class="col col7">관리</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -443,7 +429,7 @@
             </footer>
         </main>
     </div>
-    <div id="popup5_2" class="popup">
+    <div id="popup5_2_1" class="popup">
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
@@ -506,11 +492,69 @@
             </div>
         </div>
     </div>
+    <div id="popup5_2_2" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">결제 내역 (<span>010-****1234</span>)</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content">
+                <div class="option_area">
+                    <ul class="row row1">
+                        <li class="col col1 table_category">총 구매수량</li>
+                        <li class="col col2">134개</li>
+                        <li class="col col3 table_category">결제 총액</li>
+                        <li class="col col4">166,470원</li>
+                    </ul>
+                </div>
+                <div class="result_area">
+                    <div class="result_table">
+                        <table>
+                            <thead>
+                                <tr class="row row1">
+                                    <th class="col col1">NO</th>
+                                    <th class="col col2">상품명</th>
+                                    <th class="col col3">고객사</th>
+                                    <th class="col col4">매대위치</th>
+                                    <th class="col col5">결제액</th>
+                                    <th class="col col6">구매수량</th>
+                                    <th class="col col7">이용횟수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row row2">
+                                    <td class="col col1">1</td>
+                                    <td class="col col2">오랑지나</td>
+                                    <td class="col col3">롯데물산</td>
+                                    <td class="col col4">롯데물산</td>
+                                    <td class="col col5">1,310</td>
+                                    <td class="col col6">7</td>
+                                    <td class="col col7">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_blue close_btn">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="dim"></div>
     <script>
         $(function(){
-            $('#page5_2 .result_table button').on('click', function(){
-                $('#popup5_2').addClass('on')
+            $('#page5_2 .result_table button').eq(0).on('click', function(){
+                $('#popup5_2_1').addClass('on')
+                $('.dim').addClass('on')
+            })
+            $('#page5_2 .result_table button').eq(1).on('click', function(){
+                $('#popup5_2_2').addClass('on')
                 $('.dim').addClass('on')
             })
 

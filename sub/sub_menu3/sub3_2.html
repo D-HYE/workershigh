@@ -47,6 +47,9 @@
                                                 <div class="icon_btn select_btn"></div>
                                             </div>
                                             <ul>
+                                                <li class="input_wrap text_input_wrap">
+                                                    <input type="text" name="customer_select">
+                                                </li>
                                                 <li class="sel_option">포컴퍼니</li>
                                                 <li class="sel_option">롯데벤처스</li>
                                                 <li class="sel_option">위워크 BIFC</li>
@@ -85,7 +88,7 @@
                                         <tr class="row row1">
                                             <th class="col col1">장비코드</th>
                                             <th class="col col2">장비명</th>
-                                            <th class="col col3">보유수량</th>
+                                            <th class="col col3">수량</th>
                                             <th class="col col4">장비금액</th>
                                         </tr>
                                     </thead>
@@ -182,5 +185,9 @@
             </footer>
         </main>
     </div>
+    
+    <script>
+        $('#gnb .gnb_list').addClass('on');
+    </script>
 </body>
 </html>

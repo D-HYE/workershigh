@@ -299,7 +299,7 @@ main{
     line-height: 1.2;
     vertical-align: middle;
 }
-.result_area tbody tr{border-bottom: 1px solid #F2F2F2; cursor: pointer;}
+.result_area tbody tr{border-bottom: 1px solid #F2F2F2;}
 .result_area tbody tr:last-child{border-bottom: none;}
 .result_area tbody td{
     height: 60px;
@@ -416,9 +416,6 @@ main.active .menu_btn{
     margin-right: 25px;
     background: url(../images/icon/icon-menubar.svg) no-repeat center/contain;
 }
-
-.result_area tbody tr:hover{background: #F6FAFF;}
-.result_area tbody tr:hover td{color: #0044FE;}
 
 .pagenation_item li:hover{
     background: #F2F4FF;
