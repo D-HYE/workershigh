@@ -211,3 +211,57 @@
 #page4_3 .result_area table .col9{
     width: 12.6%;
 }
+
+
+#page4_4 .col td{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page4_4 .col .file_name{
+    color: #0B1293;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    border: none;
+}
+#page4_4 .col label{
+    display: block;
+    margin: 0 auto;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#page4_4 .noFile input[type="file"]{
+    display: none;
+}
+#page4_4 .noFile label{
+    width: 66px;
+}
+#page4_4 .noFile .file_upload{display: flex;}
+#page4_4 .noFile .file_change{display: none;}
+#page4_4 .noFile .file_wrap .file_name{
+    display: none;
+}
+#page4_4 .uploaded .file_wrap{
+    display: flex;
+}
+#page4_4 .uploaded .file_wrap .file_name{
+    display: block;
+}
+#page4_4 .uploaded input[type="file"]{
+    display: none;
+}
+#page4_4 .uploaded input{
+    width: calc(100% - 10px - 78px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+#page4_4 .uploaded .file_upload{display: none;}
+#page4_4 .uploaded .file_change{display: flex;}
