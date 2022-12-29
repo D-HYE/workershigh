@@ -16,7 +16,7 @@
 }
 
 #gnb{
-    position: relative;
+    position: absolute;
     top: 0;
     left: -280px;
     z-index: 5;
@@ -164,7 +164,7 @@ h2.logo{width: 156px;}
 main{
     width: 1170px;
     height: 100%;
-    /* margin-left: 270px; */
+    margin-left: 270px;
     transition: .3s;
 }
 .container{
