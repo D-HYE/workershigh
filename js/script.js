@@ -39,4 +39,18 @@ $(function(){
         $('.popup').removeClass('on');
         $('.dim').removeClass('on');
     });
+
 })
+
+function fileName_change(e){
+    console.log('file');
+    var fileName = $(e).val().split('/').pop().split('\\').pop();
+    $(e).siblings(".file_name").val(fileName);
+    $(e).parents('tr').addClass('uploaded').removeClass('noFile');
+}
+function file_change(e){
+    console.log('file');
+    var fileName = $(e).val().split('/').pop().split('\\').pop();
+    $(e).siblings(".file_name").val(fileName);
+    $(e).parents('tr').addClass('uploaded').removeClass('noFile');
+}
