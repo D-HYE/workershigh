@@ -13,7 +13,7 @@
     <script src="../../js/script.js"></script>
 </head>
 <body>
-    <div class="wrap" id="page4_3">
+    <div class="wrap" id="page4_4">
         <div id="gnb" class="active"></div><main>
             <div class="container">
                 <div class="content_wrap">
@@ -44,15 +44,63 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="row row2">
-                                            <td class="col col1">1월</td>
-                                            <td class="col col2">1,234</td>
-                                            <td class="col col3">200</td>
+                                        <!-- 파일업로드가 되어있다면 tr에 uploaded class 추가 -->
+                                        <!-- 파일업로드가 되어있지 않다면 tr에 noFile class 추가 -->
+                                        <tr class="row row2 noFile">
+                                            <td class="col col1">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">포컴퍼니</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="input_wrap text_input_wrap">
+                                                            <input type="text" name="customer_select">
+                                                        </li>
+                                                        <li class="sel_option">포컴퍼니</li>
+                                                        <li class="sel_option">포컴퍼니</li>
+                                                        <li class="sel_option">상포컴퍼니품명2</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td class="col col2">2022-11-24</td>
+                                            <td class="col col3">
+                                                <div class="file_wrap">
+                                                    <input class="file_name" value="파일변경" placeholder="파일변경">
+                                                    <label for="file_upload_1" class="file_upload btn btn_white">업로드</label> 
+                                                    <label for="file_upload_1" class="file_change btn btn_white">파일 변경</label> 
+                                                    <input class="file file_upload" type="file" id="file_upload_1" onchange="fileName_change(this)">
+                                                    <input class="file file_change" type="file" id="file_change_1" onchange="file_change(this)">
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr class="row row3">
-                                            <td class="col col1">2월</td>
-                                            <td class="col col2">1,234</td>
-                                            <td class="col col3">200</td>
+                                        <tr class="row row2 noFile">
+                                            <td class="col col1">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">포컴퍼니</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="input_wrap text_input_wrap">
+                                                            <input type="text" name="customer_select">
+                                                        </li>
+                                                        <li class="sel_option">포컴퍼니</li>
+                                                        <li class="sel_option">포컴퍼니</li>
+                                                        <li class="sel_option">상포컴퍼니품명2</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td class="col col2">2022-11-24</td>
+                                            <td class="col col3">
+                                                <div class="file_wrap">
+                                                    <input class="file_name" value="파일변경" placeholder="파일변경">
+                                                    <label for="file_upload_1" class="file_upload btn btn_white">업로드</label> 
+                                                    <label for="file_upload_1" class="file_change btn btn_white">파일 변경</label> 
+                                                    <input class="file file_upload" type="file" id="file_upload_1" onchange="fileName_change(this)">
+                                                    <input class="file file_change" type="file" id="file_change_1" onchange="file_change(this)">
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
