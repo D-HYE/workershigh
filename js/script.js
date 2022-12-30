@@ -27,7 +27,7 @@ $(function(){
     });
 
     $('#file_upload').on('change',function(){
-        let file_name = $('#file_upload').val();
+        let file_name = $('#file_upload').val().split('/').pop().split('\\').pop();
         $(".upload_val").text(file_name);
     });
 
