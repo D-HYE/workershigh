@@ -101,67 +101,138 @@
                 <div class="qna_area">
                     <div class="qna_wrap qna_wrap1">
                         <div class="question">
-                            <h2 class="num">1</h2>
+                            <h2 class="num">5</h2>
                             <div>
-                                <p>필요하신 서비스는 무엇인가요?</p>
+                                <p>설비가 필요하신가요?</p>
                             </div>
                         </div>
                         <div class="answer">
+                            <span>설비 선택(복수 선택 가능)</span>
                             <ul>
-                                <li class="answer_btn">간식</li>
-                                <li class="answer_btn">식사<br/>(조식/중식)</li>
-                                <li class="answer_btn on">커피</li>
-                                <li class="answer_btn">사무용품</li>
+                                <li class="answer_btn">냉장고</li>
+                                <li class="answer_btn">선반</li>
+                                <li class="answer_btn">커피머신</li>
+                                <li class="answer_btn">커피머신</li>
+                                <li class="answer_btn on">기타<br/>(커스텀)</li>
+                                <li class="answer_btn">필요없음</li>
                             </ul>
+                            <span>설치 설비가 가능한 공간 평수</span>
+                            <div class="input_wrap">
+                                <input type="text" placeholder="최소 1평 이상 가능합니다.">
+                            </div>
                         </div>
                     </div>
                     <div class="qna_wrap qna_wrap2">
                         <div class="question">
-                            <h2 class="num">2</h2>
+                            <h2 class="num">6</h2>
                             <div>
-                                <p>몇 명이 사용하나요?</p>
-                                <span>사용인원을 입력하세요. 5명 이상 이용 가능합니다.</span>
+                                <p>이용하시는 인원의 구성은 어떻게 되나요?</p>
+                                <span>(구성원에 최적화된 상품을 구성해 드립니다.)</span>
                             </div>
                         </div>
                         <div class="answer">
+                            <span>남녀 구성비</span>
                             <div class="input_wrap">
-                                <input type="text" value="2">
+                                <input type="text" placeholder="남자">
+                                <i>:</i>
+                                <input type="text" placeholder="여자">
                             </div>
+                            <span>주요 연령대</span>
+                            <ul>
+                                <li class="answer_btn">20대 미만</li>
+                                <li class="answer_btn">20대</li>
+                                <li class="answer_btn">30대</li>
+                                <li class="answer_btn">40대</li>
+                                <li class="answer_btn on">50대</li>
+                                <li class="answer_btn">60대이상</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="qna_wrap qna_wrap3">
                         <div class="question">
-                            <h2 class="num">3</h2>
+                            <h2 class="num">7</h2>
                             <div>
-                                <p>월 최대 예산은 얼마인가요?</p>
-                                <span>1인당 평균 N만원을 많이 사용합니다.</span>
+                                <p>서비스를 이용할 지역이 어디이신가요?</p>
                             </div>
                         </div>
                         <div class="answer">
-                            <div class="input_wrap">
-                                <input type="text" value="500">
-                            </div>
+                            <ul>
+                                <li class="answer_btn">수도권</li>
+                                <li class="answer_btn">비수도권</li>
+                            </ul>
+                            <b>&#8251; 비수도권의 경우 상품을 택배로 발송합니다.</b>
                         </div>
                     </div>
                     <div class="qna_wrap qna_wrap4">
                         <div class="question">
-                            <h2 class="num">4</h2>
+                            <h2 class="num">8</h2>
                             <div>
-                                <p>지금 신청하고 맞춤형 제안서를 받아보세요!</p>
+                                <p>서비스를 이용할 장소는 어디이신가요?</p>
                             </div>
                         </div>
                         <div class="answer">
-                            <div class="input_wrap">
-                                <input type="text" value="" placeholder="휴대폰 번호를 입력해 주세요.">
-                            </div>
-                            <button type="button" class="btn btn_blue" id="phone_num_btn">휴대폰 번호로 인증받기</button>
+                            <ul>
+                                <li class="answer_btn">사무실</li>
+                                <li class="answer_btn">호텔</li>
+                                <li class="answer_btn">스포츠</li>
+                                <li class="answer_btn on">기타</li>
+                            </ul>
+                            <input type="text" placeholder="어떤 장소인지 입력해 주세요">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="popup_btm">
                 <div class="popup_btn">
-                    <button type="button" class="next_btn" id="next_btn1">다음</button>
+                    <button type="button" class="btn btn_white" id="prev_btn1">이전</button>
+                    <button type="button" class="btn btn_blue" id="next_btn2">다음</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="survey_popup" id="popup3">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div>
+                    <h3 class="popup_title">설문 3</h3>
+                    <button class="close_btn" type="button"></button>
+                </div>
+            </div>
+            <div class="popup_content">
+                <div class="popup_img_area">
+                    <div class="img_box">
+                        <img src="./images/survey2.svg" alt="설문조사">
+                    </div>
+                    <h3>이제 거의 다 왔습니다.</h3>
+                </div>
+                <div class="qna_area">
+                    <div class="qna_wrap qna_wrap1">
+                        <div class="question">
+                            <h2 class="num">9</h2>
+                            <div>
+                                <p>회사명과 연락처를 기재해 주세요.</p>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <span>회사명</span>
+                            <div class="input_wrap">
+                                <input type="text" placeholder="" value="워커스하이">
+                            </div>
+                            <span>담당자명</span>
+                            <div class="input_wrap">
+                                <input type="text" placeholder="" value="홍길동">
+                            </div>
+                            <span>이메일주소</span>
+                            <div class="input_wrap">
+                                <input type="text" placeholder="" value="service@workershigh.com">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_blue" id="register_btn">등록완료</button>
                 </div>
             </div>
         </div>
@@ -171,13 +242,13 @@
             $(this).closest('.answer').find('.answer_btn').removeClass('on');
             $(this).addClass('on');
         })
-        $('.answer input').on('change', function(){
+        $('.answer input').on('propertychange change paste input', function(){
             let input_idx = $(this).closest('.survey_popup').find('input').length;
             let input_val = $(this).closest('.survey_popup').find('input');
             let input_null = 0;
 
             for(i=1; i<=input_idx; i++){
-                if("" !== $(input_val[i]).val()){
+                if($(input_val[i]).val() !== "" && $(input_val[i]).val() !== null){
                     input_null++;
                 }
             }
