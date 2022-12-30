@@ -179,6 +179,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
     padding: 24px 0;
     border-bottom: 1px solid #D3D3D3;
 }

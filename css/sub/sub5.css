@@ -5,19 +5,12 @@
     font-size: 13px;
 }
 
-.popup .result_area tbody tr{cursor: initial;}
-.popup .result_area tbody tr:hover{background: #fff;}
-.popup .result_area tbody tr:hover td{color: #111;}
-
 /* ---------- sub5_1 ---------- */
 #page5_1 .content{height: calc(100vh - 148px); min-height: 680px;}
 
 #page5_1 .date_area .date_wrap{width: 143px;}
 #page5_1 .date_area .calander_area{width: 250px;}
 
-#page5_1 .result_area tbody tr{cursor: initial;}
-#page5_1 .result_area tbody tr:hover{background: #fff;}
-#page5_1 .result_area tbody tr:hover td{color: #111;}
 #page5_1 .result_area .col2, #page5_1 .result_area .col6{border-left: 1px solid #d3d3d3;}
 #page5_1 .result_area .col1{width: 230px;}
 #page5_1 .result_area thead .col{height: 40px;}

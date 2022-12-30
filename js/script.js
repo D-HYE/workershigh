@@ -26,9 +26,9 @@ $(function(){
         $(this).closest('.date_area').find('.calander_area').hide();
     });
 
-    $('#file_upload').on('change',function(){
-        let file_name = $('#file_upload').val().split('/').pop().split('\\').pop();
-        $(".upload_val").text(file_name);
+    $('.file_upload_btn').on('change',function(){
+        let file_name = $(this).val().split('/').pop().split('\\').pop();
+        $(this).siblings(".upload_val").text(file_name);
     });
 
     $('.popup .close_btn').on('click', function(){
