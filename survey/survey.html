@@ -84,12 +84,58 @@
             </div>
             <div class="popup_btm">
                 <div class="popup_btn">
-                    <button type="button" class="next_btn" id="next_btn1">다음</button>
+                    <button type="button" class="btn next_btn" id="next_btn1">다음</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="survey_popup" id="popup2">
+    <div class="survey_popup" id="popup1_1" style="display: none;">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div>
+                    <h3 class="popup_title"></h3>
+                    <button class="close_btn" type="button"></button>
+                </div>
+            </div>
+            <div class="popup_content">
+                <div class="input_area">
+                    <div class="popup_img_area">
+                        <div class="img_box">
+                            <img src="./images/survey1.svg" alt="핸드폰 인증">
+                        </div>
+                        <h3>간편 인증하고<br/>즉시 제안서를 받아보세요!</h3>
+                    </div>
+                    <div class="answer answer1">
+                        <div class="input_wrap">
+                            <input type="text" placeholder="이름을 입력하세요.">
+                        </div>
+                    </div>
+                    <div class="answer answer2">
+                        <div class="input_wrap">
+                            <input type="text" placeholder="회사명을 입력하세요.">
+                        </div>
+                    </div>
+                    <div class="answer answer3">
+                        <div class="input_wrap">
+                            <input type="text" placeholder="회사 이메일 주소를 입력하세요.">
+                        </div>
+                    </div>
+                    <div class="answer answer4">
+                        <div class="input_wrap">
+                            <input type="text" placeholder="010-1234-5678">
+                        </div>
+                        <button class="btn btn_white">인증</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_blue" id="confirm_btn1">완료</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="survey_popup" id="popup2" style="display: none;">
         <div class="popup_inner">
             <div class="popup_top">
                 <div>
@@ -158,9 +204,11 @@
                         <div class="answer">
                             <ul>
                                 <li class="answer_btn">수도권</li>
-                                <li class="answer_btn">비수도권</li>
+                                <li class="answer_btn">
+                                    비수도권
+                                    <b>&#8251; 비수도권의 경우 상품을 택배로 발송합니다.</b>
+                                </li>
                             </ul>
-                            <b>&#8251; 비수도권의 경우 상품을 택배로 발송합니다.</b>
                         </div>
                     </div>
                     <div class="qna_wrap qna_wrap4">
@@ -177,7 +225,7 @@
                                 <li class="answer_btn">스포츠</li>
                                 <li class="answer_btn on">기타</li>
                             </ul>
-                            <input type="text" placeholder="어떤 장소인지 입력해 주세요">
+                            <div class="input_wrap on"><input type="text" placeholder="어떤 장소인지 입력해 주세요"></div>
                         </div>
                     </div>
                 </div>
@@ -190,7 +238,7 @@
             </div>
         </div>
     </div>
-    <div class="survey_popup" id="popup3">
+    <div class="survey_popup" id="popup3" style="display: none;">
         <div class="popup_inner">
             <div class="popup_top">
                 <div>
@@ -254,14 +302,41 @@
             }
 
             if(input_null == input_idx){
-                $(this).closest('.survey_popup').find('.next_btn').addClass('on')
-                $('#next_btn1').click(function(){
+                $(this).closest('.survey_popup').find('.next_btn').addClass('on');
+                $('#next_btn1.on').click(function(){
                     $('#popup1').hide();
                     $('#popup2').show();
-                })
+                });
             }else{
-                $(this).closest('.survey_popup').find('.next_btn').removeClass('on')
+                $(this).closest('.survey_popup').find('.next_btn').removeClass('on');
             }
+        });
+
+        $('#phone_num_btn').click(function(){
+            $('#popup1').hide();
+            $('#popup1_1').show();
+        });
+        $('#confirm_btn1, #popup1_1 .close_btn').click(function(){
+            $('#popup1_1').hide();
+            $('#popup1').show();
+        });
+
+        $('#popup2 .qna_wrap4 li').click(function(){
+            let li_has = $('#popup2 .qna_wrap4 li').eq(3).hasClass('on')
+            if(li_has == true){
+                $(this).closest('.qna_wrap4').find('.input_wrap').addClass('on');
+            }else{
+                $(this).closest('.qna_wrap4').find('.input_wrap').removeClass('on');
+            }
+        });
+        
+        $('#next_btn2').click(function(){
+            $('#popup2').hide();
+            $('#popup3').show();
+        });
+        $('#prev_btn1').click(function(){
+            $('#popup2').hide();
+            $('#popup1').show();
         });
     </script>
 </body>
