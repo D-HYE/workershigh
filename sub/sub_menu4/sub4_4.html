@@ -44,9 +44,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <!-- 파일업로드가 되어있다면 tr에 uploaded class 추가 -->
-                                        <!-- 파일업로드가 되어있지 않다면 tr에 noFile class 추가 -->
-                                        <tr class="row row2 noFile">
+                                        <!-- 파일업로드가 되어있다면 file_wrap에 uploaded class 추가 -->
+                                        <!-- 파일업로드가 되어있지 않다면 file_wrap에 noFile class 추가 -->
+                                        <tr class="row row2">
                                             <td class="col col1">
                                                 <div class="select_wrap">
                                                     <div class="selected">
@@ -65,7 +65,7 @@
                                             </td>
                                             <td class="col col2">2022-11-24</td>
                                             <td class="col col3">
-                                                <div class="file_wrap">
+                                                <div class="file_wrap noFile">
                                                     <input class="file_name" value="파일변경" placeholder="파일변경">
                                                     <label for="file_upload_1" class="file_upload btn btn_white">업로드</label> 
                                                     <label for="file_upload_1" class="file_change btn btn_white">파일 변경</label> 
@@ -89,7 +89,7 @@
                                     <tbody>
                                         <!-- 파일업로드가 되어있다면 tr에 uploaded class 추가 -->
                                         <!-- 파일업로드가 되어있지 않다면 tr에 noFile class 추가 -->
-                                        <tr class="row row2 noFile">
+                                        <tr class="row row2">
                                             <td class="col col1">
                                                 <div class="select_wrap">
                                                     <div class="selected">
@@ -108,10 +108,10 @@
                                             </td>
                                             <td class="col col2">2022-11-24</td>
                                             <td class="col col3">
-                                                <div class="file_wrap">
+                                                <div class="file_wrap noFile">
                                                     <input class="file_name" value="파일변경" placeholder="파일변경">
-                                                    <label for="file_upload_1" class="file_upload btn btn_white">업로드</label> 
-                                                    <label for="file_upload_1" class="file_change btn btn_white">파일 변경</label> 
+                                                    <label for="file_upload_2" class="file_upload btn btn_white">업로드</label> 
+                                                    <label for="file_upload_2" class="file_change btn btn_white">파일 변경</label> 
                                                     <input class="file file_upload" type="file" id="file_upload_2" onchange="fileName_change(this)">
                                                     <input class="file file_change" type="file" id="file_change_2" onchange="file_change(this)">
                                                 </div>
