@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub6.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <!-- 관리의 복지포인트 수정과 삭제 눌렀을떄 아직 -->
+    <div class="wrap" id="page6_2">
+        <div id="gnb" class="active"></div><main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>복지포인트</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>고객관리</li>
+                                    <li>복지포인트</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="search_area">
+                            <div class="search_form_table">
+                                <ul class="row row1">
+                                    <li class="col col1 table_category">
+                                        매대
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">마스터</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="input_wrap text_input_wrap">
+                                                    <input type="text" name="customer_select">
+                                                </li>
+                                                <li class="sel_option">마스터</li>
+                                                <li class="sel_option">마스터</li>
+                                                <li class="sel_option">마스터</li>
+                                                <li class="sel_option">마스터</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="col col3 table_category">
+                                        조건
+                                    </li>
+                                    <li class="col col4">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">핸드폰번호</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="sel_option">핸드폰번호</li>
+                                                <li class="sel_option">핸드폰번호</li>
+                                                <li class="sel_option">핸드폰번호</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="col col6">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" placeholder="검색어를 입력해 주세요.">
+                                        </div>
+                                    </li>
+                                    <li class="col col7">
+                                        <button type="button" class="btn search_btn btn_blue">검색</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="option_area">
+                            <ul class="page_btn_wrap">
+                                <li><button type="button" class="btn_blue user_new btn">등록</button></li>
+                                <li><button type="button" class="btn_white pointUser_new btn">엑셀 등록</button></li>
+                                <li><button type="button" class="btn_white point_new btn">복지포인트 등록</button></li>
+                            </ul>
+                        </div>
+                        <div class="result_area">
+                            <div class="result_table">
+                                <table>
+                                    <thead>
+                                        <tr class="row row1">
+                                            <th class="col col1">NO</th>
+                                            <th class="col col2">그룹</th>
+                                            <th class="col col3">이름</th>
+                                            <th class="col col4">핸드폰번호</th>
+                                            <th class="col col5">이메일</th>
+                                            <th class="col col6">복지포인트</th>
+                                            <th class="col col7">관리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row row2">
+                                            <td class="col col1">1
+                                                <div id="popup_user_edit" class="popup popup_user_edit">
+                                                    <div class="popup_inner">
+                                                        <div class="popup_top">
+                                                            <div class="null"></div>
+                                                            <h3 class="popup_title">회원 수정</h3>
+                                                            <button class="icon_btn close_btn" type="button"></button>
+                                                        </div>
+                                                        <div class="popup_content">
+                                                            <div class="result_area">
+                                                                <div class="result_table">
+                                                                    <table>
+                                                                        <tr class="row row1">
+                                                                            <td class="col col1">이름</td>
+                                                                            <td class="col col2">
+                                                                                <div class="input_wrap text_input_wrap">
+                                                                                    <input type="text" placeholder="" value="">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="row row2">
+                                                                            <td class="col col1">휴대폰 번호</td>
+                                                                            <td class="col col2">
+                                                                                <div class="input_wrap text_input_wrap">
+                                                                                    <input type="text" placeholder="">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="row row2">
+                                                                            <td class="col col1">이메일</td>
+                                                                            <td class="col col2">
+                                                                                <div class="input_wrap text_input_wrap">
+                                                                                    <input type="text" placeholder="">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="popup_btm">
+                                                            <div class="popup_btn">
+                                                                <div class="input_form_table_btn_wrap">
+                                                                    <button type="button" class="btn btn_white close_btn">닫기</button>
+                                                                    <button type="button" class="btn btn_blue confirm_btn">등록</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="col col2">드림플러스</td>
+                                            <td class="col col3">차바로</td>
+                                            <td class="col col4">010-****-7428</td>
+                                            <td class="col col5">cbr1217@naver.com</td>
+                                            <td class="col col6">50,000</td>
+                                            <td class="col col7">
+                                                <button type="button" class="btn edit btn_paleBlue">복지포인트 수정</button>
+                                                <button type="button" class="btn delete btn_paleBlue">삭제</button>
+                                                <div id="popup_edit_1" class="popup popup_point_edit">
+                                                    <div class="popup_inner">
+                                                        <div class="popup_top">
+                                                            <div class="null"></div>
+                                                            <h3 class="popup_title">복지포인트 수정</h3>
+                                                            <button class="icon_btn close_btn" type="button"></button>
+                                                        </div>
+                                                        <div class="popup_content">
+                                                            <div class="popup_content">
+                                                                <div class="result_area">
+                                                                    <div class="result_table">
+                                                                        <table>
+                                                                            <tr class="row row1">
+                                                                                <td class="col col1">합산/초기화</td>
+                                                                                <td class="col col2">
+                                                                                    <div class="selected">
+                                                                                        <div class="selected_value">마스터</div>
+                                                                                        <div class="icon_btn select_btn"></div>
+                                                                                    </div>
+                                                                                    <ul>
+                                                                                        <li class="input_wrap text_input_wrap">
+                                                                                            <input type="text" name="customer_select">
+                                                                                        </li>
+                                                                                        <li class="sel_option">마스터</li>
+                                                                                        <li class="sel_option">마스터</li>
+                                                                                        <li class="sel_option">마스터</li>
+                                                                                        <li class="sel_option">마스터</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="row row2">
+                                                                                <td class="col col1">복지포인트</td>
+                                                                                <td class="col col2">
+                                                                                    <div class="input_wrap text_input_wrap">
+                                                                                        <input type="text" placeholder="">
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="popup_btm">
+                                                            <div class="popup_btn">
+                                                                <div class="input_form_table_btn_wrap">
+                                                                    <button type="button" class="btn btn_white close_btn">닫기</button>
+                                                                    <button type="button" class="btn btn_blue confirm_btn">발급</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="popup_delete_1" class="popup popup_user_delete">
+                                                    <div class="popup_inner">
+                                                        <div class="popup_top">
+                                                            <h3 class="popup_title">삭제 하시겠습니까?</h3>
+                                                        </div>
+                                                        <div class="popup_btm">
+                                                            <div class="popup_btn">
+                                                                <div class="input_form_table_btn_wrap">
+                                                                    <button type="button" class="btn btn_white close_btn">취소</button>
+                                                                    <button type="button" class="btn btn_blue confirm_btn">확인</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="result_pagenation">
+                                <div class="pagenation_wrap">
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn first_btn"></span></li>
+                                        <li><span class="icon_btn left_btn"></span></li>
+                                    </ul>
+                                    <ol class="pagenation_item">
+                                        <li class="selected"><span class="num">1</span></li>
+                                        <li><span class="num">2</span></li>
+                                        <li><span class="num">3</span></li>
+                                    </ol>
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn right_btn"></span></li>
+                                        <li><span class="icon_btn last_btn"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div id="popup_user_new" class="popup popup_user_new">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">회원 등록</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content">
+                <div class="result_area">
+                    <div class="result_table">
+                        <table>
+                            <tr class="row row1">
+                                <td class="col col1">이름</td>
+                                <td class="col col2">
+                                    <div class="input_wrap text_input_wrap">
+                                        <input type="text" placeholder="" value="">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="row row2">
+                                <td class="col col1">휴대폰 번호</td>
+                                <td class="col col2">
+                                    <div class="input_wrap text_input_wrap">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="row row2">
+                                <td class="col col1">이메일</td>
+                                <td class="col col2">
+                                    <div class="input_wrap text_input_wrap">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white close_btn">닫기</button>
+                        <button type="button" class="btn btn_blue confirm_btn">등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_pointUser_new" class="popup popup_pointUser_new">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">복지포인트 유저 등록</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content ">
+                <div class="option_area">
+                    <ul class="page_btn_wrap">
+                        <li><button type="button" class="btn_paleBlue btn">샘플 .xls 다운로드</button></li>
+                    </ul>
+                </div>
+                <div class="file_wrap noFile">
+                    <input class="file_name" value="파일변경" placeholder="파일변경">
+                    <label for="file_upload_1" class="file_upload btn btn_white">업로드</label> 
+                    <label for="file_upload_1" class="file_change btn btn_white">파일 변경</label> 
+                    <input class="file file_upload" type="file" id="file_upload_1" onchange="fileName_change(this)">
+                    <input class="file file_change" type="file" id="file_change_1" onchange="file_change(this)">
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white close_btn">닫기</button>
+                        <button type="button" class="btn btn_blue confirm_btn">추가</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_point_new" class="popup popup_point_new">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">복지포인트 등록</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content">
+                <div class="result_area">
+                    <div class="result_table">
+                        <table>
+                            <tr class="row row1">
+                                <td class="col col1">합산/초기화</td>
+                                <td class="col col2">
+                                    <div class="select_wrap">
+                                        <div class="selected">
+                                            <div class="selected_value">합산</div>
+                                            <div class="icon_btn select_btn"></div>
+                                        </div>
+                                        <ul>
+                                            <li class="input_wrap text_input_wrap">
+                                                <input type="text" name="customer_select">
+                                            </li>
+                                            <li class="sel_option">합산</li>
+                                            <li class="sel_option">합산</li>
+                                            <li class="sel_option">합산</li>
+                                            <li class="sel_option">합산</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="row row2">
+                                <td class="col col1">복지포인트</td>
+                                <td class="col col2">
+                                    <div class="input_wrap text_input_wrap">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white close_btn">닫기</button>
+                        <button type="button" class="btn btn_blue confirm_btn">추가</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+    <script>
+        $(function(){
+            // 등록 버튼 눌렀을 때
+            $('.option_area .user_new').on('click', function(){
+                $('.popup_user_new').addClass('on')
+                $('.dim').addClass('on')
+            })
+            // 엑셀 등록 버튼 눌렀을 때
+            $('.option_area .pointUser_new').on('click', function(){
+                $('.popup_pointUser_new').addClass('on')
+                $('.dim').addClass('on')
+            })
+            // 복지포인트 등록 버튼 눌렀을 때
+            $('.option_area .point_new').on('click', function(){
+                $('.popup_point_new').addClass('on')
+                $('.dim').addClass('on')
+            })
+
+            $('.result_area tbody tr td').on('click', function(e){
+                // if($(e.target).hasClass('col3')){
+                //     // 회원명 누르면 결제 내역
+                //     $(this).find('.popup_history').addClass('on')
+                //     $('.dim').addClass('on')
+                //     console.log('name')
+                // } else
+                if($(e.target).hasClass('close_btn')){
+                    // 닫기 눌렀을때 재설정
+                    $('.popup').removeClass('on')
+                    $('.dim').removeClass('on')
+                }else{
+                    // tr 누르면 회원정보 수정
+                    $(e.target).parents('tr').find('.popup_user_edit').addClass('on')
+                    $('.dim').addClass('on')
+                }
+            })
+
+            
+        })
+    </script>
+</body>
+</html>
