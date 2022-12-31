@@ -73,3 +73,39 @@
     justify-content: flex-start;
     gap: 10px;
 }
+
+
+
+/* ---------- sub8_2 ---------- */
+#page8_2 .search_area input[type="text"]{width: 200px;}
+
+#popup8_2_1{width: 460px;}
+#popup8_2_1 .block_category{width: 120px;}
+#popup8_2_1 .col2{width: calc(100% - 120px);}
+#popup8_2_1 input{width: 100%;}
+#popup8_2_1 .row5 .col2{justify-content: space-between;}
+#popup8_2_1 .row5 p{font-size: 14px;}
+#popup8_2_1 .row5 .btn{width: 54px;}
+
+#popup8_2_2{width: 560px;}
+#popup8_2_2 .search_area{
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+#popup8_2_2 .search_area input[type="text"]{width: 350px;}
+#popup8_2_2 .search_area .btn{
+    width: 54px;
+    height: 36px;
+    padding: 0 15px;
+    font-size: 13px;
+}
+#popup8_2_2 .result_area .col1{width: 70px;}
+#popup8_2_2 .result_area .col1 .table_img_box{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+#popup8_2_2 .result_area .col2{width: 170px;}
+#popup8_2_2 .result_area .col3{width: 80px;}
+#popup8_2_2 .result_area .col4{width: 80px;}
+#popup8_2_2 .result_area .col5{width: 100px;}
