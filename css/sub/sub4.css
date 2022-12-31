@@ -211,15 +211,15 @@
 #page4_3 .result_area table .col9{
     width: 12.6%;
 }
+
+
+/* ---------- sub4_3 ---------- */
 #page4_4 .result_table{
     margin-bottom: 130px;
+    overflow: visible;
 }
-
-
-#page4_4 .col td{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#page4_4 .col{
+    overflow: visible;
 }
 #page4_4 .col .file_name{
     color: #0B1293;
@@ -229,6 +229,7 @@
     line-height: 18px;
     text-decoration-line: underline;
     border: none;
+    display: none;
 }
 #page4_4 .col label{
     display: block;
@@ -247,13 +248,13 @@
 }
 #page4_4 .noFile .file_upload{display: flex;}
 #page4_4 .noFile .file_change{display: none;}
-#page4_4 .noFile .file_wrap .file_name{
+#page4_4 .noFile.file_wrap .file_name{
     display: none;
 }
-#page4_4 .uploaded .file_wrap{
+#page4_4 .uploaded.file_wrap{
     display: flex;
 }
-#page4_4 .uploaded .file_wrap .file_name{
+#page4_4 .uploaded.file_wrap .file_name{
     display: block;
 }
 #page4_4 .uploaded input[type="file"]{
@@ -265,6 +266,9 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
+}
+#page4_4 .uploaded .file_name{
+    display: block;
 }
 #page4_4 .uploaded .file_upload{display: none;}
 #page4_4 .uploaded .file_change{display: flex;}
