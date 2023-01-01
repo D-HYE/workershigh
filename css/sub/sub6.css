@@ -195,6 +195,9 @@ label.file_upload{
 #page6_1 .popup_Rfid_new,
 #page6_1 .popup_coupon{
     width: 460px;
+}#page6_1 .popup_Rfid_new td,
+#page6_1 .popup_Rfid_new .result_table{
+    overflow: visible;
 }
 #page6_1 .popup_Rfid_new .col1,
 #page6_1 .popup_coupon .col1{
@@ -208,8 +211,10 @@ label.file_upload{
 #page6_1 .popup_coupon .col2{
     width: 70%;
 }
-#page6_1 .popup_Rfid_new .row3 input,
-#page6_1 .popup_coupon .row3 input{
+#page6_1 .popup_coupon .col2 input{
+    width: 100%;
+}
+#page6_1 .popup_Rfid_new .row3 input{
     min-width: 256px;;
 }
 #page6_1 .popup_history td{
@@ -372,15 +377,19 @@ label.file_upload{
     font-weight: 900;
 }
 #page6_3 .result_table{
-    width: 1865px;
+    /* width: 1865px; */
+    width: 2075px;
 }
 #page6_3 .result_area .col{
     width: 105px;
+    text-overflow: clip;
+    white-space: inherit;
 }
 #page6_3 .result_area .col1{width: 70px; }
 #page6_3 .result_area .col3{width: 130px; }
 #page6_3 .result_area .col4{width: 130px; cursor: pointer;}
 #page6_3 .result_area .col5{width: 180px; }
+#page6_3 .result_area .col10{width: 200px;}
 
 #page6_3 .result_table .result_table_inner{
     border: 1px solid #d3d3d3;
@@ -391,3 +400,13 @@ label.file_upload{
 #page6_3 .popup_history {
     width: 960px;
 }
+#page6_3 .result_area tbody tr:hover{background: #F6FAFF;}
+#page6_3 .result_area tbody tr:hover td{color: #0044FE;}
+#page6_3 .result_area tbody tr:hover .popup_history{background: #fff;}
+#page6_3 .result_area tbody tr:hover td .popup_history{color: #111;}
+
+#page6_3 .result_area tbody tr:hover .popup_history .col4{cursor: auto;}
+#page6_3 .result_area tbody tr:hover .popup_history{cursor: auto;}
+#page6_3 .result_area tbody tr:hover .popup_history tr{background: #fff; color: #111;}
+#page6_3 .result_area tbody tr:hover .popup_history th{color: #6F869C;}
+#page6_3 .result_area tbody tr:hover .popup_history td{color: #111;}
