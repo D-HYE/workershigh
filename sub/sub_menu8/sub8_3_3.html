@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub8.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page8_3_3">
+        <div id="gnb" class="active"></div>
+        <main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>실사</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>재고관리</li>
+                                    <li>창고재고</li>
+                                    <li>실사</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="search_area">
+                            <div class="search_form_table">
+                                <ul class="row row1">
+                                    <li class="col col1">
+                                        <h4 class="search_form_title">상품명</h4>
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" placeholder="검색어를 입력해 주세요.">
+                                        </div>
+                                    </li>
+                                    <li class="col col3">
+                                        <h4 class="search_form_title">실사 상태</h4>
+                                    </li>
+                                    <li class="col col4">
+                                        <div class="input_wrap">
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="all_sel" name="status">
+                                                <label for="all_sel">전체</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="no_confrim" name="status">
+                                                <label for="no_confrim">미확인</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="confirm" name="status">
+                                                <label for="confirm">확인완료</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col col5">
+                                        <button type="button" class="btn search_btn btn_blue">검색</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="option_area">
+                            <ul class="page_btn_wrap">
+                                <li><button type="button" class="btn_white btn">목록</button></li>
+                                <li><button type="button" class="btn_blue btn">다시 불러오기</button></li>
+                            </ul>
+                        </div>
+                        <div class="result_area">
+                            <div class="scroll_area">
+                                <div class="result_table">
+                                    <table>
+                                        <thead>
+                                            <tr class="row row1">
+                                                <th class="col col1">센터</th>
+                                                <th class="col col2">로케이션</th>
+                                                <th class="col col3">바코드</th>
+                                                <th class="col col4">상품명</th>
+                                                <th class="col col5">용량</th>
+                                                <th class="col col6">용기</th>
+                                                <th class="col col7">창고수량</th>
+                                                <th class="col col8">실사수량</th>
+                                                <th class="col col9">차이</th>
+                                                <th class="col col10">관리</th>
+                                                <th class="col col11">실사 일자</th>
+                                                <th class="col col12">실사 상태</th>
+                                                <th class="col col13">확인</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="row row2">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">확인 완료</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row3">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">미확인</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row4">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">확인 완료</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row5">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">확인 완료</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row6">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">확인 완료</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row7">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">확인 완료</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row8">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">확인 완료</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row9">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">확인 완료</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row10">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">확인 완료</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row11">
+                                                <td class="col col1">서초동</td>
+                                                <td class="col col2">A12</td>
+                                                <td class="col col3">880100234</td>
+                                                <td class="col col4">쁘띠첼</td>
+                                                <td class="col col5">90g</td>
+                                                <td class="col col6">컵</td>
+                                                <td class="col col7">220</td>
+                                                <td class="col col8">
+                                                    <div class="input_wrap text_input_wrap">
+                                                        <input type="text" placeholder="" value="210">
+                                                    </div>
+                                                </td>
+                                                <td class="col col9">-10</td>
+                                                <td class="col col10">
+                                                    <div class="select_wrap">
+                                                        <div class="selected">
+                                                            <div class="selected_value">로스</div>
+                                                            <div class="icon_btn select_btn"></div>
+                                                        </div>
+                                                        <ul>
+                                                            <li class="sel_option">로스</li>
+                                                            <li class="sel_option">폐기</li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="btn btn_paleBlue" type="button">조정</button>
+                                                </td>
+                                                <td class="col col11">2022-12-28</td>
+                                                <td class="col col12">확인 완료</td>
+                                                <td class="col col13">
+                                                    <button class="btn btn_blue">확인</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="result_pagenation">
+                                <div class="pagenation_wrap">
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn first_btn"></span></li>
+                                        <li><span class="icon_btn left_btn"></span></li>
+                                    </ul>
+                                    <ol class="pagenation_item">
+                                        <li class="selected"><span class="num">1</span></li>
+                                        <li><span class="num">2</span></li>
+                                        <li><span class="num">3</span></li>
+                                    </ol>
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn right_btn"></span></li>
+                                        <li><span class="icon_btn last_btn"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
