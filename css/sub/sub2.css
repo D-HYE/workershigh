@@ -287,7 +287,6 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 
 
 /* ---------- sub2_2_1 ---------- */
-#page2_2_1 .content{height: calc(100vh - 148px); min-height: 582px;}
 #page2_2_1 .depth_table{width: calc(100% - 100px);}
 #page2_2_1 .block_category{width: 100px;}
 #page2_2_1 .col{width: calc(33.3% - 120px);}

@@ -519,3 +519,17 @@ footer p{
     gap: 10px;
 }
 .popup_btm .popup_btn button{width: 110px;}
+
+.app_popup{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+}
+.app_popup .popup_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1440px;
+    min-height: calc(100vh - 160px);
+}

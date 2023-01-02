@@ -6,8 +6,6 @@
 }
 
 /* ---------- sub5_1 ---------- */
-#page5_1 .content{height: calc(100vh - 148px); min-height: 680px;}
-
 #page5_1 .date_area .date_wrap{width: 143px;}
 #page5_1 .date_area .calander_area{width: 250px;}
 
@@ -157,7 +155,6 @@
 #page5_4 .result_area tbody tr{cursor: initial;}
 #page5_4 .result_area tbody tr:hover{background: #fff;}
 #page5_4 .result_area tbody tr:hover td{color: #111;}
-#page5_4 .content_tab1{height: calc(100vh - 274px); min-height: 494px;}
 #page5_4 .content_tab1 .result_table{margin-bottom: 20px;}
 #page5_4 .content_tab1 .result_area .col2,
 #page5_4 .content_tab1 .result_area .col5{border-left: 1px solid #d3d3d3;}
