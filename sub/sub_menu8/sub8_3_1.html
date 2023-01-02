@@ -17,7 +17,7 @@
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
-                <h3 class="popup_title">로케이션 등록/수정</h3>
+                <h3 class="popup_title">재고 입력</h3>
                 <button class="icon_btn close_btn" type="button">닫기</button>
             </div>
             <div class="popup_content">
@@ -324,56 +324,58 @@
                     <div class="input_form_table">
                         <ul class="row row1">
                             <li class="col col1 block_category">라인</li>
-                            <li class="col col2">
-                                <div class="select_wrap">
-                                    <div class="selected">
-                                        <div class="selected_value">A</div>
-                                        <div class="icon_btn select_btn"></div>
-                                    </div>
-                                    <ul>
-                                        <li class="sel_option">A</li>
-                                        <li class="sel_option">B</li>
-                                        <li class="sel_option">C</li>
-                                    </ul>
-                                </div>
-                            </li>
+                            <li class="col col2"></li>
                         </ul>
                         <ul class="row row2">
                             <li class="col col1 block_category">층</li>
-                            <li class="col col2">
-                                <div class="select_wrap">
-                                    <div class="selected">
-                                        <div class="selected_value">1</div>
-                                        <div class="icon_btn select_btn"></div>
-                                    </div>
-                                    <ul>
-                                        <li class="sel_option">1</li>
-                                        <li class="sel_option">2</li>
-                                        <li class="sel_option">3</li>
-                                        <li class="sel_option">4</li>
-                                    </ul>
-                                </div>
-                            </li>
+                            <li class="col col2"></li>
                         </ul>
                         <ul class="row row3">
                             <li class="col col1 block_category">번호</li>
-                            <li class="col col2">
-                                <div class="select_wrap">
-                                    <div class="selected">
-                                        <div class="selected_value">24</div>
-                                        <div class="icon_btn select_btn"></div>
-                                    </div>
-                                    <ul>
-                                        <li class="sel_option">20</li>
-                                        <li class="sel_option">21</li>
-                                        <li class="sel_option">22</li>
-                                        <li class="sel_option">23</li>
-                                    </ul>
-                                </div>
-                            </li>
+                            <li class="col col2"></li>
                         </ul>
                     </div>
-
+                    <div class="overflow_position overflow_position1">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">A</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">A</li>
+                                <li class="sel_option">B</li>
+                                <li class="sel_option">C</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow_position overflow_position2">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">1</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">1</li>
+                                <li class="sel_option">2</li>
+                                <li class="sel_option">3</li>
+                                <li class="sel_option">4</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow_position overflow_position3">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">24</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">20</li>
+                                <li class="sel_option">21</li>
+                                <li class="sel_option">22</li>
+                                <li class="sel_option">23</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="popup_btm">
@@ -475,6 +477,9 @@
             $('#page8_3_1 .result_area .col9 .btn').on('click',function(){
                 $('#popup8_3_2').addClass('on');
                 $('.dim').addClass('on')
+            });
+            $('#page8_3_1 .result_area .col11 .delete_btn').on('click',function(){
+                $(this).closest('tr').hide()
             });
         })
     </script>
