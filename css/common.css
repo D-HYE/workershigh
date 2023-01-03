@@ -255,8 +255,6 @@ main{
 
 /* ---------- 옵션 option ---------- */
 .option_area{
-    display: flex;
-    justify-content: space-between;
     margin: 30px 0 20px;
 }
 .page_btn_wrap{

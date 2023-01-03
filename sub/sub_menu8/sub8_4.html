@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="../../css/sub/sub5.css">
+    <link rel="stylesheet" href="../../css/sub/sub8.css">
     <title>workes high</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../../js/script.js"></script>
 </head>
 <body>
-    <div class="wrap" id="page5_2">
+    <div class="wrap" id="page8_4">
         <div id="gnb" class="active"></div>
         <main>
             <div class="container">
@@ -22,13 +22,13 @@
                         <div class="content_title_area">
                             <div class="content_title">
                                 <div class="icon_btn menu_btn"></div>
-                                <h2>회원별 통계</h2>
+                                <h2>피킹</h2>
                             </div>
                             <div class="content_route">
                                 <ol>
                                     <li class="home_icon"></li>
-                                    <li>통계</li>
-                                    <li>회원별 통계</li>
+                                    <li>재고관리</li>
+                                    <li>피킹</li>
                                 </ol>
                             </div>
                         </div>
@@ -38,9 +38,37 @@
                             <div class="search_form_table">
                                 <ul class="row row1">
                                     <li class="col col1">
-                                        <h4 class="search_form_title">기간</h4>
+                                        <h4 class="search_form_title">거래처</h4>
                                     </li>
                                     <li class="col col2">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">L7 강남</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="input_wrap text_input_wrap">
+                                                    <input type="text" name="customer_select">
+                                                </li>
+                                                <li class="sel_option">롯데벤쳐스</li>
+                                                <li class="sel_option">포컴퍼니</li>
+                                                <li class="sel_option">드림플러스</li>
+                                                <li class="sel_option">L7 강남</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="col col3">
+                                        <h4 class="search_form_title">피킹자</h4>
+                                    </li>
+                                    <li class="col col4">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" placeholder="">
+                                        </div>
+                                    </li>
+                                    <li class="col col5">
+                                        <h4 class="search_form_title">기간</h4>
+                                    </li>
+                                    <li class="col col6">
                                         <div class="date_area">
                                             <div class="date_wrap">
                                                 <div class="date_first">
@@ -210,23 +238,37 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="col col3">
-                                        <h4 class="search_form_title">매대</h4>
-                                    </li>
-                                    <li class="col col4">
-                                        <div class="select_wrap">
-                                            <div class="selected">
-                                                <div class="selected_value">마스터</div>
-                                                <div class="icon_btn select_btn"></div>
+                                    <li class="col col7">
+                                        <div class="input_wrap">
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="today" name="period">
+                                                <label for="today">금일</label>
                                             </div>
-                                            <ul>
-                                                <li class="sel_option">마스터</li>
-                                                <li class="sel_option">마스터1</li>
-                                                <li class="sel_option">마스터2</li>
-                                            </ul>
                                         </div>
                                     </li>
-                                    <li class="col col5">
+                                </ul>
+                                <ul class="row row2">
+                                    <li class="col col1">
+                                        <h4 class="search_form_title">상태</h4>
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="input_wrap">
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="all_sel" name="status">
+                                                <label for="all_sel">전체</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="wait" name="status">
+                                                <label for="wait">대기</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="complete" name="status">
+                                                <label for="complete">완료</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="null"></li>
+                                    <li class="col col4">
                                         <button type="button" class="btn search_btn btn_blue">검색</button>
                                     </li>
                                 </ul>
@@ -234,7 +276,7 @@
                         </div>
                         <div class="option_area">
                             <ul class="page_btn_wrap">
-                                <li><button type="button" class="btn_white btn">엑셀 다운로드</button></li>
+                                <li><button type="button" class="btn_white btn" id="active_btn">피킹 활성화</button></li>
                             </ul>
                         </div>
                         <div class="result_area">
@@ -242,155 +284,105 @@
                                 <table>
                                     <thead>
                                         <tr class="row row1">
-                                            <th class="col col1">NO</th>
-                                            <th class="col col2">회원</th>
-                                            <th class="col col3">많이 구매한 상품명</th>
-                                            <th class="col col4">결제액</th>
-                                            <th class="col col5">구매수량</th>
-                                            <th class="col col6">이용횟수</th>
-                                            <th class="col col7">관리</th>
+                                            <th class="col col1">피킹코드</th>
+                                            <th class="col col2">날짜</th>
+                                            <th class="col col3">거래처</th>
+                                            <th class="col col4">거래처유형</th>
+                                            <th class="col col5">상품종류</th>
+                                            <th class="col col6">피킹자</th>
+                                            <th class="col col7">상태</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="row row2">
-                                            <td class="col col1">1</td>
-                                            <td class="col col2">김수진</td>
-                                            <td class="col col3">오랑지나</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row2" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124122523</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">L7 강남</td>
+                                            <td class="col col4">B2C</td>
+                                            <td class="col col5">5</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">완료</td>
                                         </tr>
-                                        <tr class="row row3">
-                                            <td class="col col1">2</td>
-                                            <td class="col col2">강희원</td>
-                                            <td class="col col3">아이시스</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row3" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124162328</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">스트라드비전 강남</td>
+                                            <td class="col col4">B2B</td>
+                                            <td class="col col5">8</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">대기</td>
                                         </tr>
-                                        <tr class="row row4">
-                                            <td class="col col1">3</td>
-                                            <td class="col col2">이유정</td>
-                                            <td class="col col3">레쓰비 마일드</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row4" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124162328</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">스트라드비전 강남</td>
+                                            <td class="col col4">B2B</td>
+                                            <td class="col col5">8</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">대기</td>
                                         </tr>
-                                        <tr class="row row5">
-                                            <td class="col col1">4</td>
-                                            <td class="col col2">유해은</td>
-                                            <td class="col col3">누디 사과주스</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row5" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124162328</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">스트라드비전 강남</td>
+                                            <td class="col col4">B2B</td>
+                                            <td class="col col5">8</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">대기</td>
                                         </tr>
-                                        <tr class="row row6">
-                                            <td class="col col1">5</td>
-                                            <td class="col col2">채수빈</td>
-                                            <td class="col col3">아이시스</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row6" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124122523</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">L7 강남</td>
+                                            <td class="col col4">B2C</td>
+                                            <td class="col col5">5</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">완료</td>
                                         </tr>
-                                        <tr class="row row7">
-                                            <td class="col col1">6</td>
-                                            <td class="col col2">김수진</td>
-                                            <td class="col col3">오랑지나</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row7" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124122523</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">L7 강남</td>
+                                            <td class="col col4">B2C</td>
+                                            <td class="col col5">5</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">완료</td>
                                         </tr>
-                                        <tr class="row row8">
-                                            <td class="col col1">7</td>
-                                            <td class="col col2">강희원</td>
-                                            <td class="col col3">아이시스</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row8" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124122523</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">L7 강남</td>
+                                            <td class="col col4">B2C</td>
+                                            <td class="col col5">5</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">완료</td>
                                         </tr>
-                                        <tr class="row row9">
-                                            <td class="col col1">8</td>
-                                            <td class="col col2">이유정</td>
-                                            <td class="col col3">레쓰비 마일드</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row9" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124162328</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">스트라드비전 강남</td>
+                                            <td class="col col4">B2B</td>
+                                            <td class="col col5">8</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">대기</td>
                                         </tr>
-                                        <tr class="row row10">
-                                            <td class="col col1">9</td>
-                                            <td class="col col2">유해은</td>
-                                            <td class="col col3">누디 사과주스</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row10" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124162328</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">스트라드비전 강남</td>
+                                            <td class="col col4">B2B</td>
+                                            <td class="col col5">8</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">대기</td>
                                         </tr>
-                                        <tr class="row row11">
-                                            <td class="col col1">10</td>
-                                            <td class="col col2">채수빈</td>
-                                            <td class="col col3">아이시스</td>
-                                            <td class="col col4">131,700</td>
-                                            <td class="col col5">22</td>
-                                            <td class="col col6">7</td>
-                                            <td class="col col7">
-                                                <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
-                                                </div>
-                                            </td>
+                                        <tr class="row row11" onclick="location.href='./sub8_4_1.html';">
+                                            <td class="col col1">221124162328</td>
+                                            <td class="col col2">22/11/24</td>
+                                            <td class="col col3">스트라드비전 강남</td>
+                                            <td class="col col4">B2B</td>
+                                            <td class="col col5">8</td>
+                                            <td class="col col6">박준혁</td>
+                                            <td class="col col7">대기</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -424,132 +416,73 @@
             </footer>
         </main>
     </div>
-    <div id="popup5_2_1" class="popup">
+    <div id="popup8_4" class="popup">
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
-                <h3 class="popup_title">결제 내역 (<span>010-****1234</span>)</h3>
+                <h3 class="popup_title">피킹활성화</h3>
                 <button class="icon_btn close_btn" type="button">닫기</button>
             </div>
             <div class="popup_content">
-                <div class="option_area">
-                    <ul class="row row1">
-                        <li class="col col1 table_category">총 구매수량</li>
-                        <li class="col col2">134개</li>
-                        <li class="col col3 table_category">결제 총액</li>
-                        <li class="col col4">166,470원</li>
-                    </ul>
-                </div>
-                <div class="result_area">
-                    <div class="result_table">
-                        <table>
-                            <thead>
-                                <tr class="row row1">
-                                    <th class="col col1">NO</th>
-                                    <th class="col col2">상품명</th>
-                                    <th class="col col3">고객사</th>
-                                    <th class="col col4">매대위치</th>
-                                    <th class="col col5">결제액</th>
-                                    <th class="col col6">구매수량</th>
-                                    <th class="col col7">이용횟수</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="row row2">
-                                    <td class="col col1">1</td>
-                                    <td class="col col2">오랑지나</td>
-                                    <td class="col col3">롯데물산</td>
-                                    <td class="col col4">롯데물산</td>
-                                    <td class="col col5">1,310</td>
-                                    <td class="col col6">7</td>
-                                    <td class="col col7">1</td>
-                                </tr>
-                                <tr class="row row3">
-                                    <td class="col col1">2</td>
-                                    <td class="col col2">아이시스</td>
-                                    <td class="col col3">롯데물산</td>
-                                    <td class="col col4">롯데물산</td>
-                                    <td class="col col5">1,900</td>
-                                    <td class="col col6">13</td>
-                                    <td class="col col7">2</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <ul class="row row1">
+                            <li class="col col1 block_category">거래처</li>
+                            <li class="col col2">
+                            </li>
+                        </ul>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">피킹자</li>
+                            <li class="col col2"></li>
+                        </ul>
+                    </div>
+                    <div class="overflow_position overflow_position1">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">L7 강남</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="input_wrap text_input_wrap">
+                                    <input type="text" name="customer_select">
+                                </li>
+                                <li class="sel_option">롯데벤쳐스</li>
+                                <li class="sel_option">포컴퍼니</li>
+                                <li class="sel_option">드림플러스</li>
+                                <li class="sel_option">L7 강남</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow_position overflow_position2">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">박준혁</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">왕수진</li>
+                                <li class="sel_option">박준혁</li>
+                                <li class="sel_option">홍길동</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="popup_btm">
                 <div class="popup_btn">
-                    <button type="button" class="btn btn_blue close_btn">닫기</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="popup5_2_2" class="popup">
-        <div class="popup_inner">
-            <div class="popup_top">
-                <div class="null"></div>
-                <h3 class="popup_title">결제 내역 (<span>010-****1234</span>)</h3>
-                <button class="icon_btn close_btn" type="button">닫기</button>
-            </div>
-            <div class="popup_content">
-                <div class="option_area">
-                    <ul class="row row1">
-                        <li class="col col1 table_category">총 구매수량</li>
-                        <li class="col col2">134개</li>
-                        <li class="col col3 table_category">결제 총액</li>
-                        <li class="col col4">166,470원</li>
-                    </ul>
-                </div>
-                <div class="result_area">
-                    <div class="result_table">
-                        <table>
-                            <thead>
-                                <tr class="row row1">
-                                    <th class="col col1">NO</th>
-                                    <th class="col col2">상품명</th>
-                                    <th class="col col3">고객사</th>
-                                    <th class="col col4">매대위치</th>
-                                    <th class="col col5">결제액</th>
-                                    <th class="col col6">구매수량</th>
-                                    <th class="col col7">이용횟수</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="row row2">
-                                    <td class="col col1">1</td>
-                                    <td class="col col2">오랑지나</td>
-                                    <td class="col col3">롯데물산</td>
-                                    <td class="col col4">롯데물산</td>
-                                    <td class="col col5">1,310</td>
-                                    <td class="col col6">7</td>
-                                    <td class="col col7">1</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="popup_btm">
-                <div class="popup_btn">
-                    <button type="button" class="btn btn_blue close_btn">닫기</button>
+                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_blue confirm_btn">확인</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="dim"></div>
-    <script>
-        $(function(){
-            $('#page5_2 .result_table button').eq(0).on('click', function(){
-                $('#popup5_2_1').addClass('on')
-                $('.dim').addClass('on')
-            })
-            $('#page5_2 .result_table button').eq(1).on('click', function(){
-                $('#popup5_2_2').addClass('on')
-                $('.dim').addClass('on')
-            })
 
-        })
+    <script>
+        $('#active_btn').on('click',function(){
+            $('#popup8_4').addClass('on');
+            $('.dim').addClass('on');
+        });
     </script>
 </body>
 </html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub8.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page8_5_1">
+        <div id="gnb" class="active"></div>
+        <main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>피킹 상세</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>재고관리</li>
+                                    <li>피킹</li>
+                                    <li>피킹 상세</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="option_area">
+                            <ul class="page_btn_wrap">
+                                <li><button type="button" class="btn_white btn" id="before_photo_btn">진열 전 사진</button></li>
+                                <li><button type="button" class="btn_white btn" id="after_photo_btn">진열 후 사진</button></li>
+                                <li class="null"></li>
+                                <li><button type="button" class="btn_blue btn">완료</button></li>
+                            </ul>
+                        </div>
+                        <div class="result_area">
+                            <div class="result_table">
+                                <table>
+                                    <thead>
+                                        <tr class="row row1">
+                                            <th class="col col1">상품코드</th>
+                                            <th class="col col2">상품명</th>
+                                            <th class="col col3">바코드</th>
+                                            <th class="col col4">용량</th>
+                                            <th class="col col5">용기</th>
+                                            <th class="col col6">매대재고</th>
+                                            <th class="col col7">피킹수량</th>
+                                            <th class="col col8">진열수량</th>
+                                            <th class="col col9">관리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row row2">
+                                            <td class="col col1">WH00054</td>
+                                            <td class="col col2">쁘띠첼</td>
+                                            <td class="col col3">880100234</td>
+                                            <td class="col col4">90g</td>
+                                            <td class="col col5">컵</td>
+                                            <td class="col col6">6</td>
+                                            <td class="col col7">7</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td class="col col9">
+                                                <div class="btn_wrap">
+                                                    <button type="button" class="btn btn_paleBlue loss_btn">로스</button>
+                                                    <button type="button" class="btn btn_paleBlue disuse_btn">폐기</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row3">
+                                            <td class="col col1">WH00054</td>
+                                            <td class="col col2">맥스봉</td>
+                                            <td class="col col3">8946543212</td>
+                                            <td class="col col4">100g</td>
+                                            <td class="col col5">개</td>
+                                            <td class="col col6">4</td>
+                                            <td class="col col7">10</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text">
+                                                </div>
+                                            </td>
+                                            <td class="col col9">
+                                                <div class="btn_wrap">
+                                                    <button type="button" class="btn btn_paleBlue loss_btn">로스</button>
+                                                    <button type="button" class="btn btn_paleBlue disuse_btn">폐기</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div id="popup8_5_1_1" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">진열 전 사진</h3>
+                <button class="icon_btn close_btn" type="button">닫기</button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <ul class="row row1">
+                            <li class="col col1 block_category">담당자</li>
+                            <li class="col col2"> </li>
+                        </ul>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">거래처</li>
+                            <li class="col col2"> </li>
+                        </ul>
+                        <ul class="row row3">
+                            <li class="col col1 block_category">날짜</li>
+                            <li class="col col2"> </li>
+                        </ul>
+                        <ul class="row row4">
+                            <li class="col col1 block_category">파일선택</li>
+                            <li class="col col2">
+                                <div class="upload_wrap">
+                                    <span class="upload_val">진열전사진사진사진사진.jpg</span>
+                                    <label for="file_upload" class="btn btn_white">파일선택</label> 
+                                    <input type="file" id="file_upload">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="overflow_position overflow_position1">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">박준혁</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">홍길동</li>
+                                <li class="sel_option">박준혁</li>
+                                <li class="sel_option">담당자1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow_position overflow_position2">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">L7</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">거래처1</li>
+                                <li class="sel_option">거래처2</li>
+                                <li class="sel_option">L7</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow_position overflow_position3">
+                        <div class="date_area">
+                            <div class="date_wrap">
+                                <div class="date_first">
+                                    <p class="year">2022</p>
+                                    <p class="month">10</p>
+                                    <p class="date">12</p>
+                                </div>
+                            </div>
+                            <div class="calander_area">
+                                <div class="calander_wrap">
+                                    <div class="calander_con">
+                                        <div class="calander calander_first">
+                                            <div class="year_month">
+                                                <input type="button" value="prev" class="prev">
+                                                <div class="date">
+                                                    <p class="year">2022</p>
+                                                    <p class="month">10</p>
+                                                </div>
+                                                <input type="button" value="next" class="next">
+                                            </div>
+                                            <div class="month_date">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="gray">30</td>
+                                                            <td class="gray">31</td>
+                                                            <td>1</td>
+                                                            <td>2</td>
+                                                            <td>3</td>
+                                                            <td>4</td>
+                                                            <td>5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>7</td>
+                                                            <td>8</td>
+                                                            <td>9</td>
+                                                            <td>10</td>
+                                                            <td>11</td>
+                                                            <td class="checked">12</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13</td>
+                                                            <td>14</td>
+                                                            <td>15</td>
+                                                            <td>16</td>
+                                                            <td>17</td>
+                                                            <td>18</td>
+                                                            <td>19</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20</td>
+                                                            <td>21</td>
+                                                            <td>22</td>
+                                                            <td>23</td>
+                                                            <td>24</td>
+                                                            <td>25</td>
+                                                            <td>26</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>27</td>
+                                                            <td>28</td>
+                                                            <td>29</td>
+                                                            <td>30</td>
+                                                            <td class="gray">1</td>
+                                                            <td class="gray">2</td>
+                                                            <td class="gray">3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_blue register_btn">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup8_5_1_2" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">진열 후 사진</h3>
+                <button class="icon_btn close_btn" type="button">닫기</button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <ul class="row row1">
+                            <li class="col col1 block_category">담당자</li>
+                            <li class="col col2"> </li>
+                        </ul>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">거래처</li>
+                            <li class="col col2"> </li>
+                        </ul>
+                        <ul class="row row3">
+                            <li class="col col1 block_category">날짜</li>
+                            <li class="col col2"> </li>
+                        </ul>
+                        <ul class="row row4">
+                            <li class="col col1 block_category">파일선택</li>
+                            <li class="col col2">
+                                <div class="upload_wrap">
+                                    <span class="upload_val">진열후사진사진사진사진.jpg</span>
+                                    <label for="file_upload" class="btn btn_white">파일선택</label> 
+                                    <input type="file" id="file_upload">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="overflow_position overflow_position1">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">박준혁</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">홍길동</li>
+                                <li class="sel_option">박준혁</li>
+                                <li class="sel_option">담당자1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow_position overflow_position2">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">L7</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">거래처1</li>
+                                <li class="sel_option">거래처2</li>
+                                <li class="sel_option">L7</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow_position overflow_position3">
+                        <div class="date_area">
+                            <div class="date_wrap">
+                                <div class="date_first">
+                                    <p class="year">2022</p>
+                                    <p class="month">10</p>
+                                    <p class="date">12</p>
+                                </div>
+                            </div>
+                            <div class="calander_area">
+                                <div class="calander_wrap">
+                                    <div class="calander_con">
+                                        <div class="calander calander_first">
+                                            <div class="year_month">
+                                                <input type="button" value="prev" class="prev">
+                                                <div class="date">
+                                                    <p class="year">2022</p>
+                                                    <p class="month">10</p>
+                                                </div>
+                                                <input type="button" value="next" class="next">
+                                            </div>
+                                            <div class="month_date">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="gray">30</td>
+                                                            <td class="gray">31</td>
+                                                            <td>1</td>
+                                                            <td>2</td>
+                                                            <td>3</td>
+                                                            <td>4</td>
+                                                            <td>5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>7</td>
+                                                            <td>8</td>
+                                                            <td>9</td>
+                                                            <td>10</td>
+                                                            <td>11</td>
+                                                            <td class="checked">12</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13</td>
+                                                            <td>14</td>
+                                                            <td>15</td>
+                                                            <td>16</td>
+                                                            <td>17</td>
+                                                            <td>18</td>
+                                                            <td>19</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20</td>
+                                                            <td>21</td>
+                                                            <td>22</td>
+                                                            <td>23</td>
+                                                            <td>24</td>
+                                                            <td>25</td>
+                                                            <td>26</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>27</td>
+                                                            <td>28</td>
+                                                            <td>29</td>
+                                                            <td>30</td>
+                                                            <td class="gray">1</td>
+                                                            <td class="gray">2</td>
+                                                            <td class="gray">3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_blue register_btn">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup8_5_1_3" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">로스</h3>
+                <button class="icon_btn close_btn" type="button">닫기</button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <ul class="row row1">
+                            <li class="col col1 block_category">상품명</li>
+                            <li class="col col2">쁘띠첼</li>
+                        </ul>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">매대재고</li>
+                            <li class="col col2">6</li>
+                        </ul>
+                        <ul class="row row3">
+                            <li class="col col1 block_category">로스량</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" value="2">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row4">
+                            <li class="col col1 block_category">로스금액</li>
+                            <li class="col col2">5,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_blue register_btn">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup8_5_1_4" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">폐기</h3>
+                <button class="icon_btn close_btn" type="button">닫기</button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <ul class="row row1">
+                            <li class="col col1 block_category">상품명</li>
+                            <li class="col col2">쁘띠첼</li>
+                        </ul>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">매대재고</li>
+                            <li class="col col2">6</li>
+                        </ul>
+                        <ul class="row row3">
+                            <li class="col col1 block_category">로스량</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" value="2">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row4">
+                            <li class="col col1 block_category">로스금액</li>
+                            <li class="col col2">10,000원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_blue register_btn">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+
+    <script>
+        $(function(){
+            $('#before_photo_btn').on('click',function(){
+                $('#popup8_5_1_1').addClass('on');
+                $('.dim').addClass('on')
+            });
+            $('#after_photo_btn').on('click',function(){
+                $('#popup8_5_1_2').addClass('on');
+                $('.dim').addClass('on')
+            });
+            $('.loss_btn').on('click',function(){
+                $('#popup8_5_1_3').addClass('on');
+                $('.dim').addClass('on')
+            });
+            $('.disuse_btn').on('click',function(){
+                $('#popup8_5_1_4').addClass('on');
+                $('.dim').addClass('on')
+            });
+        })
+    </script>
+</body>
+</html>
