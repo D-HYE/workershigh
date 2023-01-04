@@ -386,7 +386,7 @@
 #page8_3_3 .result_table .col4{width: 200px;}
 #page8_3_3 .result_table .col:nth-child(n+5):nth-child(-n+9){width: 80px;}
 #page8_3_3 .result_table .col8 input{width: 100%;}
-#page8_3_3 .result_table .col10{
+#page8_3_3 .result_table tbody .col10{
     width: 200px;
     overflow: initial;
     text-align: left;
@@ -690,3 +690,136 @@
 }
 #popup8_5_1_3 input,
 #popup8_5_1_4 input{width: 100%;}
+
+
+
+/* ---------- sub8_6 ---------- */
+#page8_6 .search_area .select_wrap{width: 200px;}
+#page8_6 .search_area .col3 input{width: 150px;}
+#page8_6 .search_area .date_wrap{width: 256px;}
+#page8_6 .search_area .calander_wrap{
+    width: 622px;
+    height: 305px;
+}
+#page8_6 .search_area .col4{padding-left: 7px;}
+
+#page8_6 .result_table td{height: 120px;}
+#page8_6 .result_table .col1{width: 100px;}
+#page8_6 .result_table .col2{width: 150px;}
+#page8_6 .result_table .col3{width: 60px;}
+#page8_6 .result_table .col4,
+#page8_6 .result_table .col5{
+    width: 120px;
+    cursor: pointer;
+}
+#page8_6 .result_table .col6,
+#page8_6 .result_table .col7,
+#page8_6 .result_table .col8{width: 100px;}
+#page8_6 .result_table .col9,
+#page8_6 .result_table .col10{
+    width: 130px;
+    cursor: pointer;
+}
+#page8_6 .result_table .col b{
+    font-size: 14px;
+    font-weight: 700;
+    color: #0B1293;
+    text-decoration: underline;
+}
+#page8_6 .result_table .col .table_img_box{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#popup8_6_1{width: 660px;}
+#popup8_6_1 .popup_content, #popup8_6_2 .popup_content{padding-bottom: 30px;}
+#popup8_6_1 .popup_map{
+    position: relative;
+    height: 400px;
+    background: #F2F2F2;;
+}
+#popup8_6_1 .popup_picker{
+    position: absolute;
+    top: 179px;
+    left: 286px;
+    width: 28px;
+    height: 38px;
+    background: url("../../images/map_picker.svg") no-repeat center/contain;
+}
+
+
+
+/* ---------- sub8_7 ---------- */
+#page8_7 .option_area{margin: 5px 0 20px;}
+#page8_7 .result_table .col1{width: 60px;}
+#page8_7 .result_table .col2{width: 90px;}
+#page8_7 .result_table .col3{width: 80px;}
+#page8_7 .result_table .col4{width: 120px;}
+#page8_7 .result_table .col5{width: 90px;}
+#page8_7 .result_table .col6{width: 110px;}
+#page8_7 .result_table .col7,
+#page8_7 .result_table .col8{width: 70px;}
+#page8_7 .result_table .col9{width: 80px;}
+#page8_7 .result_table .col10{width: 90px;}
+#page8_7 .result_table .col11{width: 150px;}
+
+
+
+/* ---------- sub8_7_1 app popup ---------- */
+#app_popup8_71 .form_area,
+#app_popup8_72 .form_area{
+    position: relative;
+    width: 100%;
+}
+#app_popup8_71 .form_area .select_wrap,
+#app_popup8_72 .form_area .select_wrap{width: 100%;}
+#app_popup8_71 .form_area .block_category,
+#app_popup8_72 .form_area .block_category{width: 100px;}
+#app_popup8_71 .form_area .col2,
+#app_popup8_72 .form_area .col2{
+    justify-content: space-between;
+    width: calc(100% - 100px);
+}
+#app_popup8_71 .form_area .overflow_position,
+#app_popup8_72 .form_area .overflow_position{
+    position: absolute;
+    left: 112px;
+    width: calc(100% - 124px)
+}
+
+#app_popup8_71 .popup_content{
+    gap: 20px;
+}
+#app_popup8_71 .form_area .overflow_position1{top: 10px;}
+#app_popup8_71 .form_area .overflow_position2{bottom: 10px;}
+
+#app_popup8_72 .form_area .overflow_position1{top: 10px;}
+#app_popup8_72 .form_area .overflow_position2{top: 75px;}
+#app_popup8_72 .form_area .overflow_position3{bottom: 10px;}
+
+
+
+/* ---------- sub8_7_1 ---------- */
+#page8_7_1 .search_area .select_wrap{width: 200px;}
+#page8_7_1 .search_area .col3 input{width: 150px;}
+#page8_7_1 .search_area .date_wrap{width: 256px;}
+#page8_7_1 .search_area .calander_wrap{
+    width: 622px;
+    height: 305px;
+}
+#page8_7_1 .search_area .row1 .col4{padding-left: 7px;}
+#page8_7_1 .search_area .null{width: 700px;}
+
+#page8_7_1 .result_table .col1{width: 100px;}
+#page8_7_1 .result_table .col2{width: 90px;}
+#page8_7_1 .result_table .col3{width: 80px;}
+#page8_7_1 .result_table .col4{width: 150px;}
+#page8_7_1 .result_table .col5{width: 90px;}
+#page8_7_1 .result_table .col6{width: 130px;}
+#page8_7_1 .result_table .col7,
+#page8_7_1 .result_table .col8{width: 70px;}
+#page8_7_1 .result_table .col9{width: 80px;}
+#page8_7_1 .result_table .col10{width: 90px;}
+#page8_7_1 .result_table .col11{width: 160px;}

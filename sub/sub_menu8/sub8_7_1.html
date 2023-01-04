@@ -13,7 +13,7 @@
     <script src="../../js/script.js"></script>
 </head>
 <body>
-    <div class="wrap" id="page8_5">
+    <div class="wrap" id="page8_7_1">
         <div id="gnb" class="active"></div>
         <main>
             <div class="container">
@@ -22,13 +22,13 @@
                         <div class="content_title_area">
                             <div class="content_title">
                                 <div class="icon_btn menu_btn"></div>
-                                <h2>출고</h2>
+                                <h2>재입고</h2>
                             </div>
                             <div class="content_route">
                                 <ol>
                                     <li class="home_icon"></li>
                                     <li>재고관리</li>
-                                    <li>출고</li>
+                                    <li>재입고</li>
                                 </ol>
                             </div>
                         </div>
@@ -38,37 +38,31 @@
                             <div class="search_form_table">
                                 <ul class="row row1">
                                     <li class="col col1">
-                                        <h4 class="search_form_title">거래처</h4>
+                                        <h4 class="search_form_title">검색 조건</h4>
                                     </li>
                                     <li class="col col2">
                                         <div class="select_wrap">
                                             <div class="selected">
-                                                <div class="selected_value">L7 강남</div>
+                                                <div class="selected_value">담당자</div>
                                                 <div class="icon_btn select_btn"></div>
                                             </div>
                                             <ul>
-                                                <li class="input_wrap text_input_wrap">
-                                                    <input type="text" name="customer_select">
-                                                </li>
-                                                <li class="sel_option">롯데벤쳐스</li>
-                                                <li class="sel_option">포컴퍼니</li>
-                                                <li class="sel_option">드림플러스</li>
-                                                <li class="sel_option">L7 강남</li>
+                                                <li class="sel_option">담당자1</li>
+                                                <li class="sel_option">담당자2</li>
+                                                <li class="sel_option">담당자3</li>
+                                                <li class="sel_option">담당자</li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li class="col col3">
-                                        <h4 class="search_form_title">담당자</h4>
-                                    </li>
-                                    <li class="col col4">
                                         <div class="input_wrap text_input_wrap">
-                                            <input type="text" placeholder="">
+                                            <input type="text" placeholder="" value="박준혁">
                                         </div>
                                     </li>
-                                    <li class="col col5">
+                                    <li class="col col4">
                                         <h4 class="search_form_title">기간</h4>
                                     </li>
-                                    <li class="col col6">
+                                    <li class="col col5">
                                         <div class="date_area">
                                             <div class="date_wrap">
                                                 <div class="date_first">
@@ -238,41 +232,23 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="col col7">
-                                        <div class="input_wrap">
-                                            <div class="radio_input_wrap">
-                                                <input type="radio" id="today" name="period">
-                                                <label for="today">금일</label>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    
                                 </ul>
                                 <ul class="row row2">
                                     <li class="col col1">
-                                        <h4 class="search_form_title">상태</h4>
+                                        <h4 class="search_form_title">입고 사유</h4>
                                     </li>
                                     <li class="col col2">
-                                        <div class="input_wrap">
-                                            <div class="radio_input_wrap">
-                                                <input type="radio" id="all_sel" name="status">
-                                                <label for="all_sel">전체</label>
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">진열 후 남은 상품</div>
+                                                <div class="icon_btn select_btn"></div>
                                             </div>
-                                            <div class="radio_input_wrap">
-                                                <input type="radio" id="shipping" name="status">
-                                                <label for="shipping">배송중</label>
-                                            </div>
-                                            <div class="radio_input_wrap">
-                                                <input type="radio" id="shipping_complete" name="status">
-                                                <label for="shipping_complete">배송완료</label>
-                                            </div>
-                                            <div class="radio_input_wrap">
-                                                <input type="radio" id="display" name="status">
-                                                <label for="display">진열중</label>
-                                            </div>
-                                            <div class="radio_input_wrap">
-                                                <input type="radio" id="display_complete" name="status">
-                                                <label for="display_complete">진열완료</label>
-                                            </div>
+                                            <ul>
+                                                <li class="sel_option">진열 후 남은 상품</li>
+                                                <li class="sel_option">철수 제품</li>
+                                                <li class="sel_option">기타</li>
+                                            </ul>
                                         </div>
                                     </li>
                                     <li class="null"></li>
@@ -289,114 +265,149 @@
                                 <table>
                                     <thead>
                                         <tr class="row row1">
-                                            <th class="col col1">날짜</th>
-                                            <th class="col col2">거래처</th>
-                                            <th class="col col3">거래처유형</th>
-                                            <th class="col col4">담당</th>
-                                            <th class="col col5">상태</th>
-                                            <th class="col col6">관리</th>
+                                            <th class="col col1">구분</th>
+                                            <th class="col col2">센터</th>
+                                            <th class="col col3">로케이션</th>
+                                            <th class="col col4">바코드</th>
+                                            <th class="col col5">구매처</th>
+                                            <th class="col col6">상품명</th>
+                                            <th class="col col7">용량</th>
+                                            <th class="col col8">용기</th>
+                                            <th class="col col9">제조사</th>
+                                            <th class="col col10">재입고 수량</th>
+                                            <th class="col col11">입고사유</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="row row2" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">L7 강남</td>
-                                            <td class="col col3">B2C</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">진열완료</td>
-                                            <td class="col col6">
-                                                <button class="btn_paleBlue btn" type="button">진열상세</button>
-                                            </td>
+                                        <tr class="row row2" >
+                                            <td class="col col1">입고완료</td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">쁘띠첼</td>
+                                            <td class="col col7">80g</td>
+                                            <td class="col col8">컵</td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">210</td>
+                                            <td class="col col11">철수 제품</td>
                                         </tr>
-                                        <tr class="row row3" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">스트라드비전 강남</td>
-                                            <td class="col col3">B2B</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">배송중</td>
-                                            <td class="col col6">
-                                                <button class="btn_white btn" type="button">배송완료</button>
-                                            </td>
+                                        <tr class="row row3" >
+                                            <td class="col col1">입고완료</td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">쁘띠첼</td>
+                                            <td class="col col7">80g</td>
+                                            <td class="col col8">컵</td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">210</td>
+                                            <td class="col col11">철수 제품</td>
                                         </tr>
-                                        <tr class="row row4" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">스트라드비전 강남</td>
-                                            <td class="col col3">B2B</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">배송중</td>
-                                            <td class="col col6">
-                                                <button class="btn_white btn" type="button">배송완료</button>
-                                            </td>
+                                        <tr class="row row4" >
+                                            <td class="col col1">입고완료 </td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">스낵</td>
+                                            <td class="col col7">40g</td>
+                                            <td class="col col8"></td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">5</td>
+                                            <td class="col col11">진열 후 남은 수량</td>
                                         </tr>
-                                        <tr class="row row5" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">스트라드비전 강남</td>
-                                            <td class="col col3">B2B</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">배송중</td>
-                                            <td class="col col6">
-                                                <button class="btn_white btn" type="button">배송완료</button>
-                                            </td>
+                                        <tr class="row row5" >
+                                            <td class="col col1">입고완료</td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">쁘띠첼</td>
+                                            <td class="col col7">80g</td>
+                                            <td class="col col8">컵</td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">210</td>
+                                            <td class="col col11">철수 제품</td>
                                         </tr>
-                                        <tr class="row row6" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">스트라드비전 강남</td>
-                                            <td class="col col3">B2B</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">배송중</td>
-                                            <td class="col col6">
-                                                <button class="btn_white btn" type="button">배송완료</button>
-                                            </td>
+                                        <tr class="row row6" >
+                                            <td class="col col1">입고완료 </td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">스낵</td>
+                                            <td class="col col7">40g</td>
+                                            <td class="col col8"></td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">5</td>
+                                            <td class="col col11">진열 후 남은 수량</td>
                                         </tr>
-                                        <tr class="row row7" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">L7 강남</td>
-                                            <td class="col col3">B2C</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">진열완료</td>
-                                            <td class="col col6">
-                                                <button class="btn_paleBlue btn" type="button">진열상세</button>
-                                            </td>
+                                        <tr class="row row7" >
+                                            <td class="col col1">입고완료</td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">쁘띠첼</td>
+                                            <td class="col col7">80g</td>
+                                            <td class="col col8">컵</td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">210</td>
+                                            <td class="col col11">철수 제품</td>
                                         </tr>
-                                        <tr class="row row8" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">L7 강남</td>
-                                            <td class="col col3">B2C</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">진열완료</td>
-                                            <td class="col col6">
-                                                <button class="btn_paleBlue btn" type="button">진열상세</button>
-                                            </td>
+                                        <tr class="row row8" >
+                                            <td class="col col1">입고완료 </td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">스낵</td>
+                                            <td class="col col7">40g</td>
+                                            <td class="col col8"></td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">5</td>
+                                            <td class="col col11">진열 후 남은 수량</td>
                                         </tr>
-                                        <tr class="row row9" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">L7 강남</td>
-                                            <td class="col col3">B2C</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">진열완료</td>
-                                            <td class="col col6">
-                                                <button class="btn_paleBlue btn" type="button">진열상세</button>
-                                            </td>
+                                        <tr class="row row9" >
+                                            <td class="col col1">입고완료</td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">쁘띠첼</td>
+                                            <td class="col col7">80g</td>
+                                            <td class="col col8">컵</td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">210</td>
+                                            <td class="col col11">철수 제품</td>
                                         </tr>
-                                        <tr class="row row10" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">L7 강남</td>
-                                            <td class="col col3">B2C</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">진열완료</td>
-                                            <td class="col col6">
-                                                <button class="btn_paleBlue btn" type="button">진열상세</button>
-                                            </td>
+                                        <tr class="row row10" >
+                                            <td class="col col1">입고완료 </td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">스낵</td>
+                                            <td class="col col7">40g</td>
+                                            <td class="col col8"></td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">5</td>
+                                            <td class="col col11">진열 후 남은 수량</td>
                                         </tr>
-                                        <tr class="row row11" onclick="location.href='./sub8_5_1.html';">
-                                            <td class="col col1">22/11/24</td>
-                                            <td class="col col2">L7 강남</td>
-                                            <td class="col col3">B2C</td>
-                                            <td class="col col4">박준혁</td>
-                                            <td class="col col5">진열완료</td>
-                                            <td class="col col6">
-                                                <button class="btn_paleBlue btn" type="button">진열상세</button>
-                                            </td>
+                                        <tr class="row row11" >
+                                            <td class="col col1">입고완료</td>
+                                            <td class="col col2">서초동</td>
+                                            <td class="col col3">A12</td>
+                                            <td class="col col4">880100234</td>
+                                            <td class="col col5">상상치</td>
+                                            <td class="col col6">쁘띠첼</td>
+                                            <td class="col col7">80g</td>
+                                            <td class="col col8">컵</td>
+                                            <td class="col col9">cj</td>
+                                            <td class="col col10">210</td>
+                                            <td class="col col11">철수 제품</td>
                                         </tr>
                                     </tbody>
                                 </table>
