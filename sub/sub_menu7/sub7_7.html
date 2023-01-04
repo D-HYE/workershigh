@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub7.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page7_6">
+        <div id="gnb" class="active"></div><main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>매대 주문</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>고객관리</li>
+                                    <li>매대 주문</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="search_area">
+                            <div class="search_form_table">
+                                <ul class="row row1">
+                                    <li class="col col1 table_category">검색조건</li>
+                                    <li class="col col2">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">요청자</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="sel_option">마스터</li>
+                                                <li class="sel_option">마스터</li>
+                                                <li class="sel_option">마스터</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="col col3">
+                                        <div class="input_wrap text_input_wrap">
+                                            <input type="text" name="requester_name">
+                                        </div>
+                                    </li>
+                                    <li class="col col3 table_category">재고 상황</li>
+                                    <li class="col col4">
+                                        <div class="checkbox_wrap">
+                                            <input type="checkbox" name="" id="all">
+                                            <label for="all"></label>
+                                            <input type="checkbox" name="" id="proper">
+                                            <label for="proper"></label>
+                                            <input type="checkbox" name="" id="deficient">
+                                            <label for="deficient"></label>
+                                            <input type="checkbox" name="" id="review">
+                                            <label for="review"></label>
+                                        </div>
+                                    </li>
+                                    <li class="col col5">
+                                        <button type="button" class="btn search_btn btn_blue">검색</button>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="col col1">
+                                        <div class="input_wrap radio_input_wrap">
+                                            <input type="radio" name="search" id="all">
+                                            <label for="all">전체</label>
+                                            <input type="radio" name="search" id="regi">
+                                            <label for="regi">등록</label>
+                                            <input type="radio" name="search" id="picking">
+                                            <label for="picking">피킹</label>
+                                            <input type="radio" name="search" id="fin">
+                                            <label for="fin">완료</label>
+                                        </div>
+                                    </li>
+                                    <li class="col col2">
+                                        <button type="button" class="btn search_btn btn_blue">검색</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="result_area">
+                            <div class="result_table">
+                                <table>
+                                    <thead>
+                                        <tr class="row row1">
+                                            <th class="col col1">NO</th>
+                                            <th class="col col2">주문일</th>
+                                            <th class="col col3">채널</th>
+                                            <th class="col col4">발주 거래처</th>
+                                            <th class="col col5">요청자</th>
+                                            <th class="col col6">요청구분</th>
+                                            <th class="col col7">상태</th>
+                                            <th class="col col8">비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row row2">
+                                            <td class="col col1">1</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">롯데멤버스</td>
+                                            <td class="col col5">홍길동</td>
+                                            <td class="col col6">큐레이션</td>
+                                            <td class="col col7">
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="result_pagenation">
+                                <div class="pagenation_wrap">
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn first_btn"></span></li>
+                                        <li><span class="icon_btn left_btn"></span></li>
+                                    </ul>
+                                    <ol class="pagenation_item">
+                                        <li class="selected"><span class="num">1</span></li>
+                                        <li><span class="num">2</span></li>
+                                        <li><span class="num">3</span></li>
+                                    </ol>
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn right_btn"></span></li>
+                                        <li><span class="icon_btn last_btn"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input_form_table_btn">
+                                <div class="input_form_table_btn_wrap">
+                                    <button type="button" class="btn btn_blue order_btn">발주서 작성</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div id="popup_order" class="popup popup_order">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">발주서 작성</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content ">
+                <div class="result_area">
+                    <div class="result_table">
+                        <table>
+                            <thead>
+                                <tr class="row row1">
+                                    <th class="col col1">거래처명</th>
+                                    <th class="col col2">상품명</th>
+                                    <th class="col col3">카테고리1</th>
+                                    <th class="col col4">카테고리2</th>
+                                    <th class="col col5">카테고리3</th>
+                                    <th class="col col6">용량</th>
+                                    <th class="col col7">용기</th>
+                                    <th class="col col8">판매량</th>
+                                    <th class="col col9">매대재고</th>
+                                    <th class="col col10">적정재고</th>
+                                    <th class="col col11">발주수량</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row row2">
+                                    <td class="col col1">롯데벤처스</td>
+                                    <td class="col col2">닥터아이에너지바</td>
+                                    <td class="col col3">상온</td>
+                                    <td class="col col4">제과</td>
+                                    <td class="col col5">스낵</td>
+                                    <td class="col col6">30g</td>
+                                    <td class="col col7"></td>
+                                    <td class="col col8">19</td>
+                                    <td class="col col9">2</td>
+                                    <td class="col col10">6</td>
+                                    <td class="col col11">
+                                        <div class="input_wrap">
+                                            <input type="text" name="order_cnt" value="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="row row2">
+                                    <td class="col col1">롯데벤처스</td>
+                                    <td class="col col2">에너지바II</td>
+                                    <td class="col col3">상온</td>
+                                    <td class="col col4">제과</td>
+                                    <td class="col col5">스낵</td>
+                                    <td class="col col6">30g</td>
+                                    <td class="col col7"></td>
+                                    <td class="col col8">19</td>
+                                    <td class="col col9">2</td>
+                                    <td class="col col10">6</td>
+                                    <td class="col col11">
+                                        <div class="input_wrap">
+                                            <input type="text" name="order_cnt" value="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white close_btn">닫기</button>
+                        <button type="button" class="btn btn_blue confirm_btn">발주</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+    <script>
+        $(function(){
+            // 파일 등록 버튼 눌렀을 때
+            $('.input_form_table_btn .order_btn').on('click', function(){
+                $('.popup_order').addClass('on')
+                $('.dim').addClass('on')
+            })
+        })
+    </script>
+</body>
+</html>

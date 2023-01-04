@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub7.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page7_3_1">
+        <div id="gnb" class="active"></div>
+        <main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>상품 등록</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>상품관리</li>
+                                    <li>상품 등록</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="result_area">
+                            <div class="result_table">
+                                <table>
+                                    <tbody>
+                                        <tr class="row row1">
+                                            <td class="col col1 table_category">상품명</td>
+                                            <td class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row2">
+                                            <td class="col col1 table_category">이미지</td>
+                                            <td class="col col2">
+                                                <div class="file_wrap noFile">
+                                                    <div class="preview">
+                                                        <img src="" alt="">
+                                                    </div>
+                                                    <input class="file_name" value="파일변경" placeholder="파일변경">
+                                                    <label for="file_upload_1" class="file_upload btn btn_white">파일 선택</label> 
+                                                    <label for="file_upload_1" class="file_change btn btn_white">파일 변경</label> 
+                                                    <input class="file file_upload" type="file" id="file_upload_1" onchange="fileName_change(this)">
+                                                    <input class="file file_change" type="file" id="file_change_1" onchange="file_change(this)">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row3">
+                                            <td class="col col1 table_category">1차 카테고리</td>
+                                            <td class="col col2">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">상온</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="sel_option">상온</li>
+                                                        <li class="sel_option">상온</li>
+                                                        <li class="sel_option">상온</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td class="col col3 table_category">2차 카테고리</td>
+                                            <td class="col col4">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">음료</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="sel_option">음료</li>
+                                                        <li class="sel_option">음료</li>
+                                                        <li class="sel_option">음료</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row4">
+                                            <td class="col col1 table_category">3차 카테고리</td>
+                                            <td class="col col2">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">탄산</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="sel_option">탄산</li>
+                                                        <li class="sel_option">탄산</li>
+                                                        <li class="sel_option">탄산</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td class="col col3 table_category">특이 카테고리</td>
+                                            <td class="col col4">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">비건</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="sel_option">비건</li>
+                                                        <li class="sel_option">비건</li>
+                                                        <li class="sel_option">비건</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row5">
+                                            <td class="col col1 table_category">제조사</td>
+                                            <td class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                            <td class="col col3 table_category">구매처</td>
+                                            <td class="col col4">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row6">
+                                            <td class="col col1 table_category">용량</td>
+                                            <td class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                            <td class="col col3 table_category">용기</td>
+                                            <td class="col col4">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row7">
+                                            <td class="col col1 table_category">박스</td>
+                                            <td class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                            <td class="col col3 table_category">바코드</td>
+                                            <td class="col col4">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row8">
+                                            <td class="col col1 table_category">원가</td>
+                                            <td class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                            <td class="col col3 table_category">마스터가격</td>
+                                            <td class="col col4">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row9">
+                                            <td class="col col1 table_category">판매량</td>
+                                            <td class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" value="">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="input_form_table_btn">
+                                <div class="input_form_table_btn_wrap">
+                                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                                    <button type="button" class="btn btn_blue edit_btn">등록</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

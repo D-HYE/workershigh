@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub7.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page7_4">
+        <div id="gnb" class="active"></div>
+        <main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>상품 유형</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>상품관리</li>
+                                    <li>상품 유형</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="search_area">
+                            <div class="search_form_table">
+                                <ul class="row row1">
+                                    <li class="col col1 table_category">
+                                        유형
+                                    </li>
+                                    <li class="col col2">
+                                        <div class="radio_input_wrap">
+                                            <input type="radio" id="all" name="all">
+                                            <label for="all">전체</label>
+                                            <input type="radio" id="loss" name="loss" checked="">
+                                            <label for="loss">완료</label>
+                                            <input type="radio" id="del" name="del">
+                                            <label for="del">필요</label>
+                                        </div>
+                                    </li>
+                                    <li class="col col3 table_category">
+                                        상품명
+                                    </li>
+                                    <li class="col col4">
+                                        <div class="input_wrap">
+                                            <input type="text" >
+                                        </div>
+                                    </li>
+                                    <li class="col col5">
+                                        <button type="button" class="btn search_btn btn_blue">검색</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="option_area">
+                            <ul class="page_btn_wrap">
+                                <li><button type="button" class="btn_white btn excel_new">엑셀 업로드</button></li>
+                                <li><button type="button" class="btn_white btn">엑셀 다운로드</button></li>
+                            </ul>
+                        </div>
+                        <div class="result_area">
+                            <div class="scroll_area">
+                                <div class="result_table">
+                                    <table>
+                                        <thead>
+                                            <tr class="row row1">
+                                                <th class="col col1">바코드</th>
+                                                <th class="col col2">상품명</th>
+                                                <th class="col col3">유형</th>
+                                                <th class="col col4">
+                                                    <p>기준가격</p>
+                                                    <div>가이드</div>
+                                                    <div>마진</div>
+                                                    <div>마진율</div>
+                                                    <div>원가율</div>
+                                                </th>
+                                                <th class="col col5">
+                                                    <p>유형1</p>
+                                                    <div>기준1</div>
+                                                    <div>마진율</div>
+                                                    <div>기준2</div>
+                                                </th>
+                                                <th class="col col6">
+                                                    <p>유형2</p>
+                                                    <div>금액</div>
+                                                    <div>마진율</div>
+                                                </th>
+                                                <th class="col col7">
+                                                    <p>유형3</p>
+                                                    <div>금액</div>
+                                                    <div>마진율</div>
+                                                </th>
+                                                <th class="col col8">
+                                                    <p>유형4</p>
+                                                    <div>금액</div>
+                                                    <div>마진율</div>
+                                                </th>
+                                                <th class="col col9">
+                                                    <p>유형5</p>
+                                                    <div>금액</div>
+                                                    <div>마진율</div>
+                                                </th>
+                                                <th class="col col10">
+                                                    <p>유형6</p>
+                                                    <div>금액</div>
+                                                    <div>마진율</div>
+                                                </th>
+                                                <th class="col col11">
+                                                    <p>유형7</p>
+                                                    <div>금액</div>
+                                                    <div>마진율</div>
+                                                </th>
+                                                <th class="col col12">
+                                                    <p>유형8</p>
+                                                    <div>금액</div>
+                                                    <div>마진율</div>
+                                                </th>
+                                                <th class="col col13">
+                                                    <p>유형9</p>
+                                                    <div>금액</div>
+                                                    <div>마진율</div>
+                                                </th>
+                                                <th class="col col14">
+                                                    <p>유형10</p>
+                                                    <div>금액</div>
+                                                    <div>마진율</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="row row2">
+                                                <td class="col col1">563456345</td>
+                                                <td class="col col2">
+                                                    <span>사이다</span>
+                                                    <div id="popup_edit_1" class="popup popup_edit">
+                                                        <div class="popup_inner">
+                                                            <div class="popup_top">
+                                                                <div class="null"></div>
+                                                                <h3 class="popup_title">신규상품유형 수정</h3>
+                                                                <button class="icon_btn close_btn" type="button"></button>
+                                                            </div>
+                                                            <div class="popup_content">
+                                                                <div class="result_area">
+                                                                    <div class="scroll_area">
+                                                                        <div class="result_table">
+                                                                            <table>
+                                                                                <thead>
+                                                                                    <tr class="row row1">
+                                                                                        <th class="col col1">바코드</th>
+                                                                                        <th class="col col2">상품명</th>
+                                                                                        <th class="col col3">유형</th>
+                                                                                        <th class="col col4">
+                                                                                            <p>기준가격</p>
+                                                                                            <div>가이드</div>
+                                                                                            <div>마진</div>
+                                                                                            <div>마진율</div>
+                                                                                            <div>원가율</div>
+                                                                                        </th>
+                                                                                        <th class="col col5">
+                                                                                            <p>유형1</p>
+                                                                                            <div>기준1</div>
+                                                                                            <div>마진율</div>
+                                                                                            <div>기준2</div>
+                                                                                        </th>
+                                                                                        <th class="col col6">
+                                                                                            <p>유형2</p>
+                                                                                            <div>금액</div>
+                                                                                            <div>마진율</div>
+                                                                                        </th>
+                                                                                        <th class="col col7">
+                                                                                            <p>유형3</p>
+                                                                                            <div>금액</div>
+                                                                                            <div>마진율</div>
+                                                                                        </th>
+                                                                                        <th class="col col8">
+                                                                                            <p>유형4</p>
+                                                                                            <div>금액</div>
+                                                                                            <div>마진율</div>
+                                                                                        </th>
+                                                                                        <th class="col col9">
+                                                                                            <p>유형5</p>
+                                                                                            <div>금액</div>
+                                                                                            <div>마진율</div>
+                                                                                        </th>
+                                                                                        <th class="col col10">
+                                                                                            <p>유형6</p>
+                                                                                            <div>금액</div>
+                                                                                            <div>마진율</div>
+                                                                                        </th>
+                                                                                        <th class="col col11">
+                                                                                            <p>유형7</p>
+                                                                                            <div>금액</div>
+                                                                                            <div>마진율</div>
+                                                                                        </th>
+                                                                                        <th class="col col12">
+                                                                                            <p>유형8</p>
+                                                                                            <div>금액</div>
+                                                                                            <div>마진율</div>
+                                                                                        </th>
+                                                                                        <th class="col col13">
+                                                                                            <p>유형9</p>
+                                                                                            <div>금액</div>
+                                                                                            <div>마진율</div>
+                                                                                        </th>
+                                                                                        <th class="col col14">
+                                                                                            <p>유형10</p>
+                                                                                            <div>금액</div>
+                                                                                            <div>마진율</div>
+                                                                                        </th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr class="row row2">
+                                                                                        <td class="col col1">563456345</td>
+                                                                                        <td class="col col2">
+                                                                                        </td>
+                                                                                        <td class="col col3">
+                                                                                            <div class="guide"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="margin"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="originP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col4">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col5">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col6">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col7">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col8">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col9">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col10">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col11">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col12">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                        <td class="col col13">
+                                                                                            <div class="price"><div class="input_wrap"><input type="text"></div></div>
+                                                                                            <div class="marginP"><div class="input_wrap"><input type="text"></div></div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="popup_btm">
+                                                                <div class="popup_btn">
+                                                                    <div class="input_form_table_btn_wrap">
+                                                                        <button type="button" class="btn btn_white close_btn">취소</button>
+                                                                        <button type="button" class="btn btn_blue confirm_btn">수정</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="col col3">
+                                                    <div class="guide"></div>
+                                                    <div class="margin"></div>
+                                                    <div class="marginP"></div>
+                                                    <div class="originP"></div>
+                                                </td>
+                                                <td class="col col4">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                                <td class="col col5">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                                <td class="col col6">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                                <td class="col col7">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                                <td class="col col8">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                                <td class="col col9">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                                <td class="col col10">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                                <td class="col col11">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                                <td class="col col12">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                                <td class="col col13">
+                                                    <div class="price">400</div>
+                                                    <div class="marginP">59.0</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div class="result_pagenation">
+                                <div class="pagenation_wrap">
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn first_btn"></span></li>
+                                        <li><span class="icon_btn left_btn"></span></li>
+                                    </ul>
+                                    <ol class="pagenation_item">
+                                        <li class="selected"><span class="num">1</span></li>
+                                        <li><span class="num">2</span></li>
+                                        <li><span class="num">3</span></li>
+                                        <li><span class="num">4</span></li>
+                                    </ol>
+                                    <ul class="pagenation_item">
+                                        <li><span class="icon_btn right_btn"></span></li>
+                                        <li><span class="icon_btn last_btn"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div class="dim"></div>
+    <script>
+        $(function(){
+            // 회원명 버튼 눌렀을 때
+            $('.result_area tbody tr').on('click', function(){
+                $(this).find('.popup_edit').addClass('on')
+                $('.dim').addClass('on')
+            })
+        })
+    </script>
+</body>
+</html>
