@@ -58,6 +58,7 @@ label.file_upload{
 }
 .uploaded.file_wrap .file_name{
     display: block;
+    outline: none;
 }
 .uploaded input[type="file"]{
     display: none;
@@ -99,6 +100,7 @@ label.file_upload{
     border: none;
     height: 64px;
     line-height: 64px;
+    outline: none;
 }
 
 /* ---------- sub6_1 ---------- */
@@ -315,6 +317,9 @@ label.file_upload{
 #page6_2 .popup .col2 input{
     width: 100%;
 }
+#page6_2 .result_area tbody tr{cursor: pointer;}
+#page6_2 .result_area tbody tr:hover{background: #F6FAFF;}
+#page6_2 .result_area tbody tr:hover td{color: #0044FE;}
 #page6_2 ~ .popup tbody tr:hover,
 #page6_2 .popup tbody tr:hover{
     cursor:auto;
