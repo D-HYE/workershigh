@@ -442,3 +442,102 @@ label.file_upload{
     width: 100%;
     border: 1px solid #C1C1C1;
 }
+
+
+/* ---------- sub7_4 ---------- */
+#page7_4 .result_area .result_table{width: 2790px;}
+#page7_4 .result_area tr{display: flex;}
+#page7_4 .result_area .col{
+    width: 200px; display: flex; flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#page7_4 .result_area th{
+    height: 80px;
+}
+#page7_4 .result_area th.col .category{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+#page7_4 .result_area .col .price,
+#page7_4 .result_area .col .marginP,
+#page7_4 .result_area .col .margin,
+#page7_4 .result_area .col .originP,
+#page7_4 .result_area .col .guide,
+#page7_4 .result_area .col .standard{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-right: 1px solid #eee;
+}
+#page7_4 .result_area td.col .price,
+#page7_4 .result_area td.col .marginP,
+#page7_4 .result_area td.col .margin,
+#page7_4 .result_area td.col .originP,
+#page7_4 .result_area td.col .guide,
+#page7_4 .result_area td.col .standard{
+    height: 60px;
+    border-right: 1px solid #eee;
+}
+#page7_4 .result_area .col .price,
+#page7_4 .result_area .col .marginP,
+#page7_4 .result_area .col .margin,
+#page7_4 .result_area .col .originP,
+#page7_4 .result_area .col .guide,
+#page7_4 .result_area .col .standard:last-of-type{
+    border-right: none;
+}
+#page7_4 .result_area .col4 .price,
+#page7_4 .result_area .col4 .marginP,
+#page7_4 .result_area .col4 .margin,
+#page7_4 .result_area .col4 .originP,
+#page7_4 .result_area .col4 .guide,
+#page7_4 .result_area .col4 .standard{width: 25%;}
+#page7_4 .result_area th.col div:last-of-type{
+    border-right: none;
+}
+#page7_4 .result_area .col1{width: 200px;}
+#page7_4 .result_area .col2{width: 130px;}
+#page7_4 .result_area .col3{width: 80px;}
+#page7_4 .result_area .col4{width: 380px;}
+
+#page7_4 .result_area .col3 div{width: 90px;}
+#page7_4 .result_area .col3 .guide{width: 110px;}
+
+#page7_4 .result_area td.col{padding: 0;}
+#page7_4 .result_area td .popup{
+    display: none;
+}
+#page7_4 .result_area td .popup.on{
+    display: block;
+    width: 960px;
+}
+
+#page7_4 .result_area tbody tr:hover{background: #F6FAFF;}
+#page7_4 .result_area tbody tr:hover td{color: #0044FE;cursor: pointer;}
+#page7_4 .result_area tbody tr:hover td.col3{cursor: pointer;}
+#page7_4 ~ .popup tbody tr:hover,
+#page7_4 .popup tbody tr:hover{
+    cursor:auto;
+    background-color: #fff;
+}
+#page7_4 .result_area tbody tr:hover td .popup{
+    color: #111; cursor: auto;
+}
+#page7_4 ~ .popup tbody tr:hover,
+#page7_4 .popup tbody tr:hover,
+#page7_4 ~ .popup thead tr:hover,
+#page7_4 .popup thead tr:hover{
+    cursor:auto;
+    background-color: #fff;
+}
+#page7_4 .result_area tbody tr:hover td .popup td{
+    cursor:auto;
+    color: #111;
+}
