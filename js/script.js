@@ -35,7 +35,7 @@ $(function(){
         $('.popup').removeClass('on');
         $('.dim').removeClass('on');
     });
-    $('.popup .cancle_btn').on('click', function(){
+    $('.popup .cancel_btn').on('click', function(){
         $('.popup').removeClass('on');
         $('.dim').removeClass('on');
     });

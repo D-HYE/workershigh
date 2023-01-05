@@ -49,25 +49,5 @@ form .btn{
     background: #0044FE;
 }
 
-#popup_login, #popup_pw{width: 280px;}
-#popup_login .popup_content,
-#popup_pw .popup_content{
-    padding: 30px 15px 15px;
-    text-align: center;
-}
-#popup_login .popup_content h2,
-#popup_pw .popup_content h2{
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 22px;
-    
-}
-#popup_login .confirm_btn,
-#popup_pw .confirm_btn{width: 230px;}
-
-#popup_pw .popup_content p{
-    margin-top: 10px;
-    font-size: 13px;
-    color: #4267EB;
-    line-height: 18px;
-}
+.alert_popup{width: 280px;}
+.alert_popup .confirm_btn{width: 230px;}

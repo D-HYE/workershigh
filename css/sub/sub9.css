@@ -13,7 +13,7 @@
     border-radius: 50%;
     background: url(../../images/icon/icon-delete.svg) no-repeat center/24px, #f2f2f2;
 }
-.result_area .col6:hover .icon_btn.delete_btn{
+.result_area .icon_btn.delete_btn:hover {
     background: url(../../images/icon/icon-delete-bk.svg) no-repeat center/16px, #d3d3d3;
 }
 
@@ -47,7 +47,6 @@
 #page9_2 .search_area .null{width: 200px;}
 
 #popup9_2{width: 820px;}
-#popup9_2 .option_area{position: relative;}
 #popup9_2 .option_area ul.info{
     display: flex;
     align-items: center;
@@ -82,13 +81,7 @@
     padding: 14px 12px;
 }
 #popup9_2 .option_area ul li:last-child dl dd{width: auto;}
-#popup9_2 .option_area .overflow_position{
-    position: absolute;
-    top: 8px;
-    width: 236px;
-}
-#popup9_2 .option_area .overflow_position1{left: 133px;}
-#popup9_2 .option_area .overflow_position2{right: 12px;}
+#popup9_2 .option_area .date_wrap{width: 236px;}
 
 #popup9_2 .register_area input{width: 100%;}
 #popup9_2 .register_area .row{
@@ -134,3 +127,114 @@
     background: url("../../images/icon/icon-plus-bl.svg") no-repeat center/18px, #F2F4FF;
 }
 #popup9_2 .register_area .row.on .icon_btn_wrap .icon_btn.plus_btn{display: none;}
+
+
+
+/* ---------- sub9_2_1 ---------- */
+#page9_2_1 .option_area .admin_info b{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+#page9_2_1 .option_area .admin_info span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #4267EB;
+    line-height: 24px;
+}
+#page9_2_1 .option_area1{margin: 5px 0 20px;}
+#page9_2_1 .option_area1 .page_btn_wrap{align-items: center;}
+#page9_2_1 .result_area1 tbody tr{cursor: pointer;}
+#page9_2_1 .result_area1 tbody tr:hover{background: #F6FAFF;}
+#page9_2_1 .result_area1 tbody tr:hover td{color: #0044FE;}
+#page9_2_1 .result_area1 .col1{width: 120px;}
+#page9_2_1 .result_area1 .col2,
+#page9_2_1 .result_area1 .col3{width: 150px;}
+#page9_2_1 .result_area1 .col4{width: 260px;}
+#page9_2_1 .result_area1 tbody .col4{
+    display: flex;
+    align-items: center;
+}
+#page9_2_1 .result_area1 tbody .col4 span{
+    flex: 1;
+    display: block;
+}
+#page9_2_1 .result_area1 .col5{width: 100px;}
+#page9_2_1 .result_area1 .col6{width: 100px;}
+#page9_2_1 .result_area1 .col7{width: 150px;}
+#page9_2_1 .result_area1 .col8{width: 80px;}
+
+#page9_2_1 .option_area2{margin-top: 40px;}
+#page9_2_1 .result_area2 .col{width: 105px;}
+#page9_2_1 .result_area2 .col5{width: auto;}
+
+#page9_2_1 .option_area3{margin-top: 40px;}
+
+#popup9_2_1_1{width: 720px;}
+#popup9_2_1_1 .option_area ul.info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #D3D3D3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#popup9_2_1_1 .option_area ul li{
+    border-right: 1px solid #eee;
+}
+#popup9_2_1_1 .option_area ul li:last-of-type{
+    border-right: none;
+}
+#popup9_2_1_1 .option_area ul li dl{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+#popup9_2_1_1 .option_area ul li dl dt{
+    width: 120px;
+    padding: 14px 12px;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    color: #6F869C;
+    line-height: 60px;
+    background-color: #FCFCFC;
+}
+#popup9_2_1_1 .option_area ul li dl dd{
+    width: 210px;
+    padding: 14px 12px;
+}
+#popup9_2_1_1 .option_area ul li:last-child dl dd{width: auto;}
+#popup9_2_1_1 .option_area .date_wrap{width: 186px;}
+#popup9_2_1_1 .option_area .calander_area{width: 256px;}
+
+#popup9_2_1_1 .register_area input{width: 100%;}
+#popup9_2_1_1 .register_area .row{
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+#popup9_2_1_1 .register_area .row1{
+    border-top: 1px solid #eee;
+}
+#popup9_2_1_1 .register_area .col{
+    height: 60px;
+    padding: 8px 0;
+}
+#popup9_2_1_1 .register_area .block_category{width: 100px;}
+#popup9_2_1_1 .register_area .col:nth-child(even){
+    padding-right: 8px;
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #6F869C;
+    line-height: 44px;
+}
+#popup9_2_1_1 .register_area .col3 .select_wrap{width: 150px;}
+#popup9_2_1_1 .register_area .col5{width: 150px;}
+#popup9_2_1_1 .register_area .col7{width: 80px;}
+
+#popup9_2_1_2{width: 400px;}
+#popup9_2_1_2 .form_area .block_category{width: 120px;}
+#popup9_2_1_2 .form_area .col2{font-size: 15px;}
+
+#popup9_2_1_3{width: 280px;}

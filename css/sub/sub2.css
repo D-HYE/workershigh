@@ -8,8 +8,6 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 .result_area tbody tr:hover td{color: #0044FE;}
 
 /* ---------- sub2_1 ---------- */
-#page2_1 .search_area .text_input_wrap{padding: 5px 12px;}
-#page2_1 .search_area .text_input_wrap input{width: 100%; height: 34px;}
 #page2_1 .result_area .col1{width: 60px;}
 #page2_1 .result_area .col2{width: 120px;}
 #page2_1 .result_area .col3{width: 80px;}
@@ -159,14 +157,8 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 #popup2_1_1_1 .col1{width: 120px;}
 #popup2_1_1_1 .col2{width: 180px;}
 #popup2_1_1_1 .col3{width: 100px;}
-#popup2_1_1_1 .popup_content{position: relative;}
-#popup2_1_1_1 .overflow_position{
-    position: absolute;
-    bottom: 26px;
-    left: 165px;
-}
-#popup2_1_1_1 .overflow_position .date_area{width: 156px;}
-#popup2_1_1_1 .overflow_position .date_area .calander_area{width: 250px;}
+#popup2_1_1_1 .date_area{width: 156px;}
+#popup2_1_1_1 .date_area .calander_area{width: 250px;}
 
 #popup2_1_1_2{width: 660px;}
 #popup2_1_1_2 .option_area{

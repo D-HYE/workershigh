@@ -262,7 +262,7 @@
                                         <tr class="row row1">
                                             <th class="col col1">담당자</th>
                                             <th class="col col2">날짜</th>
-                                            <th class="col col3">배송건수</th>
+                                            <th class="col col3">배송건수<br/>(스케줄 건수)</th>
                                             <th class="col col4">요일</th>
                                             <th class="col col5">상태</th>
                                             <th class="col col6">완료건수</th>
@@ -394,107 +394,105 @@
                         <li>
                             <dl>
                                 <dt>담당자</dt>
-                                <dd></dd>
+                                <dd>
+                                    <div class="select_wrap">
+                                        <div class="selected">
+                                            <div class="selected_value">박준혁</div>
+                                            <div class="icon_btn select_btn"></div>
+                                        </div>
+                                        <ul>
+                                            <li class="sel_option">홍길동</li>
+                                            <li class="sel_option">박준혁</li>
+                                            <li class="sel_option">담당자1</li>
+                                        </ul>
+                                    </div>
+                                </dd>
                             </dl>
                         </li>
                         <li>
                             <dl>
                                 <dt>날짜</dt>
-                                <dd></dd>
-                            </dl>
-                        </li>
-                    </ul>
-                    <div class="overflow_position overflow_position1">
-                        <div class="select_wrap">
-                            <div class="selected">
-                                <div class="selected_value">박준혁</div>
-                                <div class="icon_btn select_btn"></div>
-                            </div>
-                            <ul>
-                                <li class="sel_option">홍길동</li>
-                                <li class="sel_option">박준혁</li>
-                                <li class="sel_option">담당자1</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="overflow_position overflow_position2">
-                        <div class="date_area">
-                            <div class="date_wrap">
-                                <div class="date_first">
-                                    <p class="year">2022</p>
-                                    <p class="month">10</p>
-                                    <p class="date">12</p>
-                                </div>
-                            </div>
-                            <div class="calander_area">
-                                <div class="calander_wrap">
-                                    <div class="calander_con">
-                                        <div class="calander calander_first">
-                                            <div class="year_month">
-                                                <input type="button" value="prev" class="prev">
-                                                <div class="date">
-                                                    <p class="year">2022</p>
-                                                    <p class="month">10</p>
-                                                </div>
-                                                <input type="button" value="next" class="next">
+                                <dd>
+                                    <div class="date_area">
+                                        <div class="date_wrap">
+                                            <div class="date_first">
+                                                <p class="year">2022</p>
+                                                <p class="month">10</p>
+                                                <p class="date">12</p>
                                             </div>
-                                            <div class="month_date">
-                                                <table>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="gray">30</td>
-                                                            <td class="gray">31</td>
-                                                            <td>1</td>
-                                                            <td>2</td>
-                                                            <td>3</td>
-                                                            <td>4</td>
-                                                            <td>5</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>6</td>
-                                                            <td>7</td>
-                                                            <td>8</td>
-                                                            <td>9</td>
-                                                            <td>10</td>
-                                                            <td>11</td>
-                                                            <td class="checked">12</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>13</td>
-                                                            <td>14</td>
-                                                            <td>15</td>
-                                                            <td>16</td>
-                                                            <td>17</td>
-                                                            <td>18</td>
-                                                            <td>19</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>20</td>
-                                                            <td>21</td>
-                                                            <td>22</td>
-                                                            <td>23</td>
-                                                            <td>24</td>
-                                                            <td>25</td>
-                                                            <td>26</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>27</td>
-                                                            <td>28</td>
-                                                            <td>29</td>
-                                                            <td>30</td>
-                                                            <td class="gray">1</td>
-                                                            <td class="gray">2</td>
-                                                            <td class="gray">3</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                        </div>
+                                        <div class="calander_area">
+                                            <div class="calander_wrap">
+                                                <div class="calander_con">
+                                                    <div class="calander calander_first">
+                                                        <div class="year_month">
+                                                            <input type="button" value="prev" class="prev">
+                                                            <div class="date">
+                                                                <p class="year">2022</p>
+                                                                <p class="month">10</p>
+                                                            </div>
+                                                            <input type="button" value="next" class="next">
+                                                        </div>
+                                                        <div class="month_date">
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="gray">30</td>
+                                                                        <td class="gray">31</td>
+                                                                        <td>1</td>
+                                                                        <td>2</td>
+                                                                        <td>3</td>
+                                                                        <td>4</td>
+                                                                        <td>5</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>6</td>
+                                                                        <td>7</td>
+                                                                        <td>8</td>
+                                                                        <td>9</td>
+                                                                        <td>10</td>
+                                                                        <td>11</td>
+                                                                        <td class="checked">12</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>13</td>
+                                                                        <td>14</td>
+                                                                        <td>15</td>
+                                                                        <td>16</td>
+                                                                        <td>17</td>
+                                                                        <td>18</td>
+                                                                        <td>19</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>20</td>
+                                                                        <td>21</td>
+                                                                        <td>22</td>
+                                                                        <td>23</td>
+                                                                        <td>24</td>
+                                                                        <td>25</td>
+                                                                        <td>26</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>27</td>
+                                                                        <td>28</td>
+                                                                        <td>29</td>
+                                                                        <td>30</td>
+                                                                        <td class="gray">1</td>
+                                                                        <td class="gray">2</td>
+                                                                        <td class="gray">3</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
                 </div>
                 <div class="register_area">
                     <ol class="row row1 on">
@@ -503,13 +501,17 @@
                         <li class="col col3">
                             <div class="select_wrap">
                                 <div class="selected">
-                                    <div class="selected_value">박준혁</div>
+                                    <div class="selected_value">L7강남</div>
                                     <div class="icon_btn select_btn"></div>
                                 </div>
                                 <ul>
-                                    <li class="sel_option">홍길동</li>
-                                    <li class="sel_option">박준혁</li>
-                                    <li class="sel_option">담당자1</li>
+                                    <li class="input_wrap text_input_wrap">
+                                        <input type="text" name="customer_select">
+                                    </li>
+                                    <li class="sel_option">포컴퍼니</li>
+                                    <li class="sel_option">롯데벤처스</li>
+                                    <li class="sel_option">위워크 BIFC</li>
+                                    <li class="sel_option">L7강남</li>
                                 </ul>
                             </div>
                         </li>
@@ -538,13 +540,17 @@
                         <li class="col col3">
                             <div class="select_wrap">
                                 <div class="selected">
-                                    <div class="selected_value">박준혁</div>
+                                    <div class="selected_value">L7강남</div>
                                     <div class="icon_btn select_btn"></div>
                                 </div>
                                 <ul>
-                                    <li class="sel_option">홍길동</li>
-                                    <li class="sel_option">박준혁</li>
-                                    <li class="sel_option">담당자1</li>
+                                    <li class="input_wrap text_input_wrap">
+                                        <input type="text" name="customer_select">
+                                    </li>
+                                    <li class="sel_option">포컴퍼니</li>
+                                    <li class="sel_option">롯데벤처스</li>
+                                    <li class="sel_option">위워크 BIFC</li>
+                                    <li class="sel_option">L7강남</li>
                                 </ul>
                             </div>
                         </li>
@@ -573,13 +579,17 @@
                         <li class="col col3">
                             <div class="select_wrap">
                                 <div class="selected">
-                                    <div class="selected_value">박준혁</div>
+                                    <div class="selected_value">L7강남</div>
                                     <div class="icon_btn select_btn"></div>
                                 </div>
                                 <ul>
-                                    <li class="sel_option">홍길동</li>
-                                    <li class="sel_option">박준혁</li>
-                                    <li class="sel_option">담당자1</li>
+                                    <li class="input_wrap text_input_wrap">
+                                        <input type="text" name="customer_select">
+                                    </li>
+                                    <li class="sel_option">포컴퍼니</li>
+                                    <li class="sel_option">롯데벤처스</li>
+                                    <li class="sel_option">위워크 BIFC</li>
+                                    <li class="sel_option">L7강남</li>
                                 </ul>
                             </div>
                         </li>
@@ -606,7 +616,7 @@
             </div>
             <div class="popup_btm">
                 <div class="popup_btn">
-                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_white cancel_btn">취소</button>
                     <button type="button" class="btn btn_blue register_btn">등록</button>
                 </div>
             </div>

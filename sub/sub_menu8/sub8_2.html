@@ -40,11 +40,24 @@
                                         <h4 class="search_form_title">검색 조건</h4>
                                     </li>
                                     <li class="col col2">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">상품명</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="sel_option">상품명1</li>
+                                                <li class="sel_option">상품명2</li>
+                                                <li class="sel_option">상품명</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="col col3">
                                         <div class="input_wrap text_input_wrap">
                                             <input type="text" value="사이다">
                                         </div>
                                     </li>
-                                    <li class="col col3">
+                                    <li class="col col4">
                                         <button type="button" class="btn search_btn btn_blue">검색</button>
                                     </li>
                                 </ul>
@@ -185,16 +198,16 @@
                         <ul class="row row4">
                             <li class="col col1 block_category">상품 카테고리</li>
                             <li class="col col2">
-                                <div class="input_wrap text_input_wrap">
-                                    <input type="text" name="category">
-                                </div>
+                                <p>1113</p>
+                                <button type="button" class="btn search_btn btn_blue" id="product_search_btn">상품 입력</button>
                             </li>
                         </ul>
                         <ul class="row row5">
                             <li class="col col1 block_category">품명</li>
                             <li class="col col2">
-                                <p>1113</p>
-                                <button type="button" class="btn search_btn btn_blue" id="product_search_btn">검색</button>
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" name="category">
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -203,7 +216,7 @@
             </div>
             <div class="popup_btm">
                 <div class="popup_btn">
-                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_white cancel_btn">취소</button>
                     <button type="button" class="btn btn_blue register_btn">등록</button>
                 </div>
             </div>
@@ -277,7 +290,7 @@
             </div>
             <div class="popup_btm">
                 <div class="popup_btn">
-                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_white cancel_btn">취소</button>
                     <button type="button" class="btn btn_blue register_btn">등록</button>
                 </div>
             </div>
@@ -295,7 +308,7 @@
                 $('#popup8_2_2').addClass('on');
                 $('.dim').addClass('on');
             });
-            $('#popup8_2_2 .cancle_btn').on('click', function () {
+            $('#popup8_2_2 .cancel_btn').on('click', function () {
                 $('#popup8_2_2').removeClass('on');
                 $('#popup8_2_1').addClass('on');
                 $('.dim').addClass('on');

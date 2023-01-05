@@ -309,9 +309,10 @@ main{
     line-height: 1.5;
     vertical-align: middle;
     text-align: center;
-    overflow: hidden;
+    word-break: break-all;
+    /* overflow: hidden;
     text-overflow:ellipsis;
-    white-space:nowrap;
+    white-space:nowrap; */
 }
 .result_area .col:not(.col1){border-left: 1px solid #eee;}
 
@@ -519,6 +520,7 @@ footer p{
 .popup_btm .popup_btn button{width: 110px;}
 
 .app_popup{
+    position: fixed;
     top: 0;
     left: 0;
     transform: translate(0, 0);
@@ -526,12 +528,45 @@ footer p{
     height: 100vh;
     border-radius: 0;
 }
+.app_popup .popup_top{
+    justify-content: flex-end;
+}
 .app_popup .popup_content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: 1440px;
-    min-height: calc(100vh - 160px);
+    min-height: calc(100vh - 70px);
     margin: auto;
+}
+.app_popup .app_popup_top{
+    padding-bottom: 30px;
+}
+.app_popup .app_popup_top .popup_title{font-size: 18px; font-weight: 700;}
+.app_popup .app_popup_content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.app_popup .app_popup_btm{
+    padding-top: 30px;
+}
+.app_popup .app_popup_btm button{width: 110px;}
+
+
+.alert_popup .popup_content{
+    padding: 30px 15px 15px;
+    text-align: center;
+}
+.alert_popup .popup_content b{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.alert_popup p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #4267EB;
+    line-height: 18px;
 }
