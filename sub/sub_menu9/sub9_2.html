@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="../../css/sub/sub8.css">
+    <link rel="stylesheet" href="../../css/sub/sub9.css">
     <title>workes high</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../../js/script.js"></script>
 </head>
 <body>
-    <div class="wrap" id="page8_6">
+    <div class="wrap" id="page9_2">
         <div id="gnb" class="active"></div>
         <main>
             <div class="container">
@@ -22,13 +22,13 @@
                         <div class="content_title_area">
                             <div class="content_title">
                                 <div class="icon_btn menu_btn"></div>
-                                <h2>진열</h2>
+                                <h2>스케줄</h2>
                             </div>
                             <div class="content_route">
                                 <ol>
                                     <li class="home_icon"></li>
-                                    <li>재고관리</li>
-                                    <li>진열</li>
+                                    <li>진열관리</li>
+                                    <li>스케줄</li>
                                 </ol>
                             </div>
                         </div>
@@ -38,31 +38,9 @@
                             <div class="search_form_table">
                                 <ul class="row row1">
                                     <li class="col col1">
-                                        <h4 class="search_form_title">검색 조건</h4>
-                                    </li>
-                                    <li class="col col2">
-                                        <div class="select_wrap">
-                                            <div class="selected">
-                                                <div class="selected_value">담당자</div>
-                                                <div class="icon_btn select_btn"></div>
-                                            </div>
-                                            <ul>
-                                                <li class="sel_option">담당자1</li>
-                                                <li class="sel_option">담당자2</li>
-                                                <li class="sel_option">담당자3</li>
-                                                <li class="sel_option">담당자</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="col col3">
-                                        <div class="input_wrap text_input_wrap">
-                                            <input type="text" placeholder="" value="박준혁">
-                                        </div>
-                                    </li>
-                                    <li class="col col4">
                                         <h4 class="search_form_title">기간</h4>
                                     </li>
-                                    <li class="col col5">
+                                    <li class="col col2">
                                         <div class="date_area">
                                             <div class="date_wrap">
                                                 <div class="date_first">
@@ -232,6 +210,38 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <li class="col col3">
+                                        <div class="input_wrap">
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="today" name="period">
+                                                <label for="today">금일</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="this_week" name="period">
+                                                <label for="this_week">금주</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="this_month" name="period">
+                                                <label for="this_month">당월</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col col4">
+                                        <h4 class="search_form_title">담당자</h4>
+                                    </li>
+                                    <li class="col col5">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">박준혁</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="sel_option">홍길동</li>
+                                                <li class="sel_option">박준혁</li>
+                                                <li class="sel_option">담당자1</li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                     <li class="null"></li>
                                     <li class="col col6">
                                         <button type="button" class="btn search_btn btn_blue">검색</button>
@@ -241,7 +251,8 @@
                         </div>
                         <div class="option_area">
                             <ul class="page_btn_wrap">
-                                <li><button type="button" class="btn_white btn">액셀 다운로드</button></li>
+                                <li><button type="button" class="btn_blue btn" id="register_btn">스케줄 등록</button></li>
+                                <li><button type="button" class="btn_white btn">금일 액셀 다운로드</button></li>
                             </ul>
                         </div>
                         <div class="result_area">
@@ -250,217 +261,93 @@
                                     <thead>
                                         <tr class="row row1">
                                             <th class="col col1">담당자</th>
-                                            <th class="col col2">거래처</th>
-                                            <th class="col col3">요일</th>
-                                            <th class="col col4">위도</th>
-                                            <th class="col col5">경도</th>
-                                            <th class="col col6">진열시간</th>
-                                            <th class="col col7">진열완료 시간</th>
-                                            <th class="col col8">진열시간</th>
-                                            <th class="col col9">진열 전 사진</th>
-                                            <th class="col col10">진열 후 사진</th>
+                                            <th class="col col2">날짜</th>
+                                            <th class="col col3">배송건수</th>
+                                            <th class="col col4">요일</th>
+                                            <th class="col col5">상태</th>
+                                            <th class="col col6">완료건수</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="row row2">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/23</td>
+                                            <td class="col col3">5</td>
+                                            <td class="col col4">월</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">5</td>
                                         </tr>
                                         <tr class="row row3">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/24</td>
+                                            <td class="col col3">3</td>
+                                            <td class="col col4">화</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">2</td>
                                         </tr>
                                         <tr class="row row4">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/25</td>
+                                            <td class="col col3">6</td>
+                                            <td class="col col4">수</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">1</td>
                                         </tr>
                                         <tr class="row row5">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/23</td>
+                                            <td class="col col3">5</td>
+                                            <td class="col col4">월</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">5</td>
                                         </tr>
                                         <tr class="row row6">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/24</td>
+                                            <td class="col col3">3</td>
+                                            <td class="col col4">화</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">2</td>
                                         </tr>
                                         <tr class="row row7">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/25</td>
+                                            <td class="col col3">6</td>
+                                            <td class="col col4">수</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">1</td>
                                         </tr>
                                         <tr class="row row8">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/23</td>
+                                            <td class="col col3">5</td>
+                                            <td class="col col4">월</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">5</td>
                                         </tr>
                                         <tr class="row row9">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/23</td>
+                                            <td class="col col3">5</td>
+                                            <td class="col col4">월</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">5</td>
                                         </tr>
                                         <tr class="row row10">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/25</td>
+                                            <td class="col col3">6</td>
+                                            <td class="col col4">수</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">1</td>
                                         </tr>
                                         <tr class="row row11">
                                             <td class="col col1">박준혁</td>
-                                            <td class="col col2">롯데호텔</td>
-                                            <td class="col col3">월</td>
-                                            <td class="col col4"><b>214.2342</b></td>
-                                            <td class="col col5"><b>189.123124</b></td>
-                                            <td class="col col6">09 : 24</td>
-                                            <td class="col col7">10 : 25</td>
-                                            <td class="col col8">59분</td>
-                                            <td class="col col9">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 전 사진">
-                                                </div>
-                                            </td>
-                                            <td class="col col10">
-                                                <div class="table_img_box">
-                                                    <img src="../../images/img_806.png" alt="진열 후 사진">
-                                                </div>
-                                            </td>
+                                            <td class="col col2">2022/10/23</td>
+                                            <td class="col col3">5</td>
+                                            <td class="col col4">월</td>
+                                            <td class="col col5">완료</td>
+                                            <td class="col col6">5</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -494,45 +381,245 @@
             </footer>
         </main>
     </div>
-    <div id="popup8_6_1" class="popup">
+    <div id="popup9_2" class="popup">
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
-                <h3 class="popup_title">지도 표시</h3>
+                <h3 class="popup_title">스케줄 등록</h3>
                 <button class="icon_btn close_btn" type="button">닫기</button>
             </div>
             <div class="popup_content">
-                <div class="popup_map">
-                    <div class="popup_picker"></div>
+                <div class="option_area">
+                    <ul class="info">
+                        <li>
+                            <dl>
+                                <dt>담당자</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>날짜</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="overflow_position overflow_position1">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">박준혁</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">홍길동</li>
+                                <li class="sel_option">박준혁</li>
+                                <li class="sel_option">담당자1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow_position overflow_position2">
+                        <div class="date_area">
+                            <div class="date_wrap">
+                                <div class="date_first">
+                                    <p class="year">2022</p>
+                                    <p class="month">10</p>
+                                    <p class="date">12</p>
+                                </div>
+                            </div>
+                            <div class="calander_area">
+                                <div class="calander_wrap">
+                                    <div class="calander_con">
+                                        <div class="calander calander_first">
+                                            <div class="year_month">
+                                                <input type="button" value="prev" class="prev">
+                                                <div class="date">
+                                                    <p class="year">2022</p>
+                                                    <p class="month">10</p>
+                                                </div>
+                                                <input type="button" value="next" class="next">
+                                            </div>
+                                            <div class="month_date">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="gray">30</td>
+                                                            <td class="gray">31</td>
+                                                            <td>1</td>
+                                                            <td>2</td>
+                                                            <td>3</td>
+                                                            <td>4</td>
+                                                            <td>5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>7</td>
+                                                            <td>8</td>
+                                                            <td>9</td>
+                                                            <td>10</td>
+                                                            <td>11</td>
+                                                            <td class="checked">12</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13</td>
+                                                            <td>14</td>
+                                                            <td>15</td>
+                                                            <td>16</td>
+                                                            <td>17</td>
+                                                            <td>18</td>
+                                                            <td>19</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20</td>
+                                                            <td>21</td>
+                                                            <td>22</td>
+                                                            <td>23</td>
+                                                            <td>24</td>
+                                                            <td>25</td>
+                                                            <td>26</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>27</td>
+                                                            <td>28</td>
+                                                            <td>29</td>
+                                                            <td>30</td>
+                                                            <td class="gray">1</td>
+                                                            <td class="gray">2</td>
+                                                            <td class="gray">3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="register_area">
+                    <ol class="row row1 on">
+                        <li class="col col1 block_category">스케줄1</li>
+                        <li class="col col2">거래처</li>
+                        <li class="col col3">
+                            <div class="select_wrap">
+                                <div class="selected">
+                                    <div class="selected_value">박준혁</div>
+                                    <div class="icon_btn select_btn"></div>
+                                </div>
+                                <ul>
+                                    <li class="sel_option">홍길동</li>
+                                    <li class="sel_option">박준혁</li>
+                                    <li class="sel_option">담당자1</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col col4">지역</li>
+                        <li class="col col5">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li class="col col6">구역</li>
+                        <li class="col col7">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text" value="A">
+                            </div>
+                        </li>
+                        <li class="col col8">
+                            <div class="icon_btn_wrap">
+                                <button class="icon_btn minus_btn" type="button">빼기</button>
+                                <button class="icon_btn plus_btn" type="button">더하기</button>
+                            </div>
+                        </li>
+                    </ol>
+                    <ol class="row row2">
+                        <li class="col col1 block_category">스케줄2</li>
+                        <li class="col col2">거래처</li>
+                        <li class="col col3">
+                            <div class="select_wrap">
+                                <div class="selected">
+                                    <div class="selected_value">박준혁</div>
+                                    <div class="icon_btn select_btn"></div>
+                                </div>
+                                <ul>
+                                    <li class="sel_option">홍길동</li>
+                                    <li class="sel_option">박준혁</li>
+                                    <li class="sel_option">담당자1</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col col4">지역</li>
+                        <li class="col col5">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li class="col col6">구역</li>
+                        <li class="col col7">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text" value="A" disabled>
+                            </div>
+                        </li>
+                        <li class="col col8">
+                            <div class="icon_btn_wrap">
+                                <button class="icon_btn minus_btn" type="button">빼기</button>
+                                <button class="icon_btn plus_btn" type="button">더하기</button>
+                            </div>
+                        </li>
+                    </ol>
+                    <ol class="row row3">
+                        <li class="col col1 block_category">스케줄3</li>
+                        <li class="col col2">거래처</li>
+                        <li class="col col3">
+                            <div class="select_wrap">
+                                <div class="selected">
+                                    <div class="selected_value">박준혁</div>
+                                    <div class="icon_btn select_btn"></div>
+                                </div>
+                                <ul>
+                                    <li class="sel_option">홍길동</li>
+                                    <li class="sel_option">박준혁</li>
+                                    <li class="sel_option">담당자1</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col col4">지역</li>
+                        <li class="col col5">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li class="col col6">구역</li>
+                        <li class="col col7">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text" value="A" disabled>
+                            </div>
+                        </li>
+                        <li class="col col8">
+                            <div class="icon_btn_wrap">
+                                <button class="icon_btn minus_btn" type="button">빼기</button>
+                                <button class="icon_btn plus_btn" type="button">더하기</button>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="popup8_6_2" class="popup">
-        <div class="popup_inner">
-            <div class="popup_top">
-                <div class="null"></div>
-                <h3 class="popup_title">진열 사진 등록</h3>
-                <button class="icon_btn close_btn" type="button">닫기</button>
-            </div>
-            <div class="popup_content">
-                <div class="popup_img_box">
-                    <img src="../../images/grocery-g70d7d111f_1920.jpg" alt="진열 사진">
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_blue register_btn">등록</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="dim"></div>
-
     <script>
-        $('.result_area tbody .col4, .result_area tbody .col5').on('click',function(){
-            $('#popup8_6_1').addClass('on');
-            $('.dim').addClass('on');
-        });
-        $('.result_area tbody .col9, .result_area tbody .col10').on('click',function(){
-            $('#popup8_6_2').addClass('on');
-            $('.dim').addClass('on');
-        });
+        $(function(){
+            $('#register_btn').on('click',function(){
+                $('#popup9_2').addClass('on');
+                $('.dim').addClass('on');
+            });
+        })
     </script>
 </body>
 </html>

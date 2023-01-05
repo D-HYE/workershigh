@@ -481,7 +481,7 @@
 #page8_4 .search_area .col5,
 #page8_4 .search_area .col7{padding-left: 7px;}
 #page8_4 .search_area .row2{display: flex;}
-#page8_4 .search_area .row2 .null{width: 700px;}
+#page8_4 .search_area .row2 .null{width: 750px;}
 #page8_4 .search_area .row2 .col2 .input_wrap{
     display: flex;
     gap: 12px;
@@ -603,7 +603,7 @@
 #app_popup8_42 .result_area tbody .col4 .x_btn{
     width: 30px;
     height: 30px;
-    background: url(../../images/icon/icon-x.svg) no-repeat center/16px, #f2f4ff;
+    background: url(../../images/icon/icon-x-bold.svg) no-repeat center/16px, #f2f4ff;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -640,7 +640,7 @@
 
 
 
-/* ---------- sub8_5 ---------- */
+/* ---------- sub8_5_1 ---------- */
 #page8_5_1 .option_area{
     margin: 5px 0 20px;
 }
@@ -702,6 +702,7 @@
     height: 305px;
 }
 #page8_6 .search_area .col4{padding-left: 7px;}
+#page8_6 .search_area .null{width: 235px;}
 
 #page8_6 .result_table td{height: 120px;}
 #page8_6 .result_table .col1{width: 100px;}

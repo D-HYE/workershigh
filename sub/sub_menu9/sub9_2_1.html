@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub9.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page9_2_1">
+        <div id="gnb" class="active"></div>
+        <main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>스케줄 관리</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>진열관리</li>
+                                    <li>스케줄</li>
+                                    <li>스케줄 관리</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="option_area option_area1">
+                            <ul class="page_btn_wrap">
+                                <li class="admin_info">
+                                    <b>스케줄 - </b>
+                                    <p>11월 10일 (월요일)</p>
+                                </li>
+                                <li class="null"></li>
+                                <li><button type="button" class="btn_white btn">엑셀 다운로드</button></li>
+                                <li><button type="button" class="btn_blue btn">추가</button></li>
+                            </ul>
+                        </div>
+                        <div class="result_area result_area1">
+                            <div class="result_table">
+                                <table>
+                                    <thead>
+                                        <tr class="row row1">
+                                            <th class="col col1">스케줄</th>
+                                            <th class="col col2">담당자</th>
+                                            <th class="col col3">거래처유형</th>
+                                            <th class="col col4">거래처</th>
+                                            <th class="col col5">지역</th>
+                                            <th class="col col6">지역구역</th>
+                                            <th class="col col7">전월매출</th>
+                                            <th class="col col8">관리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row row2">
+                                            <td class="col col1">스케줄1</td>
+                                            <td class="col col2">박준혁</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">
+                                                <span>L7강남</span>
+                                                <button class="btn btn_paleBlue">배송정보</button>
+                                            </td>
+                                            <td class="col col5">강남</td>
+                                            <td class="col col6">A</td>
+                                            <td class="col col7">4,665,321</td>
+                                            <td class="col col8">
+                                                <div class="icon_btn_wrap">
+                                                    <button class="icon_btn edit_btn" type="button"></button>
+                                                    <button class="icon_btn delete_btn" type="button"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row3">
+                                            <td class="col col1">스케줄2</td>
+                                            <td class="col col2">박준혁</td>
+                                            <td class="col col3">B2B2C</td>
+                                            <td class="col col4">
+                                                <span>롯데백화점</span>
+                                                <button class="btn btn_paleBlue">배송정보</button>
+                                            </td>
+                                            <td class="col col5">명동</td>
+                                            <td class="col col6">B</td>
+                                            <td class="col col7">7,984,984</td>
+                                            <td class="col col8">
+                                                <div class="icon_btn_wrap">
+                                                    <button class="icon_btn edit_btn" type="button"></button>
+                                                    <button class="icon_btn delete_btn" type="button"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row4">
+                                            <td class="col col1">스케줄3</td>
+                                            <td class="col col2">박준혁</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">
+                                                <span>CITY명동</span>
+                                                <button class="btn btn_paleBlue">배송정보</button>
+                                            </td>
+                                            <td class="col col5">명동</td>
+                                            <td class="col col6">B</td>
+                                            <td class="col col7">1,986,354</td>
+                                            <td class="col col8">
+                                                <div class="icon_btn_wrap">
+                                                    <button class="icon_btn edit_btn" type="button"></button>
+                                                    <button class="icon_btn delete_btn" type="button"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="option_area option_area2">
+                            <ul class="page_btn_wrap">
+                                <li class="admin_info">
+                                    <b>현 진도관리</b>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="result_area result_area2">
+                            <div class="result_table">
+                                <table>
+                                    <thead>
+                                        <tr class="row row1">
+                                            <th class="col col1">스케줄</th>
+                                            <th class="col col2">구분</th>
+                                            <th class="col col3">담당자</th>
+                                            <th class="col col4">거래처유형</th>
+                                            <th class="col col5">거래처</th>
+                                            <th class="col col6">진열시작</th>
+                                            <th class="col col7">진열종료</th>
+                                            <th class="col col8">진열시간</th>
+                                            <th class="col col9">비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row row2">
+                                            <td class="col col1">스케줄1</td>
+                                            <td class="col col2">배송완료</td>
+                                            <td class="col col3">박준혁</td>
+                                            <td class="col col4">B2C</td>
+                                            <td class="col col5">L7강남</td>
+                                            <td class="col col6">09 : 20</td>
+                                            <td class="col col7">09 : 40</td>
+                                            <td class="col col8">20</td>
+                                            <td class="col col9"></td>
+                                        </tr>
+                                        <tr class="row row3">
+                                            <td class="col col1">스케줄2</td>
+                                            <td class="col col2">배송중</td>
+                                            <td class="col col3">박준혁</td>
+                                            <td class="col col4">B2B2C</td>
+                                            <td class="col col5">롯데백화점</td>
+                                            <td class="col col6">10 : 35</td>
+                                            <td class="col col7"></td>
+                                            <td class="col col8"></td>
+                                            <td class="col col9"></td>
+                                        </tr>
+                                        <tr class="row row4">
+                                            <td class="col col1">스케줄3</td>
+                                            <td class="col col2">배송전</td>
+                                            <td class="col col3">박준혁</td>
+                                            <td class="col col4">B2B</td>
+                                            <td class="col col5">CITY명동 </td>
+                                            <td class="col col6"></td>
+                                            <td class="col col7"></td>
+                                            <td class="col col8"></td>
+                                            <td class="col col9"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="option_area option_area3">
+                            <ul class="page_btn_wrap">
+                                <li class="admin_info">
+                                    <b>현 진도관리</b>
+                                    <p>(박준혁)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="result_area result_area3">
+                            <div class="result_table">
+                                <table>
+                                    <thead>
+                                        <tr class="row row1">
+                                            <th class="col col1">구분</th>
+                                            <th class="col col2">거래처방문수</th>
+                                            <th class="col col3">진열시간</th>
+                                            <th class="col col4">평균 진열시간</th>
+                                            <th class="col col5">이동시간</th>
+                                            <th class="col col6">평균이동시간</th>
+                                            <th class="col col7">채널(B2C)</th>
+                                            <th class="col col8">채널(B2B2C)</th>
+                                            <th class="col col9">채널(B2B)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="row row2">
+                                            <td class="col col1">금월</td>
+                                            <td class="col col2">34</td>
+                                            <td class="col col3">42시간</td>
+                                            <td class="col col4">40분</td>
+                                            <td class="col col5">42시간</td>
+                                            <td class="col col6">40분</td>
+                                            <td class="col col7">20</td>
+                                            <td class="col col8">5</td>
+                                            <td class="col col9">9</td>
+                                        </tr>
+                                        <tr class="row row3">
+                                            <td class="col col1">전월</td>
+                                            <td class="col col2">67</td>
+                                            <td class="col col3">60시간</td>
+                                            <td class="col col4">30분</td>
+                                            <td class="col col5">60시간</td>
+                                            <td class="col col6">30분</td>
+                                            <td class="col col7">20</td>
+                                            <td class="col col8">20</td>
+                                            <td class="col col9">27</td>
+                                        </tr>
+                                        <tr class="row row4">
+                                            <td class="col col1">전전월</td>
+                                            <td class="col col2">59</td>
+                                            <td class="col col3">70시간</td>
+                                            <td class="col col4">60분</td>
+                                            <td class="col col5">70시간</td>
+                                            <td class="col col6">60분</td>
+                                            <td class="col col7">19</td>
+                                            <td class="col col8">20</td>
+                                            <td class="col col9">20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div id="popup9_2_1_1" class="popup on">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">스케줄 등록</h3>
+                <button class="icon_btn close_btn" type="button">닫기</button>
+            </div>
+            <div class="popup_content">
+                <div class="option_area">
+                    <ul class="info">
+                        <li>
+                            <dl>
+                                <dt>담당자</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>날짜</dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="overflow_position overflow_position1">
+                        <div class="select_wrap">
+                            <div class="selected">
+                                <div class="selected_value">박준혁</div>
+                                <div class="icon_btn select_btn"></div>
+                            </div>
+                            <ul>
+                                <li class="sel_option">홍길동</li>
+                                <li class="sel_option">박준혁</li>
+                                <li class="sel_option">담당자1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow_position overflow_position2">
+                        <div class="date_area">
+                            <div class="date_wrap">
+                                <div class="date_first">
+                                    <p class="year">2022</p>
+                                    <p class="month">10</p>
+                                    <p class="date">12</p>
+                                </div>
+                            </div>
+                            <div class="calander_area">
+                                <div class="calander_wrap">
+                                    <div class="calander_con">
+                                        <div class="calander calander_first">
+                                            <div class="year_month">
+                                                <input type="button" value="prev" class="prev">
+                                                <div class="date">
+                                                    <p class="year">2022</p>
+                                                    <p class="month">10</p>
+                                                </div>
+                                                <input type="button" value="next" class="next">
+                                            </div>
+                                            <div class="month_date">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="gray">30</td>
+                                                            <td class="gray">31</td>
+                                                            <td>1</td>
+                                                            <td>2</td>
+                                                            <td>3</td>
+                                                            <td>4</td>
+                                                            <td>5</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>7</td>
+                                                            <td>8</td>
+                                                            <td>9</td>
+                                                            <td>10</td>
+                                                            <td>11</td>
+                                                            <td class="checked">12</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>13</td>
+                                                            <td>14</td>
+                                                            <td>15</td>
+                                                            <td>16</td>
+                                                            <td>17</td>
+                                                            <td>18</td>
+                                                            <td>19</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20</td>
+                                                            <td>21</td>
+                                                            <td>22</td>
+                                                            <td>23</td>
+                                                            <td>24</td>
+                                                            <td>25</td>
+                                                            <td>26</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>27</td>
+                                                            <td>28</td>
+                                                            <td>29</td>
+                                                            <td>30</td>
+                                                            <td class="gray">1</td>
+                                                            <td class="gray">2</td>
+                                                            <td class="gray">3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="register_area">
+                    <ol class="row row1 on">
+                        <li class="col col1 block_category">스케줄1</li>
+                        <li class="col col2">거래처</li>
+                        <li class="col col3">
+                            <div class="select_wrap">
+                                <div class="selected">
+                                    <div class="selected_value">박준혁</div>
+                                    <div class="icon_btn select_btn"></div>
+                                </div>
+                                <ul>
+                                    <li class="sel_option">홍길동</li>
+                                    <li class="sel_option">박준혁</li>
+                                    <li class="sel_option">담당자1</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col col4">지역</li>
+                        <li class="col col5">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li class="col col6">구역</li>
+                        <li class="col col7">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text" value="A">
+                            </div>
+                        </li>
+                        <li class="col col8">
+                            <div class="icon_btn_wrap">
+                                <button class="icon_btn minus_btn" type="button">빼기</button>
+                                <button class="icon_btn plus_btn" type="button">더하기</button>
+                            </div>
+                        </li>
+                    </ol>
+                    <ol class="row row2">
+                        <li class="col col1 block_category">스케줄2</li>
+                        <li class="col col2">거래처</li>
+                        <li class="col col3">
+                            <div class="select_wrap">
+                                <div class="selected">
+                                    <div class="selected_value">박준혁</div>
+                                    <div class="icon_btn select_btn"></div>
+                                </div>
+                                <ul>
+                                    <li class="sel_option">홍길동</li>
+                                    <li class="sel_option">박준혁</li>
+                                    <li class="sel_option">담당자1</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col col4">지역</li>
+                        <li class="col col5">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li class="col col6">구역</li>
+                        <li class="col col7">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text" value="A" disabled>
+                            </div>
+                        </li>
+                        <li class="col col8">
+                            <div class="icon_btn_wrap">
+                                <button class="icon_btn minus_btn" type="button">빼기</button>
+                                <button class="icon_btn plus_btn" type="button">더하기</button>
+                            </div>
+                        </li>
+                    </ol>
+                    <ol class="row row3">
+                        <li class="col col1 block_category">스케줄3</li>
+                        <li class="col col2">거래처</li>
+                        <li class="col col3">
+                            <div class="select_wrap">
+                                <div class="selected">
+                                    <div class="selected_value">박준혁</div>
+                                    <div class="icon_btn select_btn"></div>
+                                </div>
+                                <ul>
+                                    <li class="sel_option">홍길동</li>
+                                    <li class="sel_option">박준혁</li>
+                                    <li class="sel_option">담당자1</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col col4">지역</li>
+                        <li class="col col5">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li class="col col6">구역</li>
+                        <li class="col col7">
+                            <div class="input_wrap text_input_wrap">
+                                <input type="text" value="A" disabled>
+                            </div>
+                        </li>
+                        <li class="col col8">
+                            <div class="icon_btn_wrap">
+                                <button class="icon_btn minus_btn" type="button">빼기</button>
+                                <button class="icon_btn plus_btn" type="button">더하기</button>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_white cancle_btn">취소</button>
+                    <button type="button" class="btn btn_blue register_btn">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup9_2_1_2" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">배송정보</h3>
+                <button class="icon_btn close_btn" type="button">닫기</button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <ul class="row row1">
+                            <li class="col col1 block_category">거래처</li>
+                            <li class="col col2">L7강남</li>
+                        </ul>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">지역구</li>
+                            <li class="col col2">강남</li>
+                        </ul>
+                        <ul class="row row3">
+                            <li class="col col1 block_category">방문주기</li>
+                            <li class="col col2">매주 / 월, 수</li>
+                        </ul>
+                        <ul class="row row4">
+                            <li class="col col1 block_category">배송 주소</li>
+                            <li class="col col2">L7강남</li>
+                        </ul>
+                        <ul class="row row5">
+                            <li class="col col1 block_category">출입여부</li>
+                            <li class="col col2">출입증</li>
+                        </ul>
+                        <ul class="row row6">
+                            <li class="col col1 block_category">주차유형</li>
+                            <li class="col col2">지하</li>
+                        </ul>
+                        <ul class="row row7">
+                            <li class="col col1 block_category">특이사항</li>
+                            <li class="col col2">오전 안 붐빔</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_blue confirm__btn">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup9_2_1_3" class="popup">
+        <div class="popup_inner">
+            <div class="popup_content">
+                <h2>스케줄을 삭제 하시겠습니까?</h2>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_blue confirm_btn">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+    <script>
+        $(function(){
+            $('#register_btn').on('click',function(){
+                $('#popup9_2').addClass('on');
+                $('.dim').addClass('on');
+            });
+        })
+    </script>
+</body>
+</html>

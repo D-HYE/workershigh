@@ -24,7 +24,7 @@
             <div class="login_area">
                 <form>
                     <div class="input_wrap text_input_wrap">
-                        <input type="text" name="id" id="login_id" value="designer" placeholder="아이디">
+                        <input type="text" name="id" value="designer" placeholder="아이디" id="login_id" class="on" >
                     </div>
                     <div class="input_wrap text_input_wrap">
                         <input type="password" name="pw" id="login_pw" placeholder="비밀번호">
@@ -33,10 +33,75 @@
                         <input type="checkbox" name="id_check" id="id_check">
                         <label for="id_check">아이디 기억하기</label>
                     </div>
-                    <a href="./sub/sub_menu7/sub_7_3.html"><button type="button" class="btn">로그인</button></a>
+                    <button type="button" class="btn" id="login_btn" >로그인</button>
                 </form>
             </div>
         </div>
     </div>
+    <div id="popup_login" class="popup">
+        <div class="popup_inner">
+            <div class="popup_content">
+                <h2>아이디를 입력해주세요</h2>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_blue confirm_btn">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_pw" class="popup">
+        <div class="popup_inner">
+            <div class="popup_content">
+                <h2>패스워드를 1회 틀렸습니다.</h2>
+                <p>패스워드를 5회 틀리면 계정이<br/>잠기게 됩니다.</p>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_blue confirm_btn">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+    <script>
+        $('#login_id').on('propertychange change paste input', function(){
+            let id_val = $(this).val().length;
+            if(id_val !== 0){
+                $(this).addClass('on');
+            }else{
+                $(this).removeClass('on');
+            }
+        });
+        $('#login_pw').on('propertychange change paste input', function(){
+            let pw_val = $(this).val().length;
+            if(pw_val !== 0){
+                $(this).addClass('on');
+            }else{
+                $(this).removeClass('on');
+            }
+        });
+        $('#login_btn').on('click', function(){
+            let id_val = $('#login_id').val().length;
+            let pw_val = $('#login_pw').val().length;
+
+            if(id_val == 0){
+                $('#popup_login').addClass('on');
+                $('.dim').addClass('on');
+            }else if(pw_val == 0){
+                $('#popup_pw').addClass('on');
+                $('.dim').addClass('on');
+            }else{
+                location.href='./sub/sub_menu1/sub1_1.html';
+            }
+            
+        });
+        $('.confirm_btn').on('click', function(){
+            $('.popup').removeClass('on');
+            $('.dim').removeClass('on');
+        });
+
+        
+    </script>
 </body>
 </html>

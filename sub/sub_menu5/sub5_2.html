@@ -261,8 +261,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -275,8 +275,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -289,8 +289,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -303,8 +303,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -317,8 +317,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -331,8 +331,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -345,8 +345,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -359,8 +359,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -373,8 +373,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -387,8 +387,8 @@
                                             <td class="col col6">7</td>
                                             <td class="col col7">
                                                 <div class="btn_wrap">
-                                                    <button type="button" class="btn btn_paleBlue">상품별</button>
-                                                    <button type="button" class="btn btn_paleBlue">매대별</button>
+                                                    <button type="button" class="btn btn_paleBlue product_btn">상품별</button>
+                                                    <button type="button" class="btn btn_paleBlue shelves_btn">매대별</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -540,11 +540,11 @@
     <div class="dim"></div>
     <script>
         $(function(){
-            $('#page5_2 .result_table button').eq(0).on('click', function(){
+            $('.product_btn').on('click', function(){
                 $('#popup5_2_1').addClass('on')
                 $('.dim').addClass('on')
             })
-            $('#page5_2 .result_table button').eq(1).on('click', function(){
+            $('.shelves_btn').on('click', function(){
                 $('#popup5_2_2').addClass('on')
                 $('.dim').addClass('on')
             })

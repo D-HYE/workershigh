@@ -32,11 +32,13 @@ body{background: #d3d3d3;}
 #login_pw{
     background-image: url(../images/icon/icon-lock.svg);
 }
-#login_id:focus{
+#login_id:focus, #login_id.on{
     background-image: url(../images/icon/icon-user-bl.svg);
+    border: 1px solid #0044FE;
 }
-#login_pw:focus{
+#login_pw:focus, #login_pw.on{
     background-image: url(../images/icon/icon-lock-bl.svg);
+    border: 1px solid #0044FE;
 }
 .checkbox_input_wrap{margin: 5px 0 20px;}
 
@@ -45,4 +47,27 @@ form .btn{
     height: 50px;
     color: #fff;
     background: #0044FE;
+}
+
+#popup_login, #popup_pw{width: 280px;}
+#popup_login .popup_content,
+#popup_pw .popup_content{
+    padding: 30px 15px 15px;
+    text-align: center;
+}
+#popup_login .popup_content h2,
+#popup_pw .popup_content h2{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    
+}
+#popup_login .confirm_btn,
+#popup_pw .confirm_btn{width: 230px;}
+
+#popup_pw .popup_content p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #4267EB;
+    line-height: 18px;
 }
