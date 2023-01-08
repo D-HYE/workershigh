@@ -207,13 +207,39 @@
 }
 
 
-/* ---------- sub4_3 ---------- */
+/* ---------- sub4_4 ---------- */
 #page4_4 .result_table{
     margin-bottom: 130px;
     overflow: visible;
+    border: none;
 }
+#page4_4 .result_table table{
+    position: relative;
+    z-index: 2;
+}
+#page4_4 .result_table table:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border:1px solid #D3D3D3;
+    z-index: -1;
+}
+#page4_4 .result_table table thead{
+    position: relative;
+    z-index: -2;
+}
+
+
 #page4_4 .col{
     overflow: visible;
+}
+#page4_4 .col .select_wrap{
+    text-align: left;
 }
 #page4_4 .col .file_name{
     color: #0B1293;
@@ -265,4 +291,4 @@
     display: block;
 }
 #page4_4 .uploaded .file_upload{display: none;}
-#page4_4 .uploaded .file_change{display: flex;}
+#page4_4 .uploaded .file_change{display: flex; width: 78px; padding: 0;}
