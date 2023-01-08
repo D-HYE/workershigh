@@ -156,8 +156,13 @@ h2.logo{width: 156px;}
     padding: 15px 25px 20px 57px;
 }
 
-.gnb_list:first-child .list_item{background-image: none;}
+.gnb_list:first-child .list_item,
+.gnb_list:last-child .list_item{background-image: none;}
 
+.gnb_list:nth-child(12) .list_icon,
+.gnb_list:nth-child(12):hover .list_icon,
+.gnb_list:nth-child(12).on,
+.gnb_list:nth-child(12).on .list_icon{background: none;}
 
 
 /* ---------- container style ---------- */
