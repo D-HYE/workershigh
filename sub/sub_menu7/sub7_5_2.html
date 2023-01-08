@@ -13,7 +13,7 @@
     <script src="../../js/script.js"></script>
 </head>
 <body>
-    <div class="wrap" id="page7_5">
+    <div class="wrap" id="page7_5_2">
         <div id="gnb" class="active"></div><main>
             <div class="container">
                 <div class="content_wrap">
@@ -56,7 +56,7 @@
                                                         </div>
                                                     </li>
                                                     <li class="col col2">
-                                                        <button type="button" class="btn edit_btn btn_blue">수정</button>
+                                                        <button type="button" class="btn edit_btn btn_white">수정</button>
                                                     </li>
                                                 </ul>
                                             </td>
@@ -90,44 +90,52 @@
                                     </thead>
                                     <tbody>
                                         <tr class="row row2">
-                                            <th class="col col1">1</th>
-                                            <th class="col col2">
+                                            <td class="col col1">1</td>
+                                            <td class="col col2">
                                                 <div class="table_img_box"><img src="../../images/product_img.png" alt="제품사진"></div>
-                                            </th>
-                                            <th class="col col3">아이시스 8.0 300ml펫</th>
-                                            <th class="col col4">12</th>
-                                            <th class="col col5">
+                                            </td>
+                                            <td class="col col3">아이시스 8.0 300ml펫</td>
+                                            <td class="col col4">12</td>
+                                            <td class="col col5">
                                                 <div class="input_wrap">
                                                     <input type="text" value="12">
                                                 </div>
-                                            </th>
-                                            <th class="col col6">800</th>
-                                            <th class="col col7">2.000</th>
-                                            <th class="col col8">유형1</th>
-                                            <th class="col col9">여</th>
-                                            <th class="col col10">16,000</th>
-                                            <th class="col col11">왼-1-1, 왼-1-2</th>
-                                            <th class="col col12"></th>
+                                            </td>
+                                            <td class="col col6">800</td>
+                                            <td class="col col7">2.000</td>
+                                            <td class="col col8">유형1</td>
+                                            <td class="col col9">여</td>
+                                            <td class="col col10">16,000</td>
+                                            <td class="col col11">왼-1-1, 왼-1-2</td>
+                                            <td class="col col12">
+                                                <div class="icon_btn_wrap">
+                                                    <button type="button" class="icon_btn delete_btn">삭제</button>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr class="row row3">
-                                            <th class="col col1">2</th>
-                                            <th class="col col2">
+                                            <td class="col col1">2</td>
+                                            <td class="col col2">
                                                 <div class="table_img_box"><img src="../../images/product_img.png" alt="제품사진"></div>
-                                            </th>
-                                            <th class="col col3">비첸향미니육포</th>
-                                            <th class="col col4">12</th>
-                                            <th class="col col5">
+                                            </td>
+                                            <td class="col col3">비첸향미니육포</td>
+                                            <td class="col col4">12</td>
+                                            <td class="col col5">
                                                 <div class="input_wrap">
                                                     <input type="text" value="12">
                                                 </div>
-                                            </th>
-                                            <th class="col col6">800</th>
-                                            <th class="col col7">2.000</th>
-                                            <th class="col col8">유형1</th>
-                                            <th class="col col9">여</th>
-                                            <th class="col col10">16,000</th>
-                                            <th class="col col11">왼-1-1, 왼-1-2</th>
-                                            <th class="col col12"></th>
+                                            </td>
+                                            <td class="col col6">800</td>
+                                            <td class="col col7">2.000</td>
+                                            <td class="col col8">유형1</td>
+                                            <td class="col col9">여</td>
+                                            <td class="col col10">16,000</td>
+                                            <td class="col col11">왼-1-1, 왼-1-2</td>
+                                            <td class="col col12">
+                                                <div class="icon_btn_wrap">
+                                                    <button type="button" class="icon_btn delete_btn">삭제</button>
+                                                </div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -176,7 +184,7 @@
                     </ul>
                 </div>
                 <div class="result_area">
-                    <div class="result_table">
+                    <div class="result_table result_table_1">
                         <table>
                             <thead>
                                 <tr class="row row1">
@@ -221,10 +229,12 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="result_table result_table_2">
                         <table>
                             <tbody>
                                 <tr class="row row1">
-                                    <td class="col col1">수량 유형</td>
+                                    <td class="col col1 table_category">수량 유형</td>
                                     <td class="col col2">
                                         <div class="input_wrap text_input_wrap">
                                             <input type="text" placeholder="" value="">
@@ -249,10 +259,9 @@
     <div class="dim"></div>
     <script>
         $(function(){
-            // 휴대전화번호 눌렀을 때
-            $('.result_area .col2 span').on('click', function(){
-                $(this).siblings('.popup_Rfid').addClass('on')
-                $('.dim').addClass('on')
+            $('.result_area_2 tbody tr .col3').on('click', function(){
+                $('.popup_infoEidt').addClass('on');
+                $('.dim').addClass('on');
             })
         })
     </script>

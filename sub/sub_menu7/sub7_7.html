@@ -13,7 +13,7 @@
     <script src="../../js/script.js"></script>
 </head>
 <body>
-    <div class="wrap" id="page7_6">
+    <div class="wrap" id="page7_7">
         <div id="gnb" class="active"></div><main>
             <div class="container">
                 <div class="content_wrap">
@@ -21,13 +21,13 @@
                         <div class="content_title_area">
                             <div class="content_title">
                                 <div class="icon_btn menu_btn"></div>
-                                <h2>매대 주문</h2>
+                                <h2>거래처 발주</h2>
                             </div>
                             <div class="content_route">
                                 <ol>
                                     <li class="home_icon"></li>
                                     <li>고객관리</li>
-                                    <li>매대 주문</li>
+                                    <li>거래처 발주</li>
                                 </ol>
                             </div>
                         </div>
@@ -55,26 +55,181 @@
                                             <input type="text" name="requester_name">
                                         </div>
                                     </li>
-                                    <li class="col col3 table_category">재고 상황</li>
-                                    <li class="col col4">
-                                        <div class="checkbox_wrap">
-                                            <input type="checkbox" name="" id="all">
-                                            <label for="all"></label>
-                                            <input type="checkbox" name="" id="proper">
-                                            <label for="proper"></label>
-                                            <input type="checkbox" name="" id="deficient">
-                                            <label for="deficient"></label>
-                                            <input type="checkbox" name="" id="review">
-                                            <label for="review"></label>
+                                    <li class="col col4 table_category">주문일</li>
+                                    <li class="col col5">
+                                        <div class="date_area">
+                                            <div class="date_wrap">
+                                                <div class="date_first">
+                                                    <p class="year">2022</p>
+                                                    <p class="month">10</p>
+                                                    <p class="date">12</p>
+                                                </div>
+                                                <span>~</span>
+                                                <div class="date_second">
+                                                    <p class="year">2022</p>
+                                                    <p class="month">10</p>
+                                                    <p class="date">12</p>
+                                                </div>
+                                            </div>
+                                            <div class="calander_area">
+                                                <div class="calander_wrap">
+                                                    <ul class="left_side">
+                                                        <li>오늘</li>
+                                                        <li>어제</li>
+                                                        <li>일주일</li>
+                                                        <li>30일</li>
+                                                        <li>이번달</li>
+                                                        <li>지난달</li>
+                                                        <li class="on">사용자 지정</li>
+                                                    </ul>
+                                                    <div class="calander_con">
+                                                        <div class="calander calander_first">
+                                                            <div class="year_month">
+                                                                <input type="button" value="prev" class="prev">
+                                                                <div class="date">
+                                                                    <p class="year">2022</p>
+                                                                    <p class="month">10</p>
+                                                                </div>
+                                                                <input type="button" value="next" class="next">
+                                                            </div>
+                                                            <div class="month_date">
+                                                                <table>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="gray">30</td>
+                                                                            <td class="gray">31</td>
+                                                                            <td>1</td>
+                                                                            <td>2</td>
+                                                                            <td>3</td>
+                                                                            <td>4</td>
+                                                                            <td>5</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>6</td>
+                                                                            <td>7</td>
+                                                                            <td class="start">8</td>
+                                                                            <td class="on">9</td>
+                                                                            <td class="on">10</td>
+                                                                            <td class="on">11</td>
+                                                                            <td class="on">12</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="on">13</td>
+                                                                            <td class="on">14</td>
+                                                                            <td class="on">15</td>
+                                                                            <td class="on">16</td>
+                                                                            <td class="on">17</td>
+                                                                            <td class="on">18</td>
+                                                                            <td class="on">19</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="on">20</td>
+                                                                            <td class="on">21</td>
+                                                                            <td class="on">22</td>
+                                                                            <td class="on">23</td>
+                                                                            <td class="on">24</td>
+                                                                            <td class="on">25</td>
+                                                                            <td class="on">26</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="on">27</td>
+                                                                            <td class="on">28</td>
+                                                                            <td class="on">29</td>
+                                                                            <td class="on">30</td>
+                                                                            <td class="gray">1</td>
+                                                                            <td class="gray">2</td>
+                                                                            <td class="gray">3</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="calander calander_second">
+                                                            <div class="year_month">
+                                                                <input type="button" value="prev" class="prev">
+                                                                <div class="date">
+                                                                    <p class="year">2022</p>
+                                                                    <p class="month">12</p>
+                                                                </div>
+                                                                <input type="button" value="next" class="next">
+                                                            </div>
+                                                            <div class="month_date">
+                                                                <table>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="gray">27</td>
+                                                                            <td class="gray">28</td>
+                                                                            <td class="gray">29</td>
+                                                                            <td class="gray">30</td>
+                                                                            <td class="on">1</td>
+                                                                            <td class="on">2</td>
+                                                                            <td class="on">3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="on">4</td>
+                                                                            <td class="on">5</td>
+                                                                            <td class="end">6</td>
+                                                                            <td>7</td>
+                                                                            <td>8</td>
+                                                                            <td>9</td>
+                                                                            <td>10</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>11</td>
+                                                                            <td>12</td>
+                                                                            <td>13</td>
+                                                                            <td>14</td>
+                                                                            <td>15</td>
+                                                                            <td>16</td>
+                                                                            <td>17</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>18</td>
+                                                                            <td>19</td>
+                                                                            <td>20</td>
+                                                                            <td>21</td>
+                                                                            <td>22</td>
+                                                                            <td>23</td>
+                                                                            <td>24</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>25</td>
+                                                                            <td>26</td>
+                                                                            <td>27</td>
+                                                                            <td>28</td>
+                                                                            <td>29</td>
+                                                                            <td>30</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btm">
+                                                        <div class="date_wrap">
+                                                            <div class="date_first">
+                                                                <p class="year">2022</p>
+                                                                <p class="month">11</p>
+                                                                <p class="date">8</p>
+                                                            </div>
+                                                            <span>~</span>
+                                                            <div class="date_second">
+                                                                <p class="year">2022</p>
+                                                                <p class="month">12</p>
+                                                                <p class="date">06</p>
+                                                            </div>
+                                                        </div>
+                                                        <input type="button" value="닫기" class="btn_white close_btn btn">
+                                                        <input type="button" value="적용" class="btn_blue confirm_btn btn">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </li>
-                                    <li class="col col5">
-                                        <button type="button" class="btn search_btn btn_blue">검색</button>
-                                    </li>
                                 </ul>
-                                <ul>
+                                <ul class="row row2">
                                     <li class="col col1">
-                                        <div class="input_wrap radio_input_wrap">
+                                        <div class="radio_wrap">
                                             <input type="radio" name="search" id="all">
                                             <label for="all">전체</label>
                                             <input type="radio" name="search" id="regi">
@@ -103,7 +258,7 @@
                                             <th class="col col5">요청자</th>
                                             <th class="col col6">요청구분</th>
                                             <th class="col col7">상태</th>
-                                            <th class="col col8">비고</th>
+                                            <th class="col col8">발주서</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -114,8 +269,137 @@
                                             <td class="col col4">롯데멤버스</td>
                                             <td class="col col5">홍길동</td>
                                             <td class="col col6">큐레이션</td>
-                                            <td class="col col7">
-
+                                            <td class="col col7">등록</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row3">
+                                            <td class="col col1">2</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7강남</td>
+                                            <td class="col col5">이채현</td>
+                                            <td class="col col6">매대주문</td>
+                                            <td class="col col7">완료</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row4">
+                                            <td class="col col1">3</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">롯데멤버스</td>
+                                            <td class="col col5">홍길동</td>
+                                            <td class="col col6">큐레이션</td>
+                                            <td class="col col7">등록</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row5">
+                                            <td class="col col1">4</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7강남</td>
+                                            <td class="col col5">이채현</td>
+                                            <td class="col col6">매대주문</td>
+                                            <td class="col col7">완료</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row6">
+                                            <td class="col col1">5</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">롯데멤버스</td>
+                                            <td class="col col5">홍길동</td>
+                                            <td class="col col6">큐레이션</td>
+                                            <td class="col col7">등록</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row7">
+                                            <td class="col col1">6</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7강남</td>
+                                            <td class="col col5">이채현</td>
+                                            <td class="col col6">매대주문</td>
+                                            <td class="col col7">완료</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row8">
+                                            <td class="col col1">7</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">롯데멤버스</td>
+                                            <td class="col col5">홍길동</td>
+                                            <td class="col col6">큐레이션</td>
+                                            <td class="col col7">등록</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row9">
+                                            <td class="col col1">8</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7강남</td>
+                                            <td class="col col5">이채현</td>
+                                            <td class="col col6">매대주문</td>
+                                            <td class="col col7">완료</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row10">
+                                            <td class="col col1">9</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">롯데멤버스</td>
+                                            <td class="col col5">홍길동</td>
+                                            <td class="col col6">큐레이션</td>
+                                            <td class="col col7">등록</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="row row11">
+                                            <td class="col col1">10</td>
+                                            <td class="col col2">2022-11-17</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7강남</td>
+                                            <td class="col col5">이채현</td>
+                                            <td class="col col6">매대주문</td>
+                                            <td class="col col7">완료</td>
+                                            <td class="col col8">
+                                                <div class="input_wrap">
+                                                    <div class="btn order_btn btn_paleBlue">발주서</div>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -138,11 +422,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="input_form_table_btn">
-                                <div class="input_form_table_btn_wrap">
-                                    <button type="button" class="btn btn_blue order_btn">발주서 작성</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -155,7 +434,7 @@
             </footer>
         </main>
     </div>
-    <div id="popup_order" class="popup popup_order">
+    <!-- <div id="popup_order" class="popup popup_order">
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
@@ -230,14 +509,18 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="dim"></div>
+    </div> -->
+    <!-- <div class="dim"></div> -->
     <script>
         $(function(){
-            // 파일 등록 버튼 눌렀을 때
-            $('.input_form_table_btn .order_btn').on('click', function(){
-                $('.popup_order').addClass('on')
-                $('.dim').addClass('on')
+            // 발주서 버튼 눌렀을 때
+            // $('.order_btn').on('click', function(){
+            //     $('.popup_order').addClass('on')
+            //     $('.dim').addClass('on')
+            // })
+            // 발주 거래처 눌렀을 때
+            $('.result_table tbody .col4').on('click', function(){
+                document.location.href="./sub7_7_1.html"
             })
         })
     </script>
