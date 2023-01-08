@@ -485,7 +485,7 @@ footer p{
 .popup{
     display: none;
 
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -554,7 +554,9 @@ footer p{
 }
 .app_popup .app_popup_btm button{width: 110px;}
 
-
+.alert_popup{
+    position: fixed;
+}
 .alert_popup .popup_content{
     padding: 30px 15px 15px;
     text-align: center;

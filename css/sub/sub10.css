@@ -1,0 +1,62 @@
+.result_table .btn{
+    height: 36px;
+    padding: 0 15px;
+    font-size: 13px;
+}
+.scroll_area{padding-bottom: 10px; overflow-x: scroll;}
+
+
+
+#page10 .search_area .date_wrap{width: 256px;}
+#page10 .search_area .calander_wrap{
+    width: 622px;
+    height: 305px;
+}
+#page10 .search_area .col3,
+#page10 .search_area .col5{padding-left: 7px;}
+#page10 .search_area .col4 .input_wrap{
+    width: 236px;
+    display: flex;
+    gap: 12px;
+}
+#page10 .search_area .col6 input{
+    width: 280px;
+}
+
+#page10 .result_table{width: 1790px;}
+#page10 .result_area th{height: 40px;}
+#page10 .result_area .row1 .col8,
+#page10 .result_area .row1 .col12{border-bottom: 1px solid #eee;}
+#page10 .result_area .col1{width: 80px;}
+#page10 .result_area .col2{width: 100px;}
+#page10 .result_area .col3{width: 120px;}
+#page10 .result_area .col4{width: 130px;}
+#page10 .result_area .col5{width: 200px;}
+#page10 .result_area .col6,
+#page10 .result_area .col7{width: 80px;}
+#page10 .result_area .col16,
+#page10 .result_area .col18{width: 80px;}
+#page10 .result_area .col17,
+#page10 .result_area .col19{width: 100px;}
+#page10 .result_area .status_mark{
+    display: inline-block;
+    width: 44px;
+    height: 26px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 26px;
+    border-radius: 15px;
+}
+#page10 .result_area .status_mark.blue_mark{
+    background: #00A3FF;
+}
+#page10 .result_area .status_mark.yellow_mark{
+    background: #FFB800;
+}
+#page10 .result_area .status_mark.red_mark{
+    background: #FF2E00;
+}
+
+#page10 .result_area tbody .row .col19>*{display: none;}
+#page10 .result_area tbody .row.on .col19>*{display: inline-block;}
