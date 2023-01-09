@@ -256,6 +256,7 @@
 #popup8_3_1 .select_wrap{width: 156px;}
 
 #popup8_3_2{width: 560px;}
+#popup8_3_2 .popup_content{padding-bottom: 30px;}
 #popup8_3_2 .search_area{
     padding: 15px 20px;
     margin-bottom: 15px;
