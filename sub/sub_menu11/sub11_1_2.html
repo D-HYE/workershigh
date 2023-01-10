@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/sub/sub11.css">
+    <title>workes high</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="wrap" id="page11_1_2">
+        <div id="gnb" class="active"></div>
+        <main>
+            <div class="container">
+                <div class="content_wrap">
+                    <div class="content_top">
+                        <div class="content_title_area">
+                            <div class="content_title">
+                                <div class="icon_btn menu_btn"></div>
+                                <h2>개발요청</h2>
+                            </div>
+                            <div class="content_route">
+                                <ol>
+                                    <li class="home_icon"></li>
+                                    <li>관리자</li>
+                                    <li>개발요청</li>
+                                    <li>개발요청 수정</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="form_area">
+                            <div class="input_form_table">
+                                <ul class="row row1">
+                                    <li class="col col1 block_category">제목</li>
+                                    <li class="col col2">
+                                        기능 만들어주세요.
+                                    </li>
+                                </ul>
+                                <ul class="row row2">
+                                    <li class="col col1 block_category">작성자</li>
+                                    <li class="col col2">
+                                        이찬미
+                                    </li>
+                                </ul>
+                                <ul class="row row3">
+                                    <li class="col col1 block_category">등록 날짜</li>
+                                    <li class="col col2">
+                                        2022.11.01
+                                    </li>
+                                </ul>
+                                <ul class="row row4">
+                                    <li class="col col1 block_category">상태</li>
+                                    <li class="col col2">
+                                        진행
+                                    </li>
+                                </ul>
+                                <ul class="row row5">
+                                    <li class="col col1 block_category">내용</li>
+                                    <li class="col col2">
+                                        <textarea>신규 기능이 필요해요</textarea>
+                                    </li>
+                                </ul>
+                                <ul class="row row6">
+                                    <li class="col col1 block_category">첨부파일</li>
+                                    <li class="col col2">
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="input_form_table_btn">
+                                <div class="input_form_table_btn_wrap">
+                                    <button type="button" class="btn btn_blue register_btn">등록</button>
+                                    <button type="button" class="btn btn_white list_btn" onclick="location.href='./sub11_1.html';">목록</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer_inner">
+                    <p class="footer_left">Copyright © 2021 Worker's High. All rights reserved.</p>
+                    <p class="footer_right">Version 1.0.0</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <div id="popup11_1" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">개발 요청 사항 등록</h3>
+                <button class="icon_btn close_btn" type="button">닫기</button>
+            </div>
+            <div class="popup_content">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <ul class="row row1">
+                            <li class="col col1 block_category">제목</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row2">
+                            <li class="col col1 block_category">첨부파일</li>
+                            <li class="col col2">
+                                <div class="upload_wrap">
+                                    <span class="upload_val">abcd.jpg</span>
+                                    <label for="file_upload" class="btn btn_white">파일선택</label> 
+                                    <input type="file" id="file_upload" class="file_upload_btn">
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="row row3">
+                            <li class="col col1 block_category">요청사항</li>
+                            <li class="col col2">
+                                <div class="input_wrap text_input_wrap">
+                                    <textarea></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_blue register_btn">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+    <script>
+        $(function(){
+            $('#register_btn').on('click',function(){
+                $('#popup11_1').addClass('on');
+                $('.dim').addClass('on');
+            });
+        })
+    </script>
+</body>
+</html>
