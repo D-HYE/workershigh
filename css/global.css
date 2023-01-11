@@ -189,6 +189,7 @@ input[type="radio"]:checked + label:after {
     overflow: hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
+    text-align: left;
 }
 .select_wrap .sel_option:hover{
     color: #0044FE;
@@ -396,4 +397,90 @@ input[type='date']:focus{
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 
+}
+
+
+
+
+/* scorll_area */
+.scroll_area{
+    width: 100%;
+    padding-bottom: 10px;
+    overflow-x: scroll;
+}
+.scroll_area::-webkit-scrollbar {
+    height: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 5px 0 0;
+}
+.scroll_area::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.scroll_area::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* file_wrap에 noFile / uploaded class 붙는 형식으로 작동함 */
+.file_wrap{
+    align-items: center;
+}
+.file_wrap .preview{
+    width: 120px;
+    height: 120px;
+    display: none;
+}
+.file_name{
+    color: #0B1293;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    border: none;
+}
+input.file_upload{display: none;}
+label.file_upload{
+    display: block;
+    margin: 0 auto;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.noFile input[type="file"]{
+    display: none;
+}
+.noFile label{
+    width: 66px;
+}
+.noFile .file_upload{display: flex;}
+.noFile .file_change{display: none;}
+.noFile.file_wrap .file_name{
+    display: none;
+}
+.uploaded.file_wrap{
+    display: flex;
+}
+.uploaded.file_wrap .file_name{
+    display: block;
+}
+.uploaded input[type="file"]{
+    display: none;
+}
+.uploaded input{
+    width: calc(100% - 10px - 78px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.uploaded .file_upload{display: none;}
+.uploaded .file_change{display: flex; cursor: pointer;}
+.noFile .file_name{
+    display: none;
+}
+.uploaded .file_name{
+    display: block;
 }
