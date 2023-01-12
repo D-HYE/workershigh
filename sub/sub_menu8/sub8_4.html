@@ -43,7 +43,7 @@
                                     <li class="col col2">
                                         <div class="select_wrap">
                                             <div class="selected">
-                                                <div class="selected_value">L7 강남</div>
+                                                <div class="selected_value">L7</div>
                                                 <div class="icon_btn select_btn"></div>
                                             </div>
                                             <ul>
@@ -53,22 +53,60 @@
                                                 <li class="sel_option">롯데벤쳐스</li>
                                                 <li class="sel_option">포컴퍼니</li>
                                                 <li class="sel_option">드림플러스</li>
-                                                <li class="sel_option">L7 강남</li>
+                                                <li class="sel_option">L7</li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li class="col col3">
-                                        <h4 class="search_form_title">피킹자</h4>
+                                        <h4 class="search_form_title">매대</h4>
                                     </li>
                                     <li class="col col4">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">L7강남</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="sel_option">매대1</li>
+                                                <li class="sel_option">매대2</li>
+                                                <li class="sel_option">L7강남</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="col col5">
+                                        <h4 class="search_form_title">피킹자</h4>
+                                    </li>
+                                    <li class="col col6">
                                         <div class="input_wrap text_input_wrap">
                                             <input type="text" placeholder="">
                                         </div>
                                     </li>
-                                    <li class="col col5">
+                                    <li class="col col7">
+                                        <h4 class="search_form_title">상태</h4>
+                                    </li>
+                                    <li class="col col8">
+                                        <div class="input_wrap">
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="all_sel" name="status">
+                                                <label for="all_sel">전체</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="wait" name="status">
+                                                <label for="wait">대기</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="complete" name="status">
+                                                <label for="complete">완료</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                                <ul class="row row2">
+                                    <li class="col col1">
                                         <h4 class="search_form_title">기간</h4>
                                     </li>
-                                    <li class="col col6">
+                                    <li class="col col2">
                                         <div class="date_area">
                                             <div class="date_wrap">
                                                 <div class="date_first">
@@ -238,7 +276,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="col col7">
+                                    <li class="col col3">
                                         <div class="input_wrap">
                                             <div class="radio_input_wrap">
                                                 <input type="radio" id="today" name="period">
@@ -246,27 +284,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
-                                <ul class="row row2">
-                                    <li class="col col1">
-                                        <h4 class="search_form_title">상태</h4>
-                                    </li>
-                                    <li class="col col2">
-                                        <div class="input_wrap">
-                                            <div class="radio_input_wrap">
-                                                <input type="radio" id="all_sel" name="status">
-                                                <label for="all_sel">전체</label>
-                                            </div>
-                                            <div class="radio_input_wrap">
-                                                <input type="radio" id="wait" name="status">
-                                                <label for="wait">대기</label>
-                                            </div>
-                                            <div class="radio_input_wrap">
-                                                <input type="radio" id="complete" name="status">
-                                                <label for="complete">완료</label>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    
                                     <li class="null"></li>
                                     <li class="col col4">
                                         <button type="button" class="btn search_btn btn_blue">검색</button>
@@ -286,103 +304,114 @@
                                         <tr class="row row1">
                                             <th class="col col1">피킹코드</th>
                                             <th class="col col2">날짜</th>
-                                            <th class="col col3">거래처</th>
-                                            <th class="col col4">거래처유형</th>
-                                            <th class="col col5">상품종류</th>
-                                            <th class="col col6">피킹자</th>
-                                            <th class="col col7">상태</th>
+                                            <th class="col col3">거래처유형</th>
+                                            <th class="col col4">거래처</th>
+                                            <th class="col col5">매대</th>
+                                            <th class="col col6">상품종류</th>
+                                            <th class="col col7">피킹자</th>
+                                            <th class="col col8">상태</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="row row2" onclick="location.href='./sub8_4_1.html';">
                                             <td class="col col1">221124122523</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">L7 강남</td>
-                                            <td class="col col4">B2C</td>
-                                            <td class="col col5">5</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">완료</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7</td>
+                                            <td class="col col5">L7강남</td>
+                                            <td class="col col6">5</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">완료</td>
                                         </tr>
                                         <tr class="row row3" onclick="location.href='./sub8_4_1.html';">
                                             <td class="col col1">221124162328</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">스트라드비전 강남</td>
-                                            <td class="col col4">B2B</td>
-                                            <td class="col col5">8</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">대기</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">스트라드비전 강남</td>
+                                            <td class="col col5"></td>
+                                            <td class="col col6">8</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">대기</td>
                                         </tr>
                                         <tr class="row row4" onclick="location.href='./sub8_4_1.html';">
-                                            <td class="col col1">221124162328</td>
+                                            <td class="col col1">221124122523</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">스트라드비전 강남</td>
-                                            <td class="col col4">B2B</td>
-                                            <td class="col col5">8</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">대기</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7</td>
+                                            <td class="col col5">L7강남</td>
+                                            <td class="col col6">5</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">완료</td>
                                         </tr>
                                         <tr class="row row5" onclick="location.href='./sub8_4_1.html';">
                                             <td class="col col1">221124162328</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">스트라드비전 강남</td>
-                                            <td class="col col4">B2B</td>
-                                            <td class="col col5">8</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">대기</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">스트라드비전 강남</td>
+                                            <td class="col col5"></td>
+                                            <td class="col col6">8</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">대기</td>
                                         </tr>
                                         <tr class="row row6" onclick="location.href='./sub8_4_1.html';">
-                                            <td class="col col1">221124122523</td>
+                                            <td class="col col1">221124162328</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">L7 강남</td>
-                                            <td class="col col4">B2C</td>
-                                            <td class="col col5">5</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">완료</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">스트라드비전 강남</td>
+                                            <td class="col col5"></td>
+                                            <td class="col col6">8</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">대기</td>
                                         </tr>
                                         <tr class="row row7" onclick="location.href='./sub8_4_1.html';">
-                                            <td class="col col1">221124122523</td>
+                                            <td class="col col1">221124162328</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">L7 강남</td>
-                                            <td class="col col4">B2C</td>
-                                            <td class="col col5">5</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">완료</td>
+                                            <td class="col col3">B2B</td>
+                                            <td class="col col4">스트라드비전 강남</td>
+                                            <td class="col col5"></td>
+                                            <td class="col col6">8</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">대기</td>
                                         </tr>
                                         <tr class="row row8" onclick="location.href='./sub8_4_1.html';">
                                             <td class="col col1">221124122523</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">L7 강남</td>
-                                            <td class="col col4">B2C</td>
-                                            <td class="col col5">5</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">완료</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7</td>
+                                            <td class="col col5">L7강남</td>
+                                            <td class="col col6">5</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">완료</td>
                                         </tr>
                                         <tr class="row row9" onclick="location.href='./sub8_4_1.html';">
-                                            <td class="col col1">221124162328</td>
+                                            <td class="col col1">221124122523</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">스트라드비전 강남</td>
-                                            <td class="col col4">B2B</td>
-                                            <td class="col col5">8</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">대기</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7</td>
+                                            <td class="col col5">L7강남</td>
+                                            <td class="col col6">5</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">완료</td>
                                         </tr>
                                         <tr class="row row10" onclick="location.href='./sub8_4_1.html';">
-                                            <td class="col col1">221124162328</td>
+                                            <td class="col col1">221124122523</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">스트라드비전 강남</td>
-                                            <td class="col col4">B2B</td>
-                                            <td class="col col5">8</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">대기</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7</td>
+                                            <td class="col col5">L7강남</td>
+                                            <td class="col col6">5</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">완료</td>
                                         </tr>
                                         <tr class="row row11" onclick="location.href='./sub8_4_1.html';">
-                                            <td class="col col1">221124162328</td>
+                                            <td class="col col1">221124122523</td>
                                             <td class="col col2">22/11/24</td>
-                                            <td class="col col3">스트라드비전 강남</td>
-                                            <td class="col col4">B2B</td>
-                                            <td class="col col5">8</td>
-                                            <td class="col col6">박준혁</td>
-                                            <td class="col col7">대기</td>
+                                            <td class="col col3">B2C</td>
+                                            <td class="col col4">L7</td>
+                                            <td class="col col5">L7강남</td>
+                                            <td class="col col6">5</td>
+                                            <td class="col col7">박준혁</td>
+                                            <td class="col col8">완료</td>
                                         </tr>
                                     </tbody>
                                 </table>

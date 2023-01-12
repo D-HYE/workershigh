@@ -50,25 +50,26 @@
                                                     <ul>
                                                         <li class="sel_option">B2B</li>
                                                         <li class="sel_option">B2C</li>
+                                                        <li class="sel_option">B2B2C</li>
                                                     </ul>
                                         
                                                 </div>
                                             </li>
-                                            <div class="col col2 table_category">거래처 코드</div>
-                                            <div class="col col3">
+                                            <li class="col col2 table_category">거래처 코드</li>
+                                            <li class="col col3">
                                                 <div class="input_wrap text_input_wrap">
                                                     <input type="text" name="customer_code">
                                                 </div>
-                                            </div>
-                                            <div class="col col4 table_category">그룹 코드</div>
-                                            <div class="col col5">
+                                            </li>
+                                            <li class="col col4 table_category">그룹 코드</li>
+                                            <li class="col col5">
                                                 <div class="input_wrap text_input_wrap">
                                                     <input type="text" name="group_code">
                                                 </div>
-                                            </div>
-                                            <div class="col col6">
+                                            </li>
+                                            <li class="col col6">
                                                 <button type="button" class="btn btn_blue" id="renewal_btn">재계약</button>
-                                            </div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -297,11 +298,56 @@
                                                 </div>
                                             </li>
                                         </ul>
+                                    </div>
+                                </div>
+                                <div class="table_block table_block4">
+                                    <div class="block_category">배송정보</div>
+                                    <div class="depth_table">
+                                        <ul class="row row1">
+                                            <li class="col col1 table_category">지역구</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="area" value="강남구">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">위치</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="location" value="14층">
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">출입여부</li>
+                                            <li class="col col6">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="passage" value="출입증/인터폰">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="row row2">
+                                            <li class="col col1 table_category">주차유형</li>
+                                            <li class="col col2">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="parking" value="지하/지상/노상">
+                                                </div>
+                                            </li>
+                                            <li class="col col3 table_category">특이사항</li>
+                                            <li class="col col4">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="etc" value="오전 안 붐빔">
+                                                </div>
+                                            </li>
+                                            <li class="col col5 table_category">목표금액</li>
+                                            <li class="col col6">
+                                                <div class="input_wrap text_input_wrap">
+                                                    <input type="text" name="goal" value="500">
+                                                </div>
+                                            </li>
+                                        </ul>
                                         <ul class="row row3">
                                             <li class="col col1 table_category">배송주기</li>
                                             <li class="col col2">
                                                 <div class="input_wrap text_input_wrap">
-                                                    <input type="text" name="delivery_term" value="">
+                                                    <input type="text" name="delivery_term" value="주 2회">
                                                 </div>
                                             </li>
                                             <li class="col col3 table_category">배송요일</li>
@@ -332,65 +378,89 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="table_block table_block4">
-                                    <div class="block_category">실적</div>
-                                    <ul class="row row1">
-                                        <li class="col col1">
-                                            <ol class="goal_wrap">
-                                                <li>
-                                                    <h4 class="goal_month">1월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">2월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">3월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">4월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">5월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">6월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">7월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">8월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">9월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">10월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">11월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                                <li>
-                                                    <h4 class="goal_month">12월</h4>
-                                                    <p class="goal_count">1000</p>
-                                                </li>
-                                            </ol>
-                                            <button type="button" class="btn btn_blue goal_btn" id="goal_edit_btn">목표실적</button>
-                                        </li>
-                                    </ul>
-                                </div>
                                 <div class="table_block table_block5">
+                                    <div class="block_category">실적</div>
+                                    <div class="depth_table">
+                                        <ul class="row row1">
+                                            <li class="col col1">
+                                                <ol class="goal_wrap">
+                                                    <li>
+                                                        <h4 class="goal_month">1월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">2월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">3월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">4월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">5월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">6월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">7월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">8월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">9월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">10월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">11월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                    <li>
+                                                        <h4 class="goal_month">12월</h4>
+                                                        <p class="goal_count">1000</p>
+                                                    </li>
+                                                </ol>
+                                                <button type="button" class="btn btn_blue goal_btn" id="goal_edit_btn">목표실적</button>
+                                            </li>
+                                        </ul>
+                                        <ul class="row row2">
+                                            <li class="col col1 table_category">집계거래처설정</li>
+                                            <li class="col col2">
+                                                <div class="select_wrap">
+                                                    <div class="selected">
+                                                        <div class="selected_value">롯데벤처스</div>
+                                                        <div class="icon_btn select_btn"></div>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="input_wrap text_input_wrap">
+                                                            <input type="text" name="customer_select">
+                                                        </li>
+                                                        <li class="sel_option">포컴퍼니</li>
+                                                        <li class="sel_option">롯데벤처스</li>
+                                                        <li class="sel_option">위워크 BIFC</li>
+                                                        <li class="sel_option">거래처 이름1</li>
+                                                    </ul>
+                                        
+                                                </div>
+                                            </li>
+                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table_block table_block6">
                                     <div class="block_category">비고</div>
                                     <ul class="row row1">
                                         <li class="col col1">

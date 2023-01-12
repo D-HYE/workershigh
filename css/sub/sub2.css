@@ -66,13 +66,16 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 #popup2_1 .row_collapse .row_collapse_left .col.col2 .input_wrap:first-child input{width: 198px;}
 #popup2_1 .row_collapse .row_collapse_right .col3{width: 120px;}
 #popup2_1 .row_collapse .row_collapse_right .col4{width: 290px;}
-#popup2_1 .table_block3 .row1 .col:nth-child(even),
-#popup2_1 .table_block3 .row2 .col:nth-child(even),
-#popup2_1 .table_block3 .row3 .col2{width: calc(33.3% - 100px);}
+
+#popup2_1 .table_block3 .row .col:nth-child(even){width: calc(33.3% - 100px);}
 #popup2_1 .table_block3 .row1 .calander_area{width: 250px;}
-#popup2_1 .table_block3 .row3 .input_wrap{display: flex; gap: 20px;}
-#popup2_1 .table_block4 .col{width: 820px; height: 144px;}
-#popup2_1 .table_block4 textarea{width: 100%; height: 100%;}
+
+#popup2_1 .table_block4 .row1 .col:nth-child(even),
+#popup2_1 .table_block4 .row2 .col:nth-child(even),
+#popup2_1 .table_block4 .row3 .col2{width: calc(33.3% - 100px);}
+#popup2_1 .table_block4 .row3 .input_wrap{display: flex; gap: 20px;}
+#popup2_1 .table_block5 .col{width: 820px; height: 144px;}
+#popup2_1 .table_block5 textarea{width: 100%; height: 100%;}
 #popup2_1 .input_form_table_btn{margin: 15px 0;}
 
 
@@ -111,13 +114,18 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 #page2_1_1 .table_block3 .row1 .calander_area{width: 250px; height: 240px;}
 #page2_1_1 .table_block3 .row3 .col4 .input_wrap{display: flex; gap: 20px;}
 
-#page2_1_1 .table_block4 .col{
+#page2_1_1 .table_block4 .row1 .col:nth-child(even),
+#page2_1_1 .table_block4 .row2 .col:nth-child(even),
+#page2_1_1 .table_block4 .row3 .col2{width: calc(33.3% - 120px);}
+#page2_1_1 .table_block4 .row3 .input_wrap{display: flex; gap: 20px;}
+
+#page2_1_1 .table_block5 .row1 .col{
     align-items: flex-start;
     gap: 10px;
     width: 100%; 
     height: 108px;
 }
-#page2_1_1 .table_block4 .goal_wrap{
+#page2_1_1 .table_block5 .goal_wrap{
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -125,14 +133,14 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
     width: 89.307%;
     height: 100%;
 }
-#page2_1_1 .table_block4 .goal_wrap li{
+#page2_1_1 .table_block5 .goal_wrap li{
     display: flex;
     width: 15.743%;
     height: 39px;
     border: 1px solid #EEEEEE;
     border-radius: 6px;
 }
-#page2_1_1 .table_block4 .goal_wrap li h4{
+#page2_1_1 .table_block5 .goal_wrap li h4{
     width: 54px;
     font-size: 14px;
     font-weight: 400;
@@ -141,14 +149,15 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
     background: #F6FAFF;
     border-right: 1px solid rgba(168, 177, 206, 0.2);
 }
-#page2_1_1 .table_block4 .goal_wrap li p{
+#page2_1_1 .table_block5 .goal_wrap li p{
     flex-grow: 1;
     padding-right: 10px;
     text-align: right;
     line-height: 37px;
 }
-#page2_1_1 .table_block5 .col{width: 100%; height: 144px;}
-#page2_1_1 .table_block5 .col textarea{
+#page2_1_1 .table_block5 .select_wrap{width: 200px;}
+#page2_1_1 .table_block6 .col{width: 100%; height: 144px;}
+#page2_1_1 .table_block6 .col textarea{
     width: 100%;
     height: 100%;
 }
@@ -224,6 +233,10 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
     padding: 0px 10px;
     font-size: 13px;
 }
+#page2_2 .result_area .discount_desc{
+    text-decoration: underline;
+    font-style: normal;
+}
 
 #popup2_2_1{width: 960px;}
 #popup2_2_1 .block_category{width: 80px;}
@@ -246,7 +259,7 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 #popup2_2_1 .table_block1 .row_collapse_left .col2 .input_wrap:first-child input{width: 335px;}
 #popup2_2_1 .table_block1 .row_collapse_right{width: 33.3%;}
 #popup2_2_1 .table_block1 .row_collapse_right .col4{width: calc(100% - 100px);}
-#popup2_2_1 .table_block1 .row3 .col4 .input_wrap{
+#popup2_2_1 .table_block2 .row3 .col4 .input_wrap{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -270,11 +283,15 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
     width: 120px;
     border-left: 1px solid #eee;
 }
-#popup2_2_2 .col3 input{text-align: right;}
+#popup2_2_2 .desc,
+#popup2_2_3{text-align: center;}
 #popup2_2_2 .col3 input:disabled{display: none;}
+#popup2_2_2 input[type="checkbox"],
 #popup2_2_3 input[type="checkbox"]{cursor: initial;}
-#popup2_2_3 input[type="checkbox"]:not(:checked){border-color: transparent;}
-#popup2_2_3 .col3{text-align: center;}
+
+#popup2_2_4{width: 360px;}
+#popup2_2_4 .block_category{width: 100px;}
+#popup2_2_4 .col2{width: calc(100% - 100px);}
 
 
 
@@ -301,7 +318,7 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 #page2_2_1 .row_collapse_right{width: 33.3%;}
 #page2_2_1 .row_collapse_right .col4{width: calc(100% - 100px);}
 #page2_2_1 .row_collapse_right .col4 .btn{width: 64px;}
-#page2_2_1 .table_block1 .row3 .col4 .input_wrap{
+#page2_2_1 .table_block2 .row3 .col4 .input_wrap{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -325,5 +342,4 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
     border-left: 1px solid #eee;
 }
 #popup2_2_1_1 input[type="checkbox"]{cursor: initial;}
-#popup2_2_1_1 input[type="checkbox"]:not(:checked){border-color: transparent;}
-#popup2_2_1_1 .col3{text-align: center;}
+#popup2_2_1_1 .desc{text-align: center;}
