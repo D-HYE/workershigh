@@ -1,4 +1,4 @@
-.scroll_area{padding-bottom: 10px; overflow-x: scroll;}
+
 .result_table .btn{
     height: 36px;
     padding: 0 15px;
@@ -347,7 +347,6 @@
 #page8_3_3 .search_area .col3,
 #page8_3_3 .search_area .col4{padding-left: 7px;}
 
-#page8_3_3 .scroll_area{padding-bottom: 10px; overflow-x: scroll;}
 #page8_3_3 .result_area .result_table{width: 1400px;}
 #page8_3_3 .result_table .col1,
 #page8_3_3 .result_table .col2{width: 100px;}
@@ -443,7 +442,7 @@
     gap: 12px;
 }
 #page8_4 .search_area .row2{display: flex;}
-#page8_4 .search_area .row2 .null{width: 750px;}
+#page8_4 .search_area .row2 .null{width: 611px;}
 
 #page8_4 .result_area .col1{width: 150px;}
 #page8_4 .result_area .col2{width: 120px;}

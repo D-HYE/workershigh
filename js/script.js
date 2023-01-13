@@ -1,5 +1,4 @@
 $(function(){
-    $('#gnb').load('../../includes/nav.html');
 
     $('.selected').click(function(){
         let sel_has = $(this).parents('.select_wrap').hasClass('active');

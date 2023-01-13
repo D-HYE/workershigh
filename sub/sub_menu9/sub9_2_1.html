@@ -15,6 +15,12 @@
 <body>
     <div class="wrap" id="page9_2_1">
         <div id="gnb" class="active"></div>
+        <script>
+            $('#gnb').load('../../includes/nav.html', function(){
+                $('.gnb_list9').addClass('on')
+                $('.gnb_list9 li').eq(1).addClass('on')
+            });
+        </script>
         <main>
             <div class="container">
                 <div class="content_wrap">
@@ -258,6 +264,183 @@
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
+                <h3 class="popup_title">스케줄 추가</h3>
+                <button class="icon_btn close_btn" type="button">닫기</button>
+            </div>
+            <div class="popup_content">
+                <div class="option_area">
+                    <ul class="info">
+                        <li>
+                            <dl>
+                                <dt>담당자</dt>
+                                <dd>
+                                    <div class="select_wrap">
+                                        <div class="selected">
+                                            <div class="selected_value">박준혁</div>
+                                            <div class="icon_btn select_btn"></div>
+                                        </div>
+                                        <ul>
+                                            <li class="sel_option">홍길동</li>
+                                            <li class="sel_option">박준혁</li>
+                                            <li class="sel_option">담당자1</li>
+                                        </ul>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>날짜</dt>
+                                <dd>
+                                    <div class="date_area">
+                                        <div class="date_wrap">
+                                            <div class="date_first">
+                                                <p class="year">2022</p>
+                                                <p class="month">10</p>
+                                                <p class="date">12</p>
+                                            </div>
+                                        </div>
+                                        <div class="calander_area">
+                                            <div class="calander_wrap">
+                                                <div class="calander_con">
+                                                    <div class="calander calander_first">
+                                                        <div class="year_month">
+                                                            <input type="button" value="prev" class="prev">
+                                                            <div class="date">
+                                                                <p class="year">2022</p>
+                                                                <p class="month">10</p>
+                                                            </div>
+                                                            <input type="button" value="next" class="next">
+                                                        </div>
+                                                        <div class="month_date">
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="gray">30</td>
+                                                                        <td class="gray">31</td>
+                                                                        <td>1</td>
+                                                                        <td>2</td>
+                                                                        <td>3</td>
+                                                                        <td>4</td>
+                                                                        <td>5</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>6</td>
+                                                                        <td>7</td>
+                                                                        <td>8</td>
+                                                                        <td>9</td>
+                                                                        <td>10</td>
+                                                                        <td>11</td>
+                                                                        <td class="checked">12</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>13</td>
+                                                                        <td>14</td>
+                                                                        <td>15</td>
+                                                                        <td>16</td>
+                                                                        <td>17</td>
+                                                                        <td>18</td>
+                                                                        <td>19</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>20</td>
+                                                                        <td>21</td>
+                                                                        <td>22</td>
+                                                                        <td>23</td>
+                                                                        <td>24</td>
+                                                                        <td>25</td>
+                                                                        <td>26</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>27</td>
+                                                                        <td>28</td>
+                                                                        <td>29</td>
+                                                                        <td>30</td>
+                                                                        <td class="gray">1</td>
+                                                                        <td class="gray">2</td>
+                                                                        <td class="gray">3</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="scroll_area">
+                    <div class="register_area">
+                        <ol class="row row1">
+                            <li class="col col1 block_category">스케줄2</li>
+                            <li class="col col2">거래처</li>
+                            <li class="col col3">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="customer_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col col4">매대</li>
+                            <li class="col col5">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7강남</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="shelf_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7강남</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col col6">지역</li>
+                            <li class="col col7">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" >
+                                </div>
+                            </li>
+                            <li class="col col8">구역</li>
+                            <li class="col col9">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" value="A">
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <button type="button" class="btn btn_white cancel_btn">취소</button>
+                    <button type="button" class="btn btn_blue register_btn">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup9_2_1_2" class="popup">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
                 <h3 class="popup_title">스케줄 수정</h3>
                 <button class="icon_btn close_btn" type="button">닫기</button>
             </div>
@@ -367,42 +550,60 @@
                         </li>
                     </ul>
                 </div>
-                <div class="register_area">
-                    <ol class="row row1">
-                        <li class="col col1 block_category">스케줄2</li>
-                        <li class="col col2">거래처</li>
-                        <li class="col col3">
-                            <div class="select_wrap">
-                                <div class="selected">
-                                    <div class="selected_value">L7강남</div>
-                                    <div class="icon_btn select_btn"></div>
+                <div class="scroll_area">
+                    <div class="register_area">
+                        <ol class="row row1">
+                            <li class="col col1 block_category">스케줄2</li>
+                            <li class="col col2">거래처</li>
+                            <li class="col col3">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="customer_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7</li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li class="sel_option">CITY명동</li>
-                                    <li class="sel_option">L7강남</li>
-                                    <li class="sel_option">롯데백화점</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="col col4">지역</li>
-                        <li class="col col5">
-                            <div class="input_wrap text_input_wrap">
-                                <input type="text">
-                            </div>
-                        </li>
-                        <li class="col col6">구역</li>
-                        <li class="col col7">
-                            <div class="input_wrap text_input_wrap">
-                                <input type="text" value="A" disabled>
-                            </div>
-                        </li>
-                        <li class="col col8">
-                            <div class="icon_btn_wrap">
-                                <button class="icon_btn minus_btn" type="button">빼기</button>
-                                <button class="icon_btn plus_btn" type="button">더하기</button>
-                            </div>
-                        </li>
-                    </ol>
+                            </li>
+                            <li class="col col4">매대</li>
+                            <li class="col col5">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7강남</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="shelf_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7강남</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col col6">지역</li>
+                            <li class="col col7">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" >
+                                </div>
+                            </li>
+                            <li class="col col8">구역</li>
+                            <li class="col col9">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" value="A">
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             <div class="popup_btm">
@@ -413,7 +614,7 @@
             </div>
         </div>
     </div>
-    <div id="popup9_2_1_2" class="popup">
+    <div id="popup9_2_1_3" class="popup">
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
@@ -466,7 +667,7 @@
             </div>
         </div>
     </div>
-    <div id="popup9_2_1_3" class="popup alert_popup">
+    <div id="popup9_2_1_4" class="popup alert_popup">
         <div class="popup_inner">
             <div class="popup_content">
                 <b>스케줄을 삭제 하시겠습니까?</b>
@@ -486,17 +687,17 @@
                 $('.dim').addClass('on');
             });
             $('#page9_2_1 .result_area1 tbody tr').on('click',function(){
-                $('#popup9_2_1_1').addClass('on');
+                $('#popup9_2_1_2').addClass('on');
                 $('.dim').addClass('on');
             });
             $('.delivery_info_btn').on('click',function(e){
                 e.stopImmediatePropagation()
-                $('#popup9_2_1_2').addClass('on');
+                $('#popup9_2_1_3').addClass('on');
                 $('.dim').addClass('on');
             });
             $('.delete_btn').on('click',function(e){
                 e.stopImmediatePropagation()
-                $('#popup9_2_1_3').addClass('on');
+                $('#popup9_2_1_4').addClass('on');
                 $('.dim').addClass('on');
             });
         })

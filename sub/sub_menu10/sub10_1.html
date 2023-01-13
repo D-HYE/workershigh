@@ -15,6 +15,12 @@
 <body>
     <div class="wrap" id="page10">
         <div id="gnb" class="active"></div>
+        <script>
+            $('#gnb').load('../../includes/nav.html', function(){
+                $('.gnb_list10').addClass('on')
+                $('.gnb_list10 li').eq(0).addClass('on')
+            });
+        </script>
         <main>
             <div class="container">
                 <div class="content_wrap">
@@ -265,22 +271,23 @@
                                                 <th class="col col5" rowspan="2">상품명</th>
                                                 <th class="col col6" rowspan="2">용량</th>
                                                 <th class="col col7" rowspan="2">용기</th>
-                                                <th class="col col8" colspan="4">B2C</th>
-                                                <th class="col col12" colspan="4">B2B</th>
-                                                <th class="col col16" rowspan="2">최종수량</th>
-                                                <th class="col col17" rowspan="2">거래처</th>
-                                                <th class="col col18" rowspan="2">구매</th>
-                                                <th class="col col19" rowspan="2">관리</th>
+                                                <th class="col col8" rowspan="2">재고</th>
+                                                <th class="col col9" colspan="4">B2C</th>
+                                                <th class="col col13" colspan="4">B2B</th>
+                                                <th class="col col17" rowspan="2">최종수량</th>
+                                                <th class="col col18" rowspan="2">거래처</th>
+                                                <th class="col col19" rowspan="2">구매</th>
+                                                <th class="col col20" rowspan="2">관리</th>
                                             </tr>
                                             <tr class="row row2">
-                                                <th class="col col8">전주주간</th>
-                                                <th class="col col9">지난달</th>
-                                                <th class="col col10">발주여부</th>
-                                                <th class="col col11">발주수량</th>
-                                                <th class="col col12">지난달</th>
-                                                <th class="col col13">납품요청</th>
-                                                <th class="col col14">발주여부</th>
-                                                <th class="col col15">발주수량</th>
+                                                <th class="col col9">전주주간</th>
+                                                <th class="col col10">지난달</th>
+                                                <th class="col col11">발주여부</th>
+                                                <th class="col col12">발주수량</th>
+                                                <th class="col col13">지난달</th>
+                                                <th class="col col14">납품요청</th>
+                                                <th class="col col15">발주여부</th>
+                                                <th class="col col16">발주수량</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -292,22 +299,23 @@
                                                 <td class="col col5">사이다</td>
                                                 <td class="col col6">250</td>
                                                 <td class="col col7">ML</td>
-                                                <td class="col col8">30</td>
-                                                <td class="col col9">200</td>
-                                                <td class="col col10">
+                                                <td class="col col8">300</td>
+                                                <td class="col col9">30</td>
+                                                <td class="col col10">200</td>
+                                                <td class="col col11">
                                                     <span class="status_mark blue_mark">적정</span>
                                                 </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
                                                     <span class="status_mark blue_mark">적정</span>
                                                 </td>
-                                                <td class="col col15">100</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">롯데</td>
-                                                <td class="col col18">구매전</td>
-                                                <td class="col col19">
+                                                <td class="col col16">100</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">롯데</td>
+                                                <td class="col col19">구매전</td>
+                                                <td class="col col20">
                                                     <button class="btn btn_paleBlue purchase_btn">구매</button>
                                                 </td>
                                             </tr>
@@ -319,22 +327,23 @@
                                                 <td class="col col5">콜라</td>
                                                 <td class="col col6">500</td>
                                                 <td class="col col7">ML</td>
-                                                <td class="col col8">100</td>
-                                                <td class="col col9">400</td>
-                                                <td class="col col10">
+                                                <td class="col col8">250</td>
+                                                <td class="col col9">100</td>
+                                                <td class="col col10">400</td>
+                                                <td class="col col11">
                                                     <span class="status_mark red_mark">부족</span>
                                                 </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
                                                     <span class="status_mark red_mark">부족</span>
                                                 </td>
-                                                <td class="col col15">500</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">상상치</td>
-                                                <td class="col col18">구매완료</td>
-                                                <td class="col col19">
+                                                <td class="col col16">500</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">상상치</td>
+                                                <td class="col col19">구매완료</td>
+                                                <td class="col col20">
                                                     <button class="btn btn_paleBlue purchase_btn">구매</button>
                                                 </td>
                                             </tr>
@@ -346,53 +355,27 @@
                                                 <td class="col col5">밀키스</td>
                                                 <td class="col col6">250</td>
                                                 <td class="col col7">ML</td>
-                                                <td class="col col8">100</td>
-                                                <td class="col col9">200</td>
-                                                <td class="col col10">
+                                                <td class="col col8">300</td>
+                                                <td class="col col9">100</td>
+                                                <td class="col col10">200</td>
+                                                <td class="col col11">
                                                     <span class="status_mark yellow_mark">검토</span>
                                                 </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
                                                     <span class="status_mark yellow_mark">검토</span>
                                                 </td>
-                                                <td class="col col15">500</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">롯데</td>
-                                                <td class="col col18">구매전</td>
-                                                <td class="col col19">
+                                                <td class="col col16">500</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">롯데</td>
+                                                <td class="col col19">구매전</td>
+                                                <td class="col col20">
                                                     <button class="btn btn_paleBlue purchase_btn">구매</button>
                                                 </td>
                                             </tr>
                                             <tr class="row row6 on">
-                                                <td class="col col1">창고</td>
-                                                <td class="col col2">롯데</td>
-                                                <td class="col col3">WH0001</td>
-                                                <td class="col col4">23453245</td>
-                                                <td class="col col5">사이다</td>
-                                                <td class="col col6">250</td>
-                                                <td class="col col7">ML</td>
-                                                <td class="col col8">30</td>
-                                                <td class="col col9">200</td>
-                                                <td class="col col10">
-                                                    <span class="status_mark blue_mark">적정</span>
-                                                </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
-                                                    <span class="status_mark blue_mark">적정</span>
-                                                </td>
-                                                <td class="col col15">100</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">롯데</td>
-                                                <td class="col col18">구매전</td>
-                                                <td class="col col19">
-                                                    <button class="btn btn_paleBlue purchase_btn">구매</button>
-                                                </td>
-                                            </tr>
-                                            <tr class="row row7">
                                                 <td class="col col1">창고</td>
                                                 <td class="col col2">롯데</td>
                                                 <td class="col col3">WH0002</td>
@@ -400,22 +383,51 @@
                                                 <td class="col col5">콜라</td>
                                                 <td class="col col6">500</td>
                                                 <td class="col col7">ML</td>
-                                                <td class="col col8">100</td>
-                                                <td class="col col9">400</td>
-                                                <td class="col col10">
+                                                <td class="col col8">250</td>
+                                                <td class="col col9">100</td>
+                                                <td class="col col10">400</td>
+                                                <td class="col col11">
                                                     <span class="status_mark red_mark">부족</span>
                                                 </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
                                                     <span class="status_mark red_mark">부족</span>
                                                 </td>
-                                                <td class="col col15">500</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">상상치</td>
-                                                <td class="col col18">구매완료</td>
-                                                <td class="col col19">
+                                                <td class="col col16">500</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">상상치</td>
+                                                <td class="col col19">구매완료</td>
+                                                <td class="col col20">
+                                                    <button class="btn btn_paleBlue purchase_btn">구매</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row7">
+                                                <td class="col col1">창고</td>
+                                                <td class="col col2">롯데</td>
+                                                <td class="col col3">WH0001</td>
+                                                <td class="col col4">23453245</td>
+                                                <td class="col col5">사이다</td>
+                                                <td class="col col6">250</td>
+                                                <td class="col col7">ML</td>
+                                                <td class="col col8">300</td>
+                                                <td class="col col9">30</td>
+                                                <td class="col col10">200</td>
+                                                <td class="col col11">
+                                                    <span class="status_mark blue_mark">적정</span>
+                                                </td>
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
+                                                    <span class="status_mark blue_mark">적정</span>
+                                                </td>
+                                                <td class="col col16">100</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">롯데</td>
+                                                <td class="col col19">구매전</td>
+                                                <td class="col col20">
                                                     <button class="btn btn_paleBlue purchase_btn">구매</button>
                                                 </td>
                                             </tr>
@@ -427,53 +439,27 @@
                                                 <td class="col col5">밀키스</td>
                                                 <td class="col col6">250</td>
                                                 <td class="col col7">ML</td>
-                                                <td class="col col8">100</td>
-                                                <td class="col col9">200</td>
-                                                <td class="col col10">
+                                                <td class="col col8">300</td>
+                                                <td class="col col9">100</td>
+                                                <td class="col col10">200</td>
+                                                <td class="col col11">
                                                     <span class="status_mark yellow_mark">검토</span>
                                                 </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
                                                     <span class="status_mark yellow_mark">검토</span>
                                                 </td>
-                                                <td class="col col15">500</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">롯데</td>
-                                                <td class="col col18">구매전</td>
-                                                <td class="col col19">
+                                                <td class="col col16">500</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">롯데</td>
+                                                <td class="col col19">구매전</td>
+                                                <td class="col col20">
                                                     <button class="btn btn_paleBlue purchase_btn">구매</button>
                                                 </td>
                                             </tr>
                                             <tr class="row row9 on">
-                                                <td class="col col1">창고</td>
-                                                <td class="col col2">롯데</td>
-                                                <td class="col col3">WH0001</td>
-                                                <td class="col col4">23453245</td>
-                                                <td class="col col5">사이다</td>
-                                                <td class="col col6">250</td>
-                                                <td class="col col7">ML</td>
-                                                <td class="col col8">30</td>
-                                                <td class="col col9">200</td>
-                                                <td class="col col10">
-                                                    <span class="status_mark blue_mark">적정</span>
-                                                </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
-                                                    <span class="status_mark blue_mark">적정</span>
-                                                </td>
-                                                <td class="col col15">100</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">롯데</td>
-                                                <td class="col col18">구매전</td>
-                                                <td class="col col19">
-                                                    <button class="btn btn_paleBlue purchase_btn">구매</button>
-                                                </td>
-                                            </tr>
-                                            <tr class="row row10">
                                                 <td class="col col1">창고</td>
                                                 <td class="col col2">롯데</td>
                                                 <td class="col col3">WH0002</td>
@@ -481,22 +467,51 @@
                                                 <td class="col col5">콜라</td>
                                                 <td class="col col6">500</td>
                                                 <td class="col col7">ML</td>
-                                                <td class="col col8">100</td>
-                                                <td class="col col9">400</td>
-                                                <td class="col col10">
+                                                <td class="col col8">250</td>
+                                                <td class="col col9">100</td>
+                                                <td class="col col10">400</td>
+                                                <td class="col col11">
                                                     <span class="status_mark red_mark">부족</span>
                                                 </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
                                                     <span class="status_mark red_mark">부족</span>
                                                 </td>
-                                                <td class="col col15">500</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">상상치</td>
-                                                <td class="col col18">구매완료</td>
-                                                <td class="col col19">
+                                                <td class="col col16">500</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">상상치</td>
+                                                <td class="col col19">구매완료</td>
+                                                <td class="col col20">
+                                                    <button class="btn btn_paleBlue purchase_btn">구매</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="row row10">
+                                                <td class="col col1">창고</td>
+                                                <td class="col col2">롯데</td>
+                                                <td class="col col3">WH0001</td>
+                                                <td class="col col4">23453245</td>
+                                                <td class="col col5">사이다</td>
+                                                <td class="col col6">250</td>
+                                                <td class="col col7">ML</td>
+                                                <td class="col col8">300</td>
+                                                <td class="col col9">30</td>
+                                                <td class="col col10">200</td>
+                                                <td class="col col11">
+                                                    <span class="status_mark blue_mark">적정</span>
+                                                </td>
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
+                                                    <span class="status_mark blue_mark">적정</span>
+                                                </td>
+                                                <td class="col col16">100</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">롯데</td>
+                                                <td class="col col19">구매전</td>
+                                                <td class="col col20">
                                                     <button class="btn btn_paleBlue purchase_btn">구매</button>
                                                 </td>
                                             </tr>
@@ -508,49 +523,51 @@
                                                 <td class="col col5">밀키스</td>
                                                 <td class="col col6">250</td>
                                                 <td class="col col7">ML</td>
-                                                <td class="col col8">100</td>
-                                                <td class="col col9">200</td>
-                                                <td class="col col10">
+                                                <td class="col col8">300</td>
+                                                <td class="col col9">100</td>
+                                                <td class="col col10">200</td>
+                                                <td class="col col11">
                                                     <span class="status_mark yellow_mark">검토</span>
                                                 </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
                                                     <span class="status_mark yellow_mark">검토</span>
                                                 </td>
-                                                <td class="col col15">500</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">롯데</td>
-                                                <td class="col col18">구매전</td>
-                                                <td class="col col19">
+                                                <td class="col col16">500</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">롯데</td>
+                                                <td class="col col19">구매전</td>
+                                                <td class="col col20">
                                                     <button class="btn btn_paleBlue purchase_btn">구매</button>
                                                 </td>
                                             </tr>
                                             <tr class="row row12 on">
                                                 <td class="col col1">창고</td>
                                                 <td class="col col2">롯데</td>
-                                                <td class="col col3">WH0003</td>
-                                                <td class="col col4">6546545</td>
-                                                <td class="col col5">밀키스</td>
-                                                <td class="col col6">250</td>
+                                                <td class="col col3">WH0002</td>
+                                                <td class="col col4">23453223</td>
+                                                <td class="col col5">콜라</td>
+                                                <td class="col col6">500</td>
                                                 <td class="col col7">ML</td>
-                                                <td class="col col8">100</td>
-                                                <td class="col col9">200</td>
-                                                <td class="col col10">
-                                                    <span class="status_mark yellow_mark">검토</span>
+                                                <td class="col col8">250</td>
+                                                <td class="col col9">100</td>
+                                                <td class="col col10">400</td>
+                                                <td class="col col11">
+                                                    <span class="status_mark red_mark">부족</span>
                                                 </td>
-                                                <td class="col col11">100</td>
-                                                <td class="col col12">30</td>
-                                                <td class="col col13">200</td>
-                                                <td class="col col14">
-                                                    <span class="status_mark yellow_mark">검토</span>
+                                                <td class="col col12">100</td>
+                                                <td class="col col13">30</td>
+                                                <td class="col col14">200</td>
+                                                <td class="col col15">
+                                                    <span class="status_mark red_mark">부족</span>
                                                 </td>
-                                                <td class="col col15">500</td>
-                                                <td class="col col16">A12</td>
-                                                <td class="col col17">롯데</td>
-                                                <td class="col col18">구매전</td>
-                                                <td class="col col19">
+                                                <td class="col col16">500</td>
+                                                <td class="col col17">A12</td>
+                                                <td class="col col18">상상치</td>
+                                                <td class="col col19">구매완료</td>
+                                                <td class="col col20">
                                                     <button class="btn btn_paleBlue purchase_btn">구매</button>
                                                 </td>
                                             </tr>

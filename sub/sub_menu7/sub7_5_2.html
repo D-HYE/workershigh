@@ -14,7 +14,14 @@
 </head>
 <body>
     <div class="wrap" id="page7_5_2">
-        <div id="gnb" class="active"></div><main>
+        <div id="gnb" class="active"></div>
+        <script>
+            $('#gnb').load('../../includes/nav.html', function(){
+                $('.gnb_list7').addClass('on')
+                $('.gnb_list7 li').eq(4).addClass('on')
+            });
+        </script>
+        <main>
             <div class="container">
                 <div class="content_wrap">
                     <div class="content_top">

@@ -15,6 +15,12 @@
 <body>
     <div class="wrap" id="page9_2">
         <div id="gnb" class="active"></div>
+        <script>
+            $('#gnb').load('../../includes/nav.html', function(){
+                $('.gnb_list9').addClass('on')
+                $('.gnb_list9 li').eq(1).addClass('on')
+            });
+        </script>
         <main>
             <div class="container">
                 <div class="content_wrap">
@@ -269,7 +275,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="row row2">
+                                        <tr class="row row2" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/23</td>
                                             <td class="col col3">5</td>
@@ -277,7 +283,7 @@
                                             <td class="col col5">완료</td>
                                             <td class="col col6">5</td>
                                         </tr>
-                                        <tr class="row row3">
+                                        <tr class="row row3" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/24</td>
                                             <td class="col col3">3</td>
@@ -285,7 +291,7 @@
                                             <td class="col col5">완료</td>
                                             <td class="col col6">2</td>
                                         </tr>
-                                        <tr class="row row4">
+                                        <tr class="row row4" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/25</td>
                                             <td class="col col3">6</td>
@@ -293,7 +299,7 @@
                                             <td class="col col5">완료</td>
                                             <td class="col col6">1</td>
                                         </tr>
-                                        <tr class="row row5">
+                                        <tr class="row row5" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/23</td>
                                             <td class="col col3">5</td>
@@ -301,7 +307,7 @@
                                             <td class="col col5">완료</td>
                                             <td class="col col6">5</td>
                                         </tr>
-                                        <tr class="row row6">
+                                        <tr class="row row6" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/24</td>
                                             <td class="col col3">3</td>
@@ -309,7 +315,7 @@
                                             <td class="col col5">완료</td>
                                             <td class="col col6">2</td>
                                         </tr>
-                                        <tr class="row row7">
+                                        <tr class="row row7" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/25</td>
                                             <td class="col col3">6</td>
@@ -317,7 +323,7 @@
                                             <td class="col col5">완료</td>
                                             <td class="col col6">1</td>
                                         </tr>
-                                        <tr class="row row8">
+                                        <tr class="row row8" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/23</td>
                                             <td class="col col3">5</td>
@@ -325,7 +331,7 @@
                                             <td class="col col5">완료</td>
                                             <td class="col col6">5</td>
                                         </tr>
-                                        <tr class="row row9">
+                                        <tr class="row row9" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/23</td>
                                             <td class="col col3">5</td>
@@ -333,7 +339,7 @@
                                             <td class="col col5">완료</td>
                                             <td class="col col6">5</td>
                                         </tr>
-                                        <tr class="row row10">
+                                        <tr class="row row10" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/25</td>
                                             <td class="col col3">6</td>
@@ -341,7 +347,7 @@
                                             <td class="col col5">완료</td>
                                             <td class="col col6">1</td>
                                         </tr>
-                                        <tr class="row row11">
+                                        <tr class="row row11" onclick="location.href='./sub9_2_1.html';">
                                             <td class="col col1">박준혁</td>
                                             <td class="col col2">2022/10/23</td>
                                             <td class="col col3">5</td>
@@ -494,124 +500,180 @@
                         </li>
                     </ul>
                 </div>
-                <div class="register_area">
-                    <ol class="row row1 on">
-                        <li class="col col1 block_category">스케줄1</li>
-                        <li class="col col2">거래처</li>
-                        <li class="col col3">
-                            <div class="select_wrap">
-                                <div class="selected">
-                                    <div class="selected_value">L7강남</div>
-                                    <div class="icon_btn select_btn"></div>
+                <div class="scroll_area">
+                    <div class="register_area">
+                        <ol class="row row1 on">
+                            <li class="col col1 block_category">스케줄1</li>
+                            <li class="col col2">거래처</li>
+                            <li class="col col3">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="customer_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7</li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li class="input_wrap text_input_wrap">
-                                        <input type="text" name="customer_select">
-                                    </li>
-                                    <li class="sel_option">포컴퍼니</li>
-                                    <li class="sel_option">롯데벤처스</li>
-                                    <li class="sel_option">위워크 BIFC</li>
-                                    <li class="sel_option">L7강남</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="col col4">지역</li>
-                        <li class="col col5">
-                            <div class="input_wrap text_input_wrap">
-                                <input type="text">
-                            </div>
-                        </li>
-                        <li class="col col6">구역</li>
-                        <li class="col col7">
-                            <div class="input_wrap text_input_wrap">
-                                <input type="text" value="A">
-                            </div>
-                        </li>
-                        <li class="col col8">
-                            <div class="icon_btn_wrap">
-                                <button class="icon_btn minus_btn" type="button">빼기</button>
-                                <button class="icon_btn plus_btn" type="button">더하기</button>
-                            </div>
-                        </li>
-                    </ol>
-                    <ol class="row row2">
-                        <li class="col col1 block_category">스케줄2</li>
-                        <li class="col col2">거래처</li>
-                        <li class="col col3">
-                            <div class="select_wrap">
-                                <div class="selected">
-                                    <div class="selected_value">L7강남</div>
-                                    <div class="icon_btn select_btn"></div>
+                            </li>
+                            <li class="col col4">매대</li>
+                            <li class="col col5">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7강남</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="shelf_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7강남</li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li class="input_wrap text_input_wrap">
-                                        <input type="text" name="customer_select">
-                                    </li>
-                                    <li class="sel_option">포컴퍼니</li>
-                                    <li class="sel_option">롯데벤처스</li>
-                                    <li class="sel_option">위워크 BIFC</li>
-                                    <li class="sel_option">L7강남</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="col col4">지역</li>
-                        <li class="col col5">
-                            <div class="input_wrap text_input_wrap">
-                                <input type="text">
-                            </div>
-                        </li>
-                        <li class="col col6">구역</li>
-                        <li class="col col7">
-                            <div class="input_wrap text_input_wrap">
-                                <input type="text" value="A" disabled>
-                            </div>
-                        </li>
-                        <li class="col col8">
-                            <div class="icon_btn_wrap">
-                                <button class="icon_btn minus_btn" type="button">빼기</button>
-                                <button class="icon_btn plus_btn" type="button">더하기</button>
-                            </div>
-                        </li>
-                    </ol>
-                    <ol class="row row3">
-                        <li class="col col1 block_category">스케줄3</li>
-                        <li class="col col2">거래처</li>
-                        <li class="col col3">
-                            <div class="select_wrap">
-                                <div class="selected">
-                                    <div class="selected_value">L7강남</div>
-                                    <div class="icon_btn select_btn"></div>
+                            </li>
+                            <li class="col col6">지역</li>
+                            <li class="col col7">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" disabled>
                                 </div>
-                                <ul>
-                                    <li class="input_wrap text_input_wrap">
-                                        <input type="text" name="customer_select">
-                                    </li>
-                                    <li class="sel_option">포컴퍼니</li>
-                                    <li class="sel_option">롯데벤처스</li>
-                                    <li class="sel_option">위워크 BIFC</li>
-                                    <li class="sel_option">L7강남</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="col col4">지역</li>
-                        <li class="col col5">
-                            <div class="input_wrap text_input_wrap">
-                                <input type="text">
-                            </div>
-                        </li>
-                        <li class="col col6">구역</li>
-                        <li class="col col7">
-                            <div class="input_wrap text_input_wrap">
-                                <input type="text" value="A" disabled>
-                            </div>
-                        </li>
-                        <li class="col col8">
-                            <div class="icon_btn_wrap">
-                                <button class="icon_btn minus_btn" type="button">빼기</button>
-                                <button class="icon_btn plus_btn" type="button">더하기</button>
-                            </div>
-                        </li>
-                    </ol>
+                            </li>
+                            <li class="col col8">구역</li>
+                            <li class="col col9">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" value="A" disabled>
+                                </div>
+                            </li>
+                            <li class="col col10">
+                                <div class="icon_btn_wrap">
+                                    <button class="icon_btn minus_btn" type="button">빼기</button>
+                                    <button class="icon_btn plus_btn" type="button">더하기</button>
+                                </div>
+                            </li>
+                        </ol>
+                        <ol class="row row2">
+                            <li class="col col1 block_category">스케줄2</li>
+                            <li class="col col2">거래처</li>
+                            <li class="col col3">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="customer_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col col4">매대</li>
+                            <li class="col col5">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7강남</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="shelf_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7강남</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col col6">지역</li>
+                            <li class="col col7">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" >
+                                </div>
+                            </li>
+                            <li class="col col8">구역</li>
+                            <li class="col col9">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" value="A">
+                                </div>
+                            </li>
+                            <li class="col col10">
+                                <div class="icon_btn_wrap">
+                                    <button class="icon_btn minus_btn" type="button">빼기</button>
+                                    <button class="icon_btn plus_btn" type="button">더하기</button>
+                                </div>
+                            </li>
+                        </ol>
+                        <ol class="row row3">
+                            <li class="col col1 block_category">스케줄3</li>
+                            <li class="col col2">거래처</li>
+                            <li class="col col3">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="customer_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col col4">매대</li>
+                            <li class="col col5">
+                                <div class="select_wrap">
+                                    <div class="selected">
+                                        <div class="selected_value">L7강남</div>
+                                        <div class="icon_btn select_btn"></div>
+                                    </div>
+                                    <ul>
+                                        <li class="input_wrap text_input_wrap">
+                                            <input type="text" name="shelf_select">
+                                        </li>
+                                        <li class="sel_option">포컴퍼니</li>
+                                        <li class="sel_option">롯데벤처스</li>
+                                        <li class="sel_option">위워크 BIFC</li>
+                                        <li class="sel_option">L7강남</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="col col6">지역</li>
+                            <li class="col col7">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text">
+                                </div>
+                            </li>
+                            <li class="col col8">구역</li>
+                            <li class="col col9">
+                                <div class="input_wrap text_input_wrap">
+                                    <input type="text" value="A">
+                                </div>
+                            </li>
+                            <li class="col col10">
+                                <div class="icon_btn_wrap">
+                                    <button class="icon_btn minus_btn" type="button">빼기</button>
+                                    <button class="icon_btn plus_btn" type="button">더하기</button>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             <div class="popup_btm">

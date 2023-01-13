@@ -16,6 +16,12 @@
     <!-- 관리의 복지포인트 수정과 삭제 눌렀을떄 아직 -->
     <div class="wrap" id="page6_2">
         <div id="gnb" class="active"></div>
+        <script>
+            $('#gnb').load('../../includes/nav.html', function(){
+                $('.gnb_list6').addClass('on')
+                $('.gnb_list6 li').eq(1).addClass('on')
+            });
+        </script>
         <main>
             <div class="container">
                 <div class="content_wrap">

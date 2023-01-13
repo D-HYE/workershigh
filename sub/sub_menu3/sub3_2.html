@@ -15,6 +15,12 @@
 <body>
     <div class="wrap" id="page3_2">
         <div id="gnb" class="active"></div>
+        <script>
+            $('#gnb').load('../../includes/nav.html', function(){
+                $('.gnb_list3').addClass('on');
+                $('.gnb_list3 li').eq(1).addClass('on');
+            });
+        </script>
         <main>
             <div class="container">
                 <div class="content_wrap">
@@ -207,8 +213,5 @@
         </main>
     </div>
     
-    <script>
-        $('#gnb .gnb_list').addClass('on');
-    </script>
 </body>
 </html>
