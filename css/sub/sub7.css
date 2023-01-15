@@ -1016,8 +1016,7 @@ label.file_upload{
 #page7_6 .result_area .col1 .checkbox_wrap input{
     margin-right: 0;
 }
-#page7_6 .result_area .col2 span,
-#page7_6 .result_area .col11 span{
+/* #page7_6 .result_area .status_mark{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1027,10 +1026,7 @@ label.file_upload{
     text-align: center;
     color:#fff;
     margin: 0 auto;
-}
-#page7_6 .result_area .proper{background-color: #00A3FF;}
-#page7_6 .result_area .deficient{background-color: #FF2E00;}
-#page7_6 .result_area .review{background-color: #FFB800;}
+} */
 #page7_6 .result_area .order_btn{
     position: absolute;
     right: 0;
