@@ -289,10 +289,26 @@ main{
     table-layout: fixed !important;
 }
 .result_area thead{
-    background: #FCFCFC;
+    /* background: #FCFCFC; */
     border-bottom: 1px solid #D3D3D3;
     height: 50px;
     line-height: 50px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.result_area thead:after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FCFCFC;
+    /* background-color: darkred; */
+    top: 0;
+    left: 0;
+    border-radius: 12px 12px 0 0;
+    z-index: -1;
 }
 .result_area thead th{
     height: 50px;
@@ -301,6 +317,17 @@ main{
     color: #6F869C;
     line-height: 1.2;
     vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+.result_area thead th:after{
+    content:'';
+    position:absolute;
+    right:0;
+    top:0;
+    width:1px;
+    height:100%;
+    background-color:#eee;
 }
 .result_area tbody tr{border-bottom: 1px solid #F2F2F2;}
 .result_area tbody tr:last-child{border-bottom: none;}
