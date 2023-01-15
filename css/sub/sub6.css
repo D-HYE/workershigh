@@ -202,7 +202,7 @@ label.file_upload{
 .popup_history td{width: 8.5% !important;}
 .popup_history{width: 960px;}
 .popup_history .result_area {width: 100%; overflow: auto;}
-.popup_history .result_area .result_table{width: 1235px;}
+.popup_history .result_area .result_table{width: 1350px;}
 .popup_history .result_area .result_table th{
     font-weight: 700;
     font-size: 13px;
@@ -252,6 +252,7 @@ label.file_upload{
 }
 #page6_2 .result_area .result_table .col2{
     width:8.1%;
+    padding: 0;
 }
 #page6_2 .result_area .result_table .col3,
 #page6_2 .result_area .result_table .col6{
@@ -395,3 +396,17 @@ label.file_upload{
 #page6_3 .result_area tbody tr:hover .popup_history tr{background: #fff; color: #111;}
 #page6_3 .result_area tbody tr:hover .popup_history th{color: #6F869C;}
 #page6_3 .result_area tbody tr:hover .popup_history td{color: #111;}
+
+
+
+#page6_3 ~ .popup_history .result_table{width: 1865px;}
+#page6_3 ~ .popup_history .col{
+    width: 105px;
+    text-overflow: clip;
+    white-space: inherit;
+}
+#page6_3 ~ .popup_history .col1{width: 70px; }
+#page6_3 ~ .popup_history .col3{width: 130px; }
+#page6_3 ~ .popup_history .col4{width: 130px; cursor: pointer;}
+#page6_3 ~ .popup_history .col5{width: 180px; }
+#page6_3 ~ .popup_history .col10{width: 200px;}
