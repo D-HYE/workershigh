@@ -75,6 +75,7 @@
                                 </table>
                             </div>
                         </div>
+                        <input type="button" value="수정" class="btn_blue edit_btn btn">
                         <div class="result_area result_area_2">
                             <h4>주문상품 상세 내역</h4>
                             <div class="result_table">
@@ -169,7 +170,7 @@
         </main>
     </div>
     
-    <div id="popup_infoEdit" class="popup popup_infoEidt">
+    <div id="popup_new" class="popup popup_new">
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
@@ -266,8 +267,8 @@
     <div class="dim"></div>
     <script>
         $(function(){
-            $('.result_area_2 tbody tr .col3').on('click', function(){
-                $('.popup_infoEidt').addClass('on');
+            $('.new_btn').on('click', function(){
+                $('.popup_new').addClass('on');
                 $('.dim').addClass('on');
             })
         })

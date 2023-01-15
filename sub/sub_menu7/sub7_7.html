@@ -40,14 +40,36 @@
                         </div>
                     </div>
                     <div class="content">
+                        
                         <div class="search_area">
                             <div class="search_form_table">
                                 <ul class="row row1">
-                                    <li class="col col1 table_category">검색조건</li>
+                                    <li class="col col1">
+                                        <h4 class="search_form_title">거래처</h4>
+                                    </li>
                                     <li class="col col2">
                                         <div class="select_wrap">
                                             <div class="selected">
-                                                <div class="selected_value">요청자</div>
+                                                <div class="selected_value">포컴퍼니</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <!-- <li class="input_wrap text_input_wrap">
+                                                    <input type="text" name="customer_select">
+                                                </li> -->
+                                                <li class="sel_option">포컴퍼니</li>
+                                                <li class="sel_option">포컴퍼니</li>
+                                                <li class="sel_option">상포컴퍼니품명2</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="col col3 table_category">
+                                        매대
+                                    </li>
+                                    <li class="col col4">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">마스터</div>
                                                 <div class="icon_btn select_btn"></div>
                                             </div>
                                             <ul>
@@ -57,13 +79,32 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="col col3">
-                                        <div class="input_wrap text_input_wrap">
-                                            <input type="text" name="requester_name">
+                                    <li class="col col5 table_category">
+                                        검색 조건
+                                    </li>
+                                    <li class="col col6">
+                                        <div class="select_wrap">
+                                            <div class="selected">
+                                                <div class="selected_value">요청자</div>
+                                                <div class="icon_btn select_btn"></div>
+                                            </div>
+                                            <ul>
+                                                <li class="sel_option">전체</li>
+                                                <li class="sel_option">요청자</li>
+                                                <li class="sel_option">요청구분</li>
+                                                <li class="sel_option">발주거래처</li>
+                                            </ul>
                                         </div>
                                     </li>
-                                    <li class="col col4 table_category">주문일</li>
-                                    <li class="col col5">
+                                    <li class="col col7">
+                                        <div class="input_wrap">
+                                            <input type="text" value="박준혁">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="row row2">
+                                    <li class="col col1 table_category">주문일</li>
+                                    <li class="col col2">
                                         <div class="date_area">
                                             <div class="date_wrap">
                                                 <div class="date_first">
@@ -233,21 +274,19 @@
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
-                                <ul class="row row2">
-                                    <li class="col col1">
+                                    <li class="col col3">
                                         <div class="radio_wrap">
                                             <input type="radio" name="search" id="all">
                                             <label for="all">전체</label>
                                             <input type="radio" name="search" id="regi">
                                             <label for="regi">등록</label>
-                                            <input type="radio" name="search" id="picking">
-                                            <label for="picking">피킹</label>
                                             <input type="radio" name="search" id="fin">
                                             <label for="fin">완료</label>
+                                            <input type="radio" name="search" id="refuse">
+                                            <label for="refuse">반려</label>
                                         </div>
                                     </li>
-                                    <li class="col col2">
+                                    <li class="col col4">
                                         <button type="button" class="btn search_btn btn_blue">검색</button>
                                     </li>
                                 </ul>
@@ -262,7 +301,7 @@
                                                 <th class="col col1">NO</th>
                                                 <th class="col col2">주문일</th>
                                                 <th class="col col3">채널</th>
-                                                <th class="col col4">발주 거래처</th>
+                                                <th class="col col4">거래처</th>
                                                 <th class="col col5">매대</th>
                                                 <th class="col col6">요청자</th>
                                                 <th class="col col7">요청구분</th>
