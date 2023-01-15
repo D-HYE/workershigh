@@ -601,3 +601,24 @@ footer p{
     color: #4267EB;
     line-height: 18px;
 }
+
+/* status mark color */
+.status_mark{
+    display: inline-block;
+    width: 44px;
+    height: 26px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 26px;
+    border-radius: 15px;
+}
+.status_mark.blue_mark{
+    background: #00A3FF;
+}
+.status_mark.yellow_mark{
+    background: #FFB800;
+}
+.status_mark.red_mark{
+    background: #FF2E00;
+}
