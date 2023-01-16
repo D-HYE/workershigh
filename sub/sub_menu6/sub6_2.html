@@ -261,21 +261,21 @@
     </div>
 
     
-    <div id="popup_edit" class="popup popup_point_edit">
+    <div id="popup_point_edit" class="popup popup_point_edit">
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
-                <h3 class="popup_title">복지포인트 수정</h3>
+                <h3 class="popup_title">복지포인트 등록</h3>
                 <button class="icon_btn close_btn" type="button"></button>
             </div>
             <div class="popup_content">
-                <div class="popup_content">
-                    <div class="result_area">
-                        <div class="result_table">
-                            <table>
-                                <tr class="row row1">
-                                    <td class="col col1">합산/초기화</td>
-                                    <td class="col col2">
+                <div class="form_area">
+                    <div class="input_form_table">
+                        <table>
+                            <tr class="row row1">
+                                <td class="col col1 table_category">합산/초기화</td>
+                                <td class="col col2">
+                                    <div class="select_wrap">
                                         <div class="selected">
                                             <div class="selected_value">마스터</div>
                                             <div class="icon_btn select_btn"></div>
@@ -289,18 +289,18 @@
                                             <li class="sel_option">마스터</li>
                                             <li class="sel_option">마스터</li>
                                         </ul>
-                                    </td>
-                                </tr>
-                                <tr class="row row2">
-                                    <td class="col col1">복지포인트</td>
-                                    <td class="col col2">
-                                        <div class="input_wrap text_input_wrap">
-                                            <input type="text" placeholder="">
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="row row2">
+                                <td class="col col1 table_category">복지포인트</td>
+                                <td class="col col2">
+                                    <div class="input_wrap text_input_wrap">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -337,11 +337,11 @@
                 <button class="icon_btn close_btn" type="button"></button>
             </div>
             <div class="popup_content">
-                <div class="result_area">
-                    <div class="result_table">
+                <div class="form_area">
+                    <div class="input_form_table">
                         <table>
                             <tr class="row row1">
-                                <td class="col col1">이름</td>
+                                <td class="col col1 table_category">이름</td>
                                 <td class="col col2">
                                     <div class="input_wrap text_input_wrap">
                                         <input type="text" placeholder="" value="">
@@ -349,7 +349,7 @@
                                 </td>
                             </tr>
                             <tr class="row row2">
-                                <td class="col col1">휴대폰 번호</td>
+                                <td class="col col1 table_category">휴대폰 번호</td>
                                 <td class="col col2">
                                     <div class="input_wrap text_input_wrap">
                                         <input type="text" placeholder="">
@@ -357,7 +357,7 @@
                                 </td>
                             </tr>
                             <tr class="row row2">
-                                <td class="col col1">이메일</td>
+                                <td class="col col1 table_category">이메일</td>
                                 <td class="col col2">
                                     <div class="input_wrap text_input_wrap">
                                         <input type="text" placeholder="">
@@ -386,11 +386,11 @@
                 <button class="icon_btn close_btn" type="button"></button>
             </div>
             <div class="popup_content">
-                <div class="result_area">
-                    <div class="result_table">
+                <div class="form_area">
+                    <div class="input_form_table">
                         <table>
                             <tr class="row row1">
-                                <td class="col col1">이름</td>
+                                <td class="col col1 table_category">이름</td>
                                 <td class="col col2">
                                     <div class="input_wrap text_input_wrap">
                                         <input type="text" placeholder="" value="">
@@ -398,7 +398,7 @@
                                 </td>
                             </tr>
                             <tr class="row row2">
-                                <td class="col col1">휴대폰 번호</td>
+                                <td class="col col1 table_category">휴대폰 번호</td>
                                 <td class="col col2">
                                     <div class="input_wrap text_input_wrap">
                                         <input type="text" placeholder="">
@@ -406,7 +406,7 @@
                                 </td>
                             </tr>
                             <tr class="row row3">
-                                <td class="col col1">이메일</td>
+                                <td class="col col1 table_category">이메일</td>
                                 <td class="col col2">
                                     <div class="input_wrap text_input_wrap">
                                         <input type="text" placeholder="">
@@ -466,11 +466,11 @@
                 <button class="icon_btn close_btn" type="button"></button>
             </div>
             <div class="popup_content">
-                <div class="result_area">
-                    <div class="result_table">
+                <div class="form_area">
+                    <div class="input_form_table">
                         <table>
                             <tr class="row row1">
-                                <td class="col col1">합산/초기화</td>
+                                <td class="col col1 table_category">합산/초기화</td>
                                 <td class="col col2">
                                     <div class="select_wrap">
                                         <div class="selected">
@@ -486,7 +486,7 @@
                                 </td>
                             </tr>
                             <tr class="row row2">
-                                <td class="col col1">복지포인트</td>
+                                <td class="col col1 table_category">복지포인트</td>
                                 <td class="col col2">
                                     <div class="input_wrap text_input_wrap">
                                         <input type="text" placeholder="">
@@ -515,19 +515,29 @@
                 $('.popup_user_new').addClass('on')
                 $('.dim').addClass('on')
             })
+
             // 엑셀 등록 버튼 눌렀을 때
             $('.option_area .pointUser_new').on('click', function(){
                 $('.popup_pointUser_new').addClass('on')
                 $('.dim').addClass('on')
             })
+
             // 복지포인트 등록 버튼 눌렀을 때
             $('.option_area .point_new').on('click', function(){
                 $('.popup_point_new').addClass('on')
                 $('.dim').addClass('on')
             })
 
+            // 회원수정 팝업
             $('.result_area tbody tr td').on('click', function(){
-                $('.popup_user_edit').addClass('on')
+                if(!$(this).hasClass('col7')){
+                    $('.popup_user_edit').addClass('on')
+                    $('.dim').addClass('on')
+                }
+            })
+            // 복지포인트 수정 눌렀을 때
+            $('.col7 .btn_edit').on('click', function(){
+                $('.popup_point_edit').addClass('on')
                 $('.dim').addClass('on')
             })
 
