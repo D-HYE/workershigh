@@ -266,6 +266,7 @@ label.file_upload{
 }
 #page6_2 .result_area .result_table .col7{
     width:31.5%;
+    cursor: default;
 }
 #page6_2 .search_area .col2,
 #page6_2 .search_area .col4,
@@ -276,6 +277,13 @@ label.file_upload{
 #page6_2 .popup{
     width: 460px;
     cursor:auto;
+}
+#page6_2 ~ .popup .col.table_category{
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+#page6_2 ~ .popup .col.table_category:last-of-type{
+    border-bottom: none;
 }
 #page6_2 ~ .popup .col1,
 #page6_2 .popup .col1{
@@ -299,8 +307,8 @@ label.file_upload{
 #page6_2 .result_area tbody tr:hover td{color: #0044FE;}
 #page6_2 ~ .popup tbody tr:hover,
 #page6_2 .popup tbody tr:hover{
-    cursor:auto;
-    background-color: #fff;
+    cursor:default;
+    background-color: none;
 }
 #page6_2 .result_area tbody tr:hover td .popup{color: #111;}
 

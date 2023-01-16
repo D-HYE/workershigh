@@ -326,6 +326,13 @@ label.file_upload{
 #page7_2 ~ .popup .col1{width: 120px;}
 #page7_2 ~ .popup .col2{width: 280px;}
 #page7_2 ~ .popup .col2 input{width: 100%;}
+#page7_2 ~ .popup_new .col.table_category{
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+#page7_2 ~ .popup_new .col.table_category:last-of-type{
+    border-bottom: none;
+}
 
 /* ---------- sub7_3 ---------- */
 #page7_3 .search_area .date_area{width: 256px;}
@@ -1240,8 +1247,11 @@ label.file_upload{
     align-items: center;
     justify-content: space-between;
 }
-#page7_7_1 ~ .popup_new {
+#page7_7_1 ~ .popup_search {
     width: 560px;
+}
+#page7_7_1 ~ .popup_new {
+    width: 460px;
 }
 #page7_7_1 ~ .popup_new .result_table .col2{width: 30%;}
 #page7_7_1 ~ .popup_new .result_table .col2 input{
