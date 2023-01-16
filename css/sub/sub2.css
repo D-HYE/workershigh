@@ -301,7 +301,6 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 #page2_2_1 .col{width: calc(33.3% - 120px);}
 #page2_2_1 .col.table_category{width: 120px;}
 
-#page2_2_1 .row_collapse{border-bottom: 1px solid #eee;}
 #page2_2_1 .row_collapse .col{height: 129px;}
 #page2_2_1 .table_block1 .row_collapse_left{width: 66.666%;}
 #page2_2_1 .row_collapse_left .col2{

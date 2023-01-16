@@ -57,5 +57,5 @@
     background: #FF2E00;
 } */
 
-#page10 .result_area tbody .row .col19>*{display: none;}
-#page10 .result_area tbody .row.on .col19>*{display: inline-block;}
+#page10 .result_area tbody .row .col20>*{display: inline-block;}
+#page10 .result_area tbody .row.on .col20>*{display: none;}
