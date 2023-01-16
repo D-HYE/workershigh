@@ -395,7 +395,7 @@ ol.pagenation_item span{
 .input_form_table{
     border: 1px solid #D3D3D3;
     border-radius: 8px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .input_form_table .btn{height: 36px; padding: 0 15px; font-size: 13px; letter-spacing: -0.03em;}
 .input_form_table  .col>div{width: 100%;}
@@ -410,6 +410,14 @@ ol.pagenation_item span{
     justify-content: center;
     height: 64px;
     padding: 10px 12px;
+}
+.input_form_table .row1 .col1{
+    border-radius:12px 0 0 0;
+    overflow:hidden;
+}
+.input_form_table .row:last-of-type .col1{
+    border-radius: 0 0 0 12px;
+    overflow:hidden;
 }
 .input_form_table .col.table_category{padding: 0;}
 .input_form_table .col:nth-child(odd):not(.col1){border-left: 1px solid #eee;}
