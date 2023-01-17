@@ -589,9 +589,12 @@ label.file_upload{
 #page7_4 .result_area .col4 .margin,
 #page7_4 .result_area .col4 .originP,
 #page7_4 .result_area .col4 .guide,
-#page7_4 .result_area .col4 .standard{width: 25%;}
+#page7_4 .result_area .col4 .standard{border-right: 1px solid #eee;width: 25%;}
 #page7_4 .result_area th.col div:last-of-type{
     border-right: none;
+}
+#page7_4 .result_area td.col .originP{
+    border-right:none;
 }
 #page7_4 .result_area .col1{width: 200px;}
 #page7_4 .result_area .col2{width: 130px;}
