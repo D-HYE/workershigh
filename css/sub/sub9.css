@@ -50,16 +50,16 @@
 #page9_2 .result_area tbody tr:hover{background: #F6FAFF;}
 #page9_2 .result_area tbody tr:hover td{color: #0044FE;}
 
-#popup9_2{width: 820px;}
+#popup9_2{width: 1022px;}
 #popup9_2 .option_area ul.info{
     display: flex;
     align-items: center;
     width: 100%;
     border: 1px solid #D3D3D3;
     border-radius: 8px;
-    overflow: hidden;
 }
 #popup9_2 .option_area ul li{
+    width: 50%;
     border-right: 1px solid #eee;
 }
 #popup9_2 .option_area ul li:last-of-type{
@@ -70,15 +70,18 @@
     align-items: center;
     height: 60px;
 }
-#popup9_2 .option_area ul li dl dt{
+#popup9_2 .option_area ul li dt{
     width: 120px;
-    padding: 14px 12px;
     font-weight: 700;
     font-size: 13px;
     text-align: center;
     color: #6F869C;
     line-height: 60px;
     background-color: #FCFCFC;
+}
+#popup9_2 .option_area ul li:first-child dt{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 #popup9_2 .option_area ul li dl dd{
     width: 260px;
@@ -87,7 +90,6 @@
 #popup9_2 .option_area ul li:last-child dl dd{width: auto;}
 #popup9_2 .option_area .date_wrap{width: 236px;}
 
-#popup9_2 .register_area {width: 962px;}
 #popup9_2 .register_area input{width: 100%;}
 #popup9_2 .register_area .row{
     display: flex;
@@ -175,7 +177,8 @@
 
 #page9_2_1 .option_area3{margin-top: 40px;}
 
-#popup9_2_1_1, #popup9_2_1_2{width: 720px;}
+#popup9_2_1_1, #popup9_2_1_2{width: 910px;}
+
 #popup9_2_1_1 .option_area ul.info,
 #popup9_2_1_2 .option_area ul.info{
     display: flex;
@@ -183,12 +186,13 @@
     width: 100%;
     border: 1px solid #D3D3D3;
     border-radius: 8px;
-    overflow: hidden;
 }
 #popup9_2_1_1 .option_area ul li,
 #popup9_2_1_2 .option_area ul li{
+    width: 50%;
     border-right: 1px solid #eee;
 }
+
 #popup9_2_1_1 .option_area ul li:last-of-type,
 #popup9_2_1_2 .option_area ul li:last-of-type{
     border-right: none;
@@ -199,16 +203,20 @@
     align-items: center;
     height: 60px;
 }
-#popup9_2_1_1 .option_area ul li dl dt,
-#popup9_2_1_2 .option_area ul li dl dt{
+#popup9_2_1_1 .option_area ul li dt,
+#popup9_2_1_2 .option_area ul li dt{
     width: 120px;
-    padding: 14px 12px;
     font-weight: 700;
     font-size: 13px;
     text-align: center;
     color: #6F869C;
     line-height: 60px;
     background-color: #FCFCFC;
+}
+#popup9_2_1_1 .option_area ul li:first-child dt,
+#popup9_2_1_2 .option_area ul li:first-child dt{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 #popup9_2_1_1 .option_area ul li dl dd,
 #popup9_2_1_2 .option_area ul li dl dd{
@@ -222,8 +230,6 @@
 #popup9_2_1_1 .option_area .calander_area,
 #popup9_2_1_2 .option_area .calander_area{width: 256px;}
 
-#popup9_2_1_1 .register_area,
-#popup9_2_1_2 .register_area{width: 850px;}
 #popup9_2_1_1 .register_area input,
 #popup9_2_1_2 .register_area input{width: 100%;}
 #popup9_2_1_1 .register_area .row,

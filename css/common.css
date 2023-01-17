@@ -323,7 +323,7 @@ main{
 .result_area thead th:after{
     content:'';
     position:absolute;
-    right:0;
+    right:-1px;
     top:0;
     width:1px;
     height:100%;
@@ -403,7 +403,7 @@ ol.pagenation_item span{
 .table_block{display: flex; border-bottom: 1px solid #D3D3D3;}
 .table_block:last-child{border: none;}
 .input_form_table .row{display: flex; border-bottom: 1px solid #eee;}
-.input_form_table .table_block .row:last-child{border: none;}
+.input_form_table .row:last-child{border: none;}
 .input_form_table .col{
     display: flex;
     align-items: center;
@@ -435,6 +435,8 @@ ol.pagenation_item span{
     justify-content: center;
     border-right: 1px solid #eee;
 }
+.table_block:first-child .block_category{border-top-left-radius: 8px;}
+.table_block:last-child .block_category{border-bottom-left-radius: 8px;}
 .table_head_row .row{border-bottom: 1px solid #D3D3D3;}
 .table_head_row .col{
     height: 50px;

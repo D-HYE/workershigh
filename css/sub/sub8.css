@@ -28,7 +28,9 @@
 #page8_1 .result_area .col7,
 #page8_1 .result_area .col9,
 #page8_1 .result_area .col11{border-left: 1px solid #d3d3d3;}
-#page8_1 .result_area thead .col{height: 40px;}
+#page8_1 .result_area thead::after{background: none;}
+#page8_1 .result_area thead .col{height: 40px; background-color: #FCFCFC;}
+#page8_1 .result_area thead .col:after{display: none;}
 #page8_1 .result_area thead .row2 .col{border-top: 1px solid #eee;}
 #page8_1 .result_area .col1{width: 100px;}
 #page8_1 .result_area .col2{width: 110px;}

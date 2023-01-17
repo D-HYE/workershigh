@@ -23,7 +23,10 @@
 }
 
 #page10 .result_table{width: 1850px;}
-#page10 .result_area th{height: 40px;}
+
+#page10 .result_area thead::after{background: none;}
+#page10 .result_area thead .col{height: 40px; background-color: #FCFCFC;}
+#page10 .result_area thead .col:after{display: none;}
 #page10 .result_area .row1 .col9,
 #page10 .result_area .row1 .col13{border-bottom: 1px solid #eee;}
 #page10 .result_area .col1{width: 80px;}
