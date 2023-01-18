@@ -16,9 +16,11 @@
     <div class="wrap" id="page8_6">
         <div id="gnb" class="active"></div>
         <script>
-            $('#gnb').load('../../includes/nav.html', function(){
-                $('.gnb_list8').addClass('on')
-                $('.gnb_list8 li').eq(5).addClass('on')
+            $(document).ready(function() {
+                $('#gnb').load('../../includes/nav.html', function(){
+                    $('.gnb_list8').addClass('on')
+                    $('.gnb_list8 li').eq(5).addClass('on')
+                });
             });
         </script>
         <main>

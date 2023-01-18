@@ -15,6 +15,14 @@
 <body>
     <div class="wrap" id="page7_3">
         <div id="gnb" class="active"></div>
+        <script>
+            $(document).ready(function() {
+                $('#gnb').load('../../includes/nav.html', function(){
+                    $('.gnb_list7').addClass('on')
+                    $('.gnb_list7 li').eq(2).addClass('on')
+                });
+            });
+        </script>
         <main>
             <div class="container">
                 <div class="content_wrap">
@@ -267,22 +275,6 @@
                                 <li><button type="button" class="btn_white btn">지점별 가격</button></li>
                                 <li><button type="button" class="btn_white btn">RAW 데이터</button></li>
                             </ul>
-                            <div class="option_result_wrap">
-                                <div class="option_result">
-                                    <h3>검색결과 <span>33</span></h3>
-                                </div>
-                                <div class="select_wrap">
-                                    <div class="selected">
-                                        <div class="selected_value">상품명</div>
-                                        <div class="icon_btn select_btn"></div>
-                                    </div>
-                                    <ul>
-                                        <li class="sel_option">상품명</li>
-                                        <li class="sel_option">상품명1</li>
-                                        <li class="sel_option">상품명2</li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                         <div class="result_area">
                             <div class="result_table">
