@@ -435,8 +435,11 @@ input[type='date']:focus{
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
-    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     text-decoration-line: underline;
+    line-height: 18px;
     border: none;
 }
 input.file_upload{display: none;}
@@ -468,6 +471,9 @@ label.file_upload{
 }
 .uploaded input[type="file"]{
     display: none;
+}
+.uploaded input[type="text"]:disabled{
+    background: none;
 }
 .uploaded input{
     width: calc(100% - 10px - 78px);

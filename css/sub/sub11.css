@@ -19,6 +19,12 @@
     width: 455px;
 }
 
+#page11_1 .option_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #page11_1 .result_area .col1{width: 80px;}
 #page11_1 .result_area .col3,
 #page11_1 .result_area .col4,
@@ -181,6 +187,7 @@
     flex-direction: column;
     padding: 20px 12px;
 }
+#popup11_2_2 .row1 .col2 input{width: 100%;}
 #popup11_2_2 .row2 .col2 .checkbox_input_wrap{justify-content: flex-start;}
 
 

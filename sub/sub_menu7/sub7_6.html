@@ -59,15 +59,23 @@
                                     </li>
                                     <li class="col col3 table_category">재고 상황</li>
                                     <li class="col col4">
-                                        <div class="checkbox_wrap">
-                                            <input type="checkbox" name="" id="all">
-                                            <label for="all">전체</label>
-                                            <input type="checkbox" name="" id="proper">
-                                            <label for="proper">적정</label>
-                                            <input type="checkbox" name="" id="deficient">
-                                            <label for="deficient">부족</label>
-                                            <input type="checkbox" name="" id="review">
-                                            <label for="review">검토</label>
+                                        <div class="input_wrap">
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="all" name="status">
+                                                <label for="all">전체</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="proper" name="status">
+                                                <label for="proper">적정</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="lack" name="status">
+                                                <label for="lack">부족</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="examine" name="status">
+                                                <label for="examine">검토</label>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="col col5">
@@ -76,6 +84,7 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="option_area"></div>
                         <div class="result_area">
                             <div class="scroll_area">
                                 <div class="result_table">
@@ -367,7 +376,7 @@
                         <table>
                             <thead>
                                 <tr class="row row1">
-                                    <th class="col col1">거래처명</th>
+                                    <th class="col col1">매대</th>
                                     <th class="col col2">상품명</th>
                                     <th class="col col3">카테고리1</th>
                                     <th class="col col4">카테고리2</th>

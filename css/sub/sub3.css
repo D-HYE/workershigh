@@ -29,6 +29,7 @@
 #page3_2 .form_area{margin: 30px 0 20px;}
 #page3_2 .input_form_table .row{border: none;}
 #page3_2 .input_form_table .col{width: calc(25% - 120px); height: 50px;}
+#page3_2 .input_form_table .col1{border-top-left-radius: 8px;}
 #page3_2 .input_form_table .col.table_category{width: 120px;}
 #page3_2 .input_form_table .col:nth-child(even){font-size: 15px;}
 #page3_2 .result_area .col1{width: 320px;}

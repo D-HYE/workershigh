@@ -286,12 +286,14 @@
                                             <label for="refuse">반려</label>
                                         </div>
                                     </li>
+                                    <li class="null"></li>
                                     <li class="col col4">
                                         <button type="button" class="btn search_btn btn_blue">검색</button>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="option_area"></div>
                         <div class="result_area">
                             <div class="scroll_area">
                                 <div class="result_table">
@@ -504,7 +506,7 @@
             </footer>
         </main>
     </div>
-    <div id="popup_reason" class="popup popup_reason">
+    <div id="popup_reason" class="popup alert_popup">
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
@@ -513,7 +515,7 @@
             </div>
             <div class="popup_content">
                 <div class="result_area">
-                    <p>사이다 재고 10개가 부족합니다.</p>
+                    <b>사이다 재고 10개가 부족합니다.</b>
                 </div>
             </div>
             <div class="popup_btm">
@@ -538,7 +540,7 @@
                 document.location.href="./sub7_7_1.html"
             })
             $('.result_table tbody .col10 span').on('click', function(){
-                 $('.popup_reason').addClass('on')
+                 $('#popup_reason').addClass('on')
                  $('.dim').addClass('on')
             })
         })

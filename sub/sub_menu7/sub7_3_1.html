@@ -15,6 +15,12 @@
 <body>
     <div class="wrap" id="page7_3_1">
         <div id="gnb" class="active"></div>
+        <script>
+            $('#gnb').load('../../includes/nav.html', function(){
+                $('.gnb_list7').addClass('on')
+                $('.gnb_list7 li').eq(2).addClass('on')
+            });
+        </script>
         <main>
             <div class="container">
                 <div class="content_wrap">
@@ -272,7 +278,7 @@
         <div class="popup_inner">
             <div class="popup_top">
                 <div class="null"></div>
-                <h3 class="popup_title">상품 영양정보 변경</h3>
+                <h3 class="popup_title">상품 고시 정보</h3>
                 <button class="icon_btn close_btn" type="button"></button>
             </div>
             <div class="popup_content">

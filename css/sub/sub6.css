@@ -132,17 +132,18 @@ label.file_upload{
     height: 305px;
 }
 
-
-#page6_1 .result_area td{
-    font-size:15px;
+#page6_1 .result_area .result_table{
+    width: 1180px;
 }
+#page6_1 main.active .result_area .result_table{width: auto;}
+#page6_1 main.active .result_area .scroll_area{padding-bottom: 0;}
 #page6_1 .result_area .col1,
 #page6_1 .result_area .col9,
 #page6_1 .result_area .col10{
-    width: 5.4%;
+    width: 60px;
 }
 #page6_1 .result_area .col2{
-    width:11.7%;
+    width: 130px;
 }
 #page6_1 .result_area td.col2 span{
     color:  #0B1293;
@@ -150,25 +151,25 @@ label.file_upload{
     cursor: pointer;
 }
 #page6_1 .result_area .col3{
-    width:13.5%;
+    width: 150px;
 }
 #page6_1 .result_area .col4,
-#page6_1 .result_area .col5{
-    width: 6.3%;
-}
+#page6_1 .result_area .col5,
 #page6_1 .result_area .col6{
-    width: 7.2%;
+    width: 80px;
 }
+
 #page6_1 .result_area .col7,
 #page6_1 .result_area .col8{
-    width: 9%;
+    width: 100px;
 }
 #page6_1 .result_area .col11{
-    width: 20.7%;
+    width: 280px;
 }
 #page6_1 .result_area .col11 .btn{
     padding: 0 15px;
-    margin: 12px 0;
+    height: 36px;
+    font-size: 13px;
 }
 #page6_1 .result_area table tr{cursor: unset;}
 

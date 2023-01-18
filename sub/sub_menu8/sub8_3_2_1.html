@@ -56,10 +56,15 @@
                                 <ul class="row row2">
                                     <li class="col col1 table_category">이미지</li>
                                     <li class="col col2">
-                                        <div class="upload_wrap">
-                                            <span class="upload_val"></span>
-                                            <label for="file_upload" class="btn btn_white">파일선택</label> 
-                                            <input type="file" id="file_upload" class="file_upload_btn">
+                                        <div class="file_wrap noFile">
+                                            <div class="preview">
+                                                <img src="" alt="">
+                                            </div>
+                                            <input class="file_name" value="파일변경" placeholder="파일변경">
+                                            <label for="file_upload_1" class="file_upload btn btn_white">파일 선택</label> 
+                                            <label for="file_upload_1" class="file_change btn btn_white">파일 변경</label> 
+                                            <input class="file file_upload" type="file" id="file_upload_1" onchange="fileName_change(this)">
+                                            <input class="file file_change" type="file" id="file_change_1" onchange="file_change(this)">
                                         </div>
                                     </li>
                                 </ul>

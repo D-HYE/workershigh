@@ -45,6 +45,7 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 #popup2_1 .block_category{width: 80px;}
 #popup2_1 .table_category{width: 100px;}
 #popup2_1 .depth_table{width: calc(100% - 80px);}
+#popup2_1 .table_block1 .col{overflow: initial;}
 #popup2_1 .table_block1 .select_wrap{width: 180px;}
 #popup2_1 .table_block2 .row1 .col2,
 #popup2_1 .table_block2 .row1 .col4,
@@ -64,7 +65,7 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
     justify-content: space-between;
     align-items: center;
 }
-#popup2_1 .row_collapse .row_collapse_left .col.col2 .input_wrap:first-child input{width: 198px;}
+#popup2_1 .row_collapse .row_collapse_left .col.col2 .input_wrap:first-child input{width: 220px;}
 #popup2_1 .row_collapse .row_collapse_right .col3{width: 120px;}
 #popup2_1 .row_collapse .row_collapse_right .col4{width: 290px;}
 
@@ -88,7 +89,10 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 
 #page2_1_1 .table_block>.row, #page2_1_1 .depth_table{width: calc(100% - 100px);}
 
-#page2_1_1 .table_block1 .col{border: none;}
+#page2_1_1 .table_block1 .col{
+    border: none;
+    overflow: initial;
+}
 #page2_1_1 .table_block1 .col:nth-child(even){border-left: 1px solid #eee;}
 #page2_1_1 .table_block1 .col:nth-child(odd){flex: 1;}
 
@@ -164,6 +168,11 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
 }
 
 #popup2_1_1_1{width: 460px;}
+#popup2_1_1_1 .popup_content{padding: 15px 29px;}
+#popup2_1_1_1 .table_head_row .row{
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
 #popup2_1_1_1 .col1{width: 120px;}
 #popup2_1_1_1 .col2{width: 180px;}
 #popup2_1_1_1 .col3{width: 100px;}
@@ -256,7 +265,7 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
     justify-content: space-between;
     margin-bottom: 13px;
 }
-#popup2_2_1 .table_block1 .row_collapse_left .col2 .input_wrap:first-child input{width: 335px;}
+#popup2_2_1 .table_block1 .row_collapse_left .col2 .input_wrap:first-child input{width: 357px;}
 #popup2_2_1 .table_block1 .row_collapse_right{width: 33.3%;}
 #popup2_2_1 .table_block1 .row_collapse_right .col4{width: calc(100% - 100px);}
 #popup2_2_1 .table_block2 .row3 .col4 .input_wrap{
@@ -276,6 +285,7 @@ input:not(input[type="radio"], input[type="checkbox"]){width: 100%;}
     height: calc(80.469vh - 159px);
     overflow: scroll;
 }
+
 #popup2_2_2 .block_category, #popup2_2_3 .block_category{
     width: 120px;
     text-align: center;

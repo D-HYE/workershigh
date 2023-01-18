@@ -1,7 +1,7 @@
 .calander_wrap .calander_con{width: 420px;}
 
 /* 검색버튼 */
-#page7_3 .search_area,
+/* #page7_3 .search_area,
 #page7_5 .search_area,
 #page7_7 .search_area,
 #page7_5_1 .search_area{
@@ -29,7 +29,7 @@
     left: calc(100% - 25px);
     top: 25px; 
     transform:translate( -100%, 0);
-}
+} */
 
 
 
@@ -105,7 +105,9 @@
     width: 120px;
     height: 120px;
     display: none;
+    overflow: hidden;
 }
+.file_wrap .preview img{width: 100%;}
 .file_name{
     color: #0B1293;
     font-style: normal;
@@ -255,7 +257,7 @@ label.file_upload{
     color: #0B1293;
     font-weight: 900;
 }
-#page7_1 .result_table{width: 2320px;}
+#page7_1 .result_table{width: 2420px;}
 #page7_1 .result_area .col{width: 80px;}
 #page7_1 .result_area .col1,
 #page7_1 .result_area .col7,
@@ -334,6 +336,10 @@ label.file_upload{
     border-bottom: none;
 }
 
+#page7_2 .result_area tbody tr:hover{background: #F6FAFF;}
+#page7_2 .result_area tbody tr:hover td{color: #0044FE;cursor: pointer;}
+#page7_2 .result_area tbody tr:hover td.col3{cursor: pointer;}
+
 /* ---------- sub7_3 ---------- */
 #page7_3 .search_area .date_area{width: 256px;}
 #page7_3 .search_area .calander_wrap{width: 622px; height: 305px;}
@@ -346,6 +352,7 @@ label.file_upload{
 #page7_3 .search_area .row1 .col8 .select_wrap{
     margin-right: 0;    
 }
+#page7_3 .search_area .null{width: 173px;}
 
 #page7_3 .select_wrap{width: 180px;}
 #page7_3 .result_area .col1{width: 80px;}
@@ -426,26 +433,17 @@ label.file_upload{
     text-align: left;
 }
 
-
-#page7_3_1 .form_area .row{
-    display: flex;
-}
-#page7_3_1 .form_area .row .col{
-    height: auto;
-    min-height: 60px;
+#page7_3_1 .form_area .row .block_category{
+    width: 120px;
 }
 #page7_3_1 .form_area .row1 .col2{
     width: 89.2%;
 }
-#page7_3_1 .form_area .row1 .col2 input{
-    width: 100%;
-}
-#page7_3_1 .form_area .row .block_category{
-    width: 10.8%;
-}
+#page7_3_1 .form_area .row2 .col{height: 140px;}
+
 #page7_3_1 .form_area .row .col2,
 #page7_3_1 .form_area .row .col4{
-    width: 39.2%;
+    width: calc(50% - 120px)
 }
 #page7_3_1 .form_area .row .col2 .input_wrap input,
 #page7_3_1 .form_area .row .col4 .input_wrap input{
@@ -726,9 +724,13 @@ label.file_upload{
     width: 190px;
 }
 #page7_5 .search_area .row2 {height: 44px;}
-#page7_5 .search_area .row2 .col2 .checkbox_wrap label{
-    margin-right: 20px;
+#page7_5 .search_area .row2 .col2 .input_wrap{
+    display: flex;
+    gap: 12px;
 }
+#page7_5 .search_area .row2 .col2 .radio_input_wrap{width: auto;}
+#page7_5 .search_area .null{width: 690px;}
+
 #page7_5 .result_area .col{width: 13.5%;}
 #page7_5 .result_area .col1{width: 7.2%;}
 #page7_5 .result_area .col2{width: 10.8%;}
@@ -754,6 +756,7 @@ label.file_upload{
 #page7_5_1 .search_area .row2 .col2 .select_wrap{
     width: 340px;
 }
+#page7_5_1 .search_area .null{width: 585px;}
 #page7_5_1 .input_form_table_btn{
     margin:20px auto 30px;
 }
@@ -867,16 +870,20 @@ label.file_upload{
 #page7_5_2 .edit_btn{
     margin-top: 30px;
 }
-#page7_5_2 .result_area_1 .col2 ul .col1{
+#page7_5_2 .result_area_1 .input_wrap{
+    display: flex;
+    align-items: center;
+}
+#page7_5_2 .result_area_1 .input_wrap input{
     width: calc(100% - 64px);
 }
-#page7_5_2 .result_area_1 .col2 ul .col1 input{
-    width: 100%;
-}
-#page7_5_2 .result_area_1 .col2 ul .col2,
-#page7_5_2 .result_area_1 .col2 ul .col2 .edit_btn{
+#page7_5_2 .result_area_1 .input_wrap .edit_btn{
     width: 54px;
+    height: 36px;
     padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 13px;
     border: none;
 }
 #page7_5_2 .result_area_1 .col3{width: 18%;}
@@ -945,6 +952,7 @@ label.file_upload{
 }
 #page7_5_2 + .popup_new .option_area ul .col3 .search_btn{
     width: 54px;
+    height: 36px;
     padding: 0;
     margin-left: 10px;
 }
@@ -978,11 +986,12 @@ label.file_upload{
     width: 343px;
     margin-right: 7px;
 }
-#page7_6 .search_area .col4 .checkbox_wrap label{
-    margin-right: 20px;
+#page7_6 .search_area .col4 .input_wrap{
+    display: flex;
+    gap: 12px;
 }
+#page7_6 .search_area .col4 .radio_input_wrap{width: auto;}
 #page7_6 .result_area{
-    margin-top: 94px;
     position: relative;
 }
 #page7_6 .result_table{
@@ -1080,14 +1089,13 @@ label.file_upload{
 
 
 /* ---------- sub7_7 ---------- */
-#page7_7 .search_area {
-    margin-bottom: 94px;
-}
+
 #page7_7 .search_area .col2 .select_wrap,
 #page7_7 .search_area .col4 .select_wrap{
     width: 200px;
     margin-right: 7px;
 }
+#page7_7 .search_area .null{width: 370px;}
 #page7_7 .result_area tbody tr:hover{background: #F6FAFF;}
 #page7_7 .result_area tbody tr:hover td{color: #0044FE;}
 
@@ -1123,8 +1131,10 @@ label.file_upload{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 36px;
     padding: 0;
     margin: 0 auto;
+    font-size: 13px;
     text-align: center;
     cursor: pointer;
 }
@@ -1139,7 +1149,7 @@ label.file_upload{
 #page7_7 ~ .popup{width: 460px;}
 
 #page7_7_1 .input_form_table_btn_1{
-    margin: 0 0 20px;
+    margin: 5px 0 20px;
 }
 #page7_7_1 .input_form_table_btn_1 .input_form_table_btn_wrap{
     justify-content: flex-end;
@@ -1163,7 +1173,9 @@ label.file_upload{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 36px;
     padding: 0;
+    font-size: 13px;
     cursor: pointer;
 }
 #page7_7_1 .result_table_1 .col6 .input_wrap .delete_btn{
@@ -1264,6 +1276,13 @@ label.file_upload{
 #page7_7_1 ~ .popup_new .result_table .col2 input{
     width: 100%;
 }
+#page7_7_1 ~ .popup_new .search_btn{
+    width: 54px;
+    height: 36px;
+    padding: 0;
+    font-size: 13px;
+}
+
 #page7_7_1 ~ .popup_search .search_area .row1{
     display: flex;
     justify-content: space-between;

@@ -268,12 +268,12 @@ main{
     align-items: center;
     gap: 20px;
 }
-.option_result h3{
+.option_result h4{
     font-size: 15px;
     font-weight: 500;
     text-align: right;
 }
-.option_result h3 span{
+.option_result h4 span{
     font-weight: 700;
     color: #0044FE;
 }
@@ -433,6 +433,7 @@ ol.pagenation_item span{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     border-right: 1px solid #eee;
 }
 .table_block:first-child .block_category{border-top-left-radius: 8px;}
@@ -504,7 +505,6 @@ footer p{
     color: #797979;
     line-height: 18px;
 }
-
 
 
 /* ---------- 팝업 popup ---------- */
@@ -632,3 +632,5 @@ footer p{
 .status_mark.red_mark{
     background: #FF2E00;
 }
+
+.input_form_table .table_head_row .row1{border-bottom: 1px solid #D3D3D3;}

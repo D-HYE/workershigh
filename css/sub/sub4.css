@@ -78,6 +78,7 @@
     line-height: 18px;
     padding: 0;
     width: 68px;
+    height: 36px;
 }
 
 .performance_popup,
@@ -126,6 +127,8 @@
     background-color: #FCFCFC;
     text-align: center;
 }
+.performance_popup .input_form_table ,
+.goal_popup .input_form_table {overflow: hidden;}
 .performance_popup .col,
 .goal_popup .col{width: 100px;}
 .performance_popup .table_block .col,
@@ -175,7 +178,7 @@
 #page4_2 .result_area tbody tr:hover td{color: #0044FE;}
 #page4_2 .result_area tbody tr:hover td.col3{cursor: pointer;}
 
-
+#page4_2_1 .option_area{margin-top: 5px;}
 #page4_2_1 .result_area .col{
     width:10.8%;
 }
@@ -204,6 +207,7 @@
 #page4_3  .form_area{
     margin-bottom: 19px;
 }
+#page4_3 .form_area .col:nth-child(even){font-size: 15px;}
 #page4_3  .form_area .col2{
     width: 300px;
 }
@@ -265,6 +269,9 @@
 #page4_4 .col{
     overflow: visible;
 }
+#page4_4 .col3:after{
+    display: none;
+}
 #page4_4 .col .select_wrap{
     text-align: left;
 }
@@ -285,6 +292,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 13px;
     cursor: pointer;
 }
 #page4_4 .noFile input[type="file"]{

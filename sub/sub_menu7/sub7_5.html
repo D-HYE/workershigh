@@ -223,7 +223,7 @@
                                             </div>
                                             <ul>
                                                 <li class="sel_option">B2B</li>
-                                                <li class="sel_option">B2B</li>
+                                                <li class="sel_option">B2C</li>
                                                 <li class="sel_option">B2B</li>
                                             </ul>
                                         </div>
@@ -232,16 +232,16 @@
                                     <li class="col col6">
                                         <div class="select_wrap">
                                             <div class="selected">
-                                                <div class="selected_value">마스터</div>
+                                                <div class="selected_value">롯데벤처스</div>
                                                 <div class="icon_btn select_btn"></div>
                                             </div>
                                             <ul>
                                                 <li class="input_wrap text_input_wrap">
                                                     <input type="text" name="customer_select">
                                                 </li>
-                                                <li class="sel_option">마스터</li>
-                                                <li class="sel_option">마스터</li>
-                                                <li class="sel_option">마스터</li>
+                                                <li class="sel_option">롯데벤처스</li>
+                                                <li class="sel_option">포컴퍼니</li>
+                                                <li class="sel_option">드림플러스</li>
                                             </ul>
                                         </div>
                                     </li>
@@ -263,15 +263,22 @@
                                 <ul class="row row2">
                                     <li class="col col1 table_category">상태</li>
                                     <li class="col col2">
-                                        <div class="checkbox_wrap">
-                                            <input type="checkbox" name="" id="all">
-                                            <label for="all">전체</label>
-                                            <input type="checkbox" name="" id="wait">
-                                            <label for="wait">대기</label>
-                                            <input type="checkbox" name="" id="fin">
-                                            <label for="fin">발주완료</label>
+                                        <div class="input_wrap">
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="all" name="status">
+                                                <label for="all">전체</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="waiting" name="status" checked="">
+                                                <label for="waiting">대기</label>
+                                            </div>
+                                            <div class="radio_input_wrap">
+                                                <input type="radio" id="complete" name="status">
+                                                <label for="complete">발주완료</label>
+                                            </div>
                                         </div>
                                     </li>
+                                    <li class="null"></li>
                                     <li class="col col3">
                                         <button type="button" class="btn search_btn btn_blue">검색</button>
                                     </li>
@@ -291,8 +298,8 @@
                                             <th class="col col1">NO</th>
                                             <th class="col col2">큐레이션 날짜</th>
                                             <th class="col col3">큐레이션 이름</th>
-                                            <th class="col col4">기준고객사</th>
-                                            <th class="col col5">발주고객사</th>
+                                            <th class="col col4">기준 거래처 매대</th>
+                                            <th class="col col5">발주 거래처 매대</th>
                                             <th class="col col6">발주금액</th>
                                             <th class="col col7">상태</th>
                                         </tr>
