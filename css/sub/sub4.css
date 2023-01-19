@@ -245,8 +245,8 @@
     /* border: none; */
 }
 #page4_4 .result_table table{
-    position: relative;
-    z-index: 2;
+    /* position: relative;
+    z-index: 2; */
 }
 /* #page4_4 .result_table table:after{
     content: '';
@@ -260,10 +260,10 @@
     border:1px solid #D3D3D3;
     z-index: -1;
 } */
-#page4_4 .result_table table thead{
+/* #page4_4 .result_table table thead{
     position: relative;
     z-index: -2;
-}
+} */
 
 
 #page4_4 .col{

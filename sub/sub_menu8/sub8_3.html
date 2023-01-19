@@ -265,7 +265,7 @@
                         <div class="option_area">
                             <ul class="page_btn_wrap">
                                 <li><button class="btn_blue btn" onclick="location.href='./sub8_3_1.html';">입고</button></li>
-                                <li><button type="button" class="btn_white btn">입고 업로드</button></li>
+                                <li><button type="button" class="btn_white btn" id="upload_btn">입고 업로드</button></li>
                                 <li><button type="button" class="btn_white btn">액셀 다운로드</button></li>
                                 <li><button class="btn_white btn" onclick="location.href='./sub8_3_2.html';">미등록 상품</button></li>
                                 <li><button class="btn_white btn" onclick="location.href='./sub8_3_3.html';">실사</button></li>
@@ -442,5 +442,49 @@
             </footer>
         </main>
     </div>
+
+    <div id="popup8_3" class="popup ">
+        <div class="popup_inner">
+            <div class="popup_top">
+                <div class="null"></div>
+                <h3 class="popup_title">입고 업로드</h3>
+                <button class="icon_btn close_btn" type="button"></button>
+            </div>
+            <div class="popup_content ">
+                <div class="option_area">
+                    <ul class="page_btn_wrap">
+                        <li><button type="button" class="btn_paleBlue btn">샘플 .xls 다운로드</button></li>
+                    </ul>
+                </div>
+                <div class="file_wrap noFile">
+                    <input class="file_name" value="파일변경" placeholder="파일변경" type="text" disabled>
+                    <label for="file_upload_1" class="file_upload btn btn_white">업로드</label> 
+                    <label for="file_upload_1" class="file_change btn btn_white">파일 변경</label> 
+                    <input class="file file_upload" type="file" id="file_upload_1" onchange="fileName_change(this)">
+                    <input class="file file_change" type="file" id="file_change_1" onchange="file_change(this)">
+                </div>
+            </div>
+            <div class="popup_btm">
+                <div class="popup_btn">
+                    <div class="input_form_table_btn_wrap">
+                        <button type="button" class="btn btn_white close_btn">닫기</button>
+                        <button type="button" class="btn btn_blue confirm_btn">추가</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+    <script>
+        $(function(){
+            // 등록 버튼 눌렀을 때
+            $('#upload_btn').on('click', function(){
+                $('#popup8_3').addClass('on')
+                $('.dim').addClass('on')
+            })
+
+            
+        })
+    </script>
 </body>
 </html>

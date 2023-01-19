@@ -822,6 +822,13 @@ label.file_upload{
 #page7_5_1 .result_area .result_table_4{width: 1740px;}
 #page7_5_1 .result_area .result_table_4 .col1{width: 70px;}
 #page7_5_1 .result_area .result_table_4 .col2{width: 60px;}
+#page7_5_1 .result_area .result_table_4 .delete_btn{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    border-radius: 50%;
+    background: url(../../images/icon/icon-minus.svg) no-repeat center/18px, #f2f2f2;
+}
 #page7_5_1 .result_area .result_table_4 .col3{width: 70px;}
 #page7_5_1 .result_area .result_table_4 .col4{width: 210px;}
 #page7_5_1 .result_area .result_table_4 .col5{width: 130px;}
@@ -914,6 +921,9 @@ label.file_upload{
     height: 40px;
     border-radius: 50%;
     background: url(../../images/icon/icon-delete.svg) no-repeat center/24px, #f2f2f2;
+}
+#page7_5_2 .result_area_2 .col12 .icon_btn.delete_btn:hover{
+    background: url(../../images/icon/icon-delete-bk.svg) no-repeat center/16px, #d3d3d3;
 }
 #page7_5_2 .result_area_2 .col12 .icon_btn_wrap {
     display: flex;
@@ -1241,6 +1251,13 @@ label.file_upload{
 #page7_7_1 .result_table_2 .col11 .icon_btn.edit_btn{
     background: url(../../images/icon/icon-edit-blue.svg) no-repeat center/24px, #F2F4FF;
 }
+#page7_7_1 .result_table_2 .col11 .icon_btn.delete_btn:hover{
+    background: url(../../images/icon/icon-delete-bk.svg) no-repeat center/16px, #d3d3d3;
+}
+#page7_7_1 .result_table_2 .col11 .icon_btn.edit_btn:hover{
+    background: url("../../images/icon/icon-edit-nv.svg") no-repeat center/24px, #D0D5F2;
+}
+
 #page7_7_1 ~ .popup_edit{
     width: 960px;
 }
