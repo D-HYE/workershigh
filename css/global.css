@@ -384,6 +384,102 @@ input[type='date']:focus{
 }
 .upload_wrap .btn{line-height: 34px; cursor: pointer;}
 
+
+
+/* file_wrap에 noFile / uploaded class 붙는 형식으로 작동함 */
+.file_wrap{
+    align-items: center;
+}
+.file_name{
+    color: #0B1293;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    border: none;
+}
+input.file_upload{display: none;}
+label.file_upload{
+    display: block;
+    margin: 0 auto;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.noFile input[type="file"]{
+    display: none;
+}
+.noFile label{
+    width: 66px;
+}
+.noFile .file_upload{display: flex;}
+.noFile .file_change{display: none;}
+.noFile.file_wrap .file_name{
+    display: none;
+}
+.uploaded.file_wrap{
+    display: flex;
+}
+.uploaded.file_wrap .file_name{
+    display: block;
+    outline: none;
+}
+.uploaded input[type="file"]{
+    display: none;
+}
+.uploaded input{
+    width: calc(100% - 10px - 78px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+.uploaded .file_upload{display: none;}
+.uploaded .file_change{display: flex;}
+.noFile .file_name{
+    display: none;
+}
+.uploaded .file_name{
+    display: block;
+}
+
+.popup label.file_upload,
+.popup label.file_change {
+    width: 78px;
+    align-items: center;
+    justify-content: center;
+    line-height: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+}
+.popup label.file_change{
+}
+.popup .noFile.file_wrap,
+.popup .uploaded.file_wrap{
+    border: 1px solid #D3D3D3;
+    border-radius: 8px;
+    padding: 14px 12px;
+    justify-content: space-between;
+}
+.popup .noFile.file_wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+.popup .noFile.file_wrap .file_name,
+.popup .uploaded.file_wrap .file_name{
+    border: none;
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    background: none;
+    padding: 0 15px;
+}
+
+
 /* ---------- on active ----------- */
 .date_wrap.active{border: 1px solid #0044FE;}
 
@@ -419,74 +515,4 @@ input[type='date']:focus{
 }
 .scroll_area::-webkit-scrollbar-track {
     background-color: transparent;
-}
-
-/* file_wrap에 noFile / uploaded class 붙는 형식으로 작동함 */
-.file_wrap{
-    align-items: center;
-}
-.file_wrap .preview{
-    width: 120px;
-    height: 120px;
-    display: none;
-}
-.file_name{
-    color: #0B1293;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-decoration-line: underline;
-    line-height: 18px;
-    border: none;
-}
-input.file_upload{display: none;}
-label.file_upload{
-    display: block;
-    margin: 0 auto;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.noFile input[type="file"]{
-    display: none;
-}
-.noFile label{
-    width: 66px;
-}
-.noFile .file_upload{display: flex;}
-.noFile .file_change{display: none;}
-.noFile.file_wrap .file_name{
-    display: none;
-}
-.uploaded.file_wrap{
-    display: flex;
-}
-.uploaded.file_wrap .file_name{
-    display: block;
-}
-.uploaded input[type="file"]{
-    display: none;
-}
-.uploaded input[type="text"]:disabled{
-    background: none;
-}
-.uploaded input{
-    width: calc(100% - 10px - 78px);
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
-}
-.uploaded .file_upload{display: none;}
-.uploaded .file_change{display: flex; cursor: pointer;}
-.noFile .file_name{
-    display: none;
-}
-.uploaded .file_name{
-    display: block;
 }
