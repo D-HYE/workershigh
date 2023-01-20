@@ -174,7 +174,7 @@
 #popup8_3 .option_area ul{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end
 }
 #popup8_3 .option_area p{
     font-weight: 700;
