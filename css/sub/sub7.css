@@ -302,7 +302,7 @@
     width: 460px;
 }
 #page7_3 ~ .popup_excel_new .option_area ul{
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 #page7_3 ~ .popup_excel_new .option_area li p{
@@ -600,7 +600,7 @@
     width: 460px;
 }
 #page7_4 ~ .popup_excel_new .option_area ul{
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 #page7_4 ~ .popup_excel_new .option_area li p{

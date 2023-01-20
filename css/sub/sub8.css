@@ -171,6 +171,17 @@
 #popup8_3{
     width: 460px;
 }
+#popup8_3 .option_area ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#popup8_3 .option_area p{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #6F869C;
+}
 
 /* #popup8_3 label.file_upload,
 #popup8_3 label.file_change{
