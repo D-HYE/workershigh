@@ -441,7 +441,9 @@
 #page7_4 .result_area .result_table{width: 2790px;}
 #page7_4 .result_area tr{display: flex;}
 #page7_4 .result_area .col{
-    width: 200px; display: flex; flex-wrap: wrap;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
